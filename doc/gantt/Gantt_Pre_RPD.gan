@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2007-01-08" view-index="0" gantt-divider-location="336" resource-divider-location="301" version="2.0">
+<description></description>
+<view zooming-state="default:5"/>
+<!-- -->
+<calendars>
+<day-types>
+<day-type id="0"/>
+<day-type id="1"/>
+<calendar id="1" name="default">
+<default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+<overriden-day-types/>
+<days/>
+</calendar>
+</day-types>
+<date year="2006" month="12" date="24"/>
+<date year="2006" month="12" date="25"/>
+<date year="2006" month="12" date="26"/>
+<date year="2006" month="12" date="31"/>
+<date year="2007" month="1" date="1"/>
+<date year="2007" month="1" date="6"/>
+</calendars>
+<tasks color="#8cb6ce">
+<taskproperties>
+<taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+<taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+<taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+<taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+<taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+<taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+<taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+<taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+<taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+<taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+<taskproperty id="tpc0" name="Ore" type="custom" valuetype="double" defaultvalue="10.0"/>
+</taskproperties>
+<task id="13" name="Prima iterazione" color="#8cb6ce" meeting="false" start="2007-01-15" duration="32" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="345.0"/>
+<task id="14" name="Analisi Requisiti" color="#0000cc" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2007-01-18" duration="7" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="10.0"/>
+</task>
+<task id="15" name="Progettazione" color="#0000cc" meeting="false" start="2007-01-24" duration="22" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="80.0"/>
+</task>
+<task id="16" name="Programmazione" color="#0000cc" meeting="false" start="2007-02-19" duration="5" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="50.0"/>
+</task>
+<task id="18" name="Validazione" color="#0000cc" meeting="false" start="2007-02-21" duration="5" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="20.0"/>
+</task>
+<task id="17" name="Verifica" color="#0000cc" meeting="false" start="2007-01-15" duration="32" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="100.0"/>
+</task>
+</task>
+<task id="30" name="Amministrazione" color="#ff0000" meeting="false" start="2007-01-15" duration="32" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="50.0"/>
+</task>
+<task id="31" name="Supervisione" color="#ffff00" meeting="false" start="2007-01-15" duration="32" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="35.0"/>
+</task>
+<task id="20" name="Seconda iterazione" color="#8cb6ce" meeting="false" start="2007-02-21" duration="18" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="304.0"/>
+<task id="22" name="Analisi Requisiti" color="#8cb6ce" meeting="false" start="2007-02-21" duration="8" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="10.0"/>
+</task>
+<task id="23" name="Progettazione" color="#8cb6ce" meeting="false" start="2007-02-26" duration="10" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="70.0"/>
+</task>
+<task id="24" name="Programmazione" color="#8cb6ce" meeting="false" start="2007-03-07" duration="5" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="48.0"/>
+</task>
+<task id="26" name="Validazione" color="#8cb6ce" meeting="false" start="2007-03-12" duration="5" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="16.0"/>
+</task>
+<task id="25" name="Verifica" color="#8cb6ce" meeting="false" start="2007-02-21" duration="18" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="80.0"/>
+</task>
+</task>
+<task id="21" name="Amministrazione" color="#ff0000" meeting="false" start="2007-02-28" duration="13" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="40.0"/>
+</task>
+<task id="27" name="Supervisione" color="#ffff00" meeting="false" start="2007-02-28" duration="13" complete="0" priority="1" expand="true">
+<customproperty taskproperty-id="tpc0" value="40.0"/>
+</task>
+</tasks>
+<resources/>
+<allocations/>
+<vacations/>
+<taskdisplaycolumns>
+<displaycolumn property-id="tpd3" order="0" width="122"/>
+<displaycolumn property-id="tpd4" order="1" width="68"/>
+<displaycolumn property-id="tpd5" order="2" width="70"/>
+<displaycolumn property-id="tpc0" order="3" width="40"/>
+</taskdisplaycolumns>
+<previous>
+<previous-tasks name="6H">
+<previous-task id="13" start="2006-12-20" duration="33" meeting="false" super="true"/>
+<previous-task id="14" start="2006-12-20" duration="15" meeting="false" super="false"/>
+<previous-task id="15" start="2007-01-11" duration="7" meeting="false" super="false"/>
+<previous-task id="16" start="2007-01-22" duration="5" meeting="false" super="false"/>
+<previous-task id="18" start="2007-01-29" duration="5" meeting="false" super="false"/>
+<previous-task id="17" start="2006-12-20" duration="33" meeting="false" super="false"/>
+<previous-task id="20" start="2007-02-05" duration="30" meeting="false" super="true"/>
+<previous-task id="22" start="2007-02-05" duration="10" meeting="false" super="false"/>
+<previous-task id="23" start="2007-02-19" duration="10" meeting="false" super="false"/>
+<previous-task id="24" start="2007-03-05" duration="5" meeting="false" super="false"/>
+<previous-task id="26" start="2007-03-12" duration="5" meeting="false" super="false"/>
+<previous-task id="25" start="2007-02-05" duration="30" meeting="false" super="false"/>
+<previous-task id="21" start="2006-12-20" duration="63" meeting="false" super="false"/>
+<previous-task id="27" start="2006-12-20" duration="63" meeting="false" super="false"/>
+</previous-tasks>
+</previous>
+<roles roleset-name="Default"/>
+<roles roleset-name="SoftwareDevelopment"/>
+</project>
