@@ -1,0 +1,53 @@
+format 29
+
+classcanvas 128048 class_ref 128048 // WSDidatticaException
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 104 316 2005
+packagecanvas 128130 
+  package_ref 128258 // javax.ejb
+    xyzwh 471 17 2000 151 113
+packagecanvas 128176 
+  package_ref 128176 // java.lang
+    xyzwh 475 350 1995 151 102
+packagecanvas 128258 
+  package_ref 128130 // javax.jws
+    xyzwh 475 147 2000 158 189
+classcanvas 128304 class_ref 128176 // Exception
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 517 388 2010
+classcanvas 128386 class_ref 128002 // Stateless
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 498 53 2005
+classcanvas 128514 class_ref 128130 // WebService
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 501 182 2005
+packagecanvas 128519 
+  package_ref 128002 // nu.mine.egoless.didattica.ws
+    xyzwh 22 92 1995 421 357
+classcanvas 128642 class_ref 128258 // WebMethod
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 503 258 2005
+classcanvas 128770 class_ref 128386 // WSPersona
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 137 177 2005
+relationcanvas 128007 relation_ref 128007 // <dependency>
+  from ref 128770 z 2004 to ref 128386
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128647 relation_ref 128263 // <dependency>
+  from ref 128770 z 2004 to ref 128514
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128775 relation_ref 128391 // <generalisation>
+  from ref 128048 z 2004 to ref 128304
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128816 relation_ref 128432 // <dependency>
+  from ref 128770 z 2004 to ref 128048
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 129666 relation_ref 128642 // <dependency>
+  from ref 128770 z 2004 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end

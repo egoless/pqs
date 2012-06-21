@@ -1,0 +1,25 @@
+format 29
+
+classcanvas 128002 class_ref 134530 // BarraDiStatoCompatibile
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 30 55 2000
+classcanvas 128130 class_ref 134658 // BarraDIStatoPanel
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 32 207 2000
+classcanvas 128386 class_ref 134786 // ButtonTabComponent
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 207 221 2000
+classcanvas 128514 class_ref 134914 // DataPanel
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 307 55 2000
+classcanvas 128642 class_ref 135042 // UtilitaGUI
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 31 332 2000
+packagecanvas 128770 
+  package_ref 128514 // egoless.mine.nu.didattica.app.gui.componentiComuni
+   color blue  xyzwh 14 8 1994 518 414
+relationcanvas 128258 relation_ref 135810 // <generalisation>
+  from ref 128130 z 1999 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end

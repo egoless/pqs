@@ -1,0 +1,16 @@
+class StanzaBean
+!!!155184.java!!!	setId(in id : long) : void
+
+        long oldId = this.id;
+        this.id = id;
+        propertyChangeSupport.firePropertyChange ("id", new Long (oldId), new Long (id));
+!!!155440.java!!!	setDescrizione(in descrizione : String) : void
+
+        String oldDescrizione = this.descrizione;
+        this.descrizione = descrizione;
+        propertyChangeSupport.firePropertyChange ("descrizione", oldDescrizione, descrizione);
+!!!155696.java!!!	setExtra(inout extra : ListaAttributi) : void
+
+        ListaAttributi oldExtra = this.extra;
+        this.extra = extra;
+        propertyChangeSupport.firePropertyChange ("extra", oldExtra, extra);

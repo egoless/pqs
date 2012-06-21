@@ -1,0 +1,61 @@
+format 29
+
+componentcanvas 128007 component_ref 128519 // WSDidattica_driver
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 9 107 2000 130 93
+componentcanvas 128135 component_ref 128647 // WSDidattica
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color lightorange
+  xyzwh 223 108 2000 131 89
+componentcanvas 128263 component_ref 128775 // API_stub
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 442 113 2000 133 85
+arrowjunctioncanvas 128391 class_ref 128647 // AssenzaWS
+  xyz 390 121 2000 label_xy 372 140
+arrowjunctioncanvas 128647 class_ref 128519 // PersonaWS
+  xyz 389 161 2000 label_xy 371 180
+arrowjunctioncanvas 128903 class_ref 128391 // WSTest
+  xyz 493 243 2000 label_xy 484 262
+arrowjunctioncanvas 129543 class_ref 128135 // WSPersona
+  xyz 180 124 2000 label_xy 162 143
+arrowjunctioncanvas 130695 class_ref 128263 // WSAssenza
+  xyz 170 169 2000 label_xy 152 188
+note 132359 "Per comodità non sono
+stati riportati tutti i Web Service esposti e consumati."
+  xyzwh 209 18 2000 157 62
+line 128519 ---O
+  from ref 128263 z 1999 to point 439 128
+  line 131975 z 1999 to ref 128391
+line 128775 ---O
+  from ref 128263 z 1999 to point 440 168
+  line 131847 z 1999 to ref 128647
+line 129031 ---O
+  from ref 128263 z 1999 to ref 128903
+line 129287 ---(
+  from ref 128135 z 1999 to point 354 127
+  line 132103 z 1999 to ref 128391
+line 129415 ---(
+  from ref 128135 z 1999 to point 355 167
+  line 132231 z 1999 to ref 128647
+line 129671 ---O
+  from ref 128135 z 1999 to point 219 131
+  line 131335 z 1999 to ref 129543
+line 130055 ---(
+  from ref 128007 z 1999 to point 140 131
+  line 131719 z 1999 to ref 129543
+line 130311 ---( geometry VH
+  from ref 128007 z 1999 to point 71 250
+  line 130567 z 1999 to ref 128903
+line 130823 ---O
+  from ref 128135 z 1999 to point 221 176
+  line 131079 z 1999 to ref 130695
+line 130951 ---(
+  from ref 128007 z 1999 to point 141 176
+  line 131591 z 1999 to ref 130695
+line 132487 -_-_
+  from ref 132359 z 1999 to ref 128135
+line 132615 -_-_
+  from ref 132359 z 1999 to ref 128263
+line 132743 -_-_
+  from ref 132359 z 1999 to ref 128007
+end

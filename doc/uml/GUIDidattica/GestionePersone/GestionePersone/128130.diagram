@@ -1,0 +1,31 @@
+format 29
+
+packagecanvas 128130 
+  package_ref 128258 // nu.mine.egoless.didattica.app.gui
+   color yellow  xyzwh 239 7 2000 203 81
+packagecanvas 128258 
+  package_ref 128514 // egoless.mine.nu.didattica.app.gui.componentiComuni
+   color yellow  xyzwh 3 108 2000 317 81
+packagecanvas 128386 
+  package_ref 128386 // egoless.mine.nu.didattica.app.gui.gestionePersone
+   color yellow  xyzwh 189 224 2005 303 81
+packagecanvas 128514 
+  package_ref 128642 // egoless.mine.nu.didattica.app.gui.registroDocente
+   color yellow  xyzwh 381 118 2010 297 81
+packagecanvas 129026 
+  package_ref 129026 // egoless.mine.nu.didattica.app.gui.gestionePersone.studenti
+   color yellow  xyzwh 385 357 2000 353 81
+packagecanvas 129154 
+  package_ref 129154 // egoless.mine.nu.didattica.app.gui.gestionePersone.insegnanti
+   color yellow  xyzwh 2 356 2005 367 81
+simplerelationcanvas 128642 simplerelation_ref 128514
+  from ref 128258 z 1999 to ref 128130
+simplerelationcanvas 128770 simplerelation_ref 128642
+  from ref 128514 z 1999 to ref 128130
+simplerelationcanvas 128898 simplerelation_ref 128770
+  from ref 128386 z 1999 to ref 128130
+simplerelationcanvas 129282 simplerelation_ref 128898
+  from ref 129154 z 2004 to ref 128386
+simplerelationcanvas 129410 simplerelation_ref 129026
+  from ref 129026 z 1999 to ref 128386
+end

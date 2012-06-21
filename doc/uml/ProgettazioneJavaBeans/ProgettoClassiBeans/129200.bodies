@@ -1,0 +1,11 @@
+class MateriaInsegnamentoBean
+!!!145712.java!!!	setNome(in nome : String) : void
+
+        String oldNome = this.nome;
+        this.nome = nome;
+        propertyChangeSupport.firePropertyChange ("nome", oldNome, nome);
+!!!145968.java!!!	setExtra(inout extra : ListaAttributi) : void
+
+        ListaAttributi oldExtra = this.extra;
+        this.extra = extra;
+        propertyChangeSupport.firePropertyChange ("extra", oldExtra, extra);

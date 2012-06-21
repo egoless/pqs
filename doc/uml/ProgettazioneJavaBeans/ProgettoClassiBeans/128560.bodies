@@ -1,0 +1,41 @@
+class GenitoreBean
+!!!136496.java!!!	setId(in id : long) : void
+
+        long oldId = this.id;
+        this.id = id;
+        propertyChangeSupport.firePropertyChange ("id", new Long (oldId), new Long (id));
+!!!136752.java!!!	setNome(in nome : String) : void
+
+        String oldNome = this.nome;
+        this.nome = nome;
+        propertyChangeSupport.firePropertyChange ("nome", oldNome, nome);
+!!!137008.java!!!	setCognome(in cognome : String) : void
+
+        String oldCognome = this.cognome;
+        this.cognome = cognome;
+        propertyChangeSupport.firePropertyChange ("cognome", oldCognome, cognome);
+!!!137264.java!!!	setExtra(inout extra : ListaAttributi) : void
+
+        ListaAttributi oldExtra = this.extra;
+        this.extra = extra;
+        propertyChangeSupport.firePropertyChange ("extra", oldExtra, extra);
+!!!137520.java!!!	setDataNascita(inout dataNascita : Date) : void
+
+        Date oldDataNascita = this.dataNascita;
+        this.dataNascita = dataNascita;
+        propertyChangeSupport.firePropertyChange ("dataNascita", oldDataNascita, dataNascita);
+!!!137776.java!!!	setCodiceFiscale(in codiceFiscale : String) : void
+
+        String oldCodiceFiscale = this.codiceFiscale;
+        this.codiceFiscale = codiceFiscale;
+        propertyChangeSupport.firePropertyChange ("codiceFiscale", oldCodiceFiscale, codiceFiscale);
+!!!138032.java!!!	setIndirizzoResidenza(inout indirizzo : Contatto) : void
+
+        Contatto oldIndirizzo = this.indirizzo;
+        this.indirizzo = indirizzo;
+        propertyChangeSupport.firePropertyChange ("indirizzo", oldIndirizzo, indirizzo);
+!!!138288.java!!!	setPortatoreHandicap(inout portatoreHandicap : boolean) : void
+
+        boolean oldPortatoreHandicap = this.portatoreHandicap;
+        this.portatoreHandicap = portatoreHandicap;
+        propertyChangeSupport.firePropertyChange ("portatoreHandicap", new Boolean (oldPortatoreHandicap), new Boolean (portatoreHandicap));

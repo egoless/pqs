@@ -1,0 +1,9 @@
+window_sizes 960 672 240 714 479 136
+show_stereotypes
+selected 
+  package_ref 128130 // nu.mine.egoless.didattica.app.gui
+open
+  
+  package_ref 128130 // nu.mine.egoless.didattica.app.gui
+end
+end

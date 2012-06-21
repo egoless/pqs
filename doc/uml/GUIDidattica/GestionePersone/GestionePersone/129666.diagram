@@ -1,0 +1,30 @@
+format 29
+
+classcanvas 128002 class_ref 128258 // RicercaPersonaPanel
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 45 95 2000
+classcanvas 128130 class_ref 128898 // RicercaInsegnantiPanel
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 211 182 2004
+classcanvas 128514 class_ref 129026 // RicercaStudentiPanel
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 27 266 2004
+packagecanvas 128770 
+  package_ref 128386 // egoless.mine.nu.didattica.app.gui.gestionePersone
+   color blue  xyzwh 15 62 1994 576 308
+classcanvas 128898 class_ref 132994 // javax.swing.JPanel
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 139 17 2000
+relationcanvas 128258 relation_ref 129154 // <generalisation>
+  from ref 128130 z 1999 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128642 relation_ref 129282 // <generalisation>
+  from ref 128514 z 1999 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 129026 relation_ref 133762 // <generalisation>
+  from ref 128002 z 1999 to ref 128898
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end

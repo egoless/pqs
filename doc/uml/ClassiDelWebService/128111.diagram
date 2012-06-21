@@ -1,0 +1,39 @@
+format 29
+
+classcanvas 128007 class_ref 128007 // WSMateria
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 22 436 2005
+classcanvas 128091 class_ref 128091 // WSTipoAssenza
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 19 333 2005
+packagecanvas 128111 
+  package_ref 128033 // nu.mine.egoless.didattica
+   color blue  xyzwh 8 6 2000 766 665
+classcanvas 128130 class_ref 128130 // WSPersona
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 23 152 2005
+classcanvas 128135 class_ref 128135 // WSNazione
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 437 368 2005
+classcanvas 128219 class_ref 128219 // WSTipoVoto
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 430 260 2005
+classcanvas 128258 class_ref 128258 // WSAssenza
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 14 33 2005
+classcanvas 128263 class_ref 128263 // WSContatto
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 22 542 2005
+classcanvas 128386 class_ref 128386 // WSVoto
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 407 34 2005
+classcanvas 128519 class_ref 128391 // WSClasse
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 428 152 2005
+classcanvas 128647 class_ref 128647 // WSReligione
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 436 441 2005
+classcanvas 128775 class_ref 128775 // WSTipoProva
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 433 544 2005
+end

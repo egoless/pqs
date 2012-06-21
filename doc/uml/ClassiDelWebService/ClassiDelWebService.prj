@@ -1,0 +1,1998 @@
+format 29
+"ClassiDelWebService"
+  revision 36
+  modified_by 64 "STEFANO"
+  java_root_dir "C:/Documents and Settings/STEFANO/Desktop/"
+
+
+  
+  // class settings
+  default_attribute_visibility protected default_relation_visibility protected default_operation_visibility public
+  //class diagram settings
+  draw_all_relations yes hide_attributes no hide_operations no show_members_full_definition no show_members_visibility no package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes shadow yes
+  //use case diagram settings
+  package_name_in_tab no show_context no auto_label_position yes shadow yes
+  //sequence diagram settings
+  show_full_operations_definition no write_horizontally yes drawing_language uml shadow yes
+  //collaboration diagram settings
+  show_full_operations_definition no show_hierarchical_rank no write_horizontally yes drawing_language uml package_name_in_tab no show_context no shadow yes
+  //object diagram settings
+   write_horizontally yes package_name_in_tab no show_context no auto_label_position yes shadow yes
+  //component diagram settings
+  package_name_in_tab no show_context no auto_label_position yes shadow yes
+  draw_component_as_icon no show_component_req_prov no show_component_rea no
+  //deployment diagram settings
+  package_name_in_tab no show_context no write_horizontally yes auto_label_position yes shadow yes
+  draw_component_as_icon no show_component_req_prov no show_component_rea no
+  //state diagram settings
+  package_name_in_tab no show_context no auto_label_position yes write_trans_label_horizontally yes show_trans_definition no shadow yes
+  show_activities yes region_horizontally yes drawing_language uml
+  //activity diagram settings
+  package_name_in_tab no show_context no show_opaque_action_definition no auto_label_position yes write_flow_label_horizontally no shadow yes
+  show_infonote yes drawing_language uml
+  
+  class_color yellow duration_color transparent continuation_color gray note_color blue fragment_color transparent subject_color transparent usecase_color yellow package_color transparent component_color green artifact_color green deploymentnode_color gray state_color yellow stateaction_color transparent activity_color transparent activityregion_color transparent activityaction_color transparent parameterpin_color white 
+  font_size 10
+  diagram_format A4
+
+  mark_for_import
+  
+  ncouples 1
+  key "html dir" value "/Users/ericmi/ing_soft/doc/html/Interfacce Web Service/"
+  classview 128033 "Diagrammi delle Classi"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    associated_deployment_view deploymentview_ref 128223 // ViewDiSviluppo
+    classdiagram 128033 "Classi principali"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition yes show_members_visibility yes package_name_in_tab yes class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    class 128033 "Persona"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128111 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128367 "nome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128495 "cognome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128064 "sesso"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128623 "dataNascita"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128751 "codiceFiscale"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128879 "indirizzoResidenza"
+	private type class_ref 129441 // Contatto
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 129007 "portatoreHandicap"
+	private explicit_type "bool"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128239 "extra"
+	private type class_ref 129569 // ListaAttributi
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 128239 // <association>
+	relation 128239 ----
+	  a role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128239 // <association>
+	  b role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128367 // <association>
+      end
+
+      classrelation 130543 // segue
+	relation_ref 129391 // segue
+      end
+
+      classrelation 130671 // (ha nazionalità)
+	relation 129519 ---- name "ha nazionalità"
+	  a role_name "" multiplicity "1" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130671 // (ha nazionalità)
+	  b role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130799 // (ha nazionalità)
+      end
+
+      classrelation 128048 // <dependency>
+	relation 128048 -_->
+	  a default
+	    classrelation_ref 128048 // <dependency>
+	  b parent class_ref 129441 // Contatto
+      end
+    end
+
+    class 128161 "Nazione"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 132975 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 133103 "nome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 130799 // (ha nazionalità)
+	relation_ref 129519 // ha nazionalità
+      end
+
+      classrelation 130927 // <association>
+	relation 129647 ----
+	  a role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130927 // <association>
+	  b role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131055 // <association>
+      end
+    end
+
+    class 128289 "Religione"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 132079 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 132207 "nome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 130415 // (segue)
+	relation 129391 ---- name "segue"
+	  a role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130415 // (segue)
+	  b role_name "" multiplicity "0..1" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130543 // segue
+      end
+    end
+
+    class 128417 "Docente"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Rappresenta un docente della scuola"
+      attribute 132335 "dataAssunzione"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 128495 // <generalisation>
+	relation 128367 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128495 // <generalisation>
+	  b parent class_ref 128033 // Persona
+      end
+
+      classrelation 129903 // (assegna)
+	relation 129135 ---- name "assegna"
+	  a role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129903 // (assegna)
+	  b role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130031 // (assegna)
+      end
+
+      classrelation 130159 // <association>
+	relation 129263 ----
+	  a role_name "" multiplicity "1..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130159 // <association>
+	  b role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130287 // <association>
+      end
+    end
+
+    class 128545 "MateriaInsegnamento"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128320 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 130543 "nome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 130671 "extra"
+	private type class_ref 129569 // ListaAttributi
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 129519 // <association>
+	relation_ref 128879 // <association>
+      end
+
+      classrelation 130287 // <association>
+	relation_ref 129263 // <association>
+      end
+    end
+
+    class 128673 "Voto"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 132463 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 132591 "dataOra"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128448 "descrizione"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 132847 "extra"
+	private type class_ref 129569 // ListaAttributi
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 129007 // riceve
+	relation_ref 128623 // riceve
+      end
+
+      classrelation 129391 // <association>
+	relation 128879 ----
+	  a role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129391 // <association>
+	  b role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129519 // <association>
+      end
+
+      classrelation 130031 // (assegna)
+	relation_ref 129135 // assegna
+      end
+
+      classrelation 131567 // <association>
+	relation_ref 129903 // <association>
+      end
+
+      classrelation 128775 // <association>
+	relation_ref 128647 // <association>
+      end
+    end
+
+    class 128801 "Assenza"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 131311 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 131439 "dataOraInizio"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 131567 "dataOraFine"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 131695 "giustificazione"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 131951 "extra"
+	private type class_ref 129569 // ListaAttributi
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 129263 // effettua
+	relation_ref 128751 // effettua
+      end
+
+      classrelation 129647 // <association>
+	relation 129007 ----
+	  a role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129647 // <association>
+	  b role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129775 // <association>
+      end
+    end
+
+    class 128929 "Classe"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 129088 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 130031 "annoCorso"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 130159 "sezione"
+	private explicit_type "char"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 130287 "extra"
+	private type class_ref 129569 // ListaAttributi
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 128623 // (frequenta)
+	relation 128495 o--- name "frequenta"
+	  a role_name "" multiplicity "1..*" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128623 // (frequenta)
+	  b role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128751 // (frequenta)
+      end
+
+      classrelation 128289 // (appartiene a)
+	relation 128161 ---- name "appartiene a"
+	  a role_name "" multiplicity "0..1" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128289 // (appartiene a)
+	  b role_name "" multiplicity "*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128417 // (appartiene a)
+      end
+    end
+
+    class 129057 "TipoVoto"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 131183 // <association>
+	relation 129775 ----
+	  a role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131183 // <association>
+	  b role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131311 // <association>
+      end
+
+      classrelation 131311 // <association>
+	relation_ref 129775 // <association>
+      end
+
+      classrelation 131439 // <association>
+	relation 129903 ----
+	  a role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131439 // <association>
+	  b role_name "" multiplicity "1" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131567 // <association>
+      end
+
+      attribute 129216 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128576 "nome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128704 "valore"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+    end
+
+    class 129185 "TipoAssenza"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 130799 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 130927 "descrizione"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 129775 // <association>
+	relation_ref 129007 // <association>
+      end
+    end
+
+    class 129313 "Studente"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128161 "matricola"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 130415 "dataIscrizione"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 128111 // <generalisation>
+	relation 128111 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128111 // <generalisation>
+	  b parent class_ref 128033 // Persona
+      end
+
+      classrelation 128751 // (frequenta)
+	relation_ref 128495 // frequenta
+      end
+
+      classrelation 128879 // (riceve)
+	relation 128623 ---- name "riceve"
+	  a role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128879 // (riceve)
+	  b role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129007 // riceve
+      end
+
+      classrelation 129135 // (effettua)
+	relation 128751 ---- name "effettua"
+	  a role_name "" multiplicity "0..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129135 // (effettua)
+	  b role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129263 // effettua
+      end
+
+      classrelation 128033 // (figlio di)
+	relation 128033 ---- name "figlio di"
+	  a role_name "" multiplicity "*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128033 // (figlio di)
+	  b role_name "" multiplicity "1..*" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128161 // (figlio di)
+      end
+    end
+
+    class 129441 "Contatto"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128832 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 129135 "via"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 129263 "civico"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 129391 "CAP"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128033 "citta"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 129519 "provincia"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 129647 "telefonoPrincipale"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 129775 "telefonoSecondario"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 129903 "fax"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 128367 // <association>
+	relation_ref 128239 // <association>
+      end
+
+      class 129569 "ListaAttributi"
+	visibility protected
+	cpp_decl ""
+	java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	idl_decl ""
+	explicit_switch_type ""
+	
+      end
+
+      classrelation 131055 // <association>
+	relation_ref 129647 // <association>
+      end
+    end
+
+    class 128111 "OraLezione"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 133231 "giornoSettimana"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 133359 "oraGiorno"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 133487 "extra"
+	private type class_ref 129569 // ListaAttributi
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+    end
+
+    class 128239 "Stanza"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 133615 "id"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 133743 "descrizione"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 133871 "extra"
+	private type class_ref 129569 // ListaAttributi
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+    end
+
+    class 128367 "Aula"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 128495 "AulaSpeciale"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 129697 "Genitore"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128161 // (figlio di)
+	relation_ref 128033 // figlio di
+      end
+
+      classrelation 128545 // <generalisation>
+	relation 128289 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128545 // <generalisation>
+	  b parent class_ref 128033 // Persona
+      end
+    end
+
+    class 129825 "IndirizzoStudi"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128289 "nome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128417 "descrizione"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128545 "extra"
+	private type class_ref 129569 // ListaAttributi
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      classrelation 128417 // (appartiene a)
+	relation_ref 128161 // appartiene a
+      end
+    end
+
+    class 128903 "TipoProva"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128647 // <association>
+	relation 128647 ----
+	  a role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128647 // <association>
+	  b role_name "" multiplicity "" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128775 // <association>
+      end
+
+      attribute 128960 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128192 "nome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+    end
+  end
+
+  package_ref 128033 // nu.mine.egoless.didattica
+
+  componentview 128002 "Diagrammi delle componenti"
+    //component diagram settings
+    package_name_in_tab yes show_context default auto_label_position default shadow default
+    draw_component_as_icon no show_component_req_prov default show_component_rea no
+    component_color gray 
+    comment "Questo diagramma delle componenti presenta l'architettura generale del sistema software che andremo a realizzare"
+    componentdiagram 128130 "Architettura Generale"
+      package_name_in_tab default show_context default auto_label_position default shadow default
+      draw_component_as_icon default show_component_req_prov default show_component_rea default
+      size A4
+    end
+
+    component 128002 "KERNEL"
+    end
+
+    component 128130 "WEB SERVICE-API"
+      simplerelation 129344
+	-_->
+	  on component_ref 128002 // KERNEL
+      end
+    end
+
+    component 128258 "WS-DIDATTICA"
+      simplerelation 128832
+	-_->
+	  on component_ref 128130 // WEB SERVICE-API
+      end
+    end
+
+    component 128386 "WS-DOCUMENTI"
+      simplerelation 128960
+	-_->
+	  on component_ref 128130 // WEB SERVICE-API
+      end
+    end
+
+    component 128514 "WS-MONITORAGGIO"
+      simplerelation 129088
+	-_->
+	  on component_ref 128130 // WEB SERVICE-API
+      end
+    end
+
+    component 128642 "WS-ACCESSO TELEMATICO"
+      simplerelation 129216
+	-_->
+	  on component_ref 128130 // WEB SERVICE-API
+      end
+    end
+
+    component 128770 "APP-DIDATTICA"
+      simplerelation 128064
+	-_->
+	  on component_ref 128258 // WS-DIDATTICA
+      end
+    end
+
+    component 128898 "APP-DOCUMENTI"
+      simplerelation 128192
+	-_->
+	  on component_ref 128386 // WS-DOCUMENTI
+      end
+
+      simplerelation 128320
+	-_->
+	  on component_ref 128386 // WS-DOCUMENTI
+      end
+    end
+
+    component 129026 "APP-MONITORAGGIO"
+      simplerelation 128448
+	-_->
+	  on component_ref 128514 // WS-MONITORAGGIO
+      end
+    end
+
+    component 129154 "APP-ACCESSO TELEMATICO"
+      simplerelation 128576
+	-_->
+	  on component_ref 128642 // WS-ACCESSO TELEMATICO
+      end
+
+      simplerelation 128704
+	-_->
+	  on component_ref 128642 // WS-ACCESSO TELEMATICO
+      end
+    end
+  end
+
+  classview 128002 "Interfacce Web Service"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    comment "In questa class view sono raccolte tutti i diagrammi e le classi che descrivono i Web Service previsti."
+    classdiagram 128111 "Interfacce WS"
+      draw_all_relations yes hide_attributes default hide_operations default show_members_full_definition yes show_members_visibility yes package_name_in_tab yes class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      comment "Diagramma che raccoglie tutte le interfacce dei WS"
+      size A4
+    end
+
+    class 128130 "WSPersona"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/19
+
+Web Service che offre metodi per la manipolazione degli insegnanti e degli studenti"
+      operation 128130 "aggiungiStudente"
+	public explicit_return_type "long"
+	nparams 1
+	  param in name "nuovoStudente" type class_ref 129313 // Studente
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Aggiunge un nuovo studente, restituendo l'id che gli verrà assegnato."
+      end
+
+      operation 128258 "modificaStudente"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "studente" type class_ref 129313 // Studente
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Modifica uno studente esistente."
+      end
+
+      operation 128386 "cancellaStudente"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "idStudente" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella uno studente con un dato id."
+      end
+
+      operation 128514 "cercaStudente"
+	public explicit_return_type "Collection"
+	nparams 1
+	  param in name "insiemeParametri" type class_ref 128080 // ParametriRicercaStudente
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce un insieme di studenti che rispettano i criteri definiti in ParametriRicercaStudente. Si può decidere se ogni studente ha tutti i dati o solo quelli più significativi."
+      end
+
+      operation 130050 "aggiungiDocente"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "nuovoDocente" type class_ref 128417 // Docente
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Aggiunge un nuovo professore che insegna certe materie."
+      end
+
+      operation 130178 "modificaDocente"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "docente" type class_ref 128417 // Docente
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Modifica un professore esistente."
+      end
+
+      operation 130306 "cancellaDocente"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "idDocente" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella un professore con un dato id."
+      end
+
+      operation 128091 "cercaDocente"
+	public explicit_return_type "Collection"
+	nparams 1
+	  param in name "insiemeParametri" type class_ref 128208 // ParametriRicercaDocente
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce un insieme di insegnanti che rispettano i criteri definiti in ParametriRicercaDocente. Si può decidere se ogni insegnante ha tutti i dati o solo quelli più significativi."
+      end
+    end
+
+    class 128258 "WSAssenza"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/20
+
+Web Service che offre metodi per la manipolazione delle assenze."
+      operation 128770 "aggiungiAssenza"
+	public explicit_return_type "long"
+	nparams 1
+	  param in name "nuovaAssenza" type class_ref 128801 // Assenza
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Aggiunge una nuova assenza di un certo tipo associata ad uno studente. Il metodo restituisce l'id che verrà assegnato all'assenza."
+      end
+
+      operation 128898 "modificaAssenza"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "assenza" type class_ref 128801 // Assenza
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Modifica una assenza esistente."
+      end
+
+      operation 129026 "cancellaAssenza"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "idAssenza" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella una assenza con un dato id."
+      end
+
+      operation 129154 "cercaAssenza"
+	public explicit_return_type "Collection"
+	nparams 1
+	  param in name "insiemeParametri" type class_ref 128592 // ParametriRicercaAssenza
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce un insieme di assenze che rispettano i criteri definiti in ParametriRicercaAssenza. Si può decidere se ogni assenza ha tutti i dati o solo quelli più significativi."
+      end
+    end
+
+    class 128386 "WSVoto"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/22
+
+Web Service che offre metodi per la manipolazione dei voti."
+      operation 129410 "aggiungiVoto"
+	public explicit_return_type "long"
+	nparams 1
+	  param in name "nuovoVoto" type class_ref 128673 // Voto
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Aggiunge una nuova valutazione di un certo tipo per uno dato studente in una data materia assegnato da un certo professore. Il metodo restituisce l'id che verrà assegnato al voto."
+      end
+
+      operation 129538 "modificaVoto"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "voto" type class_ref 128673 // Voto
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Modifica una valutazione esistente."
+      end
+
+      operation 129666 "cancellaVoto"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "idVoto" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella una valutazione con un dato id."
+      end
+
+      operation 129794 "cercaVoto"
+	public explicit_return_type "Collection"
+	nparams 1
+	  param in name "insiemeParametri" type class_ref 128336 // ParametriRicercaVoto
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce un insieme di voti che rispettano i criteri definiti in ParametriRicercaVoto. Si può decidere se ogni voto ha tutti i dati o solo quelli più significativi."
+      end
+    end
+
+    class 128091 "WSTipoAssenza"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/23
+
+Web Service che offre metodi per la manipolazione dei tipi di assenza."
+      operation 128347 "aggiungiTipoAssenza"
+	public explicit_return_type "long"
+	nparams 1
+	  param in name "nuovoTipoAssenza" type class_ref 129185 // TipoAssenza
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Crea una nuova tipologia di assenza, restituendo l'id che gli verrà assegnato."
+      end
+
+      operation 128475 "cancellaTipoAssenza"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "idTipoAssenza" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella una tipologia di assenza."
+      end
+
+      operation 128603 "recuperaTipiAssenza"
+	public explicit_return_type "Collection"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce tutte le tipologie di assenza."
+      end
+    end
+
+    class 128219 "WSTipoVoto"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/24
+
+Web Service che offre metodi per la manipolazione dei tipi di voto (inteso come valore di voto assegnato)."
+      operation 128859 "aggiungiTipoVoto"
+	public explicit_return_type "long"
+	nparams 1
+	  param in name "nuovoTipoVoto" type class_ref 129057 // TipoVoto
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Crea un nuovo tipo di valutazione, restituendo l'id che gli verrà assegnato."
+      end
+
+      operation 128987 "cancellaTipoVoto"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "idTipoVoto" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella un tipo di valutazione."
+      end
+
+      operation 129115 "recuperaTipiVoto"
+	public explicit_return_type "Collection"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce tutti i tipi di valutazione."
+      end
+    end
+
+    class 128007 "WSMateria"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/25
+
+Web Service che offre metodi per la manipolazione delle materie di insegnamento."
+      operation 128135 "aggiungiMateria"
+	public explicit_return_type "long"
+	nparams 1
+	  param in name "nuovaMateria" type class_ref 128545 // MateriaInsegnamento
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Crea una nuova materia, restituendo l'id che gli verrà assegnato."
+      end
+
+      operation 128263 "cancellaMateria"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "idMateria" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella una materia."
+      end
+
+      operation 128391 "recuperaMaterie"
+	public explicit_return_type "Collection"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce tutte le materie."
+      end
+    end
+
+    class 128135 "WSNazione"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/26
+
+Web Service che offre metodi per manipolare le nazioni.
+Per ora è solo consentito ottenere un elenco di nazioni."
+      operation 128519 "recuperaNazioni"
+	public explicit_return_type "Collection"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce tutte le nazioni."
+      end
+    end
+
+    class 128263 "WSContatto"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/27
+
+Web Service che offre metodi per la manipolazione dei contatti."
+      operation 128903 "aggiungiContatto"
+	public explicit_return_type "long"
+	nparams 1
+	  param in name "nuovoContatto" type class_ref 129441 // Contatto
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Aggiunge un nuovo contatto, restituendo l'id che gli verrà assegnato."
+      end
+
+      operation 129031 "modificaContatto"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "contatto" type class_ref 129441 // Contatto
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Modifica un contatto esistente."
+      end
+
+      operation 129159 "cancellaContatto"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "idContatto" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella un contatto con un dato id."
+      end
+
+      operation 129287 "cercaContatto"
+	public explicit_return_type "Collection"
+	nparams 1
+	  param in name "insiemeParametri" type class_ref 128464 // ParametriRicercaContatto
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce un insieme di contatti che rispettano i criteri definiti in ParametriRicercaContatto. Si può decidere se ogni contatto ha tutti i dati o solo quelli più significativi."
+      end
+    end
+
+    class 128391 "WSClasse"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/28
+
+Web Service che offre metodi per la manipolazione delle classi."
+      operation 129415 "aggiungiClasse"
+	public explicit_return_type "long"
+	nparams 1
+	  param in name "nuovaClasse" type class_ref 128929 // Classe
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Crea una nuova classe, restituendo l'id che gli verrà assegnato."
+      end
+
+      operation 129671 "cancellaClasse"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "idClasse" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella una classe con un dato id."
+      end
+
+      operation 129799 "recuperaClassi"
+	public explicit_return_type "Collection"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Testituisce tutte le classi."
+      end
+    end
+
+    class 128647 "WSReligione"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/29
+
+Web Service che offre metodi per manipolare le religioni.
+Per ora è solo consentito ottenere un elenco di religioni."
+      operation 128647 "recuperaReligioni"
+	public explicit_return_type "Collection"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce tutte le religioni."
+      end
+    end
+
+    class 128775 "WSTipoProva"
+       stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${public}interface ${name}${extends} {
+${members}}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/30
+
+Web Service che offre metodi per manipolare i tipi di prova (orale, scritto, ...)"
+      operation 129927 "aggiungiTipoProva"
+	public explicit_return_type "long"
+	nparams 1
+	  param in name "nuovoTipoProva" type class_ref 128775 // WSTipoProva
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Crea un nuovo tipo di prova restituendo l'id che gli verrà assegnato."
+      end
+
+      operation 130055 "cancellaTipoProva"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "idTipoProva" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Cancella un tipo di prova."
+      end
+
+      operation 130183 "recuperaTipiProva"
+	public explicit_return_type "Collection"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	comment "Restituisce tutti i tipi di prova."
+      end
+    end
+  end
+
+  classview 128007 "Classi per la ricerca"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    comment "In questa view sono raccolte le classi con i parametri delle ricerche"
+    classdiagram 128080 "Classi per la ricerca"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition yes show_members_visibility yes package_name_in_tab yes class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    class 128080 "ParametriRicercaStudente"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/14
+
+Contiene i criteri per ricercare studenti."
+      attribute 128208 "nome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Nome dello studente
+"
+      end
+
+      attribute 128336 "cognome"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Cognome dello studente
+"
+      end
+
+      attribute 128464 "idClasse"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Id della classe a cui lo studente appartiene"
+      end
+
+      classrelation 128135 // <generalisation>
+	relation 128135 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128135 // <generalisation>
+	  b parent class_ref 128519 // ParametriRicerca
+      end
+    end
+
+    class 128208 "ParametriRicercaDocente"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/15
+
+Contiene i criteri per ricercare professori."
+      attribute 128735 "idMateria"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Id della materia insegnata dall'insegnante"
+      end
+
+      classrelation 128391 // <generalisation>
+	relation 128391 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128391 // <generalisation>
+	  b parent class_ref 128519 // ParametriRicerca
+      end
+    end
+
+    class 128336 "ParametriRicercaVoto"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/16
+
+Contiene i criteri per ricercare le votazioni."
+      attribute 128223 "idInsegnante"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Id del professore che ha dato il voto
+"
+      end
+
+      attribute 128351 "idStudente"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Id dello studente che ha ricevuto la votazione
+"
+      end
+
+      attribute 128479 "idMateria"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Id della materia in cui è stato dato il voto"
+      end
+
+      classrelation 128007 // <generalisation>
+	relation 128007 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128007 // <generalisation>
+	  b parent class_ref 128519 // ParametriRicerca
+      end
+
+      attribute 128135 "dataOra"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Data e ora in cui è stato assegnato il voto."
+      end
+    end
+
+    class 128464 "ParametriRicercaContatto"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/18
+
+Contiene i criteri per ricercare i contatti."
+      attribute 129744 "idPersona"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Id della persona a cui appartengono i contatti
+"
+      end
+
+      attribute 129872 "idNazione"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Id della nazione a cui i contatti si riferiscono"
+      end
+
+      attribute 129488 "citta"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Città nella quale si trovano i contatti"
+      end
+
+      classrelation 128519 // <generalisation>
+	relation 128519 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128519 // <generalisation>
+	  b parent class_ref 128519 // ParametriRicerca
+      end
+    end
+
+    class 128592 "ParametriRicercaAssenza"cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/17
+
+Contiene i criteri per ricercare le assenze."
+      attribute 128720 "idStudente"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Id dello studente che ha fatto l'assenza
+"
+      end
+
+      attribute 128848 "giustificata"
+	private explicit_type "bool"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Specifica se l'assenza è giustificata o meno"
+      end
+
+      attribute 128976 "dataInizio"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Giorno/ora di inizio dell'assenza"
+      end
+
+      attribute 129104 "dataFine"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Giorno/ora di fine dell'assenza"
+      end
+
+      classrelation 128263 // <generalisation>
+	relation 128263 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128263 // <generalisation>
+	  b parent class_ref 128519 // ParametriRicerca
+      end
+
+      attribute 128263 "data"
+	private explicit_type "date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Indica una data coperta dall'assenza.
+
+Per esempio, se si specifica il valore 05/02/2007, la ricerca può
+recuperare un'assenza che inizia il 01/02/2007 e finisce il 10/02/2007,
+dato che la data specificata rientra nel periodo dell'assenza."
+      end
+    end
+
+    class 128519 "ParametriRicerca"
+      abstract 
+      cpp_decl ""
+      java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Identificativo classe: CSW-01/29
+
+Classe generica per contenere parametri comuni a tutte le tipologie di ricerca."
+      attribute 128592 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Id dell'oggetto che l'utente che vuole recuperare. Questo criterio esclude automaticamente i rimanenti."
+      end
+
+      attribute 128007 "datiParziali"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "Se posto a true, ogni oggetto risultato della ricerca sarà popolato parzialmente con le informazioni rilevanti; se posto a false ogni oggetto sarà caricato completamente."
+      end
+    end
+  end
+end

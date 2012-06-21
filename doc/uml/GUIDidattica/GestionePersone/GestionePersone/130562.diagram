@@ -1,0 +1,78 @@
+format 29
+
+classinstance 128130 class_ref 133378 // Container
+  name "" xyz 212 13 2000 life_line_z 2000
+classinstance 128258 class_ref 133506 // Component
+  name "" xyz 110 13 2000 life_line_z 2000
+classinstance 128514 class_ref 128002 // Utente
+  name "" xyz 34 11 2005 life_line_z 2000
+classinstance 128770 class_ref 131842 // ActionListener
+  name "" xyz 286 13 2000 life_line_z 1990
+classinstance 128898 class_ref 132482 // Bean
+  name "" xyz 412 13 2000 life_line_z 2000
+classinstance 130946 class_ref 132610 // PropertyChangeListener
+  name "" xyz 618 13 2000 life_line_z 2000
+durationcanvas 129282 classinstance_ref 128514 // :Utente
+  xyzwh 47 58 2010 11 157
+durationcanvas 129410 classinstance_ref 128258 // :Component
+  xyzwh 138 58 2010 11 157
+durationcanvas 129922 classinstance_ref 128770 // :ActionListener
+  xyzwh 320 68 1995 11 90
+durationcanvas 130434 classinstance_ref 128898 // :Bean
+  xyzwh 431 85 2010 11 90
+durationcanvas 131074 classinstance_ref 130946 // :PropertyChangeListener
+  xyzwh 675 93 2010 11 65
+durationcanvas 131714 classinstance_ref 128130 // :Container
+  xyzwh 235 127 2010 11 69
+msg 128007 synchronous
+  from durationcanvas_ref 129282 // 128514
+  to durationcanvas_ref 129410 // 128258
+  yz 58 2000 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 128135 synchronous
+  from durationcanvas_ref 129410 // 128258
+  to durationcanvas_ref 129922 // 128770
+  yz 74 2000 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 130562 asynchronous
+  from durationcanvas_ref 129922 // 128770
+  to durationcanvas_ref 130434 // 128898
+  yz 85 2000 explicitmsg "setAttribute(value)"
+  show_full_operations_definition default drawing_language default
+  label_xy 337 70
+msg 131202 asynchronous
+  from durationcanvas_ref 130434 // 128898
+  to durationcanvas_ref 131074 // 130946
+  yz 97 2000 explicitmsg "*[for all registered listener] propertyChangeEvent(type, pCEvent)"
+  show_full_operations_definition default drawing_language default
+  label_xy 448 83
+msg 131842 asynchronous
+  from durationcanvas_ref 131074 // 130946
+  to durationcanvas_ref 131714 // 128130
+  yz 127 3005 explicitmsg "notifica"
+  show_full_operations_definition default drawing_language default
+  label_xy 508 114
+msg 131970 asynchronous
+  from durationcanvas_ref 131714 // 128130
+  to durationcanvas_ref 130434 // 128898
+  yz 164 1985 explicitmsg "getData()"
+  show_full_operations_definition default drawing_language default
+  label_xy 266 150
+msg 132098 asynchronous
+  from durationcanvas_ref 131714 // 128130
+  to durationcanvas_ref 129410 // 128258
+  yz 185 2000 explicitmsg "setData(value)"
+  show_full_operations_definition default drawing_language default
+  label_xy 164 171
+msg 132226 asynchronous
+  from durationcanvas_ref 129410 // 128258
+  to durationcanvas_ref 129282 // 128514
+  yz 204 2000 explicitmsg "vista modificata"
+  show_full_operations_definition default drawing_language default
+  label_xy 58 190
+msg 132354 return
+  from durationcanvas_ref 131074 // 130946
+  to durationcanvas_ref 129922 // 128770
+  yz 147 2000 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+end

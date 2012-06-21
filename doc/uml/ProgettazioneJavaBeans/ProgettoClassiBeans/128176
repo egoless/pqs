@@ -1,0 +1,6049 @@
+format 29
+"nu.mine.egoless.didattica.app" // nu.mine.egoless.didattica.app
+  revision 5
+  modified_by 17 "STEFANO"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default shadow default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default drawing_language default shadow default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+  show_activities default region_horizontally default drawing_language default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+  show_infonote default drawing_language default
+  
+  java_dir "classibeans"
+  java_package "classibeans"
+  classview 128560 "nu.mine.egoless.didattica.ws"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    class 128176 "AssenzaBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+
+@author marghe
+"
+      classrelation 128176 // <realization>
+	relation 128176 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128176 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 128176 "AssenzaBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of Assenza "
+      end
+
+      attribute 128176 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      operation 128304 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 128432 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 128304 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 128432 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 128560 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 128688 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 128816 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 128944 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 128560 "dataInizio"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataInizio.
+
+"
+      end
+
+      operation 129072 "getDataInizio"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataInizio;
+}
+"
+	
+	comment "
+Getter for property dataInizio.
+@return Value of property dataInizio.
+"
+      end
+
+      operation 129200 "setDataInizio"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "dataInizio" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataInizio.
+@param dataInizio New value of property dataInizio.
+"
+      end
+
+      attribute 128688 "dataFine"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataFine.
+
+"
+      end
+
+      operation 129328 "getDataFine"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataFine;
+}
+"
+	
+	comment "
+Getter for property dataFine.
+@return Value of property dataFine.
+"
+      end
+
+      operation 129456 "setDataFine"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "dataFine" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataFine.
+@param dataFine New value of property dataFine.
+"
+      end
+
+      attribute 128816 "giustificata"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property giustificata.
+
+"
+      end
+
+      operation 129584 "isGiustificata"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.giustificata;
+}
+"
+	
+	comment "
+Getter for property giustificata.
+@return Value of property giustificata.
+"
+      end
+
+      operation 129712 "setGiustificata"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "giustificata" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property giustificata.
+@param giustificata New value of property giustificata.
+"
+      end
+
+      attribute 128944 "note"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property note.
+
+"
+      end
+
+      operation 129840 "getNote"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.note;
+}
+"
+	
+	comment "
+Getter for property note.
+@return Value of property note.
+"
+      end
+
+      operation 129968 "setNote"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "note" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property note.
+@param note New value of property note.
+"
+      end
+
+      attribute 129072 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 130096 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 130224 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      operation 130352 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 130480 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 130608 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 128304 "ClasseBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+ClasseBean.java
+
+Created on 22 febbraio 2007, 11.04
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 128304 // <realization>
+	relation 128304 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128304 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 130736 "ClasseBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of ClasseBean "
+      end
+
+      operation 130864 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 129200 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 130992 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 131120 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 129328 "annoCorso"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property annoCorso.
+
+"
+      end
+
+      attribute 129456 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 131248 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 131376 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 131504 "getAnnoCorso"
+	public explicit_return_type "int"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.annoCorso;
+}
+"
+	
+	comment "
+Getter for property annoCorso.
+@return Value of property annoCorso.
+"
+      end
+
+      operation 131632 "setAnnoCorso"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "annoCorso" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property annoCorso.
+@param annoCorso New value of property annoCorso.
+"
+      end
+
+      operation 131760 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      attribute 129584 "sezione"
+	private explicit_type "char"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property sezione.
+
+"
+      end
+
+      operation 131888 "getSezione"
+	public explicit_return_type "char"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.sezione;
+}
+"
+	
+	comment "
+Getter for property sezione.
+@return Value of property sezione.
+"
+      end
+
+      operation 132016 "setSezione"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "sezione" explicit_type "char"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property sezione.
+@param sezione New value of property sezione.
+"
+      end
+
+      attribute 129712 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 132144 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 132272 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      operation 132400 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 128432 "ContattoBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+Contatto.java
+
+Created on 22 febbraio 2007, 12.24
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 128432 // <realization>
+	relation 128432 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128432 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 132528 "ContattoBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of Contatto "
+      end
+
+      operation 132656 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 129840 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 132784 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 132912 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 129968 "via"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property via.
+
+"
+      end
+
+      attribute 130096 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 133040 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 133168 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 133296 "getVia"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.via;
+}
+"
+	
+	comment "
+Getter for property via.
+@return Value of property via.
+"
+      end
+
+      operation 133424 "setVia"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "via" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property via.
+@param via New value of property via.
+"
+      end
+
+      attribute 130224 "civico"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property civico.
+
+"
+      end
+
+      operation 133552 "getCivico"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.civico;
+}
+"
+	
+	comment "
+Getter for property civico.
+@return Value of property civico.
+"
+      end
+
+      operation 133680 "setCivico"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "civico" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property civico.
+@param civico New value of property civico.
+"
+      end
+
+      attribute 130352 "CAP"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property CAP.
+
+"
+      end
+
+      operation 133808 "getCAP"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.CAP;
+}
+"
+	
+	comment "
+Getter for property CAP.
+@return Value of property CAP.
+"
+      end
+
+      operation 133936 "setCAP"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "CAP" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property CAP.
+@param CAP New value of property CAP.
+"
+      end
+
+      attribute 130480 "città"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property città.
+
+"
+      end
+
+      operation 134064 "getCittà"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.città;
+}
+"
+	
+	comment "
+Getter for property città.
+@return Value of property città.
+"
+      end
+
+      operation 134192 "setCittà"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "città" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property città.
+@param città New value of property città.
+"
+      end
+
+      attribute 130608 "provincia"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property provincia.
+
+"
+      end
+
+      operation 134320 "getProvincia"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.provincia;
+}
+"
+	
+	comment "
+Getter for property provincia.
+@return Value of property provincia.
+"
+      end
+
+      operation 134448 "setProvincia"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "provincia" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property provincia.
+@param provincia New value of property provincia.
+"
+      end
+
+      attribute 130736 "telefonoPrincipale"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property telefonoPrincipale.
+
+"
+      end
+
+      operation 134576 "getTelefonoPrincipale"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.telefonoPrincipale;
+}
+"
+	
+	comment "
+Getter for property telefonoPrincipale.
+@return Value of property telefonoPrincipale.
+"
+      end
+
+      operation 134704 "setTelefonoPrincipale"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "telefonoPrincipale" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property telefonoPrincipale.
+@param telefonoPrincipale New value of property telefonoPrincipale.
+"
+      end
+
+      attribute 130864 "telefonoSecondario"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property telefonoSecondario.
+
+"
+      end
+
+      operation 134832 "getTelefonoSecondario"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.telefonoSecondario;
+}
+"
+	
+	comment "
+Getter for property telefonoSecondario.
+@return Value of property telefonoSecondario.
+"
+      end
+
+      operation 134960 "setTelefonoSecondario"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "telefonoSecondario" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property telefonoSecondario.
+@param telefonoSecondario New value of property telefonoSecondario.
+"
+      end
+
+      attribute 130992 "fax"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property fax.
+
+"
+      end
+
+      operation 135088 "getFax"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.fax;
+}
+"
+	
+	comment "
+Getter for property fax.
+@return Value of property fax.
+"
+      end
+
+      operation 135216 "setFax"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "fax" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property fax.
+@param fax New value of property fax.
+"
+      end
+
+      operation 135344 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 135472 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 128560 "GenitoreBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+Genitore.java
+
+Created on 22 febbraio 2007, 12.28
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 128560 // <realization>
+	relation 128560 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128560 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 135600 "GenitoreBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of Genitore "
+      end
+
+      operation 135728 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 131120 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      operation 135856 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 135984 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 131248 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      attribute 131376 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 136112 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 136240 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 136368 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 136496 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 131504 "nome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property nome.
+
+"
+      end
+
+      operation 136624 "getNome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.nome;
+}
+"
+	
+	comment "
+Getter for property nome.
+@return Value of property nome.
+"
+      end
+
+      operation 136752 "setNome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property nome.
+@param nome New value of property nome.
+"
+      end
+
+      attribute 131632 "cognome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property cognome.
+
+"
+      end
+
+      operation 136880 "getCognome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.cognome;
+}
+"
+	
+	comment "
+Getter for property cognome.
+@return Value of property cognome.
+"
+      end
+
+      operation 137008 "setCognome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "cognome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property cognome.
+@param cognome New value of property cognome.
+"
+      end
+
+      attribute 131760 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 137136 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 137264 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      attribute 131888 "dataNascita"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataNascita.
+
+"
+      end
+
+      operation 137392 "getDataNascita"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataNascita;
+}
+"
+	
+	comment "
+Getter for property dataNascita.
+@return Value of property dataNascita.
+"
+      end
+
+      operation 137520 "setDataNascita"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "dataNascita" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataNascita.
+@param dataNascita New value of property dataNascita.
+"
+      end
+
+      attribute 132016 "codiceFiscale"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property codiceFiscale.
+
+"
+      end
+
+      operation 137648 "getCodiceFiscale"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.codiceFiscale;
+}
+"
+	
+	comment "
+Getter for property codiceFiscale.
+@return Value of property codiceFiscale.
+"
+      end
+
+      operation 137776 "setCodiceFiscale"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "codiceFiscale" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property codiceFiscale.
+@param codiceFiscale New value of property codiceFiscale.
+"
+      end
+
+      attribute 132144 "indirizzoResidenza"
+	private explicit_type "Contatto"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property indirizzoResidenza.
+
+"
+      end
+
+      operation 137904 "getIndirizzoResidenza"
+	public explicit_return_type "Contatto"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.indirizzoResidenza;
+}
+"
+	
+	comment "
+Getter for property indirizzo.
+@return Value of property indirizzo.
+"
+      end
+
+      operation 138032 "setIndirizzoResidenza"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "indirizzo" explicit_type "Contatto"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property indirizzo.
+@param indirizzo New value of property indirizzo.
+"
+      end
+
+      attribute 132272 "portatoreHandicap"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property portatoreHandicap.
+
+"
+      end
+
+      operation 138160 "isPortatoreHandicap"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.portatoreHandicap;
+}
+"
+	
+	comment "
+Getter for property portatoreHandicap.
+@return Value of property portatoreHandicap.
+"
+      end
+
+      operation 138288 "setPortatoreHandicap"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "portatoreHandicap" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property portatoreHandicap.
+@param portatoreHandicap New value of property portatoreHandicap.
+"
+      end
+
+      operation 138416 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 138544 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 128688 "IndirizzoStudiBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+IndirizzoStudi.java
+
+Created on 22 febbraio 2007, 11.59
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 128688 // <realization>
+	relation 128688 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128688 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 138672 "IndirizzoStudiBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of IndirizzoStudi "
+      end
+
+      operation 138800 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 132400 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 138928 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 139056 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 132528 "nome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property nome.
+
+"
+      end
+
+      operation 139184 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      attribute 132656 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 139312 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 139440 "getNome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.nome;
+}
+"
+	
+	comment "
+Getter for property nome.
+@return Value of property nome.
+"
+      end
+
+      operation 139568 "setNome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property nome.
+@param nome New value of property nome.
+"
+      end
+
+      attribute 132784 "descrizione"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property descrizione.
+
+"
+      end
+
+      operation 139696 "getDescrizione"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.descrizione;
+}
+"
+	
+	comment "
+Getter for property descrizione.
+@return Value of property descrizione.
+"
+      end
+
+      operation 139824 "setDescrizione"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "descrizione" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property descrizione.
+@param descrizione New value of property descrizione.
+"
+      end
+
+      attribute 132912 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 139952 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 140080 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      operation 140208 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 140336 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 128816 "InsegnanteBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+
+@author marghe
+"
+      classrelation 128816 // <realization>
+	relation 128816 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128816 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 140464 "InsegnanteBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of Insegnante "
+      end
+
+      operation 140592 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 133040 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 140720 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 140848 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 133168 "dataAssunzione"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataAssunzione.
+
+"
+      end
+
+      attribute 133296 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 140976 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 141104 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 141232 "getDataAssunzione"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataAssunzione;
+}
+"
+	
+	comment "
+Getter for property dataAssunzione.
+@return Value of property dataAssunzione.
+"
+      end
+
+      operation 141360 "setDataAssunzione"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "dataAssunzione" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataAssunzione.
+@param dataAssunzione New value of property dataAssunzione.
+"
+      end
+
+      attribute 133424 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      operation 141488 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 141616 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 133552 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 141744 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 141872 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      attribute 133680 "nome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property nome.
+
+"
+      end
+
+      operation 142000 "getNome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.nome;
+}
+"
+	
+	comment "
+Getter for property nome.
+@return Value of property nome.
+"
+      end
+
+      operation 142128 "setNome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property nome.
+@param nome New value of property nome.
+"
+      end
+
+      attribute 133808 "cognome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property cognome.
+
+"
+      end
+
+      operation 142256 "getCognome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.cognome;
+}
+"
+	
+	comment "
+Getter for property cognome.
+@return Value of property cognome.
+"
+      end
+
+      operation 142384 "setCognome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "cognome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property cognome.
+@param cognome New value of property cognome.
+"
+      end
+
+      attribute 133936 "dataNascita"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataNascita.
+
+"
+      end
+
+      operation 142512 "getDataNascita"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataNascita;
+}
+"
+	
+	comment "
+Getter for property dataNascita.
+@return Value of property dataNascita.
+"
+      end
+
+      operation 142640 "setDataNascita"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "dataNascita" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataNascita.
+@param dataNascita New value of property dataNascita.
+"
+      end
+
+      attribute 134064 "codiceFiscale"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property codiceFiscale.
+
+"
+      end
+
+      operation 142768 "getCodiceFiscale"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.codiceFiscale;
+}
+"
+	
+	comment "
+Getter for property codiceFiscale.
+@return Value of property codiceFiscale.
+"
+      end
+
+      operation 142896 "setCodiceFiscale"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "codiceFiscale" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property codiceFiscale.
+@param codiceFiscale New value of property codiceFiscale.
+"
+      end
+
+      attribute 134192 "indirizzoResidenza"
+	private explicit_type "Contatto"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property indirizzoResidenza.
+
+"
+      end
+
+      operation 143024 "getIndirizzoResidenza"
+	public explicit_return_type "Contatto"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.indirizzoResidenza;
+}
+"
+	
+	comment "
+Getter for property indirizzoResidenza.
+@return Value of property indirizzoResidenza.
+"
+      end
+
+      operation 143152 "setIndirizzoResidenza"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "indirizzoResidenza" explicit_type "Contatto"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property indirizzoResidenza.
+@param indirizzoResidenza New value of property indirizzoResidenza.
+"
+      end
+
+      attribute 134320 "portatoreHandicap"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property portatoreHandicap.
+
+"
+      end
+
+      operation 143280 "isPortatoreHandicap"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.portatoreHandicap;
+}
+"
+	
+	comment "
+Getter for property portatoreHandicap.
+@return Value of property portatoreHandicap.
+"
+      end
+
+      operation 143408 "setPortatoreHandicap"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "portatoreHandicap" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property portatoreHandicap.
+@param portatoreHandicap New value of property portatoreHandicap.
+"
+      end
+
+      operation 143536 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 143664 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 128944 "ListaAttributiBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+ListaAttributi.java
+
+Created on 22 febbraio 2007, 12.28
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 128944 // <realization>
+	relation 128944 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128944 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 143792 "ListaAttributiBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of ListaAttributi "
+      end
+
+      operation 143920 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 134448 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 144048 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 144176 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      operation 144304 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 144432 "salvaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 129200 "MateriaInsegnamentoBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+MateriaInsegnamento.java
+
+Created on 22 febbraio 2007, 12.19
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 129072 // <realization>
+	relation 129072 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129072 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 144816 "MateriaInsegnamentoBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of MateriaInsegnamento "
+      end
+
+      operation 144944 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 134576 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 145072 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 145200 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 134704 "nome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property nome.
+
+"
+      end
+
+      attribute 134832 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 145328 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 145456 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 145584 "getNome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.nome;
+}
+"
+	
+	comment "
+Getter for property nome.
+@return Value of property nome.
+"
+      end
+
+      operation 145712 "setNome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property nome.
+@param nome New value of property nome.
+"
+      end
+
+      attribute 134960 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 145840 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 145968 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      operation 146096 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 146224 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 129328 "NazioneBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+Nazione.java
+
+Created on 22 febbraio 2007, 12.23
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 129200 // <realization>
+	relation 129200 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129200 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 146352 "NazioneBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of Nazione "
+      end
+
+      operation 146480 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 135088 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 146608 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 146736 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 135216 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      attribute 135344 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 146864 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 146992 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 147120 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 147248 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 135472 "nome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property nome.
+
+"
+      end
+
+      operation 147376 "getNome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.nome;
+}
+"
+	
+	comment "
+Getter for property nome.
+@return Value of property nome.
+"
+      end
+
+      operation 147504 "setNome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property nome.
+@param nome New value of property nome.
+"
+      end
+
+      operation 147632 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 147760 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 129456 "OraLezioneBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+OraLezione.java
+
+Created on 22 febbraio 2007, 12.21
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 129328 // <realization>
+	relation 129328 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129328 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 147888 "OraLezioneBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of OraLezione "
+      end
+
+      operation 148016 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 135600 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 148144 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 148272 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 135728 "giornoSettimana"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property giornoSettimana.
+
+"
+      end
+
+      attribute 135856 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 148400 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 148528 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 148656 "getGiornoSettimana"
+	public explicit_return_type "int"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.giornoSettimana;
+}
+"
+	
+	comment "
+Getter for property giornoSettimana.
+@return Value of property giornoSettimana.
+"
+      end
+
+      operation 148784 "setGiornoSettimana"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "giornoSettimana" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property giornoSettimana.
+@param giornoSettimana New value of property giornoSettimana.
+"
+      end
+
+      attribute 135984 "oraGiorno"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property oraGiorno.
+
+"
+      end
+
+      operation 148912 "getOraGiorno"
+	public explicit_return_type "int"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.oraGiorno;
+}
+"
+	
+	comment "
+Getter for property oraGiorno.
+@return Value of property oraGiorno.
+"
+      end
+
+      operation 149040 "setOraGiorno"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "oraGiorno" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property oraGiorno.
+@param oraGiorno New value of property oraGiorno.
+"
+      end
+
+      attribute 136112 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 149168 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 149296 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      operation 149424 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 149552 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 129584 "PersonaBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+Persona.java
+
+Created on 22 febbraio 2007, 12.33
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 129456 // <realization>
+	relation 129456 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129456 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 149680 "PersonaBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of Persona "
+      end
+
+      operation 149808 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 136240 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 149936 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 150064 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 136368 "nome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property nome.
+
+"
+      end
+
+      attribute 136496 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 150192 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 150320 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 150448 "getNome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.nome;
+}
+"
+	
+	comment "
+Getter for property nome.
+@return Value of property nome.
+"
+      end
+
+      operation 150576 "setNome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property nome.
+@param nome New value of property nome.
+"
+      end
+
+      attribute 136624 "cognome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property cognome.
+
+"
+      end
+
+      operation 150704 "getCognome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.cognome;
+}
+"
+	
+	comment "
+Getter for property cognome.
+@return Value of property cognome.
+"
+      end
+
+      operation 150832 "setCognome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "cognome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property cognome.
+@param cognome New value of property cognome.
+"
+      end
+
+      attribute 136752 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      operation 150960 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 151088 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 136880 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 151216 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 151344 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      attribute 137008 "dataNascita"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataNascita.
+
+"
+      end
+
+      operation 151472 "getDataNascita"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataNascita;
+}
+"
+	
+	comment "
+Getter for property dataNascita.
+@return Value of property dataNascita.
+"
+      end
+
+      operation 151600 "setDataNascita"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "dataNascita" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataNascita.
+@param dataNascita New value of property dataNascita.
+"
+      end
+
+      attribute 137136 "codiceFiscale"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property codiceFiscale.
+
+"
+      end
+
+      operation 151728 "getCodiceFiscale"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.codiceFiscale;
+}
+"
+	
+	comment "
+Getter for property codiceFiscale.
+@return Value of property codiceFiscale.
+"
+      end
+
+      operation 151856 "setCodiceFiscale"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "codiceFiscale" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property codiceFiscale.
+@param codiceFiscale New value of property codiceFiscale.
+"
+      end
+
+      attribute 137264 "indirizzoResidenza"
+	private explicit_type "Contatto"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property indirizzoResidenza.
+
+"
+      end
+
+      operation 151984 "getIndirizzoResidenza"
+	public explicit_return_type "Contatto"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.indirizzoResidenza;
+}
+"
+	
+	comment "
+Getter for property indirizzoResidenza.
+@return Value of property indirizzoResidenza.
+"
+      end
+
+      operation 152112 "setIndirizzoResidenza"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "indirizzoResidenza" explicit_type "Contatto"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property indirizzoResidenza.
+@param indirizzoResidenza New value of property indirizzoResidenza.
+"
+      end
+
+      attribute 137392 "portatoreHandicap"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property portatoreHandicap.
+
+"
+      end
+
+      operation 152240 "isPortatoreHandicap"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.portatoreHandicap;
+}
+"
+	
+	comment "
+Getter for property portatoreHandicap.
+@return Value of property portatoreHandicap.
+"
+      end
+
+      operation 152368 "setPortatoreHandicap"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "portatoreHandicap" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property portatoreHandicap.
+@param portatoreHandicap New value of property portatoreHandicap.
+"
+      end
+
+      operation 152496 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 152624 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 129712 "ReligioneBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+Religione.java
+
+Created on 22 febbraio 2007, 12.31
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 129584 // <realization>
+	relation 129584 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129584 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 152752 "ReligioneBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of Religione "
+      end
+
+      operation 152880 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 137520 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 153008 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 153136 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 137648 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      attribute 137776 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 153264 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 153392 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 153520 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 153648 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 137904 "nome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property nome.
+
+"
+      end
+
+      operation 153776 "getNome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.nome;
+}
+"
+	
+	comment "
+Getter for property nome.
+@return Value of property nome.
+"
+      end
+
+      operation 153904 "setNome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property nome.
+@param nome New value of property nome.
+"
+      end
+
+      operation 154032 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 154160 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 129840 "StanzaBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+Stanza.java
+
+Created on 22 febbraio 2007, 12.22
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 129712 // <realization>
+	relation 129712 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129712 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 154288 "StanzaBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of Stanza "
+      end
+
+      operation 154416 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 138032 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 154544 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 154672 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param inout name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 138160 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      attribute 138288 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 154800 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 154928 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 155056 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 155184 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 138416 "descrizione"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property descrizione.
+
+"
+      end
+
+      operation 155312 "getDescrizione"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.descrizione;
+}
+"
+	
+	comment "
+Getter for property descrizione.
+@return Value of property descrizione.
+"
+      end
+
+      operation 155440 "setDescrizione"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "descrizione" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property descrizione.
+@param descrizione New value of property descrizione.
+"
+      end
+
+      attribute 138544 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 155568 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 155696 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      operation 155824 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 155952 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 129968 "StudenteBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 129840 // <realization>
+	relation 129840 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129840 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 156080 "StudenteBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of StudenteBean "
+      end
+
+      attribute 138672 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      attribute 138800 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 156208 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 156336 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 156464 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 156592 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 138928 "nome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property nome.
+
+"
+      end
+
+      operation 156720 "getNome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.nome;
+}
+"
+	
+	comment "
+Getter for property nome.
+@return Value of property nome.
+"
+      end
+
+      operation 156848 "setNome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property nome.
+@param nome New value of property nome.
+"
+      end
+
+      attribute 139056 "cognome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property cognome.
+
+"
+      end
+
+      operation 156976 "getCognome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.cognome;
+}
+"
+	
+	comment "
+Getter for property cognome.
+@return Value of property cognome.
+"
+      end
+
+      operation 157104 "setCognome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "cognome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property cognome.
+@param cognome New value of property cognome.
+"
+      end
+
+      attribute 139184 "dataNascita"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataNascita.
+
+"
+      end
+
+      operation 157232 "getDataNascita"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataNascita;
+}
+"
+	
+	comment "
+Getter for property dataNascita.
+@return Value of property dataNascita.
+"
+      end
+
+      operation 157360 "setDataNascita"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "dataNascita" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataNascita.
+@param dataNascita New value of property dataNascita.
+"
+      end
+
+      attribute 139312 "codiceFiscale"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property codiceFiscale.
+
+"
+      end
+
+      operation 157488 "getCodiceFiscale"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.codiceFiscale;
+}
+"
+	
+	comment "
+Getter for property codiceFiscale.
+@return Value of property codiceFiscale.
+"
+      end
+
+      operation 157616 "setCodiceFiscale"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "codiceFiscale" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property codiceFiscale.
+@param codiceFiscale New value of property codiceFiscale.
+"
+      end
+
+      attribute 139440 "indirizzoResidenza"
+	private explicit_type "Contatto"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property indirizzoResidenza.
+
+"
+      end
+
+      operation 157744 "getIndirizzoResidenza"
+	public explicit_return_type "Contatto"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.indirizzoResidenza;
+}
+"
+	
+	comment "
+Getter for property indirizzoResidenza.
+@return Value of property indirizzoResidenza.
+"
+      end
+
+      operation 157872 "setIndirizzoResidenza"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "indirizzoResidenza" explicit_type "Contatto"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property indirizzoResidenza.
+@param indirizzoResidenza New value of property indirizzoResidenza.
+"
+      end
+
+      attribute 139568 "portatoreHandicap"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property portatoreHandicap.
+
+"
+      end
+
+      operation 158000 "isPortatoreHandicap"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.portatoreHandicap;
+}
+"
+	
+	comment "
+Getter for property portatoreHandicap.
+@return Value of property portatoreHandicap.
+"
+      end
+
+      operation 158128 "setPortatoreHandicap"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "portatoreHandicap" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property portatoreHandicap.
+@param portatoreHandicap New value of property portatoreHandicap.
+"
+      end
+
+      operation 158256 "StudenteBean"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "studente" type class_ref 129968 // StudenteBean
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      attribute 139696 "modificato"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property modificato.
+
+"
+      end
+
+      operation 158384 "getModificato"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+	comment "
+Getter for property modificato.
+@return Value of property modificato.
+"
+      end
+
+      operation 158512 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "modificato" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property modificato.
+@param modificato New value of property modificato.
+"
+      end
+
+      attribute 139824 "m"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property ClasseModificata.
+
+"
+      end
+
+      operation 158640 "isClasseModificata"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.m;
+}
+"
+	
+	comment "
+Getter for property m.
+@return Value of property m.
+"
+      end
+
+      operation 158768 "setClasseModificata"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "m" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        this.m = m;
+}
+"
+	
+	comment "
+Setter for property m.
+@param m New value of property m.
+"
+      end
+
+      operation 158896 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 159024 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      attribute 139952 "matricola"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property matricola.
+
+"
+      end
+
+      operation 159152 "getMatricola"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.matricola;
+}
+"
+	
+	comment "
+Getter for property matricola.
+@return Value of property matricola.
+"
+      end
+
+      operation 159280 "setMatricola"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "matricola" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property matricola.
+@param matricola New value of property matricola.
+"
+      end
+
+      attribute 140080 "dataIscrizione"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataIscrizione.
+
+"
+      end
+
+      operation 159408 "getDataIscrizione"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataIscrizione;
+}
+"
+	
+	comment "
+Getter for property dataIscrizione.
+@return Value of property dataIscrizione.
+"
+      end
+
+      operation 159536 "setDataIscrizione"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "dataIscrizione" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataIscrizione.
+@param dataIscrizione New value of property dataIscrizione.
+"
+      end
+    end
+
+    class 130096 "TipoAssenzaBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+TipoAssenza.java
+
+Created on 22 febbraio 2007, 12.02
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 129968 // <realization>
+	relation 129968 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129968 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 159664 "TipoAssenzaBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of TipoAssenza "
+      end
+
+      operation 159792 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 140208 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 159920 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 160048 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 140336 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      attribute 140464 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 160176 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 160304 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 160432 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 160560 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 140592 "descrizione"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property descrizione.
+
+"
+      end
+
+      operation 160688 "getDescrizione"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.descrizione;
+}
+"
+	
+	comment "
+Getter for property descrizione.
+@return Value of property descrizione.
+"
+      end
+
+      operation 160816 "setDescrizione"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "descrizione" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property descrizione.
+@param descrizione New value of property descrizione.
+"
+      end
+
+      operation 160944 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 161072 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 130224 "TipoVotoBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+TipoVoto.java
+
+Created on 22 febbraio 2007, 12.08
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 130096 // <realization>
+	relation 130096 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130096 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 161200 "TipoVotoBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of TipoVoto "
+      end
+
+      operation 161328 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 140720 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 161456 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 161584 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 140848 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      attribute 140976 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 161712 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 161840 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 161968 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 162096 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 141104 "descrizione"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property descrizione.
+
+"
+      end
+
+      operation 162224 "getDescrizione"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.descrizione;
+}
+"
+	
+	comment "
+Getter for property descrizione.
+@return Value of property descrizione.
+"
+      end
+
+      operation 162352 "setDescrizione"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "descrizione" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property descrizione.
+@param descrizione New value of property descrizione.
+"
+      end
+
+      operation 162480 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 162608 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+
+    class 130352 "VotoBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "
+Voto.java
+
+Created on 22 febbraio 2007, 12.05
+
+To change this template, choose Tools | Template Manager
+and open the template in the editor.
+
+package classibeans;
+
+
+@author marghe
+"
+      classrelation 130224 // <realization>
+	relation 130224 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130224 // <realization>
+	  b parent class_ref 128273 // Cloneable
+      end
+
+      operation 162736 "VotoBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of Voto "
+      end
+
+      operation 162864 "clone"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+    
+}
+"
+	
+      end
+
+      attribute 141232 "modificato"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+      end
+
+      operation 162992 "getModificato"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.modificato;
+}
+"
+	
+      end
+
+      operation 163120 "setModificato"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "Modificato" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+    
+}
+"
+	
+      end
+
+      attribute 141360 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      attribute 141488 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 163248 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 163376 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 163504 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 163632 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 141616 "dataOra"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataOra.
+
+"
+      end
+
+      operation 163760 "getDataOra"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataOra;
+}
+"
+	
+	comment "
+Getter for property dataOra.
+@return Value of property dataOra.
+"
+      end
+
+      operation 163888 "setDataOra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "dataOra" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataOra.
+@param dataOra New value of property dataOra.
+"
+      end
+
+      attribute 141744 "valore"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property valore.
+
+"
+      end
+
+      operation 164016 "getValore"
+	public explicit_return_type "int"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.valore;
+}
+"
+	
+	comment "
+Getter for property valore.
+@return Value of property valore.
+"
+      end
+
+      operation 164144 "setValore"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "valore" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property valore.
+@param valore New value of property valore.
+"
+      end
+
+      attribute 141872 "extra"
+	private explicit_type "ListaAttributi"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property extra.
+
+"
+      end
+
+      operation 164272 "getExtra"
+	public explicit_return_type "ListaAttributi"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.extra;
+}
+"
+	
+	comment "
+Getter for property extra.
+@return Value of property extra.
+"
+      end
+
+      operation 164400 "setExtra"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "extra" explicit_type "ListaAttributi"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property extra.
+@param extra New value of property extra.
+"
+      end
+
+      operation 164528 "caricaDaWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 164656 "salvaSuWS"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+  end
+
+  deploymentview 128176 "nu.mine.egoless.didattica.ws"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default
+    artifact 128176 "AssenzaBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.util.Date;
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 128176 // AssenzaBean
+      end
+    end
+
+    artifact 128304 "ClasseBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 128304 // ClasseBean
+      end
+    end
+
+    artifact 128432 "ContattoBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 128432 // ContattoBean
+      end
+    end
+
+    artifact 128560 "GenitoreBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 128560 // GenitoreBean
+      end
+    end
+
+    artifact 128688 "IndirizzoStudiBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 128688 // IndirizzoStudiBean
+      end
+    end
+
+    artifact 128816 "InsegnanteBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.util.Date;
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 128816 // InsegnanteBean
+      end
+    end
+
+    artifact 128944 "ListaAttributiBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 128944 // ListaAttributiBean
+      end
+    end
+
+    artifact 129072 "Main"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+      end
+    end
+
+    artifact 129200 "MateriaInsegnamentoBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 129200 // MateriaInsegnamentoBean
+      end
+    end
+
+    artifact 129328 "NazioneBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 129328 // NazioneBean
+      end
+    end
+
+    artifact 129456 "OraLezioneBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 129456 // OraLezioneBean
+      end
+    end
+
+    artifact 129584 "PersonaBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 129584 // PersonaBean
+      end
+    end
+
+    artifact 129712 "ReligioneBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 129712 // ReligioneBean
+      end
+    end
+
+    artifact 129840 "StanzaBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 129840 // StanzaBean
+      end
+    end
+
+    artifact 129968 "StudenteBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.util.Date;
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 129968 // StudenteBean
+      end
+    end
+
+    artifact 130096 "TipoAssenzaBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 130096 // TipoAssenzaBean
+      end
+    end
+
+    artifact 130224 "TipoVotoBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 130224 // TipoVotoBean
+      end
+    end
+
+    artifact 130352 "VotoBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 130352 // VotoBean
+      end
+    end
+  end
+end

@@ -1,0 +1,41 @@
+class ContattoBean
+!!!133424.java!!!	setVia(in via : String) : void
+
+        String oldVia = this.via;
+        this.via = via;
+        propertyChangeSupport.firePropertyChange ("via", oldVia, via);
+!!!133680.java!!!	setCivico(in civico : String) : void
+
+        String oldCivico = this.civico;
+        this.civico = civico;
+        propertyChangeSupport.firePropertyChange ("civico", oldCivico, civico);
+!!!133936.java!!!	setCAP(in CAP : String) : void
+
+        String oldCAP = this.CAP;
+        this.CAP = CAP;
+        propertyChangeSupport.firePropertyChange ("CAP", oldCAP, CAP);
+!!!134192.java!!!	setCittà(in citt : String) : void
+
+        String oldCittà = this.città;
+        this.città = città;
+        propertyChangeSupport.firePropertyChange ("città", oldCittà, città);
+!!!134448.java!!!	setProvincia(in provincia : String) : void
+
+        String oldProvincia = this.provincia;
+        this.provincia = provincia;
+        propertyChangeSupport.firePropertyChange ("provincia", oldProvincia, provincia);
+!!!134704.java!!!	setTelefonoPrincipale(in telefonoPrincipale : String) : void
+
+        String oldTelefonoPrincipale = this.telefonoPrincipale;
+        this.telefonoPrincipale = telefonoPrincipale;
+        propertyChangeSupport.firePropertyChange ("telefonoPrincipale", oldTelefonoPrincipale, telefonoPrincipale);
+!!!134960.java!!!	setTelefonoSecondario(in telefonoSecondario : String) : void
+
+        String oldTelefonoSecondario = this.telefonoSecondario;
+        this.telefonoSecondario = telefonoSecondario;
+        propertyChangeSupport.firePropertyChange ("telefonoSecondario", oldTelefonoSecondario, telefonoSecondario);
+!!!135216.java!!!	setFax(in fax : String) : void
+
+        String oldFax = this.fax;
+        this.fax = fax;
+        propertyChangeSupport.firePropertyChange ("fax", oldFax, fax);

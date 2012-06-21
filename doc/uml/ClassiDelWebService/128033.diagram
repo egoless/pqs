@@ -1,0 +1,118 @@
+format 29
+
+packagecanvas 128033 
+  package_ref 128033 // nu.mine.egoless.didattica
+   color blue  xyzwh 19 47 2000 815 907
+classcanvas 128135 class_ref 128903 // TipoProva
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 469 526 2005
+classcanvas 128161 class_ref 128033 // Persona
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 27 133 2005
+classcanvas 128289 class_ref 128161 // Nazione
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 75 645 2005
+classcanvas 128417 class_ref 128289 // Religione
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 304 85 2005
+classcanvas 128545 class_ref 128417 // Docente
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 420 731 2010
+classcanvas 128673 class_ref 128545 // MateriaInsegnamento
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 674 819 2005
+classcanvas 128801 class_ref 128673 // Voto
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 679 667 2005
+classcanvas 128929 class_ref 128801 // Assenza
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 676 326 2005
+classcanvas 129057 class_ref 128929 // Classe
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 673 177 2005
+classcanvas 129185 class_ref 129057 // TipoVoto
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 486 617 2005
+classcanvas 129313 class_ref 129185 // TipoAssenza
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 684 533 2005
+classcanvas 129441 class_ref 129313 // Studente
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 264 194 2005
+classcanvas 129569 class_ref 129441 // Contatto
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 224 584 2005
+classcanvas 129697 class_ref 129569 // ListaAttributi
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 680 101 2005
+relationcanvas 128007 relation_ref 128239 // <association>
+  from ref 128161 z 2004 to ref 129569
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128176 relation_ref 128048 // <dependency>
+  from ref 128161 z 2004 to ref 129569
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128263 relation_ref 128647 // <association>
+  from ref 128135 z 2004 to ref 128801
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128623 relation_ref 128111 // <generalisation>
+  from ref 129441 z 2004 to ref 128161
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128879 relation_ref 128367 // <generalisation>
+  from ref 128545 z 2004 to point 419 554
+  line 128048 z 2004 to ref 128161
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 129007 relation_ref 128495 // frequenta
+  from ref 129057 z 2004 label "frequenta" italic xyz 504 214 2004 to ref 129441
+  no_role_a no_role_b
+  multiplicity_a_pos 416 237 3000 multiplicity_b_pos 655 237 3000
+relationcanvas 129135 relation_ref 128623 // riceve
+  from ref 129441 z 2004 label "riceve" italic xyz 521 440 2004 to ref 128801
+  no_role_a no_role_b
+  multiplicity_a_pos 688 635 3000 no_multiplicity_b
+relationcanvas 129263 relation_ref 128751 // effettua
+  from ref 129441 z 2004 label "effettua" italic xyz 516 313 2004 to ref 128929
+  no_role_a no_role_b
+  multiplicity_a_pos 645 369 3000 no_multiplicity_b
+relationcanvas 129519 relation_ref 128879 // <association>
+  from ref 128801 z 2004 to ref 128673
+  no_role_a no_role_b
+  no_multiplicity_a multiplicity_b_pos 719 781 3000
+relationcanvas 129647 relation_ref 129007 // <association>
+  from ref 128929 z 2004 to ref 129313
+  no_role_a no_role_b
+  no_multiplicity_a multiplicity_b_pos 722 458 3000
+relationcanvas 129775 relation_ref 129135 // assegna
+  from ref 128545 z 2004 label "assegna" italic xyz 585 715 2004 to ref 128801
+  no_role_a no_role_b
+  multiplicity_a_pos 648 735 3000 no_multiplicity_b
+relationcanvas 129903 relation_ref 129263 // <association>
+  from ref 128545 z 2004 to ref 128673
+  no_role_a no_role_b
+  multiplicity_a_pos 643 842 3000 multiplicity_b_pos 572 795 3000
+relationcanvas 130031 relation_ref 129391 // segue
+  from ref 128417 z 2004 label "segue" italic xyz 225 142 2004 to ref 128161
+  no_role_a no_role_b
+  multiplicity_a_pos 233 185 3000 multiplicity_b_pos 271 147 3000
+relationcanvas 130159 relation_ref 129519 // ha nazionalità
+  from ref 128161 z 2004 label "ha nazionalità" italic xyz 44 456 2004 to ref 128289
+  no_role_a no_role_b
+  multiplicity_a_pos 108 623 3000 multiplicity_b_pos 95 337 3000
+relationcanvas 130287 relation_ref 129647 // <association>
+  from ref 128289 z 2004 to ref 129569
+  no_role_a no_role_b
+  multiplicity_a_pos 193 688 3000 no_multiplicity_b
+relationcanvas 130415 relation_ref 129775 // <association>
+  from ref 129185 z 1999 to point 597 695
+  line 130543 z 1999 to ref 129185
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 130671 relation_ref 129903 // <association>
+  from ref 129185 z 2004 to ref 128801
+  no_role_a no_role_b
+  multiplicity_a_pos 649 696 3000 multiplicity_b_pos 598 684 3000
+end

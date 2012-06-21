@@ -1,0 +1,51 @@
+class StudenteBean
+!!!156592.java!!!	setId(in id : long) : void
+
+        long oldId = this.id;
+        this.id = id;
+        propertyChangeSupport.firePropertyChange ("id", new Long (oldId), new Long (id));
+!!!156848.java!!!	setNome(in nome : String) : void
+
+        String oldNome = this.nome;
+        this.nome = nome;
+        propertyChangeSupport.firePropertyChange ("nome", oldNome, nome);
+!!!157104.java!!!	setCognome(in cognome : String) : void
+
+        String oldCognome = this.cognome;
+        this.cognome = cognome;
+        propertyChangeSupport.firePropertyChange ("cognome", oldCognome, cognome);
+!!!157360.java!!!	setDataNascita(inout dataNascita : Date) : void
+
+        Date oldDataNascita = this.dataNascita;
+        this.dataNascita = dataNascita;
+        propertyChangeSupport.firePropertyChange ("dataNascita", oldDataNascita, dataNascita);
+!!!157616.java!!!	setCodiceFiscale(in codiceFiscale : String) : void
+
+        String oldCodiceFiscale = this.codiceFiscale;
+        this.codiceFiscale = codiceFiscale;
+        propertyChangeSupport.firePropertyChange ("codiceFiscale", oldCodiceFiscale, codiceFiscale);
+!!!157872.java!!!	setIndirizzoResidenza(inout indirizzoResidenza : Contatto) : void
+
+        Contatto oldIndirizzoResidenza = this.indirizzoResidenza;
+        this.indirizzoResidenza = indirizzoResidenza;
+        propertyChangeSupport.firePropertyChange ("indirizzoResidenza", oldIndirizzoResidenza, indirizzoResidenza);
+!!!158128.java!!!	setPortatoreHandicap(inout portatoreHandicap : boolean) : void
+
+        boolean oldPortatoreHandicap = this.portatoreHandicap;
+        this.portatoreHandicap = portatoreHandicap;
+        propertyChangeSupport.firePropertyChange ("portatoreHandicap", new Boolean (oldPortatoreHandicap), new Boolean (portatoreHandicap));
+!!!158512.java!!!	setModificato(in modificato : String) : void
+
+        String oldModificato = this.modificato;
+        this.modificato = modificato;
+        propertyChangeSupport.firePropertyChange ("modificato", oldModificato, modificato);
+!!!159280.java!!!	setMatricola(in matricola : String) : void
+
+        String oldMatricola = this.matricola;
+        this.matricola = matricola;
+        propertyChangeSupport.firePropertyChange ("matricola", oldMatricola, matricola);
+!!!159536.java!!!	setDataIscrizione(inout dataIscrizione : Date) : void
+
+        Date oldDataIscrizione = this.dataIscrizione;
+        this.dataIscrizione = dataIscrizione;
+        propertyChangeSupport.firePropertyChange ("dataIscrizione", oldDataIscrizione, dataIscrizione);

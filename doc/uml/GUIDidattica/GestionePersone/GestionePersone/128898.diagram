@@ -1,0 +1,84 @@
+format 29
+
+classcanvas 128002 class_ref 132226 // java.awt.Container
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 45 141 2000
+classcanvas 128130 class_ref 132354 // java.awt.Component
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 38 27 2000
+classcanvas 128386 class_ref 132482 // Bean
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 304 240 2000
+classcanvas 128642 class_ref 131842 // ActionListener
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 271 28 2000
+classcanvas 128898 class_ref 132610 // PropertyChangeListener
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 23 240 2005
+relationcanvas 128007 relation_ref 130818 // <association>
+  from ref 128002 z 1999 to ref 128386
+  no_role_a no_role_b
+  multiplicity_a_pos 289 257 3000 no_multiplicity_b
+relationcanvas 128135 relation_ref 132226 // <association>
+  from ref 128002 z 1999 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128263 relation_ref 132482 // <association>
+  from ref 128002 z 1999 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128391 relation_ref 131330 // <aggregation by value>
+  from ref 128130 z 1999 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128519 relation_ref 131970 // <aggregation by value>
+  from ref 128130 z 1999 to point 178 27
+  line 128647 z 1999 to point 178 57
+  line 128775 z 1999 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128903 relation_ref 132098 // <association>
+  from ref 128130 z 1999 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 129031 relation_ref 131842 // <association>
+  from ref 128642 z 1999 to ref 128386
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 129154 relation_ref 131202 // <aggregation by value>
+  from ref 128002 z 1999 to ref 128130
+  no_role_a no_role_b
+  multiplicity_a_pos 79 69 3000 no_multiplicity_b
+relationcanvas 129410 relation_ref 131458 // <aggregation by value>
+  from ref 128386 z 1999 to ref 128898
+  no_role_a no_role_b
+  multiplicity_a_pos 163 264 3000 no_multiplicity_b
+relationcanvas 129538 relation_ref 131586 // <aggregation>
+  from ref 128002 z 1999 to ref 128386
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 129666 relation_ref 131074 // <association>
+  from ref 128386 z 1999 to ref 128898
+  no_role_a no_role_b
+  multiplicity_a_pos 163 264 3000 no_multiplicity_b
+relationcanvas 129794 relation_ref 130690 // <association>
+  from ref 128002 z 1999 to ref 128130
+  no_role_a no_role_b
+  multiplicity_a_pos 79 69 3000 no_multiplicity_b
+relationcanvas 129922 relation_ref 131714 // <<nested>>
+  from ref 128898 z 1999 label "<<nested>>" italic xyz 77 196 1999 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 130818 relation_ref 132354 // <aggregation by value>
+  from ref 128130 z 1999 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 131074 relation_ref 132610 // <<nested>>
+  from ref 128642 z 1999 label "<<nested>>" italic xyz 181 90 1999 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 131202 relation_ref 134274 // <unidirectional association>
+  from ref 128642 z 1999 to ref 128386
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end

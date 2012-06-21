@@ -1,0 +1,133 @@
+format 29
+"DiagrammiDiStato" // DiagrammiDiStato
+  revision 1
+  modified_by 2 ""
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default shadow default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default drawing_language default shadow default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+  show_activities default region_horizontally default drawing_language default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+  show_infonote default drawing_language default
+  
+  classview 128514 "PersonaBean"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    state 128002 "PersonaBeanLifeCycle"
+      stereotype "machine"
+      statediagram 130178 "PersonaBean"
+	package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+	show_activities default region_horizontally default drawing_language default
+	size A4
+      end
+
+      pseudostate 128002 initial 
+	transition 128130 "new PersonaBean"
+	  on state_ref 128130 // creato
+	end
+      end
+
+      state 128130 "creato"
+	transition 128258 "caricaDaWs(id()) [presente nel DB]"
+	  on state_ref 128258 // caricato
+	end
+
+	transition 129666 "setAttribute(value)"
+	  on state_ref 128386 // modificato
+	end
+
+	transition 129794 "distruggi"
+	  on pseudostate_ref 128130 // final
+	end
+      end
+
+      state 128258 "caricato"
+	transition 128386 "setAttribute(value)"
+	  on state_ref 128386 // modificato
+	end
+
+	transition 129282 "<transition>"
+	  on state_ref 128514 // salvato
+	end
+
+	transition 129538 "salvaSuWS()"
+	  on state_ref 128514 // salvato
+	end
+
+	transition 129922 "distruggi"
+	  on pseudostate_ref 128130 // final
+	end
+      end
+
+      state 128386 "modificato"
+	transition 128514 "setAttribute(value)"
+	  on state_ref 128386 // modificato
+	end
+
+	transition 128642 "salvaSuWS()"
+	  on state_ref 128514 // salvato
+	end
+
+	transition 128770 "distruggi"
+	  on pseudostate_ref 128130 // final
+	end
+      end
+
+      state 128514 "salvato"
+	transition 128898 "distruggi"
+	  on pseudostate_ref 128130 // final
+	end
+
+	transition 129026 "<transition>"
+	  on state_ref 128386 // modificato
+	end
+
+	transition 129154 "setAtttribute(value)"
+	  on state_ref 128386 // modificato
+	end
+      end
+
+      pseudostate 128130 final 
+      end
+
+      pseudostate 128258 shallow_history 
+      end
+
+      statediagram 130434 "NuovoPersonaBean"
+	package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+	show_activities default region_horizontally default drawing_language default
+	size A4
+      end
+    end
+  end
+end

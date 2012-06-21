@@ -1,0 +1,65 @@
+format 29
+
+componentcanvas 128130 component_ref 128002 // KERNEL
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color red
+  xyzwh 17 271 2000 615 58
+componentcanvas 128258 component_ref 128130 // WEB SERVICE-API
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color orange
+  xyzwh 17 178 2005 608 57
+componentcanvas 128386 component_ref 128258 // WS-DIDATTICA
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color mediumgreen
+  xyzwh 18 99 2000 143 51
+componentcanvas 128514 component_ref 128386 // WS-DOCUMENTI
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 163 98 2000 143 51
+componentcanvas 128642 component_ref 128514 // WS-MONITORAGGIO
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 310 98 2000 143 51
+componentcanvas 128770 component_ref 128642 // WS-ACCESSO TELEMATICO
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 456 99 2000 171 51
+componentcanvas 128898 component_ref 128770 // APP-DIDATTICA
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color mediumgreen
+  xyzwh 16 17 2005 143 51
+componentcanvas 129026 component_ref 128898 // APP-DOCUMENTI
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 163 18 2005 143 51
+componentcanvas 129154 component_ref 129026 // APP-MONITORAGGIO
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 310 17 2005 143 51
+componentcanvas 129282 component_ref 129154 // APP-ACCESSO TELEMATICO
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 454 17 2005 175 51
+note 131008 "APPLICATIVI LATO UTENTE"
+  color yellow  xyzwh 674 24 2000 160 35
+note 131136 "LOGICA APPLICATIVA"
+  color yellow  xyzwh 673 107 2000 155 35
+note 131264 "FORNITURA DATI"
+  color yellow  xyzwh 672 192 2000 124 35
+note 131392 "MEMORIZZAZIONE DATI"
+  color yellow  xyzwh 667 281 2000 143 35
+simplerelationcanvas 128320 simplerelation_ref 128064
+  from ref 128898 z 1999 to point 85 94
+  line 128448 z 1999 to ref 128386
+simplerelationcanvas 128832 simplerelation_ref 128320
+  from ref 129026 z 1999 to ref 128514
+simplerelationcanvas 128960 simplerelation_ref 128448
+  from ref 129154 z 1999 to ref 128642
+simplerelationcanvas 129472 simplerelation_ref 128704
+  from ref 129282 z 1999 to ref 128770
+simplerelationcanvas 129728 simplerelation_ref 128832
+  from ref 128386 z 1999 to ref 128258
+simplerelationcanvas 130240 simplerelation_ref 128960
+  from ref 128514 z 1999 to ref 128258
+simplerelationcanvas 130368 simplerelation_ref 129088
+  from ref 128642 z 1999 to ref 128258
+simplerelationcanvas 130496 simplerelation_ref 129216
+  from ref 128770 z 1999 to ref 128258
+simplerelationcanvas 130624 simplerelation_ref 129344
+  from ref 128258 z 1999 to point 318 267
+  line 130752 z 1999 to ref 128130
+end

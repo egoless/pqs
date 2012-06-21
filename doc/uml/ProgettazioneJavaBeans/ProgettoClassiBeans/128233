@@ -1,0 +1,467 @@
+format 29
+"ClassiJavaBeans" // ClassiJavaBeans
+  revision 1
+  modified_by 105 "STEFANO"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default shadow default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default drawing_language default shadow default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+  show_activities default region_horizontally default drawing_language default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+  show_infonote default drawing_language default
+  
+  classview 128233 "ClassiJavaBeans"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    class 128233 "StudenteBean"cpp_decl ""
+      public java_decl "${comment}${@}${public}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 128233 "StudenteBean"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+	comment " Creates a new instance of StudenteBean "
+      end
+
+      attribute 128233 "id"
+	private explicit_type "long"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property id.
+
+"
+      end
+
+      attribute 128361 "propertyChangeSupport"
+	private explicit_type "java.beans.PropertyChangeSupport"
+	init_value "=   new java.beans.PropertyChangeSupport(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Utility field used by bound properties.
+
+"
+      end
+
+      operation 128361 "addPropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.addPropertyChangeListener(l);
+}
+"
+	
+	comment "
+Adds a PropertyChangeListener to the listener list.
+@param l The listener to add.
+"
+      end
+
+      operation 128489 "removePropertyChangeListener"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "l" explicit_type "java.beans.PropertyChangeListener"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+        propertyChangeSupport.removePropertyChangeListener(l);
+}
+"
+	
+	comment "
+Removes a PropertyChangeListener from the listener list.
+@param l The listener to remove.
+"
+      end
+
+      operation 128617 "getId"
+	public explicit_return_type "long"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.id;
+}
+"
+	
+	comment "
+Getter for property id.
+@return Value of property id.
+"
+      end
+
+      operation 128745 "setId"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property id.
+@param id New value of property id.
+"
+      end
+
+      attribute 128489 "nome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property nome.
+
+"
+      end
+
+      operation 128873 "getNome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.nome;
+}
+"
+	
+	comment "
+Getter for property nome.
+@return Value of property nome.
+"
+      end
+
+      operation 129001 "setNome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "nome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property nome.
+@param nome New value of property nome.
+"
+      end
+
+      attribute 128617 "cognome"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property cognome.
+
+"
+      end
+
+      operation 129129 "getCognome"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.cognome;
+}
+"
+	
+	comment "
+Getter for property cognome.
+@return Value of property cognome.
+"
+      end
+
+      operation 129257 "setCognome"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "cognome" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property cognome.
+@param cognome New value of property cognome.
+"
+      end
+
+      attribute 128745 "dataNascita"
+	private explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property dataNascita.
+
+"
+      end
+
+      operation 129385 "getDataNascita"
+	public explicit_return_type "Date"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.dataNascita;
+}
+"
+	
+	comment "
+Getter for property dataNascita.
+@return Value of property dataNascita.
+"
+      end
+
+      operation 129513 "setDataNascita"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "dataNascita" explicit_type "Date"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property dataNascita.
+@param dataNascita New value of property dataNascita.
+"
+      end
+
+      attribute 128873 "codiceFiscale"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property codiceFiscale.
+
+"
+      end
+
+      operation 129641 "getCodiceFiscale"
+	public explicit_return_type "String"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.codiceFiscale;
+}
+"
+	
+	comment "
+Getter for property codiceFiscale.
+@return Value of property codiceFiscale.
+"
+      end
+
+      operation 129769 "setCodiceFiscale"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "codiceFiscale" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property codiceFiscale.
+@param codiceFiscale New value of property codiceFiscale.
+"
+      end
+
+      attribute 129001 "indirizzoResidenza"
+	private explicit_type "Contatto"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property indirizzoResidenza.
+
+"
+      end
+
+      operation 129897 "getIndirizzoResidenza"
+	public explicit_return_type "Contatto"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.indirizzoResidenza;
+}
+"
+	
+	comment "
+Getter for property indirizzoResidenza.
+@return Value of property indirizzoResidenza.
+"
+      end
+
+      operation 130025 "setIndirizzoResidenza"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "indirizzoResidenza" explicit_type "Contatto"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property indirizzoResidenza.
+@param indirizzoResidenza New value of property indirizzoResidenza.
+"
+      end
+
+      attribute 129129 "portatoreHandicap"
+	private explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	idl_decl ""
+	comment "
+Holds value of property portatoreHandicap.
+
+"
+      end
+
+      operation 130153 "isPortatoreHandicap"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+        return this.portatoreHandicap;
+}
+"
+	
+	comment "
+Getter for property portatoreHandicap.
+@return Value of property portatoreHandicap.
+"
+      end
+
+      operation 130281 "setPortatoreHandicap"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "portatoreHandicap" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+${body}}
+"
+	
+	comment "
+Setter for property portatoreHandicap.
+@param portatoreHandicap New value of property portatoreHandicap.
+"
+      end
+
+      operation 130409 "StudenteBean"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "studente" type class_ref 128233 // StudenteBean
+	
+	java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 130537 "salvaWS"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+
+      operation 130665 "caricaWS"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+
+}
+"
+	
+      end
+    end
+  end
+
+  deploymentview 128233 "ClassiJavaBeans"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default
+    artifact 128233 "StudenteBean"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.util.Date;
+import java.lang.*;
+${definition}"
+      associated_classes
+	class_ref 128233 // StudenteBean
+      end
+    end
+  end
+end

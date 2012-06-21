@@ -1,0 +1,11 @@
+class TipoAssenzaBean
+!!!160560.java!!!	setId(in id : long) : void
+
+        long oldId = this.id;
+        this.id = id;
+        propertyChangeSupport.firePropertyChange ("id", new Long (oldId), new Long (id));
+!!!160816.java!!!	setDescrizione(in descrizione : String) : void
+
+        String oldDescrizione = this.descrizione;
+        this.descrizione = descrizione;
+        propertyChangeSupport.firePropertyChange ("descrizione", oldDescrizione, descrizione);

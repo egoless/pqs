@@ -1,0 +1,18 @@
+window_sizes 960 672 240 720 512 82
+diagrams
+  active  deploymentdiagram_ref 128130 // Diagramma dei Package della GUI
+    714 494 100 4 0 0
+end
+show_stereotypes
+selected 
+  package_ref 129154 // egoless.mine.nu.didattica.app.gui.gestionePersone.insegnanti
+open
+  deploymentview_ref 128130 // Diagramma dei Package della GUI
+  
+  package_ref 128386 // egoless.mine.nu.didattica.app.gui.gestionePersone
+  
+  package_ref 128514 // egoless.mine.nu.didattica.app.gui.componentiComuni
+  
+  package_ref 128642 // egoless.mine.nu.didattica.app.gui.registroDocente
+end
+end

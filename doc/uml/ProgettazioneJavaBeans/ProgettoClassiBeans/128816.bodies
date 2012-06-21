@@ -1,0 +1,46 @@
+class InsegnanteBean
+!!!141360.java!!!	setDataAssunzione(inout dataAssunzione : Date) : void
+
+        Date oldDataAssunzione = this.dataAssunzione;
+        this.dataAssunzione = dataAssunzione;
+        propertyChangeSupport.firePropertyChange ("dataAssunzione", oldDataAssunzione, dataAssunzione);
+!!!141616.java!!!	setId(in id : long) : void
+
+        long oldId = this.id;
+        this.id = id;
+        propertyChangeSupport.firePropertyChange ("id", new Long (oldId), new Long (id));
+!!!141872.java!!!	setExtra(inout extra : ListaAttributi) : void
+
+        ListaAttributi oldExtra = this.extra;
+        this.extra = extra;
+        propertyChangeSupport.firePropertyChange ("extra", oldExtra, extra);
+!!!142128.java!!!	setNome(in nome : String) : void
+
+        String oldNome = this.nome;
+        this.nome = nome;
+        propertyChangeSupport.firePropertyChange ("nome", oldNome, nome);
+!!!142384.java!!!	setCognome(in cognome : String) : void
+
+        String oldCognome = this.cognome;
+        this.cognome = cognome;
+        propertyChangeSupport.firePropertyChange ("cognome", oldCognome, cognome);
+!!!142640.java!!!	setDataNascita(inout dataNascita : Date) : void
+
+        Date oldDataNascita = this.dataNascita;
+        this.dataNascita = dataNascita;
+        propertyChangeSupport.firePropertyChange ("dataNascita", oldDataNascita, dataNascita);
+!!!142896.java!!!	setCodiceFiscale(in codiceFiscale : String) : void
+
+        String oldCodiceFiscale = this.codiceFiscale;
+        this.codiceFiscale = codiceFiscale;
+        propertyChangeSupport.firePropertyChange ("codiceFiscale", oldCodiceFiscale, codiceFiscale);
+!!!143152.java!!!	setIndirizzoResidenza(inout indirizzoResidenza : Contatto) : void
+
+        Contatto oldIndirizzoResidenza = this.indirizzoResidenza;
+        this.indirizzoResidenza = indirizzoResidenza;
+        propertyChangeSupport.firePropertyChange ("indirizzoResidenza", oldIndirizzoResidenza, indirizzoResidenza);
+!!!143408.java!!!	setPortatoreHandicap(inout portatoreHandicap : boolean) : void
+
+        boolean oldPortatoreHandicap = this.portatoreHandicap;
+        this.portatoreHandicap = portatoreHandicap;
+        propertyChangeSupport.firePropertyChange ("portatoreHandicap", new Boolean (oldPortatoreHandicap), new Boolean (portatoreHandicap));

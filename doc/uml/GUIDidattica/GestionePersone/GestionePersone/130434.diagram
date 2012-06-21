@@ -1,0 +1,51 @@
+format 29
+
+pseudostatecanvas 128002 pseudostate_ref 128002 // initial
+  xyz 98 90 2000
+statecanvas 128130 state_ref 128130 // creato
+  show_activities default region_horizontally default drawing_language default
+  xyzwh 242 29 2000 55 33
+statecanvas 129026 state_ref 128386 // modificato
+  show_activities default region_horizontally default drawing_language default
+  xyzwh 399 77 2000 79 33
+statecanvas 129794 state_ref 128514 // salvato
+  show_activities default region_horizontally default drawing_language default
+  xyzwh 409 276 2000 59 33
+pseudostatecanvas 130050 pseudostate_ref 128130 // final
+  xyz 99 199 2000
+transitioncanvas 128642 transition_ref 128130 // new PersonaBean
+  
+  from ref 128002 z 1999 label "new PersonaBean" xyz 133 66 1999 to ref 128130
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 129282 transition_ref 128514 // setAttribute(value)
+  
+  from ref 129026 z 1999 label "setAttribute(value)" xyz 468 109 1999 to point 547 128
+  line 129410 z 1999 to point 547 52
+  line 129538 z 1999 to ref 129026
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 129922 transition_ref 128642 // salvaSuWS()
+  
+  from ref 129026 z 1999 label "salvaSuWS()" xyz 406 185 1999 to ref 129794
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 130306 transition_ref 128770 // distruggi
+  
+  from ref 129026 z 1999 label "distruggi" xyz 240 148 1999 to ref 130050
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 130434 transition_ref 128898 // distruggi
+  
+  from ref 129794 z 1999 label "distruggi" xyz 245 240 1999 to ref 130050
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 130690 transition_ref 129154 // setAtttribute(value)
+  
+  from ref 129794 z 1999 label "setAtttribute(value)" xyz 457 226 1999 to point 551 191
+  line 130818 z 1999 to ref 129026
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 130946 transition_ref 129666 // setAttribute(value)
+  
+  from ref 128130 z 1999 label "setAttribute(value)" xyz 301 59 3000 to ref 129026
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 131202 transition_ref 129794 // distruggi
+  
+  from ref 128130 z 1999 label "distruggi" xyz 165 122 3000 to ref 130050
+  write_horizontally default show_definition default drawing_language default
+end

@@ -1,0 +1,11 @@
+class ReligioneBean
+!!!153648.java!!!	setId(in id : long) : void
+
+        long oldId = this.id;
+        this.id = id;
+        propertyChangeSupport.firePropertyChange ("id", new Long (oldId), new Long (id));
+!!!153904.java!!!	setNome(in nome : String) : void
+
+        String oldNome = this.nome;
+        this.nome = nome;
+        propertyChangeSupport.firePropertyChange ("nome", oldNome, nome);

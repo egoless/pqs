@@ -1,0 +1,11 @@
+format 29
+
+classinstance 128002 class_ref 130818 // java.awt.Container
+  name "" xyz 59 16 2000 life_line_z 2000
+classinstance 128130 class_ref 130946 // java.awt.Component
+  name "" xyz 203 15 2000 life_line_z 2000
+classinstance 128258 class_ref 131074 // Bean
+  name "" xyz 450 21 2000 life_line_z 2000
+classinstance 128386 class_ref 131202 // Listener
+  name "" xyz 334 4 2000 life_line_z 2000
+end

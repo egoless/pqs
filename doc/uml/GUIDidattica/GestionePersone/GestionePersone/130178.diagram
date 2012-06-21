@@ -1,0 +1,64 @@
+format 29
+
+pseudostatecanvas 128002 pseudostate_ref 128002 // initial
+  xyz 102 90 2000
+statecanvas 128130 state_ref 128130 // creato
+  show_activities default region_horizontally default drawing_language default
+  xyzwh 290 33 2000 55 33
+statecanvas 128770 state_ref 128258 // caricato
+  show_activities default region_horizontally default drawing_language default
+  xyzwh 502 98 2000 101 33
+statecanvas 129026 state_ref 128386 // modificato
+  show_activities default region_horizontally default drawing_language default
+  xyzwh 280 188 2000 79 33
+statecanvas 129794 state_ref 128514 // salvato
+  show_activities default region_horizontally default drawing_language default
+  xyzwh 290 318 2000 59 33
+pseudostatecanvas 130050 pseudostate_ref 128130 // final
+  xyz 102 265 2000
+transitioncanvas 128642 transition_ref 128130 // new PersonaBean
+  
+  from ref 128002 z 1999 label "new PersonaBean" xyz 159 67 3000 to ref 128130
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 128898 transition_ref 128258 // caricaDaWs(id()) [presente nel DB]
+  
+  from ref 128130 z 1999 label "caricaDaWs(id()) [presente nel DB]" xyz 338 70 3000 to ref 128770
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 129154 transition_ref 128386 // setAttribute(value)
+  
+  from ref 128770 z 1999 label "setAttribute(value)" xyz 384 151 3000 to ref 129026
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 129282 transition_ref 128514 // setAttribute(value)
+  
+  from ref 129026 z 1999 label "setAttribute(value)" xyz 299 157 3000 to point 358 141
+  line 129410 z 1999 to point 284 141
+  line 129538 z 1999 to ref 129026
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 129922 transition_ref 128642 // salvaSuWS()
+  
+  from ref 129026 z 1999 label "salvaSuWS()" xyz 287 261 3000 to ref 129794
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 130306 transition_ref 128770 // distruggi
+  
+  from ref 129026 z 1999 label "distruggi" xyz 182 237 3000 to ref 130050
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 130434 transition_ref 128898 // distruggi
+  
+  from ref 129794 z 1999 label "distruggi" xyz 187 295 3000 to ref 130050
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 130690 transition_ref 129154 // setAtttribute(value)
+  
+  from ref 129794 z 1999 label "setAtttribute(value)" xyz 359 285 3000 to point 461 264
+  line 130818 z 1999 to ref 129026
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 131330 transition_ref 129538 // salvaSuWS()
+  
+  from ref 128770 z 1999 label "salvaSuWS()" xyz 519 225 3000 to point 549 332
+  line 131458 z 1999 to ref 129794
+  write_horizontally default show_definition default drawing_language default
+transitioncanvas 131586 transition_ref 129922 // distruggi
+  
+  from ref 128770 z 1999 label "distruggi" xyz 332 107 3000 to point 202 112
+  line 131714 z 1999 to ref 130050
+  write_horizontally default show_definition default drawing_language default
+end

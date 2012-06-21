@@ -1,0 +1,31 @@
+format 29
+
+subject 128002 "Edita attributi di uno Studente"
+  color lightblue  xyzwh 147 10 2000 340 336
+classcanvas 128130 class_ref 128002 // Utente
+  xyz 67 144 3005 label_xy 71 184
+usecasecanvas 128258 usecase_ref 128002 // Cerca Studente
+  xyzwh 350 39 3005 64 32 label_xy 346 71
+usecasecanvas 128386 usecase_ref 128130 // Edita Attributi di un Insegnante
+  xyzwh 358 179 3005 64 32 label_xy 334 211
+usecasecanvas 128514 usecase_ref 128258 // Cerca Insegnante
+  xyzwh 353 116 3005 64 32 label_xy 343 148
+usecasecanvas 128642 usecase_ref 128386 // Edita Attributi di uno Studente
+  xyzwh 357 269 3005 64 32 label_xy 319 301
+usecasecanvas 128770 usecase_ref 128514 // Cerca Persona
+  xyzwh 203 75 3005 64 32 label_xy 199 107
+usecasecanvas 128898 usecase_ref 128642 // Edita Attributi di una Persona
+  xyzwh 210 217 3005 64 32 label_xy 173 249
+line 129026 ----
+  from ref 128130 z 3004 to ref 128770
+line 129154 ----
+  from ref 128130 z 3004 to ref 128898
+simplerelationcanvas 129282 simplerelation_ref 128002
+  from ref 128258 z 3004 to ref 128770
+simplerelationcanvas 129410 simplerelation_ref 128130
+  from ref 128514 z 3004 to ref 128770
+simplerelationcanvas 129538 simplerelation_ref 128258
+  from ref 128386 z 3004 to ref 128898
+simplerelationcanvas 129666 simplerelation_ref 128386
+  from ref 128642 z 3004 to ref 128898
+end

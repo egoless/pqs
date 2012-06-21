@@ -1,0 +1,16 @@
+class OraLezioneBean
+!!!148784.java!!!	setGiornoSettimana(in giornoSettimana : int) : void
+
+        int oldGiornoSettimana = this.giornoSettimana;
+        this.giornoSettimana = giornoSettimana;
+        propertyChangeSupport.firePropertyChange ("giornoSettimana", new Integer (oldGiornoSettimana), new Integer (giornoSettimana));
+!!!149040.java!!!	setOraGiorno(in oraGiorno : int) : void
+
+        int oldOraGiorno = this.oraGiorno;
+        this.oraGiorno = oraGiorno;
+        propertyChangeSupport.firePropertyChange ("oraGiorno", new Integer (oldOraGiorno), new Integer (oraGiorno));
+!!!149296.java!!!	setExtra(inout extra : ListaAttributi) : void
+
+        ListaAttributi oldExtra = this.extra;
+        this.extra = extra;
+        propertyChangeSupport.firePropertyChange ("extra", oldExtra, extra);

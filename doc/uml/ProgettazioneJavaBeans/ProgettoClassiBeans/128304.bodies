@@ -1,0 +1,16 @@
+class ClasseBean
+!!!131632.java!!!	setAnnoCorso(in annoCorso : int) : void
+
+        int oldAnnoCorso = this.annoCorso;
+        this.annoCorso = annoCorso;
+        propertyChangeSupport.firePropertyChange ("annoCorso", new Integer (oldAnnoCorso), new Integer (annoCorso));
+!!!132016.java!!!	setSezione(in sezione : char) : void
+
+        char oldSezione = this.sezione;
+        this.sezione = sezione;
+        propertyChangeSupport.firePropertyChange ("sezione", new Character (oldSezione), new Character (sezione));
+!!!132272.java!!!	setExtra(inout extra : ListaAttributi) : void
+
+        String oldExtra = this.extra;
+        this.extra = extra;
+        propertyChangeSupport.firePropertyChange ("extra", oldExtra, extra);

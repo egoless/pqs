@@ -1,0 +1,15 @@
+window_sizes 1024 720 318 700 581 82
+diagrams
+  componentdiagram_ref 128263 // Architettura
+    696 561 100 4 0 0
+  active  componentdiagram_ref 128519 // WSDidatticaTest
+    696 561 100 4 0 0
+end
+show_stereotypes
+selected componentdiagram_ref 128519 // WSDidatticaTest
+open
+  componentview_ref 128135 // Architettura
+  classview_ref 128007 // Interfacce
+  componentview_ref 128223 // SchemaTest
+end
+end

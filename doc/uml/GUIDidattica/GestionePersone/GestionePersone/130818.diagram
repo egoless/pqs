@@ -1,0 +1,9 @@
+format 29
+
+classcanvas 128002 class_ref 129282 // GUIFrame
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 23 53 2000
+packagecanvas 128130 
+  package_ref 128258 // nu.mine.egoless.didattica.app.gui
+   color blue  xyzwh 13 13 1995 387 145
+end

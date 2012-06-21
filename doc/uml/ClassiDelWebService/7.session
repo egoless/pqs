@@ -1,0 +1,24 @@
+window_sizes 1275 896 318 957 682 82
+diagrams
+  active  classdiagram_ref 128111 // Interfacce WS
+    951 740 100 4 0 0
+  classdiagram_ref 128033 // Classi principali
+    756 592 100 4 360 104
+end
+show_stereotypes
+selected classview_ref 128002 // Interfacce Web Service
+open
+  class_ref 128673 // Voto
+  class_ref 128219 // WSTipoVoto
+  class_ref 128135 // WSNazione
+  class_ref 128391 // WSClasse
+  class_ref 128647 // WSReligione
+  class_ref 128775 // WSTipoProva
+  class_ref 128080 // ParametriRicercaStudente
+  class_ref 128208 // ParametriRicercaInsegnante
+  class_ref 128336 // ParametriRicercaVoto
+  class_ref 128464 // ParametriRicercaContatto
+  class_ref 128592 // ParametriRicercaAssenza
+  class_ref 128519 // ParametriRicerca
+end
+end

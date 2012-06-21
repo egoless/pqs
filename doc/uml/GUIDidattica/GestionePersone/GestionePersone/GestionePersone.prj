@@ -1,0 +1,1676 @@
+format 29
+"GestionePersone"
+  revision 24
+  modified_by 2 ""
+
+
+  
+  // class settings
+  default_attribute_visibility protected default_relation_visibility protected default_operation_visibility public
+  //class diagram settings
+  draw_all_relations yes hide_attributes no hide_operations no show_members_full_definition no show_members_visibility no package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes shadow yes
+  //use case diagram settings
+  package_name_in_tab no show_context no auto_label_position yes shadow yes
+  //sequence diagram settings
+  show_full_operations_definition no write_horizontally yes drawing_language uml shadow yes
+  //collaboration diagram settings
+  show_full_operations_definition no show_hierarchical_rank no write_horizontally yes drawing_language uml package_name_in_tab no show_context no shadow yes
+  //object diagram settings
+   write_horizontally yes package_name_in_tab no show_context no auto_label_position yes shadow yes
+  //component diagram settings
+  package_name_in_tab no show_context no auto_label_position yes shadow yes
+  draw_component_as_icon no show_component_req_prov no show_component_rea no
+  //deployment diagram settings
+  package_name_in_tab no show_context no write_horizontally yes auto_label_position yes shadow yes
+  draw_component_as_icon no show_component_req_prov no show_component_rea no
+  //state diagram settings
+  package_name_in_tab no show_context no auto_label_position yes write_trans_label_horizontally yes show_trans_definition no shadow yes
+  show_activities yes region_horizontally yes drawing_language uml
+  //activity diagram settings
+  package_name_in_tab no show_context no show_opaque_action_definition no auto_label_position yes write_flow_label_horizontally no shadow yes
+  show_infonote yes drawing_language uml
+  
+  class_color yellow duration_color transparent continuation_color gray note_color blue fragment_color transparent subject_color transparent usecase_color yellow package_color transparent component_color green artifact_color green deploymentnode_color gray state_color yellow stateaction_color transparent activity_color transparent activityregion_color transparent activityaction_color transparent parameterpin_color white 
+  font_size 10
+  diagram_format A4
+
+  mark_for_import
+  
+  usecaseview 128002 "Casi d'uso Gestione Persone"
+    //use case diagram settings
+    package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    usecasediagram 128002 "Gestione Persone"
+      package_name_in_tab default show_context default auto_label_position default shadow default
+      size A4
+    end
+
+    class 128002 "Utente"
+       stereotype "actor"
+      cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    usecase 128002 "Cerca Studente"
+      //use case diagram settings
+      package_name_in_tab default show_context default auto_label_position default shadow default
+      //sequence diagram settings
+      show_full_operations_definition default write_horizontally default drawing_language default shadow default
+      //collaboration diagram settings
+      show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+      //object diagram settings
+       write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+      simplerelation 128002
+	---|>
+	  on usecase_ref 128514 // Cerca Persona
+      end
+    end
+
+    usecase 128130 "Edita Attributi di un Insegnante"
+      //use case diagram settings
+      package_name_in_tab default show_context default auto_label_position default shadow default
+      //sequence diagram settings
+      show_full_operations_definition default write_horizontally default drawing_language default shadow default
+      //collaboration diagram settings
+      show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+      //object diagram settings
+       write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+      simplerelation 128258
+	---|>
+	  on usecase_ref 128642 // Edita Attributi di una Persona
+      end
+    end
+
+    usecase 128258 "Cerca Insegnante"
+      //use case diagram settings
+      package_name_in_tab default show_context default auto_label_position default shadow default
+      //sequence diagram settings
+      show_full_operations_definition default write_horizontally default drawing_language default shadow default
+      //collaboration diagram settings
+      show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+      //object diagram settings
+       write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+      simplerelation 128130
+	---|>
+	  on usecase_ref 128514 // Cerca Persona
+      end
+    end
+
+    usecase 128386 "Edita Attributi di uno Studente"
+      //use case diagram settings
+      package_name_in_tab default show_context default auto_label_position default shadow default
+      //sequence diagram settings
+      show_full_operations_definition default write_horizontally default drawing_language default shadow default
+      //collaboration diagram settings
+      show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+      //object diagram settings
+       write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+      simplerelation 128386
+	---|>
+	  on usecase_ref 128642 // Edita Attributi di una Persona
+      end
+    end
+
+    usecase 128514 "Cerca Persona"
+      //use case diagram settings
+      package_name_in_tab default show_context default auto_label_position default shadow default
+      //sequence diagram settings
+      show_full_operations_definition default write_horizontally default drawing_language default shadow default
+      //collaboration diagram settings
+      show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+      //object diagram settings
+       write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    end
+
+    usecase 128642 "Edita Attributi di una Persona"
+      //use case diagram settings
+      package_name_in_tab default show_context default auto_label_position default shadow default
+      //sequence diagram settings
+      show_full_operations_definition default write_horizontally default drawing_language default shadow default
+      //collaboration diagram settings
+      show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+      //object diagram settings
+       write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    end
+  end
+
+  deploymentview 128130 "Diagramma dei Package della GUI"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default
+    deploymentdiagram 128130 "Diagramma dei Package della GUI"
+      package_name_in_tab default show_context default write_horizontally default auto_label_position default shadow default
+      draw_component_as_icon default show_component_req_prov default show_component_rea default
+      size A4
+    end
+  end
+
+  package_ref 128258 // nu.mine.egoless.didattica.app.gui
+
+  classview 128130 "Diagramma delle Classi Gestione Persone"
+    //class diagram settings
+    draw_all_relations default hide_attributes yes hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    classdiagram 128258 "Diagramma delle classi GUI (Gestione Persone)"
+      draw_all_relations default hide_attributes yes hide_operations yes show_members_full_definition yes show_members_visibility yes package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    class 128130 "GestioneTabPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 131202 "GestioneTabPanel"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+      end
+
+      operation 128002 "getNuovoPannelloSx"
+	protected return_type class_ref 132994 // javax.swing.JPanel
+	nparams 0
+	
+	
+	
+      end
+
+      operation 128130 "getNuovoPannelloDx"
+	protected explicit_return_type "javax.swingJPanelJPanel"
+	nparams 0
+	
+	
+	
+      end
+
+      operation 130434 "getTabbedPaneSx"
+	protected explicit_return_type "javax.swing.JTabbedPane"
+	nparams 0
+	
+	
+	
+      end
+
+      operation 130562 "getTabbedPaneDx"
+	protected explicit_return_type "javax.swing.JTabbedPane"
+	nparams 0
+	
+	
+	
+      end
+
+      operation 128386 "apriNuovoPannelloSx"
+	public explicit_return_type "void"
+	nparams 0
+	
+	
+	
+      end
+
+      operation 128514 "apriNuovoPannelloDx"
+	public explicit_return_type "void"
+	nparams 0
+	
+	
+	
+      end
+
+      operation 128898 "chiudiPannelloSx"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "" type class_ref 132994 // javax.swing.JPanel
+	
+	
+	
+      end
+
+      operation 128770 "chiudiPannelloDx"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "javax.swingJPanelJPanel"
+	
+	
+	
+      end
+
+      classrelation 130178 // <aggregation by value>
+	relation_ref 129410 // <aggregation by value>
+      end
+
+      attribute 129410 "jtabpSx"
+	private explicit_type "jTabbedPane"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      attribute 129282 "jtabpDx"
+	private explicit_type "jTabbedPane"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      attribute 129666 "jpnlBarraDiStato"
+	private explicit_type "barraDiStatoPanel"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      operation 130946 "resetBarraUpload"
+	public explicit_return_type "void"
+	nparams 0
+	
+	
+	
+      end
+
+      operation 131074 "resetBarraDownload"
+	public explicit_return_type "void"
+	nparams 0
+	
+	
+	
+      end
+
+      classrelation 138370 // <generalisation>
+	relation 135170 ---|>
+	  a public
+	    classrelation_ref 138370 // <generalisation>
+	  b parent class_ref 132994 // javax.swing.JPanel
+      end
+
+      classrelation 138498 // <generalisation>
+	relation 135298 ---|>
+	  a public
+	    classrelation_ref 138498 // <generalisation>
+	  b parent class_ref 134146 // nu.mine.egoless.app.didattica.gui.componentiComuni.BarraDiStatoCompatibile
+      end
+    end
+
+    class 128258 "RicercaPersonaPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 129922 "getAncestor"
+	public return_type class_ref 128258 // RicercaPersonaPanel
+	nparams 0
+	
+	
+	
+      end
+
+      classrelation 136962 // <generalisation>
+	relation 133762 ---|>
+	  a public
+	    classrelation_ref 136962 // <generalisation>
+	  b parent class_ref 132994 // javax.swing.JPanel
+      end
+
+      attribute 129538 "jpnlAncestor"
+	private type class_ref 128130 // GestioneTabPanel
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      operation 132098 "RicercaPersonaPanel"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "jpnlAncestor" type class_ref 128130 // GestioneTabPanel
+	
+	
+	
+      end
+    end
+
+    class 128386 "GestioneTabStudentiPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 129410 "getNuovoPannelloSx"
+	protected return_type class_ref 129026 // RicercaStudentiPanel
+	nparams 0
+	
+	
+	
+      end
+
+      operation 129538 "getNuovoPannelloDx"
+	protected return_type class_ref 128642 // GestioneStudentePanel
+	nparams 0
+	
+	
+	
+      end
+
+      operation 129666 "getNuovoPannelloDx"
+	protected return_type class_ref 128642 // GestioneStudentePanel
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	
+	
+      end
+
+      classrelation 128514 // <aggregation by value>
+	relation 128386 *---
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 128514 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 128642 // <aggregation by value>
+      end
+
+      classrelation 129026 // <aggregation by value>
+	relation 128642 *---
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 129026 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 129154 // <aggregation by value>
+      end
+
+      classrelation 130306 // <aggregation by value>
+	relation 129538 *---
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 130306 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 130434 // <aggregation by value>
+      end
+
+      operation 131842 "GestioneTabStudentiPanel"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+      end
+
+      classrelation 138242 // <generalisation>
+	relation 135042 ---|>
+	  a public
+	    classrelation_ref 138242 // <generalisation>
+	  b parent class_ref 134274 // GestionTabPersonePanel
+      end
+
+      classrelation 138882 // <generalisation>
+	relation 135682 ---|>
+	  a public
+	    classrelation_ref 138882 // <generalisation>
+	  b parent class_ref 134402 // GestioneTabPersonaPanel
+      end
+    end
+
+    class 128514 "GestioneTabInsegnantiPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 129026 "getNuovoPannelloSx"
+	protected return_type class_ref 128898 // RicercaInsegnantiPanel
+	nparams 0
+	
+	
+	
+      end
+
+      operation 129154 "getNuovoPannelloDx"
+	protected return_type class_ref 128770 // GestioneInsegnantePanel
+	nparams 0
+	
+	
+	
+      end
+
+      operation 129282 "getNuovoPannelloDx"
+	protected return_type class_ref 128770 // GestioneInsegnantePanel
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	
+	
+      end
+
+      classrelation 128258 // <aggregation by value>
+	relation 128258 *---
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 128258 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 128386 // <aggregation by value>
+      end
+
+      classrelation 128770 // <aggregation by value>
+	relation 128514 *---
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 128770 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 128898 // <aggregation by value>
+      end
+
+      classrelation 129538 // <aggregation by value>
+	relation 129026 *---
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 129538 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 129666 // <aggregation by value>
+      end
+
+      operation 131970 "GestioneTabInsegnantiPanel"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+      end
+
+      classrelation 138114 // <generalisation>
+	relation 134914 ---|>
+	  a public
+	    classrelation_ref 138114 // <generalisation>
+	  b parent class_ref 134274 // GestionTabPersonePanel
+      end
+
+      classrelation 138754 // <generalisation>
+	relation 135554 ---|>
+	  a public
+	    classrelation_ref 138754 // <generalisation>
+	  b parent class_ref 134402 // GestioneTabPersonaPanel
+      end
+    end
+
+    class 128642 "GestioneStudentePanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128642 // <aggregation by value>
+	relation_ref 128386 // <aggregation by value>
+      end
+
+      classrelation 129410 // <generalisation>
+	relation 128898 ---|>
+	  a public
+	    classrelation_ref 129410 // <generalisation>
+	  b parent class_ref 129154 // GestionePersonaPanel
+      end
+
+      classrelation 130434 // <aggregation by value>
+	relation_ref 129538 // <aggregation by value>
+      end
+
+      classrelation 130818 // <aggregation by value>
+	relation 129794 *---
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 130818 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 130946 // <aggregation by value>
+      end
+
+      classrelation 131202 // <directional aggregation by value>
+	relation 130050 *-->
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 131202 // <directional aggregation by value>
+	  b parent class_ref 129410 // GestioneDatiAnagraficiPanel
+      end
+
+      classrelation 131458 // <directional aggregation by value>
+	relation 130306 *-->
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 131458 // <directional aggregation by value>
+	  b parent class_ref 129666 // GestioneDatiStudentePanel
+      end
+
+      attribute 128130 "studenteBean"
+	private explicit_type "studenteBean"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      operation 133122 "GestioneStudentePanel"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "jpnlAncestor" type class_ref 128386 // GestioneTabStudentiPanel
+	
+	
+	
+      end
+
+      operation 133250 "GestioneStudentePanel"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "jpnlAncestor" type class_ref 128386 // GestioneTabStudentiPanel
+	  param in name "id" explicit_type "long"
+	
+	
+	
+      end
+    end
+
+    class 128770 "GestioneInsegnantePanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128386 // <aggregation by value>
+	relation_ref 128258 // <aggregation by value>
+      end
+
+      classrelation 129282 // <generalisation>
+	relation 128770 ---|>
+	  a public
+	    classrelation_ref 129282 // <generalisation>
+	  b parent class_ref 129154 // GestionePersonaPanel
+      end
+
+      classrelation 129666 // <aggregation by value>
+	relation_ref 129026 // <aggregation by value>
+      end
+
+      classrelation 130562 // <aggregation by value>
+	relation 129666 *---
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 130562 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 130690 // <aggregation by value>
+      end
+
+      classrelation 131074 // <directional aggregation by value>
+	relation 129922 *-->
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 131074 // <directional aggregation by value>
+	  b parent class_ref 129410 // GestioneDatiAnagraficiPanel
+      end
+
+      classrelation 131330 // <directional aggregation by value>
+	relation 130178 *-->
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 131330 // <directional aggregation by value>
+	  b parent class_ref 129538 // GestioneDatiInsegnantePanel
+      end
+
+      attribute 128258 "insegnanteBean"
+	private explicit_type "insegnanteBean"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      operation 133378 "GestioneInsegnantePanel"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "jpnlAncestor" type class_ref 133122 // GestioneTabInsegnantiPanel
+	
+	
+	
+      end
+
+      operation 133506 "GestioneInsegnantePanel"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "jpnlAncestor" type class_ref 133122 // GestioneTabInsegnantiPanel
+	  param in name "id" explicit_type "long"
+	
+	
+	
+      end
+    end
+
+    class 128898 "RicercaInsegnantiPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128898 // <aggregation by value>
+	relation_ref 128514 // <aggregation by value>
+      end
+
+      classrelation 129794 // <generalisation>
+	relation 129154 ---|>
+	  a public
+	    classrelation_ref 129794 // <generalisation>
+	  b parent class_ref 128258 // RicercaPersonaPanel
+      end
+
+      attribute 128898 "bean"
+	private explicit_type "InsegnantiBean"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      operation 132226 "RicercaInsegnantiPanel"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "jpnlAncestor" type class_ref 133122 // GestioneTabInsegnantiPanel
+	
+	
+	
+      end
+
+      operation 132482 "getAncestor"
+	public return_type class_ref 133122 // GestioneTabInsegnantiPanel
+	nparams 0
+	
+	
+	
+      end
+    end
+
+    class 129026 "RicercaStudentiPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 129154 // <aggregation by value>
+	relation_ref 128642 // <aggregation by value>
+      end
+
+      classrelation 129922 // <generalisation>
+	relation 129282 ---|>
+	  a public
+	    classrelation_ref 129922 // <generalisation>
+	  b parent class_ref 128258 // RicercaPersonaPanel
+      end
+
+      attribute 129026 "bean"
+	private explicit_type "StudentiBean"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      operation 132354 "RicercaStudentiPanel"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "jpnlAncestor" type class_ref 128386 // GestioneTabStudentiPanel
+	
+	
+	
+      end
+
+      operation 132610 "getAncestor"
+	public return_type class_ref 128386 // GestioneTabStudentiPanel
+	nparams 0
+	
+	
+	
+      end
+    end
+
+    class 129154 "GestionePersonaPanel"
+      abstract 
+      cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128386 "personaBean"
+	private explicit_type "PersonaBean"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      classrelation 137090 // <generalisation>
+	relation 133890 ---|>
+	  a public
+	    classrelation_ref 137090 // <generalisation>
+	  b parent class_ref 132994 // javax.swing.JPanel
+      end
+
+      operation 132994 "GestionePersonaPanel"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "jpnlAncestor" type class_ref 128130 // GestioneTabPanel
+	
+	
+	
+      end
+
+      operation 134402 "getId"
+	abstract cpp_virtual public explicit_return_type "long"
+	nparams 0
+	
+	
+	
+      end
+
+      operation 129794 "getAncestor"
+	public return_type class_ref 128130 // GestioneTabPanel
+	nparams 0
+	
+	
+	
+      end
+    end
+
+    class 129282 "GUIFrame"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 130050 // <aggregation by value>
+	relation 129410 *---
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 130050 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 130178 // <aggregation by value>
+      end
+
+      operation 136194 "GUIFrame"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+      end
+
+      operation 136322 "addTab"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "title" explicit_type "String"
+	  param inout name "component" type class_ref 132354 // java.awt.Component
+	
+	
+	
+      end
+
+      operation 136450 "removeTab"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "component" type class_ref 132354 // java.awt.Component
+	
+	
+	
+      end
+    end
+
+    class 129410 "GestioneDatiAnagraficiPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 130690 // <aggregation by value>
+	relation_ref 129666 // <aggregation by value>
+      end
+
+      classrelation 130946 // <aggregation by value>
+	relation_ref 129794 // <aggregation by value>
+      end
+
+      attribute 128770 "personaBean"
+	private type class_ref 129794 // PersonaBean
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      classrelation 135810 // <association>
+	relation 132738 ----
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 135810 // <association>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 135938 // <association>
+      end
+
+      classrelation 136322 // <generalisation>
+	relation 133122 ---|>
+	  a public
+	    classrelation_ref 136322 // <generalisation>
+	  b parent class_ref 132994 // javax.swing.JPanel
+      end
+
+      operation 130178 "GestioneDatiAnagraficiPanel"
+	public explicit_return_type ""
+	nparams 4
+	  param in name "" type class_ref 129794 // PersonaBean
+	  param in name "" explicit_type "ContattoBean"
+	  param in name "" explicit_type "ReligioniBean"
+	  param inout name "" explicit_type "NazioniBean"
+	
+	
+	
+      end
+    end
+
+    class 129538 "GestioneDatiInsegnantePanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128642 "insegnanteBean"
+	private explicit_type "insegnanteBean"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      classrelation 137346 // <generalisation>
+	relation 134146 ---|>
+	  a public
+	    classrelation_ref 137346 // <generalisation>
+	  b parent class_ref 132994 // javax.swing.JPanel
+      end
+
+      operation 132738 "GestioneDatiInsegnantePanel"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "" type class_ref 129922 // InsegnanteBean
+	
+	
+	
+      end
+    end
+
+    class 129666 "GestioneDatiStudentePanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128514 "studenteBean"
+	private explicit_type "studenteBean"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      classrelation 137218 // <generalisation>
+	relation 134018 ---|>
+	  a public
+	    classrelation_ref 137218 // <generalisation>
+	  b parent class_ref 132994 // javax.swing.JPanel
+      end
+
+      operation 132866 "GestioneDatiStudentePanel"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "" type class_ref 130050 // StudenteBean
+	
+	
+	
+      end
+    end
+
+    class 129794 "PersonaBean"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 129922 "InsegnanteBean"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 131714 // <generalisation>
+	relation 130562 ---|>
+	  a public
+	    classrelation_ref 131714 // <generalisation>
+	  b parent class_ref 129794 // PersonaBean
+      end
+    end
+
+    class 130050 "StudenteBean"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 131586 // <generalisation>
+	relation 130434 ---|>
+	  a public
+	    classrelation_ref 131586 // <generalisation>
+	  b parent class_ref 129794 // PersonaBean
+      end
+    end
+
+    class 134402 "GestioneTabPersonaPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 138626 // <generalisation>
+	relation 135426 ---|>
+	  a public
+	    classrelation_ref 138626 // <generalisation>
+	  b parent class_ref 128130 // GestioneTabPanel
+      end
+    end
+  end
+
+  package_ref 128770 // nu.mine.egoless.didattica.app.bean
+
+  classview 128258 "MVC"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    collaborationdiagram 128770 "Collaboration MVC"
+      show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+      size A4
+    end
+
+    class 131586 "java.awt.Containet"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 131714 "java.util.EventListener"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 131842 "ActionListener"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 133250 // <aggregation by value>
+	relation_ref 131330 // <aggregation by value>
+      end
+
+      classrelation 134146 // <association>
+	relation 131842 ----
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 134146 // <association>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 134274 // <association>
+      end
+
+      classrelation 134786 // <association>
+	relation_ref 132098 // <association>
+      end
+
+      classrelation 135042 // <association>
+	relation_ref 132226 // <association>
+      end
+
+      classrelation 135298 // <aggregation by value>
+	relation_ref 132354 // <aggregation by value>
+      end
+
+      classrelation 135554 // <association>
+	relation_ref 132482 // <association>
+      end
+
+      classrelation 135682 // (<<nested>>)
+	relation 132610 ---> name "<<nested>>"
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 135682 // (<<nested>>)
+	  b parent class_ref 132226 // java.awt.Container
+      end
+
+      classrelation 137474 // <unidirectional association>
+	relation 134274 --->
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 137474 // <unidirectional association>
+	  b parent class_ref 132482 // Bean
+      end
+    end
+
+    class 131970 "java.util.ActionListener"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 132098 "java.beans.PropertyChangeListener"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    classdiagram 128898 "Class Diagram MVC"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    class 132226 "java.awt.Container"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 131842 // <association>
+	relation 130690 ----
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 131842 // <association>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 131970 // <association>
+      end
+
+      classrelation 132098 // <association>
+	relation 130818 ----
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 132098 // <association>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 132226 // <association>
+      end
+
+      classrelation 132866 // <aggregation by value>
+	relation 131202 *---
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 132866 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 132994 // <aggregation by value>
+      end
+
+      classrelation 133634 // <aggregation>
+	relation 131586 o---
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 133634 // <aggregation>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 133762 // <aggregation>
+      end
+
+      classrelation 134914 // <association>
+	relation 132226 ----
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 134914 // <association>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 135042 // <association>
+      end
+
+      classrelation 135426 // <association>
+	relation 132482 ----
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 135426 // <association>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 135554 // <association>
+      end
+    end
+
+    class 132354 "java.awt.Component"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 131970 // <association>
+	relation_ref 130690 // <association>
+      end
+
+      classrelation 132994 // <aggregation by value>
+	relation_ref 131202 // <aggregation by value>
+      end
+
+      classrelation 133122 // <aggregation by value>
+	relation 131330 *---
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 133122 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 133250 // <aggregation by value>
+      end
+
+      classrelation 134402 // <aggregation by value>
+	relation 131970 *---
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 134402 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 134530 // <aggregation by value>
+      end
+
+      classrelation 134530 // <aggregation by value>
+	relation_ref 131970 // <aggregation by value>
+      end
+
+      classrelation 134658 // <association>
+	relation 132098 ----
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 134658 // <association>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 134786 // <association>
+      end
+
+      classrelation 135170 // <aggregation by value>
+	relation 132354 *---
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 135170 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 135298 // <aggregation by value>
+      end
+    end
+
+    class 132482 "Bean"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 132226 // <association>
+	relation_ref 130818 // <association>
+      end
+
+      classrelation 132610 // <association>
+	relation 131074 ----
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 132610 // <association>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 132738 // <association>
+      end
+
+      classrelation 133378 // <aggregation by value>
+	relation 131458 *---
+	  a role_name "" multiplicity "*" protected
+	    classrelation_ref 133378 // <aggregation by value>
+	  b role_name "" multiplicity "" protected
+	    classrelation_ref 133506 // <aggregation by value>
+      end
+
+      classrelation 133762 // <aggregation>
+	relation_ref 131586 // <aggregation>
+      end
+
+      classrelation 134274 // <association>
+	relation_ref 131842 // <association>
+      end
+    end
+
+    class 132610 "PropertyChangeListener"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 132738 // <association>
+	relation_ref 131074 // <association>
+      end
+
+      classrelation 133506 // <aggregation by value>
+	relation_ref 131458 // <aggregation by value>
+      end
+
+      classrelation 133890 // (<<nested>>)
+	relation 131714 ---> name "<<nested>>"
+	  a role_name "" multiplicity "" protected
+	    classrelation_ref 133890 // (<<nested>>)
+	  b parent class_ref 132226 // java.awt.Container
+      end
+    end
+
+    sequencediagram 130562 "Sequence Diagram6"
+      show_full_operations_definition default write_horizontally default drawing_language default shadow default
+      size A4
+    end
+
+    class 133378 "Container"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 133506 "Component"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 133634 "Autente"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 133762 "User"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 134018 "0"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+  end
+
+  classview 128386 "Classi Gestione Persone"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition yes show_members_visibility yes package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    classdiagram 129026 "ContattoDialog"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    class 132738 "GestioneContattoDialog"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 135938 // <association>
+	relation_ref 132738 // <association>
+      end
+
+      attribute 129154 "contattoBean"
+	private explicit_type "contattoBean"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      classrelation 136194 // <generalisation>
+	relation 132994 ---|>
+	  a public
+	    classrelation_ref 136194 // <generalisation>
+	  b parent class_ref 132866 // javax.swing.JDialog
+      end
+
+      operation 130050 "GestioneContattoDialog"
+	public explicit_return_type ""
+	nparams 3
+	  param in name "parent" explicit_type "javax.awt.Frame"
+	  param in name "modal" explicit_type "boolean"
+	  param inout name "" explicit_type "ContattoBean"
+	
+	
+	
+      end
+    end
+
+    classdiagram 129154 "GestioneDatiAnagraficiPanel"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    class 132866 "javax.swing.JDialog"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 132994 "javax.swing.JPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    classdiagram 129282 "GestioneTabPanel"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A3
+    end
+
+    class 133122 "GestioneTabInsegnantiPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    classdiagram 129666 "RicercaPersonaPanel"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    class 133250 "RicercaStudentPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    classdiagram 129794 "GestionePersonaPanel"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    classdiagram 129922 "GestioneDatiStudentePanel"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    classdiagram 130050 "GestioneDatiInsenantePanel"
+      draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    class 134146 "nu.mine.egoless.app.didattica.gui.componentiComuni.BarraDiStatoCompatibile"
+      abstract 
+      cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 134274 "GestionTabPersonePanel"
+      abstract 
+      cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 131330 "GestioneTabPersonePanel"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+      end
+
+      operation 134274 "getNuovoPannelloDx"
+	abstract cpp_virtual public return_type class_ref 132994 // javax.swing.JPanel
+	nparams 1
+	  param inout name "id" explicit_type "long"
+	
+	
+	
+      end
+
+      operation 131458 "apriNuovoPannelloDx"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	
+	
+      end
+
+      operation 131586 "isAperto"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "id" explicit_type "long"
+	
+	
+	
+      end
+
+      classrelation 137730 // <generalisation>
+	relation 134530 ---|>
+	  a public
+	    classrelation_ref 137730 // <generalisation>
+	  b parent class_ref 128130 // GestioneTabPanel
+      end
+    end
+  end
+
+  package_ref 128898 // DiagrammiDiStato
+
+  classview 128642 "ComponentiComuni"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    classdiagram 130690 "Diagram3"
+      draw_all_relations default hide_attributes no hide_operations no show_members_full_definition yes show_members_visibility yes package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    class 134530 "BarraDiStatoCompatibile"
+      abstract 
+      cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 133634 "setTesto"
+	abstract cpp_virtual public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "String"
+	
+	
+	
+      end
+
+      operation 133762 "setUploadValue"
+	abstract cpp_virtual public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "int"
+	
+	
+	
+      end
+
+      operation 133890 "setDownloadValue"
+	abstract cpp_virtual public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "int"
+	
+	
+	
+      end
+
+      operation 134018 "setUploadIndeterminato"
+	abstract cpp_virtual public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "boolean"
+	
+	
+	
+      end
+
+      operation 134146 "setDownloadIndeterminato"
+	abstract cpp_virtual public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "boolean"
+	
+	
+	
+      end
+    end
+
+    class 134658 "BarraDIStatoPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 139010 // <generalisation>
+	relation 135810 ---|>
+	  a public
+	    classrelation_ref 139010 // <generalisation>
+	  b parent class_ref 134530 // BarraDiStatoCompatibile
+      end
+
+      operation 135170 "BarraDiStatoPanel"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+      end
+
+      attribute 129794 "jprgUpload"
+	private explicit_type "JProgressBar"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      attribute 129922 "jprgDownload"
+	private explicit_type "JProgressBar"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+
+      attribute 130050 "jlblStato"
+	private explicit_type "jLabel"
+	cpp_decl ""
+	java_decl ""
+	idl_decl ""
+      end
+    end
+
+    class 134786 "ButtonTabComponent"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 135298 "ButtonTabComponent"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "title" explicit_type "String"
+	  param in name "pane" explicit_type "jTabedPane"
+	
+	
+	
+      end
+
+      operation 135426 "paintComponent"
+	protected explicit_return_type "void"
+	nparams 1
+	  param in name "g" explicit_type "Graphics"
+	
+	
+	
+      end
+    end
+
+    class 134914 "DataPanel"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 135554 "DataPanel"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+      end
+
+      operation 135682 "getDataSelezionata"
+	public explicit_return_type "java.util.Date"
+	nparams 0
+	
+	
+	
+      end
+
+      operation 135810 "setDate"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "" explicit_type "java.util.Date"
+	
+	
+	
+      end
+    end
+
+    class 135042 "UtilitaGUI"cpp_decl ""
+      java_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 135938 "initTabComponent"
+	class_operation public explicit_return_type "void"
+	nparams 3
+	  param in name "" explicit_type "jTabbedPane"
+	  param in name "" explicit_type "jPanel"
+	  param in name "" explicit_type "String"
+	
+	
+	
+      end
+
+      operation 136066 "messaggioWSNonRaggiungibile"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "parent" type class_ref 132354 // java.awt.Component
+	
+	
+	
+      end
+    end
+  end
+
+  classview 128770 "GUIFrame"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default shadow default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default shadow default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default drawing_language default shadow default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default shadow default
+    show_activities default region_horizontally default drawing_language default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default shadow default
+    show_infonote default drawing_language default
+    
+    classdiagram 130818 "Diagram2"
+      draw_all_relations default hide_attributes no hide_operations no show_members_full_definition yes show_members_visibility yes package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+      size A4
+    end
+
+    sequencediagram 128007 "Sequence Diagram1"
+      show_full_operations_definition default write_horizontally default drawing_language default shadow default
+      size A4
+    end
+  end
+end

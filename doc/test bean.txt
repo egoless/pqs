@@ -1,0 +1,34 @@
+Test dei bean
+
+0 = restituisci null
+1 = restituisci ciò che c'è nel DB
+>1 (2) = restituisci dati fittizi
+
+NazioniBean, ReligioniBean
+ * lettura numero di elementi con
+   * bean appena creato
+   * caricamento array vuoto
+   * caricamento array pieno
+ * recupero elemento in una data posizione con
+   * bean appena creato: posizione 0
+   * caricamento array vuoto: posizione 0
+   * caricamento array pieno: recupero posizione -1 ,0, numero di elementi, numero di elementi+2, uno in mezzo (tipicamente 1)
+   nelle posizioni:
+ * caricamento array da WS: controllo lancio eventi
+
+TipoVoto
+ * test get di ogni proprietà
+ * test set di ogni proprietà: lancio evento nel passaggio tra due valori, nel passaggio tra null e un valore, nel passagio da un valore a null, nel non passaggio allo stesso valore, nel non passaggio a null (i test con null ove possibile)
+ * test salvataggio: controllo assegnamento ID ed avvenuta creazione oggetto (senza controllo valori)
+ * test cancellazione: controllo effettiva cancellazione di un oggetto esistente (non ha senso testare  la cancellazione di un elemento non esistente, dato che questa eventualità non genera alcun errore).
+ 
+TipiVoti: come NazioniBean ed in più
+ * cancellazione di un elemento:
+   * cancellazione dell'elemento di indice -1: non cambia il numero di elementi, non viene lanciato l'evento
+   * cancellazione dell'elemento di indice numero_di_elementi: non cambia il numero di elementi, non viene lanciato l'evento
+   * cancellazione dell'elemento di indice 1: cambia il numero di elementi, viene lanciato l'evento, non troviamo più l'elemento eliminato
+ * sostituzione di un elemento
+   * sostituzione di un elemento di indice -1: non viene lanciato l'evento
+   * sostituzione di un elemento di indice numero_di_elementi: non viene lanciato l'evento
+   * sostituzione di un elemento di indice 1: viene lanciato l'evento, il nuovo elemento è presente nella posizione prescelta, il vecchio elemento non è più presente
+   

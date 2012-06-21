@@ -1,0 +1,44 @@
+format 29
+
+classcanvas 128007 class_ref 128519 // ParametriRicerca
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 229 162 2010
+packagecanvas 128720 
+  package_ref 128033 // nu.mine.egoless.didattica
+   color blue  xyzwh 13 15 2000 539 321
+classcanvas 128848 class_ref 128080 // ParametriRicercaStudente
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 37 73 2005
+classcanvas 128976 class_ref 128208 // ParametriRicercaDocente
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 375 78 2005
+classcanvas 129104 class_ref 128336 // ParametriRicercaVoto
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 225 43 2005
+classcanvas 129232 class_ref 128464 // ParametriRicercaContatto
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 379 226 2010
+classcanvas 129360 class_ref 128592 // ParametriRicercaAssenza
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 46 199 2010
+relationcanvas 128135 relation_ref 128007 // <generalisation>
+  from ref 129104 z 2004 to ref 128007
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128263 relation_ref 128135 // <generalisation>
+  from ref 128848 z 2004 to ref 128007
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128391 relation_ref 128263 // <generalisation>
+  from ref 129360 z 2009 to ref 128007
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128519 relation_ref 128391 // <generalisation>
+  from ref 128976 z 2004 to ref 128007
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+relationcanvas 128647 relation_ref 128519 // <generalisation>
+  from ref 129232 z 2009 to ref 128007
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end

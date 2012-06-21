@@ -1,0 +1,100 @@
+format 29
+
+classinstance 128007 class_ref 128002 // Utente
+  name "" xyz 117 14 2005 life_line_z 2000
+classinstance 128135 class_ref 129282 // GUIFrame
+  name "" xyz 349 18 2000 life_line_z 2000
+fragment 129799 ""
+  xyzwh 92 137 3005 327 180
+  separator 5000
+end
+fragment 130183 ""
+  xyzwh 92 384 3005 323 145
+  separator 5000
+end
+fragment 130823 "Gestione Persona"
+  xyzwh 12 8 1975 488 546
+end
+durationcanvas 128263 classinstance_ref 128007 // :Utente
+  xyzwh 130 68 2010 11 470
+durationcanvas 128391 classinstance_ref 128135 // :GUIFrame
+  xyzwh 372 68 2010 11 468
+msg 128519 synchronous
+  from durationcanvas_ref 128263 // 128007
+  to durationcanvas_ref 128391 // 128135
+  yz 68 2000 explicitmsg "*[i:=1...n] inserisci parametri"
+  show_full_operations_definition default drawing_language default
+  label_xy 185 54
+msg 128647 synchronous
+  from durationcanvas_ref 128263 // 128007
+  to durationcanvas_ref 128391 // 128135
+  yz 93 2000 explicitmsg "effettua ricerca"
+  show_full_operations_definition default drawing_language default
+  label_xy 223 80
+msg 128903 return
+  from durationcanvas_ref 128391 // 128135
+  to durationcanvas_ref 128263 // 128007
+  yz 117 2000 explicitmsg "visualizzazione risultati"
+  show_full_operations_definition default drawing_language default
+  label_xy 208 104
+msg 129031 synchronous
+  from durationcanvas_ref 128263 // 128007
+  to durationcanvas_ref 128391 // 128135
+  yz 158 2000 explicitmsg "*[i:=1...m] seleziona persona"
+  show_full_operations_definition default drawing_language default
+  label_xy 188 146
+msg 129159 synchronous
+  from durationcanvas_ref 128263 // 128007
+  to durationcanvas_ref 128391 // 128135
+  yz 183 2000 explicitmsg "modifica selezioni"
+  show_full_operations_definition default drawing_language default
+  label_xy 222 171
+msg 129287 return
+  from durationcanvas_ref 128391 // 128135
+  to durationcanvas_ref 128263 // 128007
+  yz 211 2000 explicitmsg "*[i:=1...m] apri pannello gestione persona"
+  show_full_operations_definition default drawing_language default
+  label_xy 160 199
+msg 129415 synchronous
+  from durationcanvas_ref 128263 // 128007
+  to durationcanvas_ref 128391 // 128135
+  yz 346 2000 explicitmsg "modifica dati"
+  show_full_operations_definition default drawing_language default
+  label_xy 229 330
+msg 129543 synchronous
+  from durationcanvas_ref 128263 // 128007
+  to durationcanvas_ref 128391 // 128135
+  yz 405 2000 explicitmsg "salva dati"
+  show_full_operations_definition default drawing_language default
+  label_xy 240 393
+msg 129927 synchronous
+  from durationcanvas_ref 128263 // 128007
+  to durationcanvas_ref 128391 // 128135
+  yz 249 2000 explicitmsg "nuova persona"
+  show_full_operations_definition default drawing_language default
+  label_xy 225 237
+msg 130055 return
+  from durationcanvas_ref 128391 // 128135
+  to durationcanvas_ref 128263 // 128007
+  yz 279 2000 explicitmsg "apri pannello gestione nuova persona"
+  show_full_operations_definition default drawing_language default
+  label_xy 172 267
+msg 130439 synchronous
+  from durationcanvas_ref 128391 // 128135
+  to durationcanvas_ref 128263 // 128007
+  yz 433 2000 explicitmsg "salvataggio completato"
+  show_full_operations_definition default drawing_language default
+  label_xy 208 421
+msg 130567 synchronous
+  from durationcanvas_ref 128263 // 128007
+  to durationcanvas_ref 128391 // 128135
+  yz 477 2000 explicitmsg "elimina dati"
+  show_full_operations_definition default drawing_language default
+  label_xy 237 464
+msg 130695 synchronous
+  from durationcanvas_ref 128391 // 128135
+  to durationcanvas_ref 128263 // 128007
+  yz 509 2000 explicitmsg "dati eliminati"
+  show_full_operations_definition default drawing_language default
+  label_xy 236 496
+end

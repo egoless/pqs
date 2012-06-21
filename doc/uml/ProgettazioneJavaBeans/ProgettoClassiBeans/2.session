@@ -1,0 +1,13 @@
+window_sizes 960 672 240 720 512 82
+diagrams
+  classdiagram_ref 128545 // DiagramIndirizzoStudi
+    567 412 100 4 0 0
+  active  classdiagram_ref 128929 // DiagramMateriaInsegnamento
+    567 412 100 4 0 0
+end
+show_stereotypes
+selected classdiagram_ref 128929 // DiagramMateriaInsegnamento
+open
+  classview_ref 128432 // VisioneBeans
+end
+end

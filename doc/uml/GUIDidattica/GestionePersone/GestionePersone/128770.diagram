@@ -1,0 +1,23 @@
+format 29
+
+classinstance 128386 class_ref 131970 // java.util.ActionListener
+  xyz 415 223 2010 name ""  xyz 415 223 2010
+classinstance 130050 class_ref 132098 // java.beans.PropertyChangeListener
+  xyz 49 225 2010 name ""  xyz 49 225 2010
+fragment 132354 "View"
+  color lightblue xyzwh 5 65 995 629 97
+end
+fragment 132482 "controller"
+  color lightred xyzwh 5 188 995 629 94
+end
+fragment 132610 "Model"
+  color lightgreen xyzwh 4 312 995 631 84
+end
+classinstance 133762 class_ref 132226 // java.awt.Container
+  xyz 90 103 2000 name ""  xyz 90 103 2000
+classinstance 133890 class_ref 132354 // java.awt.Component
+  xyz 412 101 2000 name ""  xyz 412 101 2000
+classinstance 134018 class_ref 132482 // Bean
+  xyz 289 336 2000 name ""  xyz 289 336 2000
+no_msg
+end

@@ -1,0 +1,16 @@
+format 29
+
+classcanvas 128002 class_ref 128514 // GestioneTabInsegnantiPanel
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 113 165 2000
+packagecanvas 128130 
+  package_ref 128386 // egoless.mine.nu.didattica.app.gui.gestionePersone
+   color blue  xyzwh 93 113 1994 372 146
+classcanvas 128642 class_ref 132994 // javax.swing.JPanel
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 212 54 2005
+relationcanvas 128770 relation_ref 133634 // <generalisation>
+  from ref 128002 z 1999 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end

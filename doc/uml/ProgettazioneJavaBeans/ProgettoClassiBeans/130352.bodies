@@ -1,0 +1,21 @@
+class VotoBean
+!!!163632.java!!!	setId(in id : long) : void
+
+        long oldId = this.id;
+        this.id = id;
+        propertyChangeSupport.firePropertyChange ("id", new Long (oldId), new Long (id));
+!!!163888.java!!!	setDataOra(inout dataOra : Date) : void
+
+        Date oldDataOra = this.dataOra;
+        this.dataOra = dataOra;
+        propertyChangeSupport.firePropertyChange ("dataOra", oldDataOra, dataOra);
+!!!164144.java!!!	setValore(in valore : int) : void
+
+        int oldValore = this.valore;
+        this.valore = valore;
+        propertyChangeSupport.firePropertyChange ("valore", new Integer (oldValore), new Integer (valore));
+!!!164400.java!!!	setExtra(inout extra : ListaAttributi) : void
+
+        ListaAttributi oldExtra = this.extra;
+        this.extra = extra;
+        propertyChangeSupport.firePropertyChange ("extra", oldExtra, extra);

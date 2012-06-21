@@ -1,0 +1,54 @@
+format 29
+
+packagecanvas 128095 
+  package_ref 128095 // SchemaGeneraleTest
+   color white  xyzwh 25 13 2000 574 377
+componentcanvas 128223 component_ref 128095 // WSDidattica_driver
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color gold
+  xyzwh 43 151 2005 143 51
+componentcanvas 128479 component_ref 128223 // WSDidattica
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color darkgreen
+  xyzwh 42 231 2005 143 51
+componentcanvas 128607 component_ref 128351 // API_stub
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color gold
+  xyzwh 42 316 2005 143 51
+componentcanvas 128991 component_ref 128479 // Test
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color gold
+  xyzwh 233 72 2005 143 51
+componentcanvas 129119 component_ref 128607 // JavaBeans
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color darkgreen
+  xyzwh 234 150 2005 143 51
+componentcanvas 129247 component_ref 128735 // WSDidattica_stub
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color gold
+  xyzwh 234 232 2005 143 51
+componentcanvas 129375 component_ref 128607 // JavaBeans
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color darkgreen
+  xyzwh 429 151 2005 143 51
+componentcanvas 129503 component_ref 128223 // WSDidattica
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color darkgreen
+  xyzwh 429 233 2005 143 51
+componentcanvas 129631 component_ref 128351 // API_stub
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color gold
+  xyzwh 428 313 2005 143 51
+simplerelationcanvas 128735 simplerelation_ref 128095
+  from ref 128223 z 2004 to ref 128479
+simplerelationcanvas 128863 simplerelation_ref 128223
+  from ref 128479 z 2004 to ref 128607
+simplerelationcanvas 129759 simplerelation_ref 128351
+  from ref 128991 z 2004 to ref 129119
+simplerelationcanvas 129887 simplerelation_ref 128479
+  from ref 129119 z 2004 to ref 129247
+simplerelationcanvas 130015 simplerelation_ref 128607
+  from ref 129375 z 2004 to ref 129503
+simplerelationcanvas 130143 simplerelation_ref 128735
+  from ref 129503 z 2004 to ref 129631
+end

@@ -1,0 +1,9 @@
+format 29
+
+packagecanvas 128002 
+  package_ref 128002 // nu.mine.egoless.didattica
+   color blue  xyzwh 5 6 2000 824 391
+classcanvas 128130 class_ref 128002 // StudenteBean
+  draw_all_relations default hide_attributes default hide_operations default show_members_full_definition default show_members_visibility default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default shadow default
+  xyz 25 41 2005
+end

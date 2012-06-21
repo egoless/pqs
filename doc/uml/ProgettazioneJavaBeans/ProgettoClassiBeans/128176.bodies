@@ -1,0 +1,31 @@
+class AssenzaBean
+!!!128944.java!!!	setId(in id : long) : void
+
+        long oldId = this.id;
+        this.id = id;
+        propertyChangeSupport.firePropertyChange ("id", new Long (oldId), new Long (id));
+!!!129200.java!!!	setDataInizio(inout dataInizio : Date) : void
+
+        Date oldDataInizio = this.dataInizio;
+        this.dataInizio = dataInizio;
+        propertyChangeSupport.firePropertyChange ("dataInizio", oldDataInizio, dataInizio);
+!!!129456.java!!!	setDataFine(inout dataFine : Date) : void
+
+        Date oldDataFine = this.dataFine;
+        this.dataFine = dataFine;
+        propertyChangeSupport.firePropertyChange ("dataFine", oldDataFine, dataFine);
+!!!129712.java!!!	setGiustificata(inout giustificata : boolean) : void
+
+        boolean oldGiustificata = this.giustificata;
+        this.giustificata = giustificata;
+        propertyChangeSupport.firePropertyChange ("giustificata", new Boolean (oldGiustificata), new Boolean (giustificata));
+!!!129968.java!!!	setNote(in note : String) : void
+
+        String oldNote = this.note;
+        this.note = note;
+        propertyChangeSupport.firePropertyChange ("note", oldNote, note);
+!!!130224.java!!!	setExtra(inout extra : ListaAttributi) : void
+
+        ListaAttributi oldExtra = this.extra;
+        this.extra = extra;
+        propertyChangeSupport.firePropertyChange ("extra", oldExtra, extra);

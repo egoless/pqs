@@ -1,0 +1,44 @@
+format 29
+
+componentcanvas 128007 component_ref 128007 // WSDidattica_stub
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 334 146 2000 145 72
+arrowjunctioncanvas 128135 class_ref 128007 // WSDidaStub
+  xyz 396 246 2000 label_xy 361 263
+arrowjunctioncanvas 128391 class_ref 128263 // WSAssenza
+  xyz 275 142 2000 label_xy 242 159
+arrowjunctioncanvas 128647 class_ref 128135 // WSPersona
+  xyz 275 174 2000 label_xy 242 191
+note 129159 "Per chiarezza di esposizione non sono indicate tutte le interfacce che espone lo stub, che sono le stesse di WSDidattica (vedi Specifica Tecnica)"
+  xyzwh 339 19 2000 159 104
+componentcanvas 129671 component_ref 128135 // JavaBeans
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  color lightorange
+  xyzwh 27 151 2000 143 51
+componentcanvas 129799 component_ref 128263 // Test
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 26 247 2000 143 51
+componentcanvas 130567 component_ref 128391 // APPDidattica
+  draw_component_as_icon default show_component_req_prov default show_component_rea default
+  xyzwh 7 90 1994 202 233
+line 128263 ---O
+  from ref 128007 z 1999 to ref 128135
+line 128519 ---O
+  from ref 128007 z 1999 to point 330 149
+  line 129031 z 1999 to ref 128391
+line 128775 ---O
+  from ref 128007 z 1999 to point 332 181
+  line 128903 z 1999 to ref 128647
+line 129927 ---(
+  from ref 129671 z 1999 to ref 128391
+line 130055 ---(
+  from ref 129671 z 1999 to point 176 181
+  line 130183 z 1999 to ref 128647
+simplerelationcanvas 130311 simplerelation_ref 128007
+  from ref 129799 z 1999 stereotype "<<drives>>" xyz 30 215 3000 to ref 129671
+line 130439 ---(
+  from ref 129799 z 1999 to ref 128135
+line 129415 -_-_
+  from ref 129159 z 1999 to point 345 145
+  line 129543 z 1999 to ref 128007
+end

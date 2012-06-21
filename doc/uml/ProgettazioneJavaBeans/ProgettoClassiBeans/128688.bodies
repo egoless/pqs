@@ -1,0 +1,16 @@
+class IndirizzoStudiBean
+!!!139568.java!!!	setNome(in nome : String) : void
+
+        String oldNome = this.nome;
+        this.nome = nome;
+        propertyChangeSupport.firePropertyChange ("nome", oldNome, nome);
+!!!139824.java!!!	setDescrizione(in descrizione : String) : void
+
+        String oldDescrizione = this.descrizione;
+        this.descrizione = descrizione;
+        propertyChangeSupport.firePropertyChange ("descrizione", oldDescrizione, descrizione);
+!!!140080.java!!!	setExtra(inout extra : ListaAttributi) : void
+
+        ListaAttributi oldExtra = this.extra;
+        this.extra = extra;
+        propertyChangeSupport.firePropertyChange ("extra", oldExtra, extra);
