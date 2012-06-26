@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="egoless" basedir=".">
+   <dirname property="egoless.basedir" file="${ant.file.egoless}"/>
+
+   <!-- Importiamo il target per fare i report di JUnit in PDF -->
+   <property name="junitpdfreport.essentials.path" value="junitpdfreport" />
+   <import file="${junitpdfreport.essentials.path}/build-junitpdfreport.xml" />
+   
+   <property name="checkstyle.path" value="checkstyle" />
+   <!-- <import file="${checkstyle.path}/build.xml" /> -->
+   <taskdef resource="checkstyletask.properties"
+         classpath="${egoless.basedir}/${checkstyle.path}/checkstyle-all-4.3.jar"/>
+
+   <tstamp>
+      <format property="NOW" pattern="yyyy-MM-dd HH-mm-ss" locale="en"/>
+   </tstamp>
+
+   <!-- Definiamo il target per la generazione dei report di JUnit in PDF-->
+   <target name="testreport-pdf" description="Produces a PDF report of JUnit tests">
+      <!-- Ho dovuto ridefinire la proprietà -->
+      <property name="build.test.results.dir" value="build/test/results" />
+
+      <property name="test.reports.dir" value="test report" />
+      <property name="test.report.prefix" value="test report " />
+
+      <mkdir dir="${test.reports.dir}" />
+      <junitpdfreport todir="." styledir="default" outfile="${test.reports.dir}/${test.report.prefix}${NOW}.pdf">
+         <fileset dir="${build.test.results.dir}">
+            <include name="TEST-*.xml"/>
+         </fileset>
+      </junitpdfreport>
+   </target>
+
+   <!-- Definiamo il target per JDepend -->
+   <target name="jdepend" description="Calculates various metrics on package">
+      <property name="test.jdepend.dir" value="jdepend report" />
+      <property name="test.jdepend.prefix" value="jdepend report " />
+   
+      <!-- Copia il jar di JDepend nella directory lib di ant -->
+      <!-- Se non trova la classe di JDepend, chiudere e riaprire NetBeans-->
+      <copy file="${egoless.basedir}/jdepend/lib/jdepend-2.9.jar" tofile="${ant.home}/lib/jdepend.jar"/>
+   
+      <mkdir dir="${test.jdepend.dir}" />
+      <jdepend format="xml" outputfile="${test.jdepend.dir}/${test.jdepend.prefix}${NOW}.xml">
+         <exclude name="java.*"/>
+         <exclude name="javax.*"/>
+         <classespath>
+           <pathelement location="build" />
+         </classespath>
+         <classpath location="build" />
+      </jdepend>
+   
+     <style in="${test.jdepend.dir}/${test.jdepend.prefix}${NOW}.xml"
+            out="${test.jdepend.dir}/${test.jdepend.prefix}${NOW}.html"
+            style="${ant.home}/etc/jdepend.xsl" />
+
+   </target>
+   
+   <property name="test.checkstyle.dir" value="checkstyle report" />
+      <property name="test.checkstyle.prefix" value="checkstyle report " />
+    
+   <target name="checkstyle"
+        description="Generates a report of code convention violations.">
+
+   <mkdir dir="${test.checkstyle.dir}" />
+  <checkstyle config="${egoless.basedir}/${checkstyle.path}/egoless.xml"
+              failureProperty="checkstyle.failure"
+              failOnViolation="false">
+    <formatter type="xml" tofile="${test.checkstyle.dir}/${test.checkstyle.prefix}${NOW}.xml"/>
+    <fileset dir="src" includes="**/*.java"/>
+  </checkstyle>
+
+  <style in="${test.checkstyle.dir}/${test.checkstyle.prefix}${NOW}.xml" 
+         out="${test.checkstyle.dir}/${test.checkstyle.prefix}${NOW}.html"
+         style="${egoless.basedir}/${checkstyle.path}/contrib/checkstyle-author.xsl"/>
+
+</target>
+    
+    <!-- Cobertura -->
+    <property name="cobertura.dir" value="../ant/cobertura" />
+    <path id="cobertura.classpath">
+    <fileset dir="${cobertura.dir}">
+        <include name="cobertura.jar" />
+        <include name="lib/**/*.jar" />
+    </fileset>
+    </path>
+    <taskdef classpathref="cobertura.classpath" resource="tasks.properties" />
+    
+    <property name="build.coverage.results.dir" value="build/coverage/results" />
+    <property name="build.instrumented.dir" value="build/instrumented-classes" />
+    <property name="coverage.reports.dir" value="coverage report" />
+    <property name="coverage.report.prefix" value="coverage report " />
+    
+    <!--<target name="cobertura-instrument" depends="compile">
+        <cobertura-instrument todir="build/instrumented-classes">    
+        <fileset dir="build">
+            <include name="**/*.class"/>
+        </fileset>
+        </cobertura-instrument>
+    </target>
+    <mkdir dir="${coverage.reports.dir}" />-->
+    <property name="src.dir" value="src" />
+    <property name="test.src.dir" value="test" />
+    
+    
+    <target name="cobertura" depends="compile" description="Test the program for coverage and ciclomatic complexity.">
+        
+        <property name="current.report.dir" value="${coverage.reports.dir}/${NOW}" />
+       <!-- <property name="testcase" value="T${NOW}" /> -->
+        <mkdir dir="${current.report.dir}" />
+        <mkdir dir="${current.report.dir}/xml" />
+        <cobertura-instrument datafile="${current.report.dir}/cobertura.ser" todir="build/instrumented-classes">    
+        <fileset dir="build">
+            <include name="**/*.class"/>
+        </fileset>
+        </cobertura-instrument>
+        <junit fork="yes" failureProperty="test.failed">
+	<!--
+		Specify the name of the coverage data file to use.
+		The value specified below is the default.
+	-->
+	<sysproperty key="net.sourceforge.cobertura.datafile"
+		file="${current.report.dir}/cobertura.ser" />
+
+	<!--
+		Note the classpath order: instrumented classes are before the
+		original (uninstrumented) classes.  This is important.
+	-->
+	<classpath location="${build.instrumented.dir}" />
+	<classpath location="${build.classes.dir}" />
+
+	<!--
+		The instrumented classes reference classes used by the
+		Cobertura runtime, so Cobertura and its dependencies
+		must be on your classpath.
+	-->
+        <classpath refid="cobertura.classpath" />
+	
+	<formatter type="xml" />
+        
+        
+	<test name="${testcase}" todir="${current.report.dir}/xml" if="testcase" />
+	<batchtest todir="${current.report.dir}/xml" unless="testcase">
+		<fileset dir="${test.src.dir}">
+			<include name="**/*Test.java" />
+		</fileset>
+	</batchtest>
+        </junit>
+        <cobertura-report datafile="${current.report.dir}/cobertura.ser" destdir="${current.report.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*.java" />
+            </fileset>
+            <fileset dir="${test.src.dir}">
+                <include name="**/*.java" />
+            </fileset>
+        </cobertura-report>
+    </target>
+
+    <!-- Generazione JavaDoc per i progetti EJB -->
+    <target name="javadoc-build-javaee" depends="init">
+      <property name="dist.javadoc.dir" value="dist/javadoc" />
+      <property name="src.dir2" value="src/java" />
+        <mkdir dir="${dist.javadoc.dir}"/>
+        <javadoc destdir="${dist.javadoc.dir}" source="${javac.source}" notree="${javadoc.notree}" use="${javadoc.use}" nonavbar="${javadoc.nonavbar}" noindex="${javadoc.noindex}" splitindex="${javadoc.splitindex}" author="${javadoc.author}" version="${javadoc.version}" windowtitle="${javadoc.windowtitle}" private="${javadoc.private}" additionalparam="${javadoc.additionalparam}" failonerror="true" useexternalfile="true" executable="${platform.javadoc}">
+            <classpath>
+                <path path="${javac.classpath}:${j2ee.platform.classpath}"/>
+            </classpath>
+            <sourcepath>
+                <pathelement location="${src.dir2}"/>
+            </sourcepath>
+            <packageset dir="${src.dir2}" includes="*/**"/>
+            <fileset dir="${src.dir2}" includes="*.java"/>
+        </javadoc>
+    </target>
+    <target name="javadoc-browse-javaee" if="netbeans.home" unless="no.javadoc.preview" depends="init,javadoc-build-javaee">
+        <nbbrowse file="${dist.javadoc.dir}/index.html"/>
+    </target>
+    <target name="javadoc-javaee" depends="init,javadoc-build-javaee,javadoc-browse-javaee" description="Build Javadoc for Java EE projects."/>
+
+</project>

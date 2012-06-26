@@ -1,0 +1,2212 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="nu.mine.egoless.didattica.app.adapter">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>4</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>3</Ca>
+                <Ce>4</Ce>
+                <A>0</A>
+                <I>0.57</I>
+                <D>0.43</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ClasseAdapter.java">
+                    nu.mine.egoless.didattica.app.adapter.ClasseAdapter
+                </Class>
+                <Class sourceFile="MateriaInsegnamentoAdapter.java">
+                    nu.mine.egoless.didattica.app.adapter.MateriaInsegnamentoAdapter
+                </Class>
+                <Class sourceFile="NazioneAdapter.java">
+                    nu.mine.egoless.didattica.app.adapter.NazioneAdapter
+                </Class>
+                <Class sourceFile="ReligioneAdapter.java">
+                    nu.mine.egoless.didattica.app.adapter.ReligioneAdapter
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.ws.classesupport</Package>
+                <Package>nu.mine.egoless.didattica.ws.materiaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.nazioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.religioneclient</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.app.bean">
+            <Stats>
+                <TotalClasses>24</TotalClasses>
+                <ConcreteClasses>23</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>7</Ca>
+                <Ce>12</Ce>
+                <A>0.04</A>
+                <I>0.63</I>
+                <D>0.33</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="PersonaBean.java">
+                    nu.mine.egoless.didattica.app.bean.PersonaBean
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AssenzaBean.java">
+                    nu.mine.egoless.didattica.app.bean.AssenzaBean
+                </Class>
+                <Class sourceFile="AssenzeBean.java">
+                    nu.mine.egoless.didattica.app.bean.AssenzeBean
+                </Class>
+                <Class sourceFile="ClasseBean.java">
+                    nu.mine.egoless.didattica.app.bean.ClasseBean
+                </Class>
+                <Class sourceFile="ClassiBean.java">
+                    nu.mine.egoless.didattica.app.bean.ClassiBean
+                </Class>
+                <Class sourceFile="ContattiBean.java">
+                    nu.mine.egoless.didattica.app.bean.ContattiBean
+                </Class>
+                <Class sourceFile="ContattoBean.java">
+                    nu.mine.egoless.didattica.app.bean.ContattoBean
+                </Class>
+                <Class sourceFile="Costanti.java">
+                    nu.mine.egoless.didattica.app.bean.Costanti
+                </Class>
+                <Class sourceFile="InsegnanteBean.java">
+                    nu.mine.egoless.didattica.app.bean.InsegnanteBean
+                </Class>
+                <Class sourceFile="InsegnantiBean.java">
+                    nu.mine.egoless.didattica.app.bean.InsegnantiBean
+                </Class>
+                <Class sourceFile="MateriaInsegnamentoBean.java">
+                    nu.mine.egoless.didattica.app.bean.MateriaInsegnamentoBean
+                </Class>
+                <Class sourceFile="MaterieInsegnamentoBean.java">
+                    nu.mine.egoless.didattica.app.bean.MaterieInsegnamentoBean
+                </Class>
+                <Class sourceFile="NazioniBean.java">
+                    nu.mine.egoless.didattica.app.bean.NazioniBean
+                </Class>
+                <Class sourceFile="ReligioniBean.java">
+                    nu.mine.egoless.didattica.app.bean.ReligioniBean
+                </Class>
+                <Class sourceFile="StudenteBean.java">
+                    nu.mine.egoless.didattica.app.bean.StudenteBean
+                </Class>
+                <Class sourceFile="StudentiBean.java">
+                    nu.mine.egoless.didattica.app.bean.StudentiBean
+                </Class>
+                <Class sourceFile="TipiAssenzeBean.java">
+                    nu.mine.egoless.didattica.app.bean.TipiAssenzeBean
+                </Class>
+                <Class sourceFile="TipiProveBean.java">
+                    nu.mine.egoless.didattica.app.bean.TipiProveBean
+                </Class>
+                <Class sourceFile="TipiVotiBean.java">
+                    nu.mine.egoless.didattica.app.bean.TipiVotiBean
+                </Class>
+                <Class sourceFile="TipoAssenzaBean.java">
+                    nu.mine.egoless.didattica.app.bean.TipoAssenzaBean
+                </Class>
+                <Class sourceFile="TipoProvaBean.java">
+                    nu.mine.egoless.didattica.app.bean.TipoProvaBean
+                </Class>
+                <Class sourceFile="TipoVotoBean.java">
+                    nu.mine.egoless.didattica.app.bean.TipoVotoBean
+                </Class>
+                <Class sourceFile="VotiBean.java">
+                    nu.mine.egoless.didattica.app.bean.VotiBean
+                </Class>
+                <Class sourceFile="VotoBean.java">
+                    nu.mine.egoless.didattica.app.bean.VotoBean
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.ws.assenzaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.classesupport</Package>
+                <Package>nu.mine.egoless.didattica.ws.contattoclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.materiaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.nazioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.personaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.religioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipoassenzaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipoprovaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipovotoclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.votoclient</Package>
+                <Package>nu.mine.egoless.supporto</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.gui</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.app.gui">
+            <Stats>
+                <TotalClasses>25</TotalClasses>
+                <ConcreteClasses>25</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>5</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="CaricamentoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.CaricamentoDialog
+                </Class>
+                <Class sourceFile="CaricamentoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.CaricamentoDialog$1
+                </Class>
+                <Class sourceFile="CreditDialog.java">
+                    nu.mine.egoless.didattica.app.gui.CreditDialog
+                </Class>
+                <Class sourceFile="CreditDialog.java">
+                    nu.mine.egoless.didattica.app.gui.CreditDialog$1
+                </Class>
+                <Class sourceFile="CreditDialog.java">
+                    nu.mine.egoless.didattica.app.gui.CreditDialog$2
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$1
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$1$1
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$10
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$11
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$12
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$13
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$14
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$15
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$16
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$17
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$17$1
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$2
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$3
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$4
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$5
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$6
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$7
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$8
+                </Class>
+                <Class sourceFile="GUIFrame.java">
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$9
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+                <Package>org.jdesktop.layout</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.app.gui.componentiComuni">
+            <Stats>
+                <TotalClasses>23</TotalClasses>
+                <ConcreteClasses>21</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>7</Ca>
+                <Ce>10</Ce>
+                <A>0.09</A>
+                <I>0.59</I>
+                <D>0.32</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="BarraDiStatoCompatibile.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.BarraDiStatoCompatibile
+                </Class>
+                <Class sourceFile="Listable.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.Listable
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BarraDiStatoPanel.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.BarraDiStatoPanel
+                </Class>
+                <Class sourceFile="ButtonTabComponent.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ButtonTabComponent
+                </Class>
+                <Class sourceFile="ButtonTabComponent.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ButtonTabComponent$1
+                </Class>
+                <Class sourceFile="ButtonTabComponent.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ButtonTabComponent$2
+                </Class>
+                <Class sourceFile="ButtonTabComponent.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ButtonTabComponent$TabButton
+                </Class>
+                <Class sourceFile="ContenitoreDati.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ContenitoreDati
+                </Class>
+                <Class sourceFile="DataPanel.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel
+                </Class>
+                <Class sourceFile="DataPanel.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel$1
+                </Class>
+                <Class sourceFile="DataPanel.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel$2
+                </Class>
+                <Class sourceFile="DataPanel.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel$3
+                </Class>
+                <Class sourceFile="DataPanel.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel$4
+                </Class>
+                <Class sourceFile="ElementiComboBox.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ElementiComboBox
+                </Class>
+                <Class sourceFile="ElementiComboBox.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ElementiComboBox$1
+                </Class>
+                <Class sourceFile="IconListRenderer.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.IconListRenderer
+                </Class>
+                <Class sourceFile="ModificaListaElementiDialog.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog
+                </Class>
+                <Class sourceFile="ModificaListaElementiDialog.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$1
+                </Class>
+                <Class sourceFile="ModificaListaElementiDialog.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$2
+                </Class>
+                <Class sourceFile="ModificaListaElementiDialog.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$3
+                </Class>
+                <Class sourceFile="ModificaListaElementiDialog.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$4
+                </Class>
+                <Class sourceFile="ModificaListaElementiDialog.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$5
+                </Class>
+                <Class sourceFile="UtilitaGUI.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.UtilitaGUI
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+                <Package>nu.mine.egoless.didattica.ws.classesupport</Package>
+                <Package>nu.mine.egoless.didattica.ws.materiaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.nazioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.religioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipoassenzaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipoprovaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipovotoclient</Package>
+                <Package>org.jdesktop.layout</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.gui</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+                <Package>nu.mine.egoless.didattica.app.prove</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.app.gui.componentiComuni.elementi">
+            <Stats>
+                <TotalClasses>11</TotalClasses>
+                <ConcreteClasses>10</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>7</Ce>
+                <A>0.09</A>
+                <I>0.78</I>
+                <D>0.13</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Listable.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.Listable
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ElementiClasse.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiClasse
+                </Class>
+                <Class sourceFile="ElementiMaterieInsegnamento.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiMaterieInsegnamento
+                </Class>
+                <Class sourceFile="ElementiTipiAssenze.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiTipiAssenze
+                </Class>
+                <Class sourceFile="ElementiTipiProve.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiTipiProve
+                </Class>
+                <Class sourceFile="ElementiTipiVoti.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiTipiVoti
+                </Class>
+                <Class sourceFile="ElementoClasse.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoClasse
+                </Class>
+                <Class sourceFile="ElementoMateriaInsegnamento.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoMateriaInsegnamento
+                </Class>
+                <Class sourceFile="ElementoTipoAssenza.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoTipoAssenza
+                </Class>
+                <Class sourceFile="ElementoTipoProva.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoTipoProva
+                </Class>
+                <Class sourceFile="ElementoTipoVoto.java">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoTipoVoto
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.ws.classesupport</Package>
+                <Package>nu.mine.egoless.didattica.ws.materiaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipoassenzaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipoprovaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipovotoclient</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.app.gui.gestionePersone">
+            <Stats>
+                <TotalClasses>62</TotalClasses>
+                <ConcreteClasses>60</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>7</Ce>
+                <A>0.03</A>
+                <I>0.78</I>
+                <D>0.19</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="GestionePersonaPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestionePersonaPanel
+                </Class>
+                <Class sourceFile="GestioneTabPersonePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneTabPersonePanel
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$1
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$10
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$11
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$12
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$13
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$14
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$15
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$16
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$17
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$18
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$19
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$2
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$20
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$21
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$3
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$4
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$5
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$6
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$7
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$8
+                </Class>
+                <Class sourceFile="AnteprimaDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$9
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$1
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$10
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$11
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$12
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$13
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$14
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$15
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$16
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$2
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$3
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$4
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$5
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$6
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$7
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$8
+                </Class>
+                <Class sourceFile="GestioneContattoDialog.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$9
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$1
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$10
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$11
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$12
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$13
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$14
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$15
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$16
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$17
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$18
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$2
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$3
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$4
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$5
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$6
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$7
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$8
+                </Class>
+                <Class sourceFile="GestioneDatiAnagraficiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$9
+                </Class>
+                <Class sourceFile="GestioneTabPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneTabPanel
+                </Class>
+                <Class sourceFile="RicercaPersonePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.RicercaPersonePanel
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.app.adapter</Package>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.ws.classesupport</Package>
+                <Package>nu.mine.egoless.didattica.ws.nazioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.religioneclient</Package>
+                <Package>org.jdesktop.layout</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">
+            <Stats>
+                <TotalClasses>32</TotalClasses>
+                <ConcreteClasses>32</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>9</Ce>
+                <A>0</A>
+                <I>0.9</I>
+                <D>0.1</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="GestioneDatiInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel
+                </Class>
+                <Class sourceFile="GestioneDatiInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$1
+                </Class>
+                <Class sourceFile="GestioneDatiInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$2
+                </Class>
+                <Class sourceFile="GestioneDatiInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$3
+                </Class>
+                <Class sourceFile="GestioneDatiInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$4
+                </Class>
+                <Class sourceFile="GestioneDatiInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$5
+                </Class>
+                <Class sourceFile="GestioneInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel
+                </Class>
+                <Class sourceFile="GestioneInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$1
+                </Class>
+                <Class sourceFile="GestioneInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$1$1
+                </Class>
+                <Class sourceFile="GestioneInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$2
+                </Class>
+                <Class sourceFile="GestioneInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$3
+                </Class>
+                <Class sourceFile="GestioneInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$4
+                </Class>
+                <Class sourceFile="GestioneInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$5
+                </Class>
+                <Class sourceFile="GestioneInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$6
+                </Class>
+                <Class sourceFile="GestioneInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$7
+                </Class>
+                <Class sourceFile="GestioneTabInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneTabInsegnantiPanel
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$1
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$10
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$11
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$12
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$13
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$14
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$14$1
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$2
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$3
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$4
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$5
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$6
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$7
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$8
+                </Class>
+                <Class sourceFile="RicercaInsegnantiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$9
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.app.adapter</Package>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone</Package>
+                <Package>nu.mine.egoless.didattica.ws.contattoclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.materiaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.nazioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.personaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.religioneclient</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.gui</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.app.gui.gestionePersone.studenti">
+            <Stats>
+                <TotalClasses>37</TotalClasses>
+                <ConcreteClasses>37</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>9</Ce>
+                <A>0</A>
+                <I>0.9</I>
+                <D>0.1</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$1
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$2
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$3
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$4
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$5
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$6
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$7
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$8
+                </Class>
+                <Class sourceFile="GestioneStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel
+                </Class>
+                <Class sourceFile="GestioneStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$1
+                </Class>
+                <Class sourceFile="GestioneStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$1$1
+                </Class>
+                <Class sourceFile="GestioneStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$2
+                </Class>
+                <Class sourceFile="GestioneStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$3
+                </Class>
+                <Class sourceFile="GestioneStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$4
+                </Class>
+                <Class sourceFile="GestioneStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$5
+                </Class>
+                <Class sourceFile="GestioneStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$6
+                </Class>
+                <Class sourceFile="GestioneStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$7
+                </Class>
+                <Class sourceFile="GestioneTabStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneTabStudentiPanel
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$1
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$10
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$11
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$12
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$13
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$14
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$15
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$16
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$16$1
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$2
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$3
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$4
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$5
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$6
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$7
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$8
+                </Class>
+                <Class sourceFile="RicercaStudentiPanel.java">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$9
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.app.adapter</Package>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone</Package>
+                <Package>nu.mine.egoless.didattica.ws.classesupport</Package>
+                <Package>nu.mine.egoless.didattica.ws.contattoclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.nazioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.personaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.religioneclient</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.gui</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.app.gui.registroDocente">
+            <Stats>
+                <TotalClasses>42</TotalClasses>
+                <ConcreteClasses>42</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>15</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$1
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$10
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$11
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$12
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$13
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$14
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$2
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$3
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$4
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$5
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$6
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$7
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$8
+                </Class>
+                <Class sourceFile="GestioneAssenzeStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$9
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneDatiStudentePanel
+                </Class>
+                <Class sourceFile="GestioneDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneDatiStudentePanel$1
+                </Class>
+                <Class sourceFile="GestioneVotiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel
+                </Class>
+                <Class sourceFile="GestioneVotiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$1
+                </Class>
+                <Class sourceFile="GestioneVotiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$2
+                </Class>
+                <Class sourceFile="GestioneVotiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$3
+                </Class>
+                <Class sourceFile="GestioneVotiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$4
+                </Class>
+                <Class sourceFile="GestioneVotiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$5
+                </Class>
+                <Class sourceFile="ListaAssenzeStudenteDialog.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaAssenzeStudenteDialog
+                </Class>
+                <Class sourceFile="ListaAssenzeStudenteDialog.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaAssenzeStudenteDialog$1
+                </Class>
+                <Class sourceFile="ListaAssenzeStudenteDialog.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaAssenzeStudenteDialog$2
+                </Class>
+                <Class sourceFile="ListaAssenzeStudenteDialog.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaAssenzeStudenteDialog$3
+                </Class>
+                <Class sourceFile="ListaVotiStudenteDialog.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaVotiStudenteDialog
+                </Class>
+                <Class sourceFile="ListaVotiStudenteDialog.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaVotiStudenteDialog$1
+                </Class>
+                <Class sourceFile="ListaVotiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaVotiStudentePanel
+                </Class>
+                <Class sourceFile="ListaVotiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaVotiStudentePanel$1
+                </Class>
+                <Class sourceFile="RegistroPanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.Pair
+                </Class>
+                <Class sourceFile="RegistroInsegnantePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroInsegnantePanel
+                </Class>
+                <Class sourceFile="RegistroPanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel
+                </Class>
+                <Class sourceFile="RegistroPanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$1
+                </Class>
+                <Class sourceFile="RegistroPanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$1$1
+                </Class>
+                <Class sourceFile="RegistroPanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$2
+                </Class>
+                <Class sourceFile="RegistroPanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$3
+                </Class>
+                <Class sourceFile="RegistroPanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$4
+                </Class>
+                <Class sourceFile="SelezionaRegistroPanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.SelezionaRegistroPanel
+                </Class>
+                <Class sourceFile="SelezionaRegistroPanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.SelezionaRegistroPanel$1
+                </Class>
+                <Class sourceFile="VisualizzaDatiStudentePanel.java">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.VisualizzaDatiStudentePanel
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+                <Package>nu.mine.egoless.didattica.ws.assenzaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.classesupport</Package>
+                <Package>nu.mine.egoless.didattica.ws.materiaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.nazioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.personaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.religioneclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipoassenzaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipoprovaclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.tipovotoclient</Package>
+                <Package>nu.mine.egoless.didattica.ws.votoclient</Package>
+                <Package>nu.mine.egoless.supporto</Package>
+                <Package>org.jdesktop.layout</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.app.prove">
+            <Stats>
+                <TotalClasses>15</TotalClasses>
+                <ConcreteClasses>15</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>2</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BeanProxy.java">
+                    nu.mine.egoless.didattica.app.prove.BeanProxy
+                </Class>
+                <Class sourceFile="DataProva.java">
+                    nu.mine.egoless.didattica.app.prove.DataProva
+                </Class>
+                <Class sourceFile="DataProva.java">
+                    nu.mine.egoless.didattica.app.prove.DataProva$1
+                </Class>
+                <Class sourceFile="DataProva.java">
+                    nu.mine.egoless.didattica.app.prove.DataProva$2
+                </Class>
+                <Class sourceFile="DataProva.java">
+                    nu.mine.egoless.didattica.app.prove.DataProva$3
+                </Class>
+                <Class sourceFile="ExtProva.java">
+                    nu.mine.egoless.didattica.app.prove.ExtProva
+                </Class>
+                <Class sourceFile="NewDataDialog.java">
+                    nu.mine.egoless.didattica.app.prove.NewDataDialog
+                </Class>
+                <Class sourceFile="NewDataDialog.java">
+                    nu.mine.egoless.didattica.app.prove.NewDataDialog$1
+                </Class>
+                <Class sourceFile="NewDataDialog.java">
+                    nu.mine.egoless.didattica.app.prove.NewDataDialog$2
+                </Class>
+                <Class sourceFile="NewDataDialog.java">
+                    nu.mine.egoless.didattica.app.prove.NewDataDialog$3
+                </Class>
+                <Class sourceFile="NewJDialog.java">
+                    nu.mine.egoless.didattica.app.prove.NewJDialog
+                </Class>
+                <Class sourceFile="NewJDialog.java">
+                    nu.mine.egoless.didattica.app.prove.NewJDialog$1
+                </Class>
+                <Class sourceFile="NewJPanel.java">
+                    nu.mine.egoless.didattica.app.prove.NewJPanel
+                </Class>
+                <Class sourceFile="Prova.java">
+                    nu.mine.egoless.didattica.app.prove.Prova
+                </Class>
+                <Class sourceFile="Win.java">
+                    nu.mine.egoless.didattica.app.prove.Win
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>org.jdesktop.layout</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.assenzaclient">
+            <Stats>
+                <TotalClasses>19</TotalClasses>
+                <ConcreteClasses>15</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>0</Ce>
+                <A>0.21</A>
+                <I>0</I>
+                <D>0.79</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.Elemento
+                </Class>
+                <Class sourceFile="ParametriRicerca.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.ParametriRicerca
+                </Class>
+                <Class sourceFile="WSAssenza.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.WSAssenza
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiAssenza.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.AggiungiAssenza
+                </Class>
+                <Class sourceFile="AggiungiAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.AggiungiAssenzaResponse
+                </Class>
+                <Class sourceFile="Assenza.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.Assenza
+                </Class>
+                <Class sourceFile="CancellaAssenza.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.CancellaAssenza
+                </Class>
+                <Class sourceFile="CancellaAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.CancellaAssenzaResponse
+                </Class>
+                <Class sourceFile="CercaAssenza.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.CercaAssenza
+                </Class>
+                <Class sourceFile="CercaAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.CercaAssenzaResponse
+                </Class>
+                <Class sourceFile="Date.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.Date
+                </Class>
+                <Class sourceFile="ModificaAssenza.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.ModificaAssenza
+                </Class>
+                <Class sourceFile="ModificaAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.ModificaAssenzaResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="ParametriRicercaAssenza.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.ParametriRicercaAssenza
+                </Class>
+                <Class sourceFile="WSAssenzaService.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.WSAssenzaService
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.assenzaclient.WSDidatticaException_Exception
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.classesupport">
+            <Stats>
+                <TotalClasses>14</TotalClasses>
+                <ConcreteClasses>11</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>7</Ca>
+                <Ce>0</Ce>
+                <A>0.21</A>
+                <I>0</I>
+                <D>0.79</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.classesupport.Elemento
+                </Class>
+                <Class sourceFile="WSClasse.java">
+                    nu.mine.egoless.didattica.ws.classesupport.WSClasse
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.classesupport.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiClasse.java">
+                    nu.mine.egoless.didattica.ws.classesupport.AggiungiClasse
+                </Class>
+                <Class sourceFile="AggiungiClasseResponse.java">
+                    nu.mine.egoless.didattica.ws.classesupport.AggiungiClasseResponse
+                </Class>
+                <Class sourceFile="CancellaClasse.java">
+                    nu.mine.egoless.didattica.ws.classesupport.CancellaClasse
+                </Class>
+                <Class sourceFile="CancellaClasseResponse.java">
+                    nu.mine.egoless.didattica.ws.classesupport.CancellaClasseResponse
+                </Class>
+                <Class sourceFile="Classe.java">
+                    nu.mine.egoless.didattica.ws.classesupport.Classe
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.classesupport.ObjectFactory
+                </Class>
+                <Class sourceFile="RecuperaClassi.java">
+                    nu.mine.egoless.didattica.ws.classesupport.RecuperaClassi
+                </Class>
+                <Class sourceFile="RecuperaClassiResponse.java">
+                    nu.mine.egoless.didattica.ws.classesupport.RecuperaClassiResponse
+                </Class>
+                <Class sourceFile="WSClasseService.java">
+                    nu.mine.egoless.didattica.ws.classesupport.WSClasseService
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.classesupport.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.classesupport.WSDidatticaException_Exception
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.adapter</Package>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.contattoclient">
+            <Stats>
+                <TotalClasses>18</TotalClasses>
+                <ConcreteClasses>14</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>3</Ca>
+                <Ce>0</Ce>
+                <A>0.22</A>
+                <I>0</I>
+                <D>0.78</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.Elemento
+                </Class>
+                <Class sourceFile="ParametriRicerca.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.ParametriRicerca
+                </Class>
+                <Class sourceFile="WSContatto.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.WSContatto
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiContatto.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.AggiungiContatto
+                </Class>
+                <Class sourceFile="AggiungiContattoResponse.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.AggiungiContattoResponse
+                </Class>
+                <Class sourceFile="CancellaContatto.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.CancellaContatto
+                </Class>
+                <Class sourceFile="CancellaContattoResponse.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.CancellaContattoResponse
+                </Class>
+                <Class sourceFile="CercaContatto.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.CercaContatto
+                </Class>
+                <Class sourceFile="CercaContattoResponse.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.CercaContattoResponse
+                </Class>
+                <Class sourceFile="Contatto.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.Contatto
+                </Class>
+                <Class sourceFile="ModificaContatto.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.ModificaContatto
+                </Class>
+                <Class sourceFile="ModificaContattoResponse.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.ModificaContattoResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.ObjectFactory
+                </Class>
+                <Class sourceFile="ParametriRicercaContatto.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.ParametriRicercaContatto
+                </Class>
+                <Class sourceFile="WSContattoService.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.WSContattoService
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.contattoclient.WSDidatticaException_Exception
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.didastubclient">
+            <Stats>
+                <TotalClasses>16</TotalClasses>
+                <ConcreteClasses>14</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>0</Ce>
+                <A>0.12</A>
+                <I>0</I>
+                <D>0.88</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="WSDidaStub.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.WSDidaStub
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="CercaAssenzaBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaAssenzaBehavior
+                </Class>
+                <Class sourceFile="CercaContattoBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaContattoBehavior
+                </Class>
+                <Class sourceFile="CercaInsegnanteBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaInsegnanteBehavior
+                </Class>
+                <Class sourceFile="CercaStudenteBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaStudenteBehavior
+                </Class>
+                <Class sourceFile="CercaVotoBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaVotoBehavior
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.ObjectFactory
+                </Class>
+                <Class sourceFile="RecuperaClassiBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaClassiBehavior
+                </Class>
+                <Class sourceFile="RecuperaMaterieBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaMaterieBehavior
+                </Class>
+                <Class sourceFile="RecuperaNazioniReturnsNull.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaNazioniReturnsNull
+                </Class>
+                <Class sourceFile="RecuperaReligioniReturnsNull.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaReligioniReturnsNull
+                </Class>
+                <Class sourceFile="RecuperaTipiAssenzaBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaTipiAssenzaBehavior
+                </Class>
+                <Class sourceFile="RecuperaTipiProvaBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaTipiProvaBehavior
+                </Class>
+                <Class sourceFile="RecuperaTipiVotoBehavior.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaTipiVotoBehavior
+                </Class>
+                <Class sourceFile="WSDidaStubService.java">
+                    nu.mine.egoless.didattica.ws.didastubclient.WSDidaStubService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.materiaclient">
+            <Stats>
+                <TotalClasses>14</TotalClasses>
+                <ConcreteClasses>11</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>6</Ca>
+                <Ce>0</Ce>
+                <A>0.21</A>
+                <I>0</I>
+                <D>0.79</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.Elemento
+                </Class>
+                <Class sourceFile="WSMateria.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.WSMateria
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiMateria.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.AggiungiMateria
+                </Class>
+                <Class sourceFile="AggiungiMateriaResponse.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.AggiungiMateriaResponse
+                </Class>
+                <Class sourceFile="CancellaMateria.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.CancellaMateria
+                </Class>
+                <Class sourceFile="CancellaMateriaResponse.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.CancellaMateriaResponse
+                </Class>
+                <Class sourceFile="MateriaInsegnamento.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.MateriaInsegnamento
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="RecuperaMaterie.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.RecuperaMaterie
+                </Class>
+                <Class sourceFile="RecuperaMaterieResponse.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.RecuperaMaterieResponse
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.WSDidatticaException_Exception
+                </Class>
+                <Class sourceFile="WSMateriaService.java">
+                    nu.mine.egoless.didattica.ws.materiaclient.WSMateriaService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.adapter</Package>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.nazioneclient">
+            <Stats>
+                <TotalClasses>10</TotalClasses>
+                <ConcreteClasses>7</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>7</Ca>
+                <Ce>0</Ce>
+                <A>0.3</A>
+                <I>0</I>
+                <D>0.7</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.Elemento
+                </Class>
+                <Class sourceFile="WSNazione.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.WSNazione
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Nazione.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.Nazione
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.ObjectFactory
+                </Class>
+                <Class sourceFile="RecuperaNazioni.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.RecuperaNazioni
+                </Class>
+                <Class sourceFile="RecuperaNazioniResponse.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.RecuperaNazioniResponse
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.WSDidatticaException_Exception
+                </Class>
+                <Class sourceFile="WSNazioneService.java">
+                    nu.mine.egoless.didattica.ws.nazioneclient.WSNazioneService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.adapter</Package>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.personaclient">
+            <Stats>
+                <TotalClasses>38</TotalClasses>
+                <ConcreteClasses>34</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>4</Ca>
+                <Ce>0</Ce>
+                <A>0.11</A>
+                <I>0</I>
+                <D>0.89</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.personaclient.Elemento
+                </Class>
+                <Class sourceFile="ParametriRicerca.java">
+                    nu.mine.egoless.didattica.ws.personaclient.ParametriRicerca
+                </Class>
+                <Class sourceFile="WSPersona.java">
+                    nu.mine.egoless.didattica.ws.personaclient.WSPersona
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.personaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiDocente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.AggiungiDocente
+                </Class>
+                <Class sourceFile="AggiungiDocenteResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.AggiungiDocenteResponse
+                </Class>
+                <Class sourceFile="AggiungiStudente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.AggiungiStudente
+                </Class>
+                <Class sourceFile="AggiungiStudenteResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.AggiungiStudenteResponse
+                </Class>
+                <Class sourceFile="CancellaDocente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.CancellaDocente
+                </Class>
+                <Class sourceFile="CancellaDocenteResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.CancellaDocenteResponse
+                </Class>
+                <Class sourceFile="CancellaStudente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.CancellaStudente
+                </Class>
+                <Class sourceFile="CancellaStudenteResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.CancellaStudenteResponse
+                </Class>
+                <Class sourceFile="CercaDocente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.CercaDocente
+                </Class>
+                <Class sourceFile="CercaDocenteResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.CercaDocenteResponse
+                </Class>
+                <Class sourceFile="CercaStudente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.CercaStudente
+                </Class>
+                <Class sourceFile="CercaStudenteResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.CercaStudenteResponse
+                </Class>
+                <Class sourceFile="Date.java">
+                    nu.mine.egoless.didattica.ws.personaclient.Date
+                </Class>
+                <Class sourceFile="Docente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.Docente
+                </Class>
+                <Class sourceFile="GetClasse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.GetClasse
+                </Class>
+                <Class sourceFile="GetClasseResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.GetClasseResponse
+                </Class>
+                <Class sourceFile="GetMaterie.java">
+                    nu.mine.egoless.didattica.ws.personaclient.GetMaterie
+                </Class>
+                <Class sourceFile="GetMaterieResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.GetMaterieResponse
+                </Class>
+                <Class sourceFile="ModificaDocente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.ModificaDocente
+                </Class>
+                <Class sourceFile="ModificaDocenteResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.ModificaDocenteResponse
+                </Class>
+                <Class sourceFile="ModificaStudente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.ModificaStudente
+                </Class>
+                <Class sourceFile="ModificaStudenteResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.ModificaStudenteResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.personaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="ParametriRicercaDocente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.ParametriRicercaDocente
+                </Class>
+                <Class sourceFile="ParametriRicercaStudente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.ParametriRicercaStudente
+                </Class>
+                <Class sourceFile="Persona.java">
+                    nu.mine.egoless.didattica.ws.personaclient.Persona
+                </Class>
+                <Class sourceFile="SetClasse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.SetClasse
+                </Class>
+                <Class sourceFile="SetClasseResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.SetClasseResponse
+                </Class>
+                <Class sourceFile="SetMaterie.java">
+                    nu.mine.egoless.didattica.ws.personaclient.SetMaterie
+                </Class>
+                <Class sourceFile="SetMaterieResponse.java">
+                    nu.mine.egoless.didattica.ws.personaclient.SetMaterieResponse
+                </Class>
+                <Class sourceFile="Studente.java">
+                    nu.mine.egoless.didattica.ws.personaclient.Studente
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.personaclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.personaclient.WSDidatticaException_Exception
+                </Class>
+                <Class sourceFile="WSPersonaService.java">
+                    nu.mine.egoless.didattica.ws.personaclient.WSPersonaService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.religioneclient">
+            <Stats>
+                <TotalClasses>10</TotalClasses>
+                <ConcreteClasses>7</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>7</Ca>
+                <Ce>0</Ce>
+                <A>0.3</A>
+                <I>0</I>
+                <D>0.7</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.Elemento
+                </Class>
+                <Class sourceFile="WSReligione.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.WSReligione
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.ObjectFactory
+                </Class>
+                <Class sourceFile="RecuperaReligioni.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.RecuperaReligioni
+                </Class>
+                <Class sourceFile="RecuperaReligioniResponse.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.RecuperaReligioniResponse
+                </Class>
+                <Class sourceFile="Religione.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.Religione
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.WSDidatticaException_Exception
+                </Class>
+                <Class sourceFile="WSReligioneService.java">
+                    nu.mine.egoless.didattica.ws.religioneclient.WSReligioneService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.adapter</Package>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.tipoassenzaclient">
+            <Stats>
+                <TotalClasses>14</TotalClasses>
+                <ConcreteClasses>11</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>4</Ca>
+                <Ce>0</Ce>
+                <A>0.21</A>
+                <I>0</I>
+                <D>0.79</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.Elemento
+                </Class>
+                <Class sourceFile="WSTipoAssenza.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.WSTipoAssenza
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiTipoAssenza.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.AggiungiTipoAssenza
+                </Class>
+                <Class sourceFile="AggiungiTipoAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.AggiungiTipoAssenzaResponse
+                </Class>
+                <Class sourceFile="CancellaTipoAssenza.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.CancellaTipoAssenza
+                </Class>
+                <Class sourceFile="CancellaTipoAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.CancellaTipoAssenzaResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="RecuperaTipiAssenza.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.RecuperaTipiAssenza
+                </Class>
+                <Class sourceFile="RecuperaTipiAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.RecuperaTipiAssenzaResponse
+                </Class>
+                <Class sourceFile="TipoAssenza.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.TipoAssenza
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.WSDidatticaException_Exception
+                </Class>
+                <Class sourceFile="WSTipoAssenzaService.java">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.WSTipoAssenzaService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.tipoprovaclient">
+            <Stats>
+                <TotalClasses>14</TotalClasses>
+                <ConcreteClasses>11</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>4</Ca>
+                <Ce>0</Ce>
+                <A>0.21</A>
+                <I>0</I>
+                <D>0.79</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.Elemento
+                </Class>
+                <Class sourceFile="WSTipoProva.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.WSTipoProva
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiTipoProva.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.AggiungiTipoProva
+                </Class>
+                <Class sourceFile="AggiungiTipoProvaResponse.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.AggiungiTipoProvaResponse
+                </Class>
+                <Class sourceFile="CancellaTipoProva.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.CancellaTipoProva
+                </Class>
+                <Class sourceFile="CancellaTipoProvaResponse.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.CancellaTipoProvaResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="RecuperaTipiProva.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.RecuperaTipiProva
+                </Class>
+                <Class sourceFile="RecuperaTipiProvaResponse.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.RecuperaTipiProvaResponse
+                </Class>
+                <Class sourceFile="TipoProva.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.TipoProva
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.WSDidatticaException_Exception
+                </Class>
+                <Class sourceFile="WSTipoProvaService.java">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.WSTipoProvaService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.tipovotoclient">
+            <Stats>
+                <TotalClasses>14</TotalClasses>
+                <ConcreteClasses>11</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>4</Ca>
+                <Ce>0</Ce>
+                <A>0.21</A>
+                <I>0</I>
+                <D>0.79</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.Elemento
+                </Class>
+                <Class sourceFile="WSTipoVoto.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.WSTipoVoto
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiTipoVoto.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.AggiungiTipoVoto
+                </Class>
+                <Class sourceFile="AggiungiTipoVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.AggiungiTipoVotoResponse
+                </Class>
+                <Class sourceFile="CancellaTipoVoto.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.CancellaTipoVoto
+                </Class>
+                <Class sourceFile="CancellaTipoVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.CancellaTipoVotoResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.ObjectFactory
+                </Class>
+                <Class sourceFile="RecuperaTipiVoto.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.RecuperaTipiVoto
+                </Class>
+                <Class sourceFile="RecuperaTipiVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.RecuperaTipiVotoResponse
+                </Class>
+                <Class sourceFile="TipoVoto.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.TipoVoto
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.WSDidatticaException_Exception
+                </Class>
+                <Class sourceFile="WSTipoVotoService.java">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.WSTipoVotoService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.votoclient">
+            <Stats>
+                <TotalClasses>19</TotalClasses>
+                <ConcreteClasses>15</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>0</Ce>
+                <A>0.21</A>
+                <I>0</I>
+                <D>0.79</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.didattica.ws.votoclient.Elemento
+                </Class>
+                <Class sourceFile="ParametriRicerca.java">
+                    nu.mine.egoless.didattica.ws.votoclient.ParametriRicerca
+                </Class>
+                <Class sourceFile="WSVoto.java">
+                    nu.mine.egoless.didattica.ws.votoclient.WSVoto
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.votoclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiVoto.java">
+                    nu.mine.egoless.didattica.ws.votoclient.AggiungiVoto
+                </Class>
+                <Class sourceFile="AggiungiVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.votoclient.AggiungiVotoResponse
+                </Class>
+                <Class sourceFile="CancellaVoto.java">
+                    nu.mine.egoless.didattica.ws.votoclient.CancellaVoto
+                </Class>
+                <Class sourceFile="CancellaVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.votoclient.CancellaVotoResponse
+                </Class>
+                <Class sourceFile="CercaVoto.java">
+                    nu.mine.egoless.didattica.ws.votoclient.CercaVoto
+                </Class>
+                <Class sourceFile="CercaVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.votoclient.CercaVotoResponse
+                </Class>
+                <Class sourceFile="Date.java">
+                    nu.mine.egoless.didattica.ws.votoclient.Date
+                </Class>
+                <Class sourceFile="ModificaVoto.java">
+                    nu.mine.egoless.didattica.ws.votoclient.ModificaVoto
+                </Class>
+                <Class sourceFile="ModificaVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.votoclient.ModificaVotoResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.votoclient.ObjectFactory
+                </Class>
+                <Class sourceFile="ParametriRicercaVoto.java">
+                    nu.mine.egoless.didattica.ws.votoclient.ParametriRicercaVoto
+                </Class>
+                <Class sourceFile="Voto.java">
+                    nu.mine.egoless.didattica.ws.votoclient.Voto
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.votoclient.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSDidatticaException_Exception.java">
+                    nu.mine.egoless.didattica.ws.votoclient.WSDidatticaException_Exception
+                </Class>
+                <Class sourceFile="WSVotoService.java">
+                    nu.mine.egoless.didattica.ws.votoclient.WSVotoService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.app.bean</Package>
+                <Package>nu.mine.egoless.didattica.app.gui.registroDocente</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.supporto">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.jdesktop.layout">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+    </Packages>
+
+    <Cycles>
+        <Package Name="nu.mine.egoless.didattica.app.gui">
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+        </Package>
+
+        <Package Name="nu.mine.egoless.didattica.app.gui.componentiComuni">
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+        </Package>
+
+        <Package Name="nu.mine.egoless.didattica.app.gui.componentiComuni.elementi">
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+        </Package>
+
+        <Package Name="nu.mine.egoless.didattica.app.gui.gestionePersone">
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+        </Package>
+
+        <Package Name="nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+        </Package>
+
+        <Package Name="nu.mine.egoless.didattica.app.gui.gestionePersone.studenti">
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+        </Package>
+
+        <Package Name="nu.mine.egoless.didattica.app.gui.registroDocente">
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+        </Package>
+
+        <Package Name="nu.mine.egoless.didattica.app.prove">
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</Package>
+            <Package>nu.mine.egoless.didattica.app.gui.componentiComuni</Package>
+        </Package>
+
+    </Cycles>
+</JDepend>

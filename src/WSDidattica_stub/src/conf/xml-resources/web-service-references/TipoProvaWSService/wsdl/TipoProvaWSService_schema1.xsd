@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:tns="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="aggiungiTipoProva" type="tns:aggiungiTipoProva"/>
+
+  <xs:element name="aggiungiTipoProvaResponse" type="tns:aggiungiTipoProvaResponse"/>
+
+  <xs:element name="cancellaTipoProva" type="tns:cancellaTipoProva"/>
+
+  <xs:element name="cancellaTipoProvaResponse" type="tns:cancellaTipoProvaResponse"/>
+
+  <xs:element name="caricaTipoProva" type="tns:caricaTipoProva"/>
+
+  <xs:element name="caricaTipoProvaResponse" type="tns:caricaTipoProvaResponse"/>
+
+  <xs:element name="getTipiProva" type="tns:getTipiProva"/>
+
+  <xs:element name="getTipiProvaResponse" type="tns:getTipiProvaResponse"/>
+
+  <xs:element name="modificaTipoProva" type="tns:modificaTipoProva"/>
+
+  <xs:element name="modificaTipoProvaResponse" type="tns:modificaTipoProvaResponse"/>
+
+  <xs:complexType name="getTipiProva"/>
+
+  <xs:complexType name="getTipiProvaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoProva">
+    <xs:sequence>
+      <xs:element name="idTipoProva" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoProvaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:tipoProva" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoProva">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaTipoProva">
+    <xs:sequence>
+      <xs:element name="tipoProva" type="tns:tipoProva" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaTipoProvaResponse"/>
+
+  <xs:complexType name="aggiungiTipoProva">
+    <xs:sequence>
+      <xs:element name="nuovoTipoProva" type="tns:tipoProva" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoProvaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaTipoProva">
+    <xs:sequence>
+      <xs:element name="idTipoProva" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaTipoProvaResponse"/>
+</xs:schema>
+

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+
+<system systemId="http://192.168.84.136:8080/WSTestService/WSTest/__container$publishing$subctx/META-INF/wsdl/WSTestService_schema1.xsd" uri="xml-resources/web-service-references/WSTest/wsdl/192.168.84.136_8080/WSTestService/WSTest/__container_publishing_subctx/META-INF/wsdl/WSTestService_schema1.xsd"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<system systemId="http://localhost:8080/WSSupportoService/WSSupporto?wsdl" uri="xml-resources/web-service-references/WSSupporto/wsdl/localhost_8080/WSSupportoService/WSSupporto.wsdl"/>
+<system systemId="http://localhost:8080/WSSupportoService/WSSupporto/__container$publishing$subctx/META-INF/wsdl/WSSupportoService_schema1.xsd" uri="xml-resources/web-service-references/WSSupporto/wsdl/localhost_8080/WSSupportoService/WSSupporto/__container_publishing_subctx/META-INF/wsdl/WSSupportoService_schema1.xsd"/>
+<system systemId="http://localhost:8080/WSSupportoService/WSSupporto/__container$publishing$subctx/META-INF/wsdl/WSSupportoService_schema2.xsd" uri="xml-resources/web-service-references/WSSupporto/wsdl/localhost_8080/WSSupportoService/WSSupporto/__container_publishing_subctx/META-INF/wsdl/WSSupportoService_schema2.xsd"/>
+<system systemId="http://localhost:8080/WSVotoService/WSVoto?wsdl" uri="xml-resources/web-service-references/WSVoto/wsdl/localhost_8080/WSVotoService/WSVoto.wsdl"/>
+<system systemId="http://localhost:8080/WSVotoService/WSVoto/__container$publishing$subctx/META-INF/wsdl/WSVotoService_schema1.xsd" uri="xml-resources/web-service-references/WSVoto/wsdl/localhost_8080/WSVotoService/WSVoto/__container_publishing_subctx/META-INF/wsdl/WSVotoService_schema1.xsd"/>
+<system systemId="http://localhost:8080/WSVotoService/WSVoto/__container$publishing$subctx/META-INF/wsdl/WSVotoService_schema2.xsd" uri="xml-resources/web-service-references/WSVoto/wsdl/localhost_8080/WSVotoService/WSVoto/__container_publishing_subctx/META-INF/wsdl/WSVotoService_schema2.xsd"/>
+<system systemId="http://localhost:8080/WSPersonaService/WSPersona?wsdl" uri="xml-resources/web-service-references/WSPersona/wsdl/localhost_8080/WSPersonaService/WSPersona.wsdl"/>
+<system systemId="http://localhost:8080/WSPersonaService/WSPersona/__container$publishing$subctx/META-INF/wsdl/WSPersonaService_schema1.xsd" uri="xml-resources/web-service-references/WSPersona/wsdl/localhost_8080/WSPersonaService/WSPersona/__container_publishing_subctx/META-INF/wsdl/WSPersonaService_schema1.xsd"/>
+<system systemId="http://localhost:8080/WSPersonaService/WSPersona/__container$publishing$subctx/META-INF/wsdl/WSPersonaService_schema2.xsd" uri="xml-resources/web-service-references/WSPersona/wsdl/localhost_8080/WSPersonaService/WSPersona/__container_publishing_subctx/META-INF/wsdl/WSPersonaService_schema2.xsd"/>
+<system systemId="http://localhost:8080/WSTipoAssenzaService/WSTipoAssenza?wsdl" uri="xml-resources/web-service-references/WSTipoAssenza/wsdl/localhost_8080/WSTipoAssenzaService/WSTipoAssenza.wsdl"/>
+<system systemId="http://localhost:8080/WSTipoAssenzaService/WSTipoAssenza/__container$publishing$subctx/META-INF/wsdl/WSTipoAssenzaService_schema1.xsd" uri="xml-resources/web-service-references/WSTipoAssenza/wsdl/localhost_8080/WSTipoAssenzaService/WSTipoAssenza/__container_publishing_subctx/META-INF/wsdl/WSTipoAssenzaService_schema1.xsd"/>
+<system systemId="http://localhost:8080/WSTipoAssenzaService/WSTipoAssenza/__container$publishing$subctx/META-INF/wsdl/WSTipoAssenzaService_schema2.xsd" uri="xml-resources/web-service-references/WSTipoAssenza/wsdl/localhost_8080/WSTipoAssenzaService/WSTipoAssenza/__container_publishing_subctx/META-INF/wsdl/WSTipoAssenzaService_schema2.xsd"/>
+<system systemId="http://localhost:8080/WSClasseService/WSClasse?wsdl" uri="xml-resources/web-service-references/WSClasse/wsdl/localhost_8080/WSClasseService/WSClasse.wsdl"/>
+<system systemId="http://localhost:8080/WSClasseService/WSClasse/__container$publishing$subctx/META-INF/wsdl/WSClasseService_schema1.xsd" uri="xml-resources/web-service-references/WSClasse/wsdl/localhost_8080/WSClasseService/WSClasse/__container_publishing_subctx/META-INF/wsdl/WSClasseService_schema1.xsd"/>
+<system systemId="http://localhost:8080/WSClasseService/WSClasse/__container$publishing$subctx/META-INF/wsdl/WSClasseService_schema2.xsd" uri="xml-resources/web-service-references/WSClasse/wsdl/localhost_8080/WSClasseService/WSClasse/__container_publishing_subctx/META-INF/wsdl/WSClasseService_schema2.xsd"/>
+<system systemId="http://localhost:8080/WSMateriaService/WSMateria?wsdl" uri="xml-resources/web-service-references/WSMateria/wsdl/localhost_8080/WSMateriaService/WSMateria.wsdl"/>
+<system systemId="http://localhost:8080/WSMateriaService/WSMateria/__container$publishing$subctx/META-INF/wsdl/WSMateriaService_schema1.xsd" uri="xml-resources/web-service-references/WSMateria/wsdl/localhost_8080/WSMateriaService/WSMateria/__container_publishing_subctx/META-INF/wsdl/WSMateriaService_schema1.xsd"/>
+<system systemId="http://localhost:8080/WSMateriaService/WSMateria/__container$publishing$subctx/META-INF/wsdl/WSMateriaService_schema2.xsd" uri="xml-resources/web-service-references/WSMateria/wsdl/localhost_8080/WSMateriaService/WSMateria/__container_publishing_subctx/META-INF/wsdl/WSMateriaService_schema2.xsd"/>
+<system systemId="http://localhost:8080/WSAssenzaService/WSAssenza?wsdl" uri="xml-resources/web-service-references/WSAssenza/wsdl/localhost_8080/WSAssenzaService/WSAssenza.wsdl"/>
+<system systemId="http://localhost:8080/WSAssenzaService/WSAssenza/__container$publishing$subctx/META-INF/wsdl/WSAssenzaService_schema1.xsd" uri="xml-resources/web-service-references/WSAssenza/wsdl/localhost_8080/WSAssenzaService/WSAssenza/__container_publishing_subctx/META-INF/wsdl/WSAssenzaService_schema1.xsd"/>
+<system systemId="http://localhost:8080/WSAssenzaService/WSAssenza/__container$publishing$subctx/META-INF/wsdl/WSAssenzaService_schema2.xsd" uri="xml-resources/web-service-references/WSAssenza/wsdl/localhost_8080/WSAssenzaService/WSAssenza/__container_publishing_subctx/META-INF/wsdl/WSAssenzaService_schema2.xsd"/>
+<system systemId="http://localhost:8080/WSContattoService/WSContatto?wsdl" uri="xml-resources/web-service-references/WSContatto/wsdl/localhost_8080/WSContattoService/WSContatto.wsdl"/>
+<system systemId="http://localhost:8080/WSContattoService/WSContatto/__container$publishing$subctx/META-INF/wsdl/WSContattoService_schema1.xsd" uri="xml-resources/web-service-references/WSContatto/wsdl/localhost_8080/WSContattoService/WSContatto/__container_publishing_subctx/META-INF/wsdl/WSContattoService_schema1.xsd"/>
+<system systemId="http://localhost:8080/WSContattoService/WSContatto/__container$publishing$subctx/META-INF/wsdl/WSContattoService_schema2.xsd" uri="xml-resources/web-service-references/WSContatto/wsdl/localhost_8080/WSContattoService/WSContatto/__container_publishing_subctx/META-INF/wsdl/WSContattoService_schema2.xsd"/>
+
+
+
+
+
+
+<system systemId="http://localhost:8080/WSTipoVotoService/WSTipoVoto?wsdl" uri="xml-resources/web-service-references/WSTipoVoto/wsdl/localhost_8080/WSTipoVotoService/WSTipoVoto.wsdl"/>
+<system systemId="http://localhost:8080/WSTipoVotoService/WSTipoVoto/__container$publishing$subctx/META-INF/wsdl/WSTipoVotoService_schema1.xsd" uri="xml-resources/web-service-references/WSTipoVoto/wsdl/localhost_8080/WSTipoVotoService/WSTipoVoto/__container_publishing_subctx/META-INF/wsdl/WSTipoVotoService_schema1.xsd"/>
+<system systemId="http://localhost:8080/WSTipoVotoService/WSTipoVoto/__container$publishing$subctx/META-INF/wsdl/WSTipoVotoService_schema2.xsd" uri="xml-resources/web-service-references/WSTipoVoto/wsdl/localhost_8080/WSTipoVotoService/WSTipoVoto/__container_publishing_subctx/META-INF/wsdl/WSTipoVotoService_schema2.xsd"/>
+
+
+<system systemId="http://localhost:8080/WSTestService/WSTest?wsdl" uri="xml-resources/web-service-references/WSTest/wsdl/localhost_8080/WSTestService/WSTest.wsdl"/>
+<system systemId="http://localhost:8080/WSTestService/WSTest/__container$publishing$subctx/META-INF/wsdl/WSTestService_schema1.xsd" uri="xml-resources/web-service-references/WSTest/wsdl/localhost_8080/WSTestService/WSTest/__container_publishing_subctx/META-INF/wsdl/WSTestService_schema1.xsd"/>
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTipoProva/WSTipoProva.wsdl" uri="xml-resources/web-service-references/WSTipoProva/wsdl/WSTipoProva.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTipoProva/WSTipoProvaService_schema1.xsd" uri="xml-resources/web-service-references/WSTipoProva/wsdl/WSTipoProvaService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTipoProva/WSTipoProvaService_schema2.xsd" uri="xml-resources/web-service-references/WSTipoProva/wsdl/WSTipoProvaService_schema2.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSNazione/WSNazione.wsdl" uri="xml-resources/web-service-references/WSNazione/wsdl/WSNazione.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSNazione/WSNazioneService_schema1.xsd" uri="xml-resources/web-service-references/WSNazione/wsdl/WSNazioneService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSNazione/WSNazioneService_schema2.xsd" uri="xml-resources/web-service-references/WSNazione/wsdl/WSNazioneService_schema2.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSReligione/WSReligione.wsdl" uri="xml-resources/web-service-references/WSReligione/wsdl/WSReligione.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSReligione/WSReligioneService_schema1.xsd" uri="xml-resources/web-service-references/WSReligione/wsdl/WSReligioneService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSReligione/WSReligioneService_schema2.xsd" uri="xml-resources/web-service-references/WSReligione/wsdl/WSReligioneService_schema2.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTipoAssenza/WSTipoAssenza.wsdl" uri="xml-resources/web-service-references/WSTipoAssenza/wsdl/WSTipoAssenza.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTipoAssenza/WSTipoAssenzaService_schema1.xsd" uri="xml-resources/web-service-references/WSTipoAssenza/wsdl/WSTipoAssenzaService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTipoAssenza/WSTipoAssenzaService_schema2.xsd" uri="xml-resources/web-service-references/WSTipoAssenza/wsdl/WSTipoAssenzaService_schema2.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTipoVoto/WSTipoVoto.wsdl" uri="xml-resources/web-service-references/WSTipoVoto/wsdl/WSTipoVoto.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTipoVoto/WSTipoVotoService_schema1.xsd" uri="xml-resources/web-service-references/WSTipoVoto/wsdl/WSTipoVotoService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTipoVoto/WSTipoVotoService_schema2.xsd" uri="xml-resources/web-service-references/WSTipoVoto/wsdl/WSTipoVotoService_schema2.xsd"/>
+
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSMateria/WSMateria.wsdl" uri="xml-resources/web-service-references/WSMateria/wsdl/WSMateria.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSMateria/WSMateriaService_schema1.xsd" uri="xml-resources/web-service-references/WSMateria/wsdl/WSMateriaService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSMateria/WSMateriaService_schema2.xsd" uri="xml-resources/web-service-references/WSMateria/wsdl/WSMateriaService_schema2.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSClasse/WSClasse.wsdl" uri="xml-resources/web-service-references/WSClasse/wsdl/WSClasse.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSClasse/WSClasseService_schema1.xsd" uri="xml-resources/web-service-references/WSClasse/wsdl/WSClasseService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSClasse/WSClasseService_schema2.xsd" uri="xml-resources/web-service-references/WSClasse/wsdl/WSClasseService_schema2.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSContatto/WSContatto.wsdl" uri="xml-resources/web-service-references/WSContatto/wsdl/WSContatto.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSContatto/WSContattoService_schema1.xsd" uri="xml-resources/web-service-references/WSContatto/wsdl/WSContattoService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSContatto/WSContattoService_schema2.xsd" uri="xml-resources/web-service-references/WSContatto/wsdl/WSContattoService_schema2.xsd"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTest/WSTestService.wsdl" uri="xml-resources/web-service-references/WSTestService/wsdl/WSTestService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSTest/WSTestService_schema1.xsd" uri="xml-resources/web-service-references/WSTestService/wsdl/WSTestService_schema1.xsd"/>
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSAssenza/WSAssenza.wsdl" uri="xml-resources/web-service-references/WSAssenza/wsdl/WSAssenza.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSAssenza/WSAssenzaService_schema1.xsd" uri="xml-resources/web-service-references/WSAssenza/wsdl/WSAssenzaService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSAssenza/WSAssenzaService_schema2.xsd" uri="xml-resources/web-service-references/WSAssenza/wsdl/WSAssenzaService_schema2.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSVoto/WSVoto.wsdl" uri="xml-resources/web-service-references/WSVoto/wsdl/WSVoto.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSVoto/WSVotoService_schema1.xsd" uri="xml-resources/web-service-references/WSVoto/wsdl/WSVotoService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSVoto/WSVotoService_schema2.xsd" uri="xml-resources/web-service-references/WSVoto/wsdl/WSVotoService_schema2.xsd"/>
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSPersona/WSPersona.wsdl" uri="xml-resources/web-service-references/WSPersona/wsdl/WSPersona.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSPersona/WSPersonaService_schema1.xsd" uri="xml-resources/web-service-references/WSPersona/wsdl/WSPersonaService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/WSPersona/WSPersonaService_schema2.xsd" uri="xml-resources/web-service-references/WSPersona/wsdl/WSPersonaService_schema2.xsd"/>
+</catalog>

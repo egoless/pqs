@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://registro.modulo.ws.pqs.swellsys.com/" name="VotoWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="VotoWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="aggiungiVoto">
+    <part name="parameters" element="tns:aggiungiVoto"/>
+  </message>
+  <message name="aggiungiVotoResponse">
+    <part name="parameters" element="tns:aggiungiVotoResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="modificaVoto">
+    <part name="parameters" element="tns:modificaVoto"/>
+  </message>
+  <message name="modificaVotoResponse">
+    <part name="parameters" element="tns:modificaVotoResponse"/>
+  </message>
+  <message name="cancellaVoto">
+    <part name="parameters" element="tns:cancellaVoto"/>
+  </message>
+  <message name="cancellaVotoResponse">
+    <part name="parameters" element="tns:cancellaVotoResponse"/>
+  </message>
+  <message name="cercaVoto">
+    <part name="parameters" element="tns:cercaVoto"/>
+  </message>
+  <message name="cercaVotoResponse">
+    <part name="parameters" element="tns:cercaVotoResponse"/>
+  </message>
+  <message name="caricaVoto">
+    <part name="parameters" element="tns:caricaVoto"/>
+  </message>
+  <message name="caricaVotoResponse">
+    <part name="parameters" element="tns:caricaVotoResponse"/>
+  </message>
+  <portType name="VotoWS">
+    <operation name="aggiungiVoto">
+      <input message="tns:aggiungiVoto"/>
+      <output message="tns:aggiungiVotoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaVoto">
+      <input message="tns:modificaVoto"/>
+      <output message="tns:modificaVotoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaVoto">
+      <input message="tns:cancellaVoto"/>
+      <output message="tns:cancellaVotoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cercaVoto">
+      <input message="tns:cercaVoto"/>
+      <output message="tns:cercaVotoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaVoto">
+      <input message="tns:caricaVoto"/>
+      <output message="tns:caricaVotoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+  </portType>
+  <binding name="VotoWSPortBinding" type="tns:VotoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cercaVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="VotoWSService">
+    <port name="VotoWSPort" binding="tns:VotoWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/VotoWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

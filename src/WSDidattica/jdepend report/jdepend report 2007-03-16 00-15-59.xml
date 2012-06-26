@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="junit.framework">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws">
+            <Stats>
+                <TotalClasses>13</TotalClasses>
+                <ConcreteClasses>13</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>3</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="PersonaHelper.java">
+                    nu.mine.egoless.didattica.ws.PersonaHelper
+                </Class>
+                <Class sourceFile="WSAssenza.java">
+                    nu.mine.egoless.didattica.ws.WSAssenza
+                </Class>
+                <Class sourceFile="WSClasse.java">
+                    nu.mine.egoless.didattica.ws.WSClasse
+                </Class>
+                <Class sourceFile="WSContatto.java">
+                    nu.mine.egoless.didattica.ws.WSContatto
+                </Class>
+                <Class sourceFile="WSDidattica.java">
+                    nu.mine.egoless.didattica.ws.WSDidattica
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSMateria.java">
+                    nu.mine.egoless.didattica.ws.WSMateria
+                </Class>
+                <Class sourceFile="WSPersona.java">
+                    nu.mine.egoless.didattica.ws.WSPersona
+                </Class>
+                <Class sourceFile="WSSupporto.java">
+                    nu.mine.egoless.didattica.ws.WSSupporto
+                </Class>
+                <Class sourceFile="WSSupportoTest.java">
+                    nu.mine.egoless.didattica.ws.WSSupportoTest
+                </Class>
+                <Class sourceFile="WSTipoAssenza.java">
+                    nu.mine.egoless.didattica.ws.WSTipoAssenza
+                </Class>
+                <Class sourceFile="WSTipoVoto.java">
+                    nu.mine.egoless.didattica.ws.WSTipoVoto
+                </Class>
+                <Class sourceFile="WSVoto.java">
+                    nu.mine.egoless.didattica.ws.WSVoto
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>junit.framework</Package>
+                <Package>nu.mine.egoless.didattica.ws.apiclient</Package>
+                <Package>nu.mine.egoless.supporto</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.didattica.ws.apiclient">
+            <Stats>
+                <TotalClasses>84</TotalClasses>
+                <ConcreteClasses>81</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.04</A>
+                <I>0</I>
+                <D>0.96</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="ParametriRicerca.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ParametriRicerca
+                </Class>
+                <Class sourceFile="WSApi.java">
+                    nu.mine.egoless.didattica.ws.apiclient.WSApi
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.didattica.ws.apiclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiAssenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiAssenza
+                </Class>
+                <Class sourceFile="AggiungiAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiAssenzaResponse
+                </Class>
+                <Class sourceFile="AggiungiClasse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiClasse
+                </Class>
+                <Class sourceFile="AggiungiClasseResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiClasseResponse
+                </Class>
+                <Class sourceFile="AggiungiContatto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiContatto
+                </Class>
+                <Class sourceFile="AggiungiContattoResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiContattoResponse
+                </Class>
+                <Class sourceFile="AggiungiInsegnante.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiInsegnante
+                </Class>
+                <Class sourceFile="AggiungiInsegnanteResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiInsegnanteResponse
+                </Class>
+                <Class sourceFile="AggiungiMateria.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiMateria
+                </Class>
+                <Class sourceFile="AggiungiMateriaInsegnamento.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiMateriaInsegnamento
+                </Class>
+                <Class sourceFile="AggiungiMateriaInsegnamentoResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiMateriaInsegnamentoResponse
+                </Class>
+                <Class sourceFile="AggiungiMateriaResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiMateriaResponse
+                </Class>
+                <Class sourceFile="AggiungiStudente.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiStudente
+                </Class>
+                <Class sourceFile="AggiungiStudenteResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiStudenteResponse
+                </Class>
+                <Class sourceFile="AggiungiTipoAssenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiTipoAssenza
+                </Class>
+                <Class sourceFile="AggiungiTipoAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiTipoAssenzaResponse
+                </Class>
+                <Class sourceFile="AggiungiTipoVoto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiTipoVoto
+                </Class>
+                <Class sourceFile="AggiungiTipoVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiTipoVotoResponse
+                </Class>
+                <Class sourceFile="AggiungiVoto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiVoto
+                </Class>
+                <Class sourceFile="AggiungiVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.AggiungiVotoResponse
+                </Class>
+                <Class sourceFile="Assenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.Assenza
+                </Class>
+                <Class sourceFile="CancellaAssenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaAssenza
+                </Class>
+                <Class sourceFile="CancellaClasse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaClasse
+                </Class>
+                <Class sourceFile="CancellaContatto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaContatto
+                </Class>
+                <Class sourceFile="CancellaInsegnante.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaInsegnante
+                </Class>
+                <Class sourceFile="CancellaMateria.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaMateria
+                </Class>
+                <Class sourceFile="CancellaMateriaInsegnamento.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaMateriaInsegnamento
+                </Class>
+                <Class sourceFile="CancellaStudente.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaStudente
+                </Class>
+                <Class sourceFile="CancellaTipoAssenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaTipoAssenza
+                </Class>
+                <Class sourceFile="CancellaTipoVoto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaTipoVoto
+                </Class>
+                <Class sourceFile="CancellaVoto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CancellaVoto
+                </Class>
+                <Class sourceFile="CercaAssenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaAssenza
+                </Class>
+                <Class sourceFile="CercaAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaAssenzaResponse
+                </Class>
+                <Class sourceFile="CercaContatto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaContatto
+                </Class>
+                <Class sourceFile="CercaContattoResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaContattoResponse
+                </Class>
+                <Class sourceFile="CercaInsegnante.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaInsegnante
+                </Class>
+                <Class sourceFile="CercaInsegnanteResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaInsegnanteResponse
+                </Class>
+                <Class sourceFile="CercaStudente.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaStudente
+                </Class>
+                <Class sourceFile="CercaStudenteResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaStudenteResponse
+                </Class>
+                <Class sourceFile="CercaVoto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaVoto
+                </Class>
+                <Class sourceFile="CercaVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.CercaVotoResponse
+                </Class>
+                <Class sourceFile="Classe.java">
+                    nu.mine.egoless.didattica.ws.apiclient.Classe
+                </Class>
+                <Class sourceFile="Contatto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.Contatto
+                </Class>
+                <Class sourceFile="IndirizzoStudi.java">
+                    nu.mine.egoless.didattica.ws.apiclient.IndirizzoStudi
+                </Class>
+                <Class sourceFile="Insegnante.java">
+                    nu.mine.egoless.didattica.ws.apiclient.Insegnante
+                </Class>
+                <Class sourceFile="ListaAttributi.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ListaAttributi
+                </Class>
+                <Class sourceFile="MateriaInsegnamento.java">
+                    nu.mine.egoless.didattica.ws.apiclient.MateriaInsegnamento
+                </Class>
+                <Class sourceFile="ModificaAssenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ModificaAssenza
+                </Class>
+                <Class sourceFile="ModificaAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ModificaAssenzaResponse
+                </Class>
+                <Class sourceFile="ModificaContatto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ModificaContatto
+                </Class>
+                <Class sourceFile="ModificaInsegnante.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ModificaInsegnante
+                </Class>
+                <Class sourceFile="ModificaStudente.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ModificaStudente
+                </Class>
+                <Class sourceFile="ModificaVoto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ModificaVoto
+                </Class>
+                <Class sourceFile="Nazione.java">
+                    nu.mine.egoless.didattica.ws.apiclient.Nazione
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ObjectFactory
+                </Class>
+                <Class sourceFile="ParametriRicercaAssenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ParametriRicercaAssenza
+                </Class>
+                <Class sourceFile="ParametriRicercaContatto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ParametriRicercaContatto
+                </Class>
+                <Class sourceFile="ParametriRicercaInsegnante.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ParametriRicercaInsegnante
+                </Class>
+                <Class sourceFile="ParametriRicercaStudente.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ParametriRicercaStudente
+                </Class>
+                <Class sourceFile="ParametriRicercaVoto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.ParametriRicercaVoto
+                </Class>
+                <Class sourceFile="Persona.java">
+                    nu.mine.egoless.didattica.ws.apiclient.Persona
+                </Class>
+                <Class sourceFile="RecuperaClassi.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaClassi
+                </Class>
+                <Class sourceFile="RecuperaClassiResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaClassiResponse
+                </Class>
+                <Class sourceFile="RecuperaMaterie.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaMaterie
+                </Class>
+                <Class sourceFile="RecuperaMaterieInsegnamento.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaMaterieInsegnamento
+                </Class>
+                <Class sourceFile="RecuperaMaterieInsegnamentoResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaMaterieInsegnamentoResponse
+                </Class>
+                <Class sourceFile="RecuperaMaterieResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaMaterieResponse
+                </Class>
+                <Class sourceFile="RecuperaNazioni.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaNazioni
+                </Class>
+                <Class sourceFile="RecuperaNazioniResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaNazioniResponse
+                </Class>
+                <Class sourceFile="RecuperaReligioni.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaReligioni
+                </Class>
+                <Class sourceFile="RecuperaReligioniResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaReligioniResponse
+                </Class>
+                <Class sourceFile="RecuperaTipiAssenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaTipiAssenza
+                </Class>
+                <Class sourceFile="RecuperaTipiAssenzaResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaTipiAssenzaResponse
+                </Class>
+                <Class sourceFile="RecuperaTipiVoto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaTipiVoto
+                </Class>
+                <Class sourceFile="RecuperaTipiVotoResponse.java">
+                    nu.mine.egoless.didattica.ws.apiclient.RecuperaTipiVotoResponse
+                </Class>
+                <Class sourceFile="Religione.java">
+                    nu.mine.egoless.didattica.ws.apiclient.Religione
+                </Class>
+                <Class sourceFile="Studente.java">
+                    nu.mine.egoless.didattica.ws.apiclient.Studente
+                </Class>
+                <Class sourceFile="TipoAssenza.java">
+                    nu.mine.egoless.didattica.ws.apiclient.TipoAssenza
+                </Class>
+                <Class sourceFile="TipoVoto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.TipoVoto
+                </Class>
+                <Class sourceFile="Voto.java">
+                    nu.mine.egoless.didattica.ws.apiclient.Voto
+                </Class>
+                <Class sourceFile="WSApiService.java">
+                    nu.mine.egoless.didattica.ws.apiclient.WSApiService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.supporto">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0</A>
+                <I>0</I>
+                <D>1</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DateTimeFacade.java">
+                    nu.mine.egoless.supporto.DateTimeFacade
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

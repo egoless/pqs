@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="WSTipoVoto">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSTipoVoto</implementation-class>
+    </service>
+    <service name="WSClasse">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSClasse</implementation-class>
+    </service>
+    <service name="WSMateria">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSMateria</implementation-class>
+    </service>
+    <service name="WSReligione">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSReligione</implementation-class>
+    </service>
+    <service name="WSTipoProva">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSTipoProva</implementation-class>
+    </service>
+    <service name="WSNazione">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSNazione</implementation-class>
+    </service>
+    <service name="WSAssenza">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSAssenza</implementation-class>
+    </service>
+    <service name="WSVoto">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSVoto</implementation-class>
+    </service>
+    <service name="WSContatto">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSContatto</implementation-class>
+    </service>
+    <service name="WSTipoAssenza">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSTipoAssenza</implementation-class>
+    </service>
+    <service name="WSPersona">
+      <implementation-class>nu.mine.egoless.didattica.ws.WSPersona</implementation-class>
+    </service>
+  </services>
+  <clients>
+    <client name="PersonaWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/PersonaWS/PersonaWSService.wsdl</wsdl-url>
+      <local-wsdl-file>PersonaWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.personaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="NazioneWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/NazioneWS/NazioneWSService.wsdl</wsdl-url>
+      <local-wsdl-file>NazioneWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.nazioneclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="ReligioneWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/ReligioneWS/ReligioneWSService.wsdl</wsdl-url>
+      <local-wsdl-file>ReligioneWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.religioneclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="TipoAssenzaWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/TipoAssenzaWS/TipoAssenzaWSService.wsdl</wsdl-url>
+      <local-wsdl-file>TipoAssenzaWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.tipoassenzaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="ClasseWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/ClasseWS/ClasseWSService.wsdl</wsdl-url>
+      <local-wsdl-file>ClasseWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.classeclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="MateriaInsegnamentoWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/MateriaInsegnamentoWS/MateriaInsegnamentoWSService.wsdl</wsdl-url>
+      <local-wsdl-file>MateriaInsegnamentoWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.materiaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="AssenzaWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/AssenzaWS/AssenzaWSService.wsdl</wsdl-url>
+      <local-wsdl-file>AssenzaWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.assenzaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="TipoProvaWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/TipoProvaWS/TipoProvaWSService.wsdl</wsdl-url>
+      <local-wsdl-file>TipoProvaWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.tipoprovaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="TipoVotoWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/TipoVotoWS/TipoVotoWSService.wsdl</wsdl-url>
+      <local-wsdl-file>TipoVotoWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.tipovotoclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="VotoWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/VotoWS/VotoWSService.wsdl</wsdl-url>
+      <local-wsdl-file>VotoWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.votoclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="ContattoWSService">
+      <wsdl-url>file:/c:/ProgettoFinale/wsdl/swell/ContattoWS/ContattoWSService.wsdl</wsdl-url>
+      <local-wsdl-file>ContattoWSService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">nu.mine.egoless.ws.contattoclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+  </clients>
+</jax-ws>

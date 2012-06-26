@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://ws.didattica.egoless.mine.nu/" name="WSTipoAssenzaService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://ws.didattica.egoless.mine.nu/" schemaLocation="WSTipoAssenzaService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  <!--  <xsd:schema>
+      <xsd:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="http://localhost:8080/WSTipoAssenzaService/WSTipoAssenza/__container$publishing$subctx/META-INF/wsdl/WSTipoAssenzaService_schema2.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema> -->
+  </types>
+  <message name="aggiungiTipoAssenza">
+    <part name="parameters" element="tns:aggiungiTipoAssenza"/>
+  </message>
+  <message name="aggiungiTipoAssenzaResponse">
+    <part name="parameters" element="tns:aggiungiTipoAssenzaResponse"/>
+  </message>
+  <message name="WSDidatticaException">
+    <part name="fault" element="tns:WSDidatticaException"/>
+  </message>
+  <message name="cancellaTipoAssenza">
+    <part name="parameters" element="tns:cancellaTipoAssenza"/>
+  </message>
+  <message name="cancellaTipoAssenzaResponse">
+    <part name="parameters" element="tns:cancellaTipoAssenzaResponse"/>
+  </message>
+  <message name="recuperaTipiAssenza">
+    <part name="parameters" element="tns:recuperaTipiAssenza"/>
+  </message>
+  <message name="recuperaTipiAssenzaResponse">
+    <part name="parameters" element="tns:recuperaTipiAssenzaResponse"/>
+  </message>
+  <portType name="WSTipoAssenza">
+    <operation name="aggiungiTipoAssenza">
+      <input message="tns:aggiungiTipoAssenza"/>
+      <output message="tns:aggiungiTipoAssenzaResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cancellaTipoAssenza">
+      <input message="tns:cancellaTipoAssenza"/>
+      <output message="tns:cancellaTipoAssenzaResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="recuperaTipiAssenza">
+      <input message="tns:recuperaTipiAssenza"/>
+      <output message="tns:recuperaTipiAssenzaResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+  </portType>
+  <binding name="WSTipoAssenzaPortBinding" type="tns:WSTipoAssenza">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiTipoAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaTipoAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="recuperaTipiAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="WSTipoAssenzaService">
+    <port name="WSTipoAssenzaPort" binding="tns:WSTipoAssenzaPortBinding">
+      <soap:address location="http://ericmiotto.bsshome.bedin.it:8080/WSTipoAssenzaService/WSTipoAssenza" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sun-ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Application Server 9.0 EJB 3.0//EN" "http://www.sun.com/software/appserver/dtds/sun-ejb-jar_3_0-0.dtd">
+<sun-ejb-jar>
+  <enterprise-beans>
+    <ejb>
+      <ejb-name>WSMateria</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSClasse</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSTipoAssenza</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSVoto</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSReligione</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSPersona</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSAssenza</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSTipoProva</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSContatto</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSNazione</ejb-name>
+    </ejb>
+    <ejb>
+      <ejb-name>WSTipoVoto</ejb-name>
+    </ejb>
+  </enterprise-beans>
+</sun-ejb-jar>

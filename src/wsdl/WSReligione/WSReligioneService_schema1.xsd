@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="WSReligioneService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="recuperaReligioni" type="tns:recuperaReligioni"/>
+
+  <xs:element name="recuperaReligioniResponse" type="tns:recuperaReligioniResponse"/>
+
+  <xs:complexType name="recuperaReligioni"/>
+
+  <xs:complexType name="recuperaReligioniResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:religione" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="WSClasseService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="aggiungiClasse" type="tns:aggiungiClasse"/>
+
+  <xs:element name="aggiungiClasseResponse" type="tns:aggiungiClasseResponse"/>
+
+  <xs:element name="cancellaClasse" type="tns:cancellaClasse"/>
+
+  <xs:element name="cancellaClasseResponse" type="tns:cancellaClasseResponse"/>
+
+  <xs:element name="recuperaClassi" type="tns:recuperaClassi"/>
+
+  <xs:element name="recuperaClassiResponse" type="tns:recuperaClassiResponse"/>
+
+  <xs:complexType name="aggiungiClasse">
+    <xs:sequence>
+      <xs:element name="nuovaClasse" type="ns1:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiClasseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaClasse">
+    <xs:sequence>
+      <xs:element name="idClasse" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaClasseResponse"/>
+
+  <xs:complexType name="recuperaClassi"/>
+
+  <xs:complexType name="recuperaClassiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:classe" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

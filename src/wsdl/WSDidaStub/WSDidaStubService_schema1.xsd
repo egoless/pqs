@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://stub.didattica.ws/" xmlns:tns="http://stub.didattica.ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="cercaAssenzaBehavior" type="tns:cercaAssenzaBehavior"/>
+
+  <xs:element name="cercaContattoBehavior" type="tns:cercaContattoBehavior"/>
+
+  <xs:element name="cercaInsegnanteBehavior" type="tns:cercaInsegnanteBehavior"/>
+
+  <xs:element name="cercaStudenteBehavior" type="tns:cercaStudenteBehavior"/>
+
+  <xs:element name="cercaVotoBehavior" type="tns:cercaVotoBehavior"/>
+
+  <xs:element name="recuperaClassiBehavior" type="tns:recuperaClassiBehavior"/>
+
+  <xs:element name="recuperaMaterieBehavior" type="tns:recuperaMaterieBehavior"/>
+
+  <xs:element name="recuperaNazioniReturnsNull" type="tns:recuperaNazioniReturnsNull"/>
+
+  <xs:element name="recuperaReligioniReturnsNull" type="tns:recuperaReligioniReturnsNull"/>
+
+  <xs:element name="recuperaTipiAssenzaBehavior" type="tns:recuperaTipiAssenzaBehavior"/>
+
+  <xs:element name="recuperaTipiProvaBehavior" type="tns:recuperaTipiProvaBehavior"/>
+
+  <xs:element name="recuperaTipiVotoBehavior" type="tns:recuperaTipiVotoBehavior"/>
+
+  <xs:complexType name="recuperaClassiBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaAssenzaBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaInsegnanteBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaTipiAssenzaBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaVotoBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaReligioniReturnsNull">
+    <xs:sequence>
+      <xs:element name="value" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaTipiProvaBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaStudenteBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaMaterieBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaTipiVotoBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaNazioniReturnsNull">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaContattoBehavior">
+    <xs:sequence>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

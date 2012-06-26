@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="docente">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element name="dataAssunzione" type="tns:date" minOccurs="0"/>
+          <xs:element name="matricola" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="persona">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="contattoId" type="xs:int"/>
+          <xs:element name="nazioneId" type="xs:int"/>
+          <xs:element name="religioneId" type="xs:int"/>
+          <xs:element name="istitutoId" type="xs:int"/>
+          <xs:element name="codiceFiscale" type="xs:string" minOccurs="0"/>
+          <xs:element name="cognome" type="xs:string" minOccurs="0"/>
+          <xs:element name="dataNascita" type="tns:date" minOccurs="0"/>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+          <xs:element name="portatoreHandicap" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="sesso" type="xs:int" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="date">
+    <xs:sequence>
+      <xs:element name="anno" type="xs:int"/>
+      <xs:element name="date" type="xs:string" minOccurs="0"/>
+      <xs:element name="giorno" type="xs:int"/>
+      <xs:element name="mese" type="xs:int"/>
+      <xs:element name="minuti" type="xs:int"/>
+      <xs:element name="ore" type="xs:int"/>
+      <xs:element name="secondi" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicercaDocente">
+    <xs:complexContent>
+      <xs:extension base="tns:parametriRicerca">
+        <xs:sequence>
+          <xs:element name="idMateria" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicerca" abstract="true">
+    <xs:sequence>
+      <xs:element name="datiParziali" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="id" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="studente">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element name="dataIscrizione" type="tns:date" minOccurs="0"/>
+          <xs:element name="matricola" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicercaStudente">
+    <xs:complexContent>
+      <xs:extension base="tns:parametriRicerca">
+        <xs:sequence>
+          <xs:element name="cognome" type="xs:string" minOccurs="0"/>
+          <xs:element name="idClasse" type="xs:int"/>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,10 @@
+nu.mine.egoless.didattica.app.adapter
+nu.mine.egoless.didattica.app.bean
+nu.mine.egoless.didattica.app.gui
+nu.mine.egoless.didattica.app.gui.componentiComuni
+nu.mine.egoless.didattica.app.gui.componentiComuni.elementi
+nu.mine.egoless.didattica.app.gui.gestionePersone
+nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti
+nu.mine.egoless.didattica.app.gui.gestionePersone.studenti
+nu.mine.egoless.didattica.app.gui.registroDocente
+nu.mine.egoless.didattica.app.prove

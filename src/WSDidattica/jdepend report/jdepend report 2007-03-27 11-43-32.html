@@ -1,0 +1,1102 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>JDepend Analysis</title>
+<style type="text/css">
+      body {
+        font:normal 68% verdana,arial,helvetica;
+        color:#000000;
+      }
+      table tr td, tr th {
+          font-size: 68%;
+      }
+      table.details tr th{
+        font-weight: bold;
+        text-align:left;
+        background:#a6caf0;
+      }
+      table.details tr td{
+        background:#eeeee0;
+      }
+      
+      p {
+        line-height:1.5em;
+        margin-top:0.5em; margin-bottom:1.0em;
+        margin-left:2em;
+        margin-right:2em;
+      }
+      h1 {
+        margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+      }
+      h2 {
+        margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+      }
+      h3 {
+        margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+      }
+      h4 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h5 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h6 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      .Error {
+        font-weight:bold; color:red;
+      }
+      .Failure {
+        font-weight:bold; color:purple;
+      }
+      .Properties {
+        text-align:right;
+      }
+      </style>
+</head>
+<body>
+<h1>
+<a name="top">JDepend Analysis</a>
+</h1>
+<p align="right">Designed for use with <a href="http://www.clarkware.com/software/JDepend.html">JDepend</a> and <a href="http://jakarta.apache.org">Ant</a>.</p>
+<hr size="2">
+<table width="100%">
+<tr>
+<td><a name="NVsummary">
+<h2>Summary</h2>
+</a></td><td align="right">
+    [<a href="#NVsummary">summary</a>]
+    [<a href="#NVpackages">packages</a>]
+    [<a href="#NVcycles">cycles</a>]
+    [<a href="#NVexplanations">explanations</a>]
+    </td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Package</th><th>Total Classes</th><th><a href="#EXnumber">Abstract Classes</a></th><th><a href="#EXnumber">Concrete Classes</a></th><th><a href="#EXafferent">Afferent Couplings</a></th><th><a href="#EXefferent">Efferent Couplings</a></th><th><a href="#EXabstractness">Abstractness</a></th><th><a href="#EXinstability">Instability</a></th><th><a href="#EXdistance">Distance</a></th>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a></td><td align="right">12</td><td align="right">0</td><td align="right">12</td><td align="right">0</td><td align="right">12</td><td align="right">0</td><td align="right">1</td><td align="right">0</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.supporto">nu.mine.egoless.supporto</a></td><td align="right">1</td><td align="right">0</td><td align="right">1</td><td align="right">1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">1</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.assenzaclient">nu.mine.egoless.ws.assenzaclient</a></td><td align="right">21</td><td align="right">4</td><td align="right">17</td><td align="right">1</td><td align="right">0</td><td align="right">0.19</td><td align="right">0</td><td align="right">0.81</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.classeclient">nu.mine.egoless.ws.classeclient</a></td><td align="right">34</td><td align="right">3</td><td align="right">31</td><td align="right">1</td><td align="right">0</td><td align="right">0.09</td><td align="right">0</td><td align="right">0.91</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.contattoclient">nu.mine.egoless.ws.contattoclient</a></td><td align="right">20</td><td align="right">4</td><td align="right">16</td><td align="right">1</td><td align="right">0</td><td align="right">0.2</td><td align="right">0</td><td align="right">0.8</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.materiaclient">nu.mine.egoless.ws.materiaclient</a></td><td align="right">23</td><td align="right">3</td><td align="right">20</td><td align="right">1</td><td align="right">0</td><td align="right">0.13</td><td align="right">0</td><td align="right">0.87</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.nazioneclient">nu.mine.egoless.ws.nazioneclient</a></td><td align="right">18</td><td align="right">3</td><td align="right">15</td><td align="right">1</td><td align="right">0</td><td align="right">0.17</td><td align="right">0</td><td align="right">0.83</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.personaclient">nu.mine.egoless.ws.personaclient</a></td><td align="right">96</td><td align="right">4</td><td align="right">92</td><td align="right">1</td><td align="right">0</td><td align="right">0.04</td><td align="right">0</td><td align="right">0.96</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.religioneclient">nu.mine.egoless.ws.religioneclient</a></td><td align="right">18</td><td align="right">3</td><td align="right">15</td><td align="right">1</td><td align="right">0</td><td align="right">0.17</td><td align="right">0</td><td align="right">0.83</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.tipoassenzaclient">nu.mine.egoless.ws.tipoassenzaclient</a></td><td align="right">18</td><td align="right">3</td><td align="right">15</td><td align="right">1</td><td align="right">0</td><td align="right">0.17</td><td align="right">0</td><td align="right">0.83</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.tipoprovaclient">nu.mine.egoless.ws.tipoprovaclient</a></td><td align="right">18</td><td align="right">3</td><td align="right">15</td><td align="right">1</td><td align="right">0</td><td align="right">0.17</td><td align="right">0</td><td align="right">0.83</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.tipovotoclient">nu.mine.egoless.ws.tipovotoclient</a></td><td align="right">18</td><td align="right">3</td><td align="right">15</td><td align="right">1</td><td align="right">0</td><td align="right">0.17</td><td align="right">0</td><td align="right">0.83</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.ws.votoclient">nu.mine.egoless.ws.votoclient</a></td><td align="right">21</td><td align="right">4</td><td align="right">17</td><td align="right">1</td><td align="right">0</td><td align="right">0.19</td><td align="right">0</td><td align="right">0.81</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td><a name="NVpackages">
+<h2>Packages</h2>
+</a></td><td align="right">
+    [<a href="#NVsummary">summary</a>]
+    [<a href="#NVpackages">packages</a>]
+    [<a href="#NVcycles">cycles</a>]
+    [<a href="#NVexplanations">explanations</a>]
+    </td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 0</td><td><a href="#EXefferent">Efferent Couplings</a>: 12</td><td><a href="#EXabstractness">Abstractness</a>: 0</td><td><a href="#EXinstability">Instability</a>: 1</td><td><a href="#EXdistance">Distance</a>: 0</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.WSAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.WSClasse
+                <br>
+                    nu.mine.egoless.didattica.ws.WSContatto
+                <br>
+                    nu.mine.egoless.didattica.ws.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.WSMateria
+                <br>
+                    nu.mine.egoless.didattica.ws.WSNazione
+                <br>
+                    nu.mine.egoless.didattica.ws.WSPersona
+                <br>
+                    nu.mine.egoless.didattica.ws.WSReligione
+                <br>
+                    nu.mine.egoless.didattica.ws.WSTipoAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.WSTipoProva
+                <br>
+                    nu.mine.egoless.didattica.ws.WSTipoVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.WSVoto
+                <br>
+</td><td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.supporto">nu.mine.egoless.supporto</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.assenzaclient">nu.mine.egoless.ws.assenzaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.classeclient">nu.mine.egoless.ws.classeclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.contattoclient">nu.mine.egoless.ws.contattoclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.materiaclient">nu.mine.egoless.ws.materiaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.nazioneclient">nu.mine.egoless.ws.nazioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.personaclient">nu.mine.egoless.ws.personaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.religioneclient">nu.mine.egoless.ws.religioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.tipoassenzaclient">nu.mine.egoless.ws.tipoassenzaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.tipoprovaclient">nu.mine.egoless.ws.tipoprovaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.tipovotoclient">nu.mine.egoless.ws.tipovotoclient</a>
+<br>
+<a href="#PKnu.mine.egoless.ws.votoclient">nu.mine.egoless.ws.votoclient</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.supporto">nu.mine.egoless.supporto</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 1</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%">
+                    nu.mine.egoless.supporto.DateTimeFacade
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.assenzaclient">nu.mine.egoless.ws.assenzaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.19</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.81</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.assenzaclient.AssenzaWS
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.ParametriRicerca
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.assenzaclient.AggiungiAssenza
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.AggiungiAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.Assenza
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.AssenzaWSService
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.CancellaAssenza
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.CancellaAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.CaricaAssenza
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.CaricaAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.CercaAssenza
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.CercaAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.Date
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.ModificaAssenza
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.ModificaAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.OperazioneNonValida_Exception
+                <br>
+                    nu.mine.egoless.ws.assenzaclient.ParametriRicercaAssenza
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.classeclient">nu.mine.egoless.ws.classeclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.09</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.91</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.classeclient.ClasseWS
+                <br>
+                    nu.mine.egoless.ws.classeclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.classeclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.classeclient.AggiungiClasse
+                <br>
+                    nu.mine.egoless.ws.classeclient.AggiungiClasseResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.CancellaClasse
+                <br>
+                    nu.mine.egoless.ws.classeclient.CancellaClasseResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.CaricaClasse
+                <br>
+                    nu.mine.egoless.ws.classeclient.CaricaClasseResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.Classe
+                <br>
+                    nu.mine.egoless.ws.classeclient.ClasseWSService
+                <br>
+                    nu.mine.egoless.ws.classeclient.DisplayEntry
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetAule
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetAuleResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetCariche
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetCaricheResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetClassi
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetClassiResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetConsigliClasse
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetConsigliClasseResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetDocenti
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetDocentiResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetMaterie
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetMaterieResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetNomeCompleto
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetNomeCompletoResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetOreLzione
+                <br>
+                    nu.mine.egoless.ws.classeclient.GetOreLzioneResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.ModificaClasse
+                <br>
+                    nu.mine.egoless.ws.classeclient.ModificaClasseResponse
+                <br>
+                    nu.mine.egoless.ws.classeclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.classeclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.classeclient.OperazioneNonValida_Exception
+                <br>
+                    nu.mine.egoless.ws.classeclient.RuoloCarica
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.contattoclient">nu.mine.egoless.ws.contattoclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.2</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.8</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.contattoclient.ContattoWS
+                <br>
+                    nu.mine.egoless.ws.contattoclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.contattoclient.ParametriRicerca
+                <br>
+                    nu.mine.egoless.ws.contattoclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.contattoclient.AggiungiContatto
+                <br>
+                    nu.mine.egoless.ws.contattoclient.AggiungiContattoResponse
+                <br>
+                    nu.mine.egoless.ws.contattoclient.CancellaContatto
+                <br>
+                    nu.mine.egoless.ws.contattoclient.CancellaContattoResponse
+                <br>
+                    nu.mine.egoless.ws.contattoclient.CaricaContatto
+                <br>
+                    nu.mine.egoless.ws.contattoclient.CaricaContattoResponse
+                <br>
+                    nu.mine.egoless.ws.contattoclient.CercaContatto
+                <br>
+                    nu.mine.egoless.ws.contattoclient.CercaContattoResponse
+                <br>
+                    nu.mine.egoless.ws.contattoclient.Contatto
+                <br>
+                    nu.mine.egoless.ws.contattoclient.ContattoWSService
+                <br>
+                    nu.mine.egoless.ws.contattoclient.ModificaContatto
+                <br>
+                    nu.mine.egoless.ws.contattoclient.ModificaContattoResponse
+                <br>
+                    nu.mine.egoless.ws.contattoclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.contattoclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.contattoclient.OperazioneNonValida_Exception
+                <br>
+                    nu.mine.egoless.ws.contattoclient.ParametriRicercaContatto
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.materiaclient">nu.mine.egoless.ws.materiaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.13</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.87</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.materiaclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.materiaclient.MateriaInsegnamentoWS
+                <br>
+                    nu.mine.egoless.ws.materiaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.materiaclient.AggiungiMateriaInsegnamento
+                <br>
+                    nu.mine.egoless.ws.materiaclient.AggiungiMateriaInsegnamentoResponse
+                <br>
+                    nu.mine.egoless.ws.materiaclient.CancellaMateriaInsegnamento
+                <br>
+                    nu.mine.egoless.ws.materiaclient.CancellaMateriaInsegnamentoResponse
+                <br>
+                    nu.mine.egoless.ws.materiaclient.CaricaMateriaInsegnamento
+                <br>
+                    nu.mine.egoless.ws.materiaclient.CaricaMateriaInsegnamentoResponse
+                <br>
+                    nu.mine.egoless.ws.materiaclient.DisplayEntry
+                <br>
+                    nu.mine.egoless.ws.materiaclient.GetDocenti
+                <br>
+                    nu.mine.egoless.ws.materiaclient.GetDocentiResponse
+                <br>
+                    nu.mine.egoless.ws.materiaclient.GetMaterie
+                <br>
+                    nu.mine.egoless.ws.materiaclient.GetMaterieResponse
+                <br>
+                    nu.mine.egoless.ws.materiaclient.GetOreLezione
+                <br>
+                    nu.mine.egoless.ws.materiaclient.GetOreLezioneResponse
+                <br>
+                    nu.mine.egoless.ws.materiaclient.MateriaInsegnamento
+                <br>
+                    nu.mine.egoless.ws.materiaclient.MateriaInsegnamentoWSService
+                <br>
+                    nu.mine.egoless.ws.materiaclient.ModificaMateriaInsegnamento
+                <br>
+                    nu.mine.egoless.ws.materiaclient.ModificaMateriaInsegnamentoResponse
+                <br>
+                    nu.mine.egoless.ws.materiaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.materiaclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.materiaclient.OperazioneNonValida_Exception
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.nazioneclient">nu.mine.egoless.ws.nazioneclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.17</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.83</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.nazioneclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.NazioneWS
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.nazioneclient.AggiungiNazione
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.AggiungiNazioneResponse
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.CancellaNazione
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.CancellaNazioneResponse
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.CaricaNazione
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.CaricaNazioneResponse
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.GetNazioni
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.GetNazioniResponse
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.ModificaNazione
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.ModificaNazioneResponse
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.Nazione
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.NazioneWSService
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.nazioneclient.OperazioneNonValida_Exception
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.personaclient">nu.mine.egoless.ws.personaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.04</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.96</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.personaclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.personaclient.ParametriRicerca
+                <br>
+                    nu.mine.egoless.ws.personaclient.PersonaWS
+                <br>
+                    nu.mine.egoless.ws.personaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.personaclient.AddCarica
+                <br>
+                    nu.mine.egoless.ws.personaclient.AddCaricaResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.AddFiglio
+                <br>
+                    nu.mine.egoless.ws.personaclient.AddFiglioResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.AddGenitore
+                <br>
+                    nu.mine.egoless.ws.personaclient.AddGenitoreResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.Addclasse
+                <br>
+                    nu.mine.egoless.ws.personaclient.AddclasseResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.AggiungiDocente
+                <br>
+                    nu.mine.egoless.ws.personaclient.AggiungiDocenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.AggiungiGenitore
+                <br>
+                    nu.mine.egoless.ws.personaclient.AggiungiGenitoreResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.AggiungiPersonaleATA
+                <br>
+                    nu.mine.egoless.ws.personaclient.AggiungiPersonaleATAResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.AggiungiStudente
+                <br>
+                    nu.mine.egoless.ws.personaclient.AggiungiStudenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.CancellaDocente
+                <br>
+                    nu.mine.egoless.ws.personaclient.CancellaDocenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.CancellaGenitore
+                <br>
+                    nu.mine.egoless.ws.personaclient.CancellaGenitoreResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.CancellaPersonaleATA
+                <br>
+                    nu.mine.egoless.ws.personaclient.CancellaPersonaleATAResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.CancellaStudente
+                <br>
+                    nu.mine.egoless.ws.personaclient.CancellaStudenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.Carica
+                <br>
+                    nu.mine.egoless.ws.personaclient.CaricaDocente
+                <br>
+                    nu.mine.egoless.ws.personaclient.CaricaDocenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.CaricaGenitore
+                <br>
+                    nu.mine.egoless.ws.personaclient.CaricaGenitoreResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.CaricaPersonaleATA
+                <br>
+                    nu.mine.egoless.ws.personaclient.CaricaPersonaleATAResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.CaricaStudente
+                <br>
+                    nu.mine.egoless.ws.personaclient.CaricaStudenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.CercaDocente
+                <br>
+                    nu.mine.egoless.ws.personaclient.CercaDocenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.CercaStudente
+                <br>
+                    nu.mine.egoless.ws.personaclient.CercaStudenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.Date
+                <br>
+                    nu.mine.egoless.ws.personaclient.DelCarica
+                <br>
+                    nu.mine.egoless.ws.personaclient.DelCaricaResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.DelClasse
+                <br>
+                    nu.mine.egoless.ws.personaclient.DelClasseResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.DelFiglio
+                <br>
+                    nu.mine.egoless.ws.personaclient.DelFiglioResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.DelGenitore
+                <br>
+                    nu.mine.egoless.ws.personaclient.DelGenitoreResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.DisplayEntry
+                <br>
+                    nu.mine.egoless.ws.personaclient.Docente
+                <br>
+                    nu.mine.egoless.ws.personaclient.Genitore
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetAssenze
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetAssenzeResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetClasse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetClasseResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetClassi
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetClassiDocente
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetClassiDocenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetClassiResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetCoordinatoreDi
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetCoordinatoreDiResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetFigli
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetFigliResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetGenitori
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetGenitoriResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetIncarichi
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetIncarichiResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetMaterie
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetMaterieResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetOreLezione
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetOreLezioneResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetResponsabileDi
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetResponsabileDiResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetUtenti
+                <br>
+                    nu.mine.egoless.ws.personaclient.GetUtentiResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.ModificaDocente
+                <br>
+                    nu.mine.egoless.ws.personaclient.ModificaDocenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.ModificaGenitore
+                <br>
+                    nu.mine.egoless.ws.personaclient.ModificaGenitoreResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.ModificaPersonaleATA
+                <br>
+                    nu.mine.egoless.ws.personaclient.ModificaPersonaleATAResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.ModificaStudente
+                <br>
+                    nu.mine.egoless.ws.personaclient.ModificaStudenteResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.personaclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.personaclient.OperazioneNonValida_Exception
+                <br>
+                    nu.mine.egoless.ws.personaclient.ParametriRicercaDocente
+                <br>
+                    nu.mine.egoless.ws.personaclient.ParametriRicercaStudente
+                <br>
+                    nu.mine.egoless.ws.personaclient.Persona
+                <br>
+                    nu.mine.egoless.ws.personaclient.PersonaWSService
+                <br>
+                    nu.mine.egoless.ws.personaclient.PersonaleATA
+                <br>
+                    nu.mine.egoless.ws.personaclient.SetMaterie
+                <br>
+                    nu.mine.egoless.ws.personaclient.SetMaterieResponse
+                <br>
+                    nu.mine.egoless.ws.personaclient.Studente
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.religioneclient">nu.mine.egoless.ws.religioneclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.17</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.83</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.religioneclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.religioneclient.ReligioneWS
+                <br>
+                    nu.mine.egoless.ws.religioneclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.religioneclient.AggiungiReligione
+                <br>
+                    nu.mine.egoless.ws.religioneclient.AggiungiReligioneResponse
+                <br>
+                    nu.mine.egoless.ws.religioneclient.CancellaReligione
+                <br>
+                    nu.mine.egoless.ws.religioneclient.CancellaReligioneResponse
+                <br>
+                    nu.mine.egoless.ws.religioneclient.CaricaReligione
+                <br>
+                    nu.mine.egoless.ws.religioneclient.CaricaReligioneResponse
+                <br>
+                    nu.mine.egoless.ws.religioneclient.GetReligioni
+                <br>
+                    nu.mine.egoless.ws.religioneclient.GetReligioniResponse
+                <br>
+                    nu.mine.egoless.ws.religioneclient.ModificaReligione
+                <br>
+                    nu.mine.egoless.ws.religioneclient.ModificaReligioneResponse
+                <br>
+                    nu.mine.egoless.ws.religioneclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.religioneclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.religioneclient.OperazioneNonValida_Exception
+                <br>
+                    nu.mine.egoless.ws.religioneclient.Religione
+                <br>
+                    nu.mine.egoless.ws.religioneclient.ReligioneWSService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.tipoassenzaclient">nu.mine.egoless.ws.tipoassenzaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.17</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.83</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.tipoassenzaclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.TipoAssenzaWS
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.tipoassenzaclient.AggiungiTipoAssenza
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.AggiungiTipoAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.CancellaTipoAssenza
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.CancellaTipoAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.CaricaTipoAssenza
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.CaricaTipoAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.GetTipiAssenza
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.GetTipiAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.ModificaTipoAssenza
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.ModificaTipoAssenzaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.OperazioneNonValida_Exception
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.TipoAssenza
+                <br>
+                    nu.mine.egoless.ws.tipoassenzaclient.TipoAssenzaWSService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.tipoprovaclient">nu.mine.egoless.ws.tipoprovaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.17</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.83</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.tipoprovaclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.TipoProvaWS
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.tipoprovaclient.AggiungiTipoProva
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.AggiungiTipoProvaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.CancellaTipoProva
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.CancellaTipoProvaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.CaricaTipoProva
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.CaricaTipoProvaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.GetTipiProva
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.GetTipiProvaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.ModificaTipoProva
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.ModificaTipoProvaResponse
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.OperazioneNonValida_Exception
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.TipoProva
+                <br>
+                    nu.mine.egoless.ws.tipoprovaclient.TipoProvaWSService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.tipovotoclient">nu.mine.egoless.ws.tipovotoclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.17</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.83</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.tipovotoclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.TipoVotoWS
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.tipovotoclient.AggiungiTipoVoto
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.AggiungiTipoVotoResponse
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.CancellaTipoVoto
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.CancellaTipoVotoResponse
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.CaricaTipoVoto
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.CaricaTipoVotoResponse
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.GetTipivoto
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.GetTipivotoResponse
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.ModificaTipoVoto
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.ModificaTipoVotoResponse
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.OperazioneNonValida_Exception
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.TipoVoto
+                <br>
+                    nu.mine.egoless.ws.tipovotoclient.TipoVotoWSService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.ws.votoclient">nu.mine.egoless.ws.votoclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.19</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.81</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.ws.votoclient.Elemento
+                <br>
+                    nu.mine.egoless.ws.votoclient.ParametriRicerca
+                <br>
+                    nu.mine.egoless.ws.votoclient.VotoWS
+                <br>
+                    nu.mine.egoless.ws.votoclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.ws.votoclient.AggiungiVoto
+                <br>
+                    nu.mine.egoless.ws.votoclient.AggiungiVotoResponse
+                <br>
+                    nu.mine.egoless.ws.votoclient.CancellaVoto
+                <br>
+                    nu.mine.egoless.ws.votoclient.CancellaVotoResponse
+                <br>
+                    nu.mine.egoless.ws.votoclient.CaricaVoto
+                <br>
+                    nu.mine.egoless.ws.votoclient.CaricaVotoResponse
+                <br>
+                    nu.mine.egoless.ws.votoclient.CercaVoto
+                <br>
+                    nu.mine.egoless.ws.votoclient.CercaVotoResponse
+                <br>
+                    nu.mine.egoless.ws.votoclient.Date
+                <br>
+                    nu.mine.egoless.ws.votoclient.ModificaVoto
+                <br>
+                    nu.mine.egoless.ws.votoclient.ModificaVotoResponse
+                <br>
+                    nu.mine.egoless.ws.votoclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.ws.votoclient.OperazioneNonValida
+                <br>
+                    nu.mine.egoless.ws.votoclient.OperazioneNonValida_Exception
+                <br>
+                    nu.mine.egoless.ws.votoclient.ParametriRicercaVoto
+                <br>
+                    nu.mine.egoless.ws.votoclient.Voto
+                <br>
+                    nu.mine.egoless.ws.votoclient.VotoWSService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws">nu.mine.egoless.didattica.ws</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td><a name="NVcycles">
+<h2>Cycles</h2>
+</a></td><td align="right">
+    [<a href="#NVsummary">summary</a>]
+    [<a href="#NVpackages">packages</a>]
+    [<a href="#NVcycles">cycles</a>]
+    [<a href="#NVexplanations">explanations</a>]
+    </td>
+</tr>
+</table>
+<p>There are no cyclic dependancies.</p>
+<table width="100%">
+<tr>
+<td><a name="NVexplanations">
+<h2>Explanations</h2>
+</a></td><td align="right">
+    [<a href="#NVsummary">summary</a>]
+    [<a href="#NVpackages">packages</a>]
+    [<a href="#NVcycles">cycles</a>]
+    [<a href="#NVexplanations">explanations</a>]
+    </td>
+</tr>
+</table>
+<p>The following explanations are for quick reference and are lifted directly from the original <a href="http://www.clarkware.com/software/JDepend.html">JDepend documentation</a>.</p>
+<h3>
+<a name="EXnumber">Number of Classes</a>
+</h3>
+<p>The number of concrete and abstract classes (and interfaces) in the package is an indicator of the extensibility of the package.</p>
+<h3>
+<a name="EXafferent">Afferent Couplings</a>
+</h3>
+<p>The number of other packages that depend upon classes within the package is an indicator of the package's responsibility. </p>
+<h3>
+<a name="EXefferent">Efferent Couplings</a>
+</h3>
+<p>The number of other packages that the classes in the package depend upon is an indicator of the package's independence. </p>
+<h3>
+<a name="EXabstractness">Abstractness</a>
+</h3>
+<p>The ratio of the number of abstract classes (and interfaces) in the analyzed package to the total number of classes in the analyzed package. </p>
+<p>The range for this metric is 0 to 1, with A=0 indicating a completely concrete package and A=1 indicating a completely abstract package. </p>
+<h3>
+<a name="EXinstability">Instability</a>
+</h3>
+<p>The ratio of efferent coupling (Ce) to total coupling (Ce / (Ce + Ca)). This metric is an indicator of the package's resilience to change. </p>
+<p>The range for this metric is 0 to 1, with I=0 indicating a completely stable package and I=1 indicating a completely instable package. </p>
+<h3>
+<a name="EXdistance">Distance</a>
+</h3>
+<p>The perpendicular distance of a package from the idealized line A + I = 1. This metric is an indicator of the package's balance between abstractness and stability. </p>
+<p>A package squarely on the main sequence is optimally balanced with respect to its abstractness and stability. Ideal packages are either completely abstract and stable (x=0, y=1) or completely concrete and instable (x=1, y=0). </p>
+<p>The range for this metric is 0 to 1, with D=0 indicating a package that is coincident with the main sequence and D=1 indicating a package that is as far from the main sequence as possible. </p>
+</body>
+</html>

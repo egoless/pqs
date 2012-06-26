@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        *** GENERATED - DO NOT EDIT  ***
+
+        For the purpose of easier reading the script
+        is divided into following sections:
+        - initialization
+        - execution
+        -->
+<project default="-am-deploy" basedir=".." xmlns:webproject3="http://www.netbeans.org/ns/web-project/3" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1" xmlns:webproject1="http://www.netbeans.org/ns/web-project/1">
+    <target name="-run-deploy-am" depends="-am-deploy"/>
+    <!--
+                ======================
+                INITIALIZATION SECTION
+                ======================
+            -->
+    <target name="-am-init" depends="init, -am-task-init">
+        <!-- Initialize properties here. -->
+        <echo message="am-init:"/>
+        <fail unless="user.properties.file">Must set user properties file</fail>
+        <fail unless="deploy.ant.properties.file">Must set ant deploy properties</fail>
+        <property file="nbproject/private/private.properties"/>
+        <property file="${user.properties.file}"/>
+        <property file="${deploy.ant.properties.file}"/>
+        <property file="nbproject/project.properties"/>
+        <fail unless="sjsas.root">Must set Sun app server root</fail>
+        <property name="am.config.file" value="${sjsas.root}/addons/amserver/AMConfig.properties"/>
+        <condition property="amconf.dir" value="${conf.dir}" else="${meta.inf}">
+            <isset property="conf.dir"/>
+        </condition>
+        <property name="am.config.xml.dir" value="${basedir}/${amconf.dir}"/>
+    </target>
+    <target name="-am-task-init" unless="netbeans.home">
+        <echo message="am-task-init:"/>
+        <taskdef name="amdeploy" classname="org.netbeans.modules.identity.ant.AMDeploy">
+            <classpath path="${libs.IdentityAntTasks.classpath};${libs.jaxb20.classpath}"/>
+        </taskdef>
+    </target>
+    <!--
+                ======================
+                EXECUTION SECTION
+                ======================
+            -->
+    <target name="-am-deploy" depends="-am-init" description="Deploy to Access Manager.">
+        <echo message="am-deploy:"/>
+        <amdeploy amconfigfile="${am.config.file}" amconfigxmldir="${am.config.xml.dir}"/>
+    </target>
+</project>

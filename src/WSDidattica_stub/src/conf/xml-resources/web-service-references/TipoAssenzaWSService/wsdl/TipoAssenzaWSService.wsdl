@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://registro.modulo.ws.pqs.swellsys.com/" name="TipoAssenzaWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="TipoAssenzaWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="aggiungiTipoAssenza">
+    <part name="parameters" element="tns:aggiungiTipoAssenza"/>
+  </message>
+  <message name="aggiungiTipoAssenzaResponse">
+    <part name="parameters" element="tns:aggiungiTipoAssenzaResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="modificaTipoAssenza">
+    <part name="parameters" element="tns:modificaTipoAssenza"/>
+  </message>
+  <message name="modificaTipoAssenzaResponse">
+    <part name="parameters" element="tns:modificaTipoAssenzaResponse"/>
+  </message>
+  <message name="cancellaTipoAssenza">
+    <part name="parameters" element="tns:cancellaTipoAssenza"/>
+  </message>
+  <message name="cancellaTipoAssenzaResponse">
+    <part name="parameters" element="tns:cancellaTipoAssenzaResponse"/>
+  </message>
+  <message name="caricaTipoAssenza">
+    <part name="parameters" element="tns:caricaTipoAssenza"/>
+  </message>
+  <message name="caricaTipoAssenzaResponse">
+    <part name="parameters" element="tns:caricaTipoAssenzaResponse"/>
+  </message>
+  <message name="getTipiAssenza">
+    <part name="parameters" element="tns:getTipiAssenza"/>
+  </message>
+  <message name="getTipiAssenzaResponse">
+    <part name="parameters" element="tns:getTipiAssenzaResponse"/>
+  </message>
+  <portType name="TipoAssenzaWS">
+    <operation name="aggiungiTipoAssenza">
+      <input message="tns:aggiungiTipoAssenza"/>
+      <output message="tns:aggiungiTipoAssenzaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaTipoAssenza">
+      <input message="tns:modificaTipoAssenza"/>
+      <output message="tns:modificaTipoAssenzaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaTipoAssenza">
+      <input message="tns:cancellaTipoAssenza"/>
+      <output message="tns:cancellaTipoAssenzaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaTipoAssenza">
+      <input message="tns:caricaTipoAssenza"/>
+      <output message="tns:caricaTipoAssenzaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getTipiAssenza">
+      <input message="tns:getTipiAssenza"/>
+      <output message="tns:getTipiAssenzaResponse"/>
+    </operation>
+  </portType>
+  <binding name="TipoAssenzaWSPortBinding" type="tns:TipoAssenzaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiTipoAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaTipoAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaTipoAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaTipoAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getTipiAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="TipoAssenzaWSService">
+    <port name="TipoAssenzaWSPort" binding="tns:TipoAssenzaWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/TipoAssenzaWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

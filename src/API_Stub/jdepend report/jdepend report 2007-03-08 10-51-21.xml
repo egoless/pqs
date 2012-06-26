@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="nu.mine.egoless.api.ws">
+            <Stats>
+                <TotalClasses>22</TotalClasses>
+                <ConcreteClasses>22</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>0</Ce>
+                <A>0</A>
+                <I>0</I>
+                <D>1</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Assenza.java">
+                    nu.mine.egoless.api.ws.Assenza
+                </Class>
+                <Class sourceFile="Classe.java">
+                    nu.mine.egoless.api.ws.Classe
+                </Class>
+                <Class sourceFile="Contatto.java">
+                    nu.mine.egoless.api.ws.Contatto
+                </Class>
+                <Class sourceFile="Genitore.java">
+                    nu.mine.egoless.api.ws.Genitore
+                </Class>
+                <Class sourceFile="IndirizzoStudi.java">
+                    nu.mine.egoless.api.ws.IndirizzoStudi
+                </Class>
+                <Class sourceFile="Insegnante.java">
+                    nu.mine.egoless.api.ws.Insegnante
+                </Class>
+                <Class sourceFile="ListaAttributi.java">
+                    nu.mine.egoless.api.ws.ListaAttributi
+                </Class>
+                <Class sourceFile="MateriaInsegnamento.java">
+                    nu.mine.egoless.api.ws.MateriaInsegnamento
+                </Class>
+                <Class sourceFile="Nazione.java">
+                    nu.mine.egoless.api.ws.Nazione
+                </Class>
+                <Class sourceFile="ParametriRicercaAssenza.java">
+                    nu.mine.egoless.api.ws.ParametriRicercaAssenza
+                </Class>
+                <Class sourceFile="ParametriRicercaContatto.java">
+                    nu.mine.egoless.api.ws.ParametriRicercaContatto
+                </Class>
+                <Class sourceFile="ParametriRicercaInsegnante.java">
+                    nu.mine.egoless.api.ws.ParametriRicercaInsegnante
+                </Class>
+                <Class sourceFile="ParametriRicercaStudente.java">
+                    nu.mine.egoless.api.ws.ParametriRicercaStudente
+                </Class>
+                <Class sourceFile="ParametriRicercaVoto.java">
+                    nu.mine.egoless.api.ws.ParametriRicercaVoto
+                </Class>
+                <Class sourceFile="Persona.java">
+                    nu.mine.egoless.api.ws.Persona
+                </Class>
+                <Class sourceFile="Religione.java">
+                    nu.mine.egoless.api.ws.Religione
+                </Class>
+                <Class sourceFile="Stanza.java">
+                    nu.mine.egoless.api.ws.Stanza
+                </Class>
+                <Class sourceFile="Studente.java">
+                    nu.mine.egoless.api.ws.Studente
+                </Class>
+                <Class sourceFile="TipoAssenza.java">
+                    nu.mine.egoless.api.ws.TipoAssenza
+                </Class>
+                <Class sourceFile="TipoVoto.java">
+                    nu.mine.egoless.api.ws.TipoVoto
+                </Class>
+                <Class sourceFile="Voto.java">
+                    nu.mine.egoless.api.ws.Voto
+                </Class>
+                <Class sourceFile="WSApi.java">
+                    nu.mine.egoless.api.ws.WSApi
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

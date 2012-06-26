@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://api.ws.pqs.swellsys.com/" name="ClasseWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="ClasseWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="getDocenti">
+    <part name="parameters" element="tns:getDocenti"/>
+  </message>
+  <message name="getDocentiResponse">
+    <part name="parameters" element="tns:getDocentiResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="aggiungiClasse">
+    <part name="parameters" element="tns:aggiungiClasse"/>
+  </message>
+  <message name="aggiungiClasseResponse">
+    <part name="parameters" element="tns:aggiungiClasseResponse"/>
+  </message>
+  <message name="modificaClasse">
+    <part name="parameters" element="tns:modificaClasse"/>
+  </message>
+  <message name="modificaClasseResponse">
+    <part name="parameters" element="tns:modificaClasseResponse"/>
+  </message>
+  <message name="cancellaClasse">
+    <part name="parameters" element="tns:cancellaClasse"/>
+  </message>
+  <message name="cancellaClasseResponse">
+    <part name="parameters" element="tns:cancellaClasseResponse"/>
+  </message>
+  <message name="caricaClasse">
+    <part name="parameters" element="tns:caricaClasse"/>
+  </message>
+  <message name="caricaClasseResponse">
+    <part name="parameters" element="tns:caricaClasseResponse"/>
+  </message>
+  <message name="getClassi">
+    <part name="parameters" element="tns:getClassi"/>
+  </message>
+  <message name="getClassiResponse">
+    <part name="parameters" element="tns:getClassiResponse"/>
+  </message>
+  <message name="getCariche">
+    <part name="parameters" element="tns:getCariche"/>
+  </message>
+  <message name="getCaricheResponse">
+    <part name="parameters" element="tns:getCaricheResponse"/>
+  </message>
+  <message name="getAule">
+    <part name="parameters" element="tns:getAule"/>
+  </message>
+  <message name="getAuleResponse">
+    <part name="parameters" element="tns:getAuleResponse"/>
+  </message>
+  <message name="getConsigliClasse">
+    <part name="parameters" element="tns:getConsigliClasse"/>
+  </message>
+  <message name="getConsigliClasseResponse">
+    <part name="parameters" element="tns:getConsigliClasseResponse"/>
+  </message>
+  <message name="getMaterie">
+    <part name="parameters" element="tns:getMaterie"/>
+  </message>
+  <message name="getMaterieResponse">
+    <part name="parameters" element="tns:getMaterieResponse"/>
+  </message>
+  <message name="getNomeCompleto">
+    <part name="parameters" element="tns:getNomeCompleto"/>
+  </message>
+  <message name="getNomeCompletoResponse">
+    <part name="parameters" element="tns:getNomeCompletoResponse"/>
+  </message>
+  <message name="getOreLzione">
+    <part name="parameters" element="tns:getOreLzione"/>
+  </message>
+  <message name="getOreLzioneResponse">
+    <part name="parameters" element="tns:getOreLzioneResponse"/>
+  </message>
+  <portType name="ClasseWS">
+    <operation name="getDocenti">
+      <input message="tns:getDocenti"/>
+      <output message="tns:getDocentiResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="aggiungiClasse">
+      <input message="tns:aggiungiClasse"/>
+      <output message="tns:aggiungiClasseResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaClasse">
+      <input message="tns:modificaClasse"/>
+      <output message="tns:modificaClasseResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaClasse">
+      <input message="tns:cancellaClasse"/>
+      <output message="tns:cancellaClasseResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaClasse">
+      <input message="tns:caricaClasse"/>
+      <output message="tns:caricaClasseResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getClassi">
+      <input message="tns:getClassi"/>
+      <output message="tns:getClassiResponse"/>
+    </operation>
+    <operation name="getCariche">
+      <input message="tns:getCariche"/>
+      <output message="tns:getCaricheResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getAule">
+      <input message="tns:getAule"/>
+      <output message="tns:getAuleResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getConsigliClasse">
+      <input message="tns:getConsigliClasse"/>
+      <output message="tns:getConsigliClasseResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getMaterie">
+      <input message="tns:getMaterie"/>
+      <output message="tns:getMaterieResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getNomeCompleto">
+      <input message="tns:getNomeCompleto"/>
+      <output message="tns:getNomeCompletoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getOreLzione">
+      <input message="tns:getOreLzione"/>
+      <output message="tns:getOreLzioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+  </portType>
+  <binding name="ClasseWSPortBinding" type="tns:ClasseWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="getDocenti">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="aggiungiClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getClassi">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="getCariche">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getAule">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getConsigliClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getMaterie">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getNomeCompleto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getOreLzione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="ClasseWSService">
+    <port name="ClasseWSPort" binding="tns:ClasseWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/ClasseWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

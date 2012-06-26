@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="aggiungiNazione" type="tns:aggiungiNazione"/>
+
+  <xs:element name="aggiungiNazioneResponse" type="tns:aggiungiNazioneResponse"/>
+
+  <xs:element name="cancellaNazione" type="tns:cancellaNazione"/>
+
+  <xs:element name="cancellaNazioneResponse" type="tns:cancellaNazioneResponse"/>
+
+  <xs:element name="caricaNazione" type="tns:caricaNazione"/>
+
+  <xs:element name="caricaNazioneResponse" type="tns:caricaNazioneResponse"/>
+
+  <xs:element name="getNazioni" type="tns:getNazioni"/>
+
+  <xs:element name="getNazioniResponse" type="tns:getNazioniResponse"/>
+
+  <xs:element name="modificaNazione" type="tns:modificaNazione"/>
+
+  <xs:element name="modificaNazioneResponse" type="tns:modificaNazioneResponse"/>
+
+  <xs:complexType name="cancellaNazione">
+    <xs:sequence>
+      <xs:element name="idNazione" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaNazioneResponse"/>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaNazione">
+    <xs:sequence>
+      <xs:element name="idNazione" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaNazioneResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:nazione" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="nazione">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="codice" type="xs:string" minOccurs="0"/>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="modificaNazione">
+    <xs:sequence>
+      <xs:element name="nazione" type="tns:nazione" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaNazioneResponse"/>
+
+  <xs:complexType name="getNazioni"/>
+
+  <xs:complexType name="getNazioniResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiNazione">
+    <xs:sequence>
+      <xs:element name="nuovaNazione" type="tns:nazione" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiNazioneResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

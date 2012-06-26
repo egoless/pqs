@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="PersonaWS">
+      <implementation-class>reverse.PersonaWS</implementation-class>
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/swell/PersonaWS/PersonaWSService.wsdl</wsdl-url>
+      <local-wsdl-file>PersonaWSService.wsdl</local-wsdl-file>
+      <service-name>PersonaWSService</service-name>
+      <port-name>PersonaWSPort</port-name>
+      <package-name>com.swellsys.pqs.ws.api</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

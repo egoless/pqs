@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+
+
+
+
+
+
+
+
+
+
+
+
+<system systemId="http://192.168.84.142:8080/WSApiService/WSApi/__container$publishing$subctx/META-INF/wsdl/WSApiService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/192.168.84.142_8080/WSApiService/WSApi/__container_publishing_subctx/META-INF/wsdl/WSApiService_schema1.xsd"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<system systemId="http://192.168.84.136:8080/WSApiService/WSApi/__container$publishing$subctx/META-INF/wsdl/WSApiService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/192.168.84.136_8080/WSApiService/WSApi/__container_publishing_subctx/META-INF/wsdl/WSApiService_schema1.xsd"/>
+
+
+
+<system systemId="http://192.168.84.108:8080/WSApiService/WSApi/__container$publishing$subctx/META-INF/wsdl/WSApiService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/192.168.84.108_8080/WSApiService/WSApi/__container_publishing_subctx/META-INF/wsdl/WSApiService_schema1.xsd"/>
+
+
+
+
+
+
+
+
+
+<system systemId="http://acer-2e76c7a74b:8080/WSApiService/WSApi/__container$publishing$subctx/META-INF/wsdl/WSApiService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/acer-2e76c7a74b_8080/WSApiService/WSApi/__container_publishing_subctx/META-INF/wsdl/WSApiService_schema1.xsd"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<system systemId="http://localhost:8080/WSApiService/WSApi?wsdl" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/localhost_8080/WSApiService/WSApi.wsdl"/>
+
+
+
+
+
+
+<system systemId="file:/C:/Documents%20and%20Settings/STEFANO/Documenti/Sorgenti%20Buoni/wsdl/WSApi/WSApiService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/WSApiService_schema1.xsd"/>
+<system systemId="file:/C:/Documents%20and%20Settings/STEFANO/Documenti/Sorgenti%20Buoni/wsdl/WSApi/WSApi.wsdl" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/WSApi.wsdl"/>
+<system systemId="http://localhost:8080/WSApiService/WSApi/__container$publishing$subctx/META-INF/wsdl/WSApiService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/localhost_8080/WSApiService/WSApi/__container_publishing_subctx/META-INF/wsdl/WSApiService_schema1.xsd"/>
+<system systemId="file:/Users/ericmi/ing_soft/src_local2/wsdl/swell/PersonaWS/PersonaWSService.wsdl" uri="src/conf/xml-resources/web-service-references/PersonaWSService/wsdl/PersonaWSService.wsdl"/>
+<system systemId="file:/Users/ericmi/ing_soft/src_local2/wsdl/swell/PersonaWS/PersonaWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/PersonaWSService/wsdl/PersonaWSService_schema1.xsd"/>
+<system systemId="file:/Users/ericmi/ing_soft/src_local2/wsdl/swell/NazioneWS/NazioneWSService.wsdl" uri="src/conf/xml-resources/web-service-references/NazioneWSService/wsdl/NazioneWSService.wsdl"/>
+<system systemId="file:/Users/ericmi/ing_soft/src_local2/wsdl/swell/NazioneWS/NazioneWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/NazioneWSService/wsdl/NazioneWSService_schema1.xsd"/>
+<system systemId="file:/Users/ericmi/ing_soft/src_local2/wsdl/swell/ReligioneWS/ReligioneWSService.wsdl" uri="src/conf/xml-resources/web-service-references/ReligioneWSService/wsdl/ReligioneWSService.wsdl"/>
+<system systemId="file:/Users/ericmi/ing_soft/src_local2/wsdl/swell/ReligioneWS/ReligioneWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/ReligioneWSService/wsdl/ReligioneWSService_schema1.xsd"/>
+<system systemId="file:/Users/ericmi/ing_soft/src_local2/wsdl/WSApi/WSApi.wsdl" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/WSApi.wsdl"/>
+<system systemId="file:/Users/ericmi/ing_soft/src_local2/wsdl/WSApi/WSApiService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/WSApi/wsdl/WSApiService_schema1.xsd"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ReligioneWS/ReligioneWSService.wsdl" uri="src/conf/xml-resources/web-service-references/ReligioneWSService/wsdl/ReligioneWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ReligioneWS/ReligioneWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/ReligioneWSService/wsdl/ReligioneWSService_schema1.xsd"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/NazioneWS/NazioneWSService.wsdl" uri="src/conf/xml-resources/web-service-references/NazioneWSService/wsdl/NazioneWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/NazioneWS/NazioneWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/NazioneWSService/wsdl/NazioneWSService_schema1.xsd"/>
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ContattoWS/ContattoWSService.wsdl" uri="src/conf/xml-resources/web-service-references/ContattoWSService/wsdl/ContattoWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ContattoWS/ContattoWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/ContattoWSService/wsdl/ContattoWSService_schema1.xsd"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ClasseWS/ClasseWSService.wsdl" uri="src/conf/xml-resources/web-service-references/ClasseWSService/wsdl/ClasseWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ClasseWS/ClasseWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/ClasseWSService/wsdl/ClasseWSService_schema1.xsd"/>
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/MateriaInsegnamentoWS/MateriaInsegnamentoWSService.wsdl" uri="src/conf/xml-resources/web-service-references/MateriaInsegnamentoWSService/wsdl/MateriaInsegnamentoWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/MateriaInsegnamentoWS/MateriaInsegnamentoWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/MateriaInsegnamentoWSService/wsdl/MateriaInsegnamentoWSService_schema1.xsd"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoProvaWS/TipoProvaWSService.wsdl" uri="src/conf/xml-resources/web-service-references/TipoProvaWSService/wsdl/TipoProvaWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoProvaWS/TipoProvaWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/TipoProvaWSService/wsdl/TipoProvaWSService_schema1.xsd"/>
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoAssenzaWS/TipoAssenzaWSService.wsdl" uri="src/conf/xml-resources/web-service-references/TipoAssenzaWSService/wsdl/TipoAssenzaWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoAssenzaWS/TipoAssenzaWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/TipoAssenzaWSService/wsdl/TipoAssenzaWSService_schema1.xsd"/>
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoVotoWS/TipoVotoWSService.wsdl" uri="src/conf/xml-resources/web-service-references/TipoVotoWSService/wsdl/TipoVotoWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoVotoWS/TipoVotoWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/TipoVotoWSService/wsdl/TipoVotoWSService_schema1.xsd"/>
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/VotoWS/VotoWSService.wsdl" uri="src/conf/xml-resources/web-service-references/VotoWSService/wsdl/VotoWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/VotoWS/VotoWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/VotoWSService/wsdl/VotoWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/AssenzaWS/AssenzaWSService.wsdl" uri="src/conf/xml-resources/web-service-references/AssenzaWSService/wsdl/AssenzaWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/AssenzaWS/AssenzaWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/AssenzaWSService/wsdl/AssenzaWSService_schema1.xsd"/>
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/PersonaWS/PersonaWSService.wsdl" uri="src/conf/xml-resources/web-service-references/PersonaWSService/wsdl/PersonaWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/PersonaWS/PersonaWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/PersonaWSService/wsdl/PersonaWSService_schema1.xsd"/>
+
+
+
+
+<system systemId="file:/c:/ProgettoFinale/wsdl/swell/AssenzaWS/AssenzaWSService.wsdl" uri="src/conf/xml-resources/web-service-references/AssenzaWSService/wsdl/AssenzaWSService.wsdl"/>
+<system systemId="file:/c:/ProgettoFinale/wsdl/swell/AssenzaWS/AssenzaWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/AssenzaWSService/wsdl/AssenzaWSService_schema1.xsd"/>
+
+
+<system systemId="file:/c:/ProgettoFinale/wsdl/swell/VotoWS/VotoWSService.wsdl" uri="src/conf/xml-resources/web-service-references/VotoWSService/wsdl/VotoWSService.wsdl"/>
+<system systemId="file:/c:/ProgettoFinale/wsdl/swell/VotoWS/VotoWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/VotoWSService/wsdl/VotoWSService_schema1.xsd"/>
+
+<system systemId="file:/c:/ProgettoFinale/wsdl/swell/ContattoWS/ContattoWSService.wsdl" uri="src/conf/xml-resources/web-service-references/ContattoWSService/wsdl/ContattoWSService.wsdl"/>
+<system systemId="file:/c:/ProgettoFinale/wsdl/swell/ContattoWS/ContattoWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/ContattoWSService/wsdl/ContattoWSService_schema1.xsd"/>
+<system systemId="file:/c:/ProgettoFinale/wsdl/swell/PersonaWS/PersonaWSService.wsdl" uri="src/conf/xml-resources/web-service-references/PersonaWSService/wsdl/PersonaWSService.wsdl"/>
+<system systemId="file:/c:/ProgettoFinale/wsdl/swell/PersonaWS/PersonaWSService_schema1.xsd" uri="src/conf/xml-resources/web-service-references/PersonaWSService/wsdl/PersonaWSService_schema1.xsd"/>
+</catalog>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://registro.modulo.ws.pqs.swellsys.com/" name="TipoVotoWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="TipoVotoWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="aggiungiTipoVoto">
+    <part name="parameters" element="tns:aggiungiTipoVoto"/>
+  </message>
+  <message name="aggiungiTipoVotoResponse">
+    <part name="parameters" element="tns:aggiungiTipoVotoResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="modificaTipoVoto">
+    <part name="parameters" element="tns:modificaTipoVoto"/>
+  </message>
+  <message name="modificaTipoVotoResponse">
+    <part name="parameters" element="tns:modificaTipoVotoResponse"/>
+  </message>
+  <message name="cancellaTipoVoto">
+    <part name="parameters" element="tns:cancellaTipoVoto"/>
+  </message>
+  <message name="cancellaTipoVotoResponse">
+    <part name="parameters" element="tns:cancellaTipoVotoResponse"/>
+  </message>
+  <message name="caricaTipoVoto">
+    <part name="parameters" element="tns:caricaTipoVoto"/>
+  </message>
+  <message name="caricaTipoVotoResponse">
+    <part name="parameters" element="tns:caricaTipoVotoResponse"/>
+  </message>
+  <message name="getTipivoto">
+    <part name="parameters" element="tns:getTipivoto"/>
+  </message>
+  <message name="getTipivotoResponse">
+    <part name="parameters" element="tns:getTipivotoResponse"/>
+  </message>
+  <portType name="TipoVotoWS">
+    <operation name="aggiungiTipoVoto">
+      <input message="tns:aggiungiTipoVoto"/>
+      <output message="tns:aggiungiTipoVotoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaTipoVoto">
+      <input message="tns:modificaTipoVoto"/>
+      <output message="tns:modificaTipoVotoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaTipoVoto">
+      <input message="tns:cancellaTipoVoto"/>
+      <output message="tns:cancellaTipoVotoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaTipoVoto">
+      <input message="tns:caricaTipoVoto"/>
+      <output message="tns:caricaTipoVotoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getTipivoto">
+      <input message="tns:getTipivoto"/>
+      <output message="tns:getTipivotoResponse"/>
+    </operation>
+  </portType>
+  <binding name="TipoVotoWSPortBinding" type="tns:TipoVotoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiTipoVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaTipoVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaTipoVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaTipoVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getTipivoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="TipoVotoWSService">
+    <port name="TipoVotoWSPort" binding="tns:TipoVotoWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/TipoVotoWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

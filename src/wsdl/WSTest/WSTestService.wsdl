@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.api.egoless.mine.nu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://ws.api.egoless.mine.nu/" name="WSTestService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://ws.api.egoless.mine.nu/" schemaLocation="WSTestService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="caricaStudente">
+    <part name="parameters" element="tns:caricaStudente"/>
+  </message>
+  <message name="caricaStudenteResponse">
+    <part name="parameters" element="tns:caricaStudenteResponse"/>
+  </message>
+  <message name="caricaTipoProva">
+    <part name="parameters" element="tns:caricaTipoProva"/>
+  </message>
+  <message name="caricaTipoProvaResponse">
+    <part name="parameters" element="tns:caricaTipoProvaResponse"/>
+  </message>
+  <message name="caricaAssenza">
+    <part name="parameters" element="tns:caricaAssenza"/>
+  </message>
+  <message name="caricaAssenzaResponse">
+    <part name="parameters" element="tns:caricaAssenzaResponse"/>
+  </message>
+  <message name="caricaTipoVoto">
+    <part name="parameters" element="tns:caricaTipoVoto"/>
+  </message>
+  <message name="caricaTipoVotoResponse">
+    <part name="parameters" element="tns:caricaTipoVotoResponse"/>
+  </message>
+  <message name="caricaContatto">
+    <part name="parameters" element="tns:caricaContatto"/>
+  </message>
+  <message name="caricaContattoResponse">
+    <part name="parameters" element="tns:caricaContattoResponse"/>
+  </message>
+  <message name="caricaTipoAssenza">
+    <part name="parameters" element="tns:caricaTipoAssenza"/>
+  </message>
+  <message name="caricaTipoAssenzaResponse">
+    <part name="parameters" element="tns:caricaTipoAssenzaResponse"/>
+  </message>
+  <message name="caricaClasse">
+    <part name="parameters" element="tns:caricaClasse"/>
+  </message>
+  <message name="caricaClasseResponse">
+    <part name="parameters" element="tns:caricaClasseResponse"/>
+  </message>
+  <message name="caricaVoto">
+    <part name="parameters" element="tns:caricaVoto"/>
+  </message>
+  <message name="caricaVotoResponse">
+    <part name="parameters" element="tns:caricaVotoResponse"/>
+  </message>
+  <message name="recuperaNazioniBehavior">
+    <part name="parameters" element="tns:recuperaNazioniBehavior"/>
+  </message>
+  <message name="recuperaReligioniBehavior">
+    <part name="parameters" element="tns:recuperaReligioniBehavior"/>
+  </message>
+  <message name="opern">
+    <part name="parameters" element="tns:opern"/>
+  </message>
+  <message name="opernResponse">
+    <part name="parameters" element="tns:opernResponse"/>
+  </message>
+  <message name="salvaTipoVoto">
+    <part name="parameters" element="tns:salvaTipoVoto"/>
+  </message>
+  <message name="salvaTipoVotoResponse">
+    <part name="parameters" element="tns:salvaTipoVotoResponse"/>
+  </message>
+  <message name="eliminaTipoVoto">
+    <part name="parameters" element="tns:eliminaTipoVoto"/>
+  </message>
+  <message name="eliminaTipoVotoResponse">
+    <part name="parameters" element="tns:eliminaTipoVotoResponse"/>
+  </message>
+  <message name="salvaTipoProva">
+    <part name="parameters" element="tns:salvaTipoProva"/>
+  </message>
+  <message name="salvaTipoProvaResponse">
+    <part name="parameters" element="tns:salvaTipoProvaResponse"/>
+  </message>
+  <message name="eliminaTipoProva">
+    <part name="parameters" element="tns:eliminaTipoProva"/>
+  </message>
+  <message name="eliminaTipoProvaResponse">
+    <part name="parameters" element="tns:eliminaTipoProvaResponse"/>
+  </message>
+  <message name="salvaAssenza">
+    <part name="parameters" element="tns:salvaAssenza"/>
+  </message>
+  <message name="salvaAssenzaResponse">
+    <part name="parameters" element="tns:salvaAssenzaResponse"/>
+  </message>
+  <message name="eliminaAssenza">
+    <part name="parameters" element="tns:eliminaAssenza"/>
+  </message>
+  <message name="eliminaAssenzaResponse">
+    <part name="parameters" element="tns:eliminaAssenzaResponse"/>
+  </message>
+  <message name="salvaContatto">
+    <part name="parameters" element="tns:salvaContatto"/>
+  </message>
+  <message name="salvaContattoResponse">
+    <part name="parameters" element="tns:salvaContattoResponse"/>
+  </message>
+  <message name="eliminaContatto">
+    <part name="parameters" element="tns:eliminaContatto"/>
+  </message>
+  <message name="eliminaContattoResponse">
+    <part name="parameters" element="tns:eliminaContattoResponse"/>
+  </message>
+  <message name="salvaVoto">
+    <part name="parameters" element="tns:salvaVoto"/>
+  </message>
+  <message name="salvaVotoResponse">
+    <part name="parameters" element="tns:salvaVotoResponse"/>
+  </message>
+  <message name="eliminaVoto">
+    <part name="parameters" element="tns:eliminaVoto"/>
+  </message>
+  <message name="eliminaVotoResponse">
+    <part name="parameters" element="tns:eliminaVotoResponse"/>
+  </message>
+  <message name="salvaStudente">
+    <part name="parameters" element="tns:salvaStudente"/>
+  </message>
+  <message name="salvaStudenteResponse">
+    <part name="parameters" element="tns:salvaStudenteResponse"/>
+  </message>
+  <message name="eliminaStudente">
+    <part name="parameters" element="tns:eliminaStudente"/>
+  </message>
+  <message name="eliminaStudenteResponse">
+    <part name="parameters" element="tns:eliminaStudenteResponse"/>
+  </message>
+  <message name="caricaInsegnante">
+    <part name="parameters" element="tns:caricaInsegnante"/>
+  </message>
+  <message name="caricaInsegnanteResponse">
+    <part name="parameters" element="tns:caricaInsegnanteResponse"/>
+  </message>
+  <message name="salvaInsegnante">
+    <part name="parameters" element="tns:salvaInsegnante"/>
+  </message>
+  <message name="salvaInsegnanteResponse">
+    <part name="parameters" element="tns:salvaInsegnanteResponse"/>
+  </message>
+  <message name="eliminaInsegnante">
+    <part name="parameters" element="tns:eliminaInsegnante"/>
+  </message>
+  <message name="eliminaInsegnanteResponse">
+    <part name="parameters" element="tns:eliminaInsegnanteResponse"/>
+  </message>
+  <message name="salvaTipoAssenza">
+    <part name="parameters" element="tns:salvaTipoAssenza"/>
+  </message>
+  <message name="salvaTipoAssenzaResponse">
+    <part name="parameters" element="tns:salvaTipoAssenzaResponse"/>
+  </message>
+  <message name="eliminaTipoAssenza">
+    <part name="parameters" element="tns:eliminaTipoAssenza"/>
+  </message>
+  <message name="eliminaTipoAssenzaResponse">
+    <part name="parameters" element="tns:eliminaTipoAssenzaResponse"/>
+  </message>
+  <message name="salvaClasse">
+    <part name="parameters" element="tns:salvaClasse"/>
+  </message>
+  <message name="salvaClasseResponse">
+    <part name="parameters" element="tns:salvaClasseResponse"/>
+  </message>
+  <message name="eliminaClasse">
+    <part name="parameters" element="tns:eliminaClasse"/>
+  </message>
+  <message name="eliminaClasseResponse">
+    <part name="parameters" element="tns:eliminaClasseResponse"/>
+  </message>
+  <message name="caricaMateria">
+    <part name="parameters" element="tns:caricaMateria"/>
+  </message>
+  <message name="caricaMateriaResponse">
+    <part name="parameters" element="tns:caricaMateriaResponse"/>
+  </message>
+  <message name="salvaMateria">
+    <part name="parameters" element="tns:salvaMateria"/>
+  </message>
+  <message name="salvaMateriaResponse">
+    <part name="parameters" element="tns:salvaMateriaResponse"/>
+  </message>
+  <message name="eliminaMateria">
+    <part name="parameters" element="tns:eliminaMateria"/>
+  </message>
+  <message name="eliminaMateriaResponse">
+    <part name="parameters" element="tns:eliminaMateriaResponse"/>
+  </message>
+  <portType name="WSTest">
+    <operation name="caricaStudente">
+      <input message="tns:caricaStudente"/>
+      <output message="tns:caricaStudenteResponse"/>
+    </operation>
+    <operation name="caricaTipoProva">
+      <input message="tns:caricaTipoProva"/>
+      <output message="tns:caricaTipoProvaResponse"/>
+    </operation>
+    <operation name="caricaAssenza">
+      <input message="tns:caricaAssenza"/>
+      <output message="tns:caricaAssenzaResponse"/>
+    </operation>
+    <operation name="caricaTipoVoto">
+      <input message="tns:caricaTipoVoto"/>
+      <output message="tns:caricaTipoVotoResponse"/>
+    </operation>
+    <operation name="caricaContatto">
+      <input message="tns:caricaContatto"/>
+      <output message="tns:caricaContattoResponse"/>
+    </operation>
+    <operation name="caricaTipoAssenza">
+      <input message="tns:caricaTipoAssenza"/>
+      <output message="tns:caricaTipoAssenzaResponse"/>
+    </operation>
+    <operation name="caricaClasse">
+      <input message="tns:caricaClasse"/>
+      <output message="tns:caricaClasseResponse"/>
+    </operation>
+    <operation name="caricaVoto">
+      <input message="tns:caricaVoto"/>
+      <output message="tns:caricaVotoResponse"/>
+    </operation>
+    <operation name="recuperaNazioniBehavior">
+      <input message="tns:recuperaNazioniBehavior"/>
+    </operation>
+    <operation name="recuperaReligioniBehavior">
+      <input message="tns:recuperaReligioniBehavior"/>
+    </operation>
+    <operation name="opern">
+      <input message="tns:opern"/>
+      <output message="tns:opernResponse"/>
+    </operation>
+    <operation name="salvaTipoVoto">
+      <input message="tns:salvaTipoVoto"/>
+      <output message="tns:salvaTipoVotoResponse"/>
+    </operation>
+    <operation name="eliminaTipoVoto">
+      <input message="tns:eliminaTipoVoto"/>
+      <output message="tns:eliminaTipoVotoResponse"/>
+    </operation>
+    <operation name="salvaTipoProva">
+      <input message="tns:salvaTipoProva"/>
+      <output message="tns:salvaTipoProvaResponse"/>
+    </operation>
+    <operation name="eliminaTipoProva">
+      <input message="tns:eliminaTipoProva"/>
+      <output message="tns:eliminaTipoProvaResponse"/>
+    </operation>
+    <operation name="salvaAssenza">
+      <input message="tns:salvaAssenza"/>
+      <output message="tns:salvaAssenzaResponse"/>
+    </operation>
+    <operation name="eliminaAssenza">
+      <input message="tns:eliminaAssenza"/>
+      <output message="tns:eliminaAssenzaResponse"/>
+    </operation>
+    <operation name="salvaContatto">
+      <input message="tns:salvaContatto"/>
+      <output message="tns:salvaContattoResponse"/>
+    </operation>
+    <operation name="eliminaContatto">
+      <input message="tns:eliminaContatto"/>
+      <output message="tns:eliminaContattoResponse"/>
+    </operation>
+    <operation name="salvaVoto">
+      <input message="tns:salvaVoto"/>
+      <output message="tns:salvaVotoResponse"/>
+    </operation>
+    <operation name="eliminaVoto">
+      <input message="tns:eliminaVoto"/>
+      <output message="tns:eliminaVotoResponse"/>
+    </operation>
+    <operation name="salvaStudente">
+      <input message="tns:salvaStudente"/>
+      <output message="tns:salvaStudenteResponse"/>
+    </operation>
+    <operation name="eliminaStudente">
+      <input message="tns:eliminaStudente"/>
+      <output message="tns:eliminaStudenteResponse"/>
+    </operation>
+    <operation name="caricaInsegnante">
+      <input message="tns:caricaInsegnante"/>
+      <output message="tns:caricaInsegnanteResponse"/>
+    </operation>
+    <operation name="salvaInsegnante">
+      <input message="tns:salvaInsegnante"/>
+      <output message="tns:salvaInsegnanteResponse"/>
+    </operation>
+    <operation name="eliminaInsegnante">
+      <input message="tns:eliminaInsegnante"/>
+      <output message="tns:eliminaInsegnanteResponse"/>
+    </operation>
+    <operation name="salvaTipoAssenza">
+      <input message="tns:salvaTipoAssenza"/>
+      <output message="tns:salvaTipoAssenzaResponse"/>
+    </operation>
+    <operation name="eliminaTipoAssenza">
+      <input message="tns:eliminaTipoAssenza"/>
+      <output message="tns:eliminaTipoAssenzaResponse"/>
+    </operation>
+    <operation name="salvaClasse">
+      <input message="tns:salvaClasse"/>
+      <output message="tns:salvaClasseResponse"/>
+    </operation>
+    <operation name="eliminaClasse">
+      <input message="tns:eliminaClasse"/>
+      <output message="tns:eliminaClasseResponse"/>
+    </operation>
+    <operation name="caricaMateria">
+      <input message="tns:caricaMateria"/>
+      <output message="tns:caricaMateriaResponse"/>
+    </operation>
+    <operation name="salvaMateria">
+      <input message="tns:salvaMateria"/>
+      <output message="tns:salvaMateriaResponse"/>
+    </operation>
+    <operation name="eliminaMateria">
+      <input message="tns:eliminaMateria"/>
+      <output message="tns:eliminaMateriaResponse"/>
+    </operation>
+  </portType>
+  <binding name="WSTestPortBinding" type="tns:WSTest">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="caricaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="caricaTipoProva">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="caricaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="caricaTipoVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="caricaContatto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="caricaTipoAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="caricaClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="caricaVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="recuperaNazioniBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="recuperaReligioniBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="opern">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaTipoVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaTipoVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaTipoProva">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaTipoProva">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaContatto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaContatto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="caricaInsegnante">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaInsegnante">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaInsegnante">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaTipoAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaTipoAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="caricaMateria">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="salvaMateria">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminaMateria">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="WSTestService">
+    <port name="WSTestPort" binding="tns:WSTestPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/WSTestService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

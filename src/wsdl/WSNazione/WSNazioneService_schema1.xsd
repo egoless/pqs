@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="WSNazioneService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="recuperaNazioni" type="tns:recuperaNazioni"/>
+
+  <xs:element name="recuperaNazioniResponse" type="tns:recuperaNazioniResponse"/>
+
+  <xs:complexType name="recuperaNazioni"/>
+
+  <xs:complexType name="recuperaNazioniResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:nazione" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

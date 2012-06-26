@@ -1,0 +1,1324 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="nu.mine.egoless.didattica.ws">
+            <Stats>
+                <TotalClasses>12</TotalClasses>
+                <ConcreteClasses>12</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>12</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="WSAssenza.java">
+                    nu.mine.egoless.didattica.ws.WSAssenza
+                </Class>
+                <Class sourceFile="WSClasse.java">
+                    nu.mine.egoless.didattica.ws.WSClasse
+                </Class>
+                <Class sourceFile="WSContatto.java">
+                    nu.mine.egoless.didattica.ws.WSContatto
+                </Class>
+                <Class sourceFile="WSDidatticaException.java">
+                    nu.mine.egoless.didattica.ws.WSDidatticaException
+                </Class>
+                <Class sourceFile="WSMateria.java">
+                    nu.mine.egoless.didattica.ws.WSMateria
+                </Class>
+                <Class sourceFile="WSNazione.java">
+                    nu.mine.egoless.didattica.ws.WSNazione
+                </Class>
+                <Class sourceFile="WSPersona.java">
+                    nu.mine.egoless.didattica.ws.WSPersona
+                </Class>
+                <Class sourceFile="WSReligione.java">
+                    nu.mine.egoless.didattica.ws.WSReligione
+                </Class>
+                <Class sourceFile="WSTipoAssenza.java">
+                    nu.mine.egoless.didattica.ws.WSTipoAssenza
+                </Class>
+                <Class sourceFile="WSTipoProva.java">
+                    nu.mine.egoless.didattica.ws.WSTipoProva
+                </Class>
+                <Class sourceFile="WSTipoVoto.java">
+                    nu.mine.egoless.didattica.ws.WSTipoVoto
+                </Class>
+                <Class sourceFile="WSVoto.java">
+                    nu.mine.egoless.didattica.ws.WSVoto
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>nu.mine.egoless.supporto</Package>
+                <Package>nu.mine.egoless.ws.assenzaclient</Package>
+                <Package>nu.mine.egoless.ws.classeclient</Package>
+                <Package>nu.mine.egoless.ws.contattoclient</Package>
+                <Package>nu.mine.egoless.ws.materiaclient</Package>
+                <Package>nu.mine.egoless.ws.nazioneclient</Package>
+                <Package>nu.mine.egoless.ws.personaclient</Package>
+                <Package>nu.mine.egoless.ws.religioneclient</Package>
+                <Package>nu.mine.egoless.ws.tipoassenzaclient</Package>
+                <Package>nu.mine.egoless.ws.tipoprovaclient</Package>
+                <Package>nu.mine.egoless.ws.tipovotoclient</Package>
+                <Package>nu.mine.egoless.ws.votoclient</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.supporto">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0</A>
+                <I>0</I>
+                <D>1</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DateTimeFacade.java">
+                    nu.mine.egoless.supporto.DateTimeFacade
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.assenzaclient">
+            <Stats>
+                <TotalClasses>21</TotalClasses>
+                <ConcreteClasses>17</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.19</A>
+                <I>0</I>
+                <D>0.81</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="AssenzaWS.java">
+                    nu.mine.egoless.ws.assenzaclient.AssenzaWS
+                </Class>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.assenzaclient.Elemento
+                </Class>
+                <Class sourceFile="ParametriRicerca.java">
+                    nu.mine.egoless.ws.assenzaclient.ParametriRicerca
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.assenzaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiAssenza.java">
+                    nu.mine.egoless.ws.assenzaclient.AggiungiAssenza
+                </Class>
+                <Class sourceFile="AggiungiAssenzaResponse.java">
+                    nu.mine.egoless.ws.assenzaclient.AggiungiAssenzaResponse
+                </Class>
+                <Class sourceFile="Assenza.java">
+                    nu.mine.egoless.ws.assenzaclient.Assenza
+                </Class>
+                <Class sourceFile="AssenzaWSService.java">
+                    nu.mine.egoless.ws.assenzaclient.AssenzaWSService
+                </Class>
+                <Class sourceFile="CancellaAssenza.java">
+                    nu.mine.egoless.ws.assenzaclient.CancellaAssenza
+                </Class>
+                <Class sourceFile="CancellaAssenzaResponse.java">
+                    nu.mine.egoless.ws.assenzaclient.CancellaAssenzaResponse
+                </Class>
+                <Class sourceFile="CaricaAssenza.java">
+                    nu.mine.egoless.ws.assenzaclient.CaricaAssenza
+                </Class>
+                <Class sourceFile="CaricaAssenzaResponse.java">
+                    nu.mine.egoless.ws.assenzaclient.CaricaAssenzaResponse
+                </Class>
+                <Class sourceFile="CercaAssenza.java">
+                    nu.mine.egoless.ws.assenzaclient.CercaAssenza
+                </Class>
+                <Class sourceFile="CercaAssenzaResponse.java">
+                    nu.mine.egoless.ws.assenzaclient.CercaAssenzaResponse
+                </Class>
+                <Class sourceFile="Date.java">
+                    nu.mine.egoless.ws.assenzaclient.Date
+                </Class>
+                <Class sourceFile="ModificaAssenza.java">
+                    nu.mine.egoless.ws.assenzaclient.ModificaAssenza
+                </Class>
+                <Class sourceFile="ModificaAssenzaResponse.java">
+                    nu.mine.egoless.ws.assenzaclient.ModificaAssenzaResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.assenzaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.assenzaclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.assenzaclient.OperazioneNonValida_Exception
+                </Class>
+                <Class sourceFile="ParametriRicercaAssenza.java">
+                    nu.mine.egoless.ws.assenzaclient.ParametriRicercaAssenza
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.classeclient">
+            <Stats>
+                <TotalClasses>34</TotalClasses>
+                <ConcreteClasses>31</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.09</A>
+                <I>0</I>
+                <D>0.91</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="ClasseWS.java">
+                    nu.mine.egoless.ws.classeclient.ClasseWS
+                </Class>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.classeclient.Elemento
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.classeclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiClasse.java">
+                    nu.mine.egoless.ws.classeclient.AggiungiClasse
+                </Class>
+                <Class sourceFile="AggiungiClasseResponse.java">
+                    nu.mine.egoless.ws.classeclient.AggiungiClasseResponse
+                </Class>
+                <Class sourceFile="CancellaClasse.java">
+                    nu.mine.egoless.ws.classeclient.CancellaClasse
+                </Class>
+                <Class sourceFile="CancellaClasseResponse.java">
+                    nu.mine.egoless.ws.classeclient.CancellaClasseResponse
+                </Class>
+                <Class sourceFile="CaricaClasse.java">
+                    nu.mine.egoless.ws.classeclient.CaricaClasse
+                </Class>
+                <Class sourceFile="CaricaClasseResponse.java">
+                    nu.mine.egoless.ws.classeclient.CaricaClasseResponse
+                </Class>
+                <Class sourceFile="Classe.java">
+                    nu.mine.egoless.ws.classeclient.Classe
+                </Class>
+                <Class sourceFile="ClasseWSService.java">
+                    nu.mine.egoless.ws.classeclient.ClasseWSService
+                </Class>
+                <Class sourceFile="DisplayEntry.java">
+                    nu.mine.egoless.ws.classeclient.DisplayEntry
+                </Class>
+                <Class sourceFile="GetAule.java">
+                    nu.mine.egoless.ws.classeclient.GetAule
+                </Class>
+                <Class sourceFile="GetAuleResponse.java">
+                    nu.mine.egoless.ws.classeclient.GetAuleResponse
+                </Class>
+                <Class sourceFile="GetCariche.java">
+                    nu.mine.egoless.ws.classeclient.GetCariche
+                </Class>
+                <Class sourceFile="GetCaricheResponse.java">
+                    nu.mine.egoless.ws.classeclient.GetCaricheResponse
+                </Class>
+                <Class sourceFile="GetClassi.java">
+                    nu.mine.egoless.ws.classeclient.GetClassi
+                </Class>
+                <Class sourceFile="GetClassiResponse.java">
+                    nu.mine.egoless.ws.classeclient.GetClassiResponse
+                </Class>
+                <Class sourceFile="GetConsigliClasse.java">
+                    nu.mine.egoless.ws.classeclient.GetConsigliClasse
+                </Class>
+                <Class sourceFile="GetConsigliClasseResponse.java">
+                    nu.mine.egoless.ws.classeclient.GetConsigliClasseResponse
+                </Class>
+                <Class sourceFile="GetDocenti.java">
+                    nu.mine.egoless.ws.classeclient.GetDocenti
+                </Class>
+                <Class sourceFile="GetDocentiResponse.java">
+                    nu.mine.egoless.ws.classeclient.GetDocentiResponse
+                </Class>
+                <Class sourceFile="GetMaterie.java">
+                    nu.mine.egoless.ws.classeclient.GetMaterie
+                </Class>
+                <Class sourceFile="GetMaterieResponse.java">
+                    nu.mine.egoless.ws.classeclient.GetMaterieResponse
+                </Class>
+                <Class sourceFile="GetNomeCompleto.java">
+                    nu.mine.egoless.ws.classeclient.GetNomeCompleto
+                </Class>
+                <Class sourceFile="GetNomeCompletoResponse.java">
+                    nu.mine.egoless.ws.classeclient.GetNomeCompletoResponse
+                </Class>
+                <Class sourceFile="GetOreLzione.java">
+                    nu.mine.egoless.ws.classeclient.GetOreLzione
+                </Class>
+                <Class sourceFile="GetOreLzioneResponse.java">
+                    nu.mine.egoless.ws.classeclient.GetOreLzioneResponse
+                </Class>
+                <Class sourceFile="ModificaClasse.java">
+                    nu.mine.egoless.ws.classeclient.ModificaClasse
+                </Class>
+                <Class sourceFile="ModificaClasseResponse.java">
+                    nu.mine.egoless.ws.classeclient.ModificaClasseResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.classeclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.classeclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.classeclient.OperazioneNonValida_Exception
+                </Class>
+                <Class sourceFile="RuoloCarica.java">
+                    nu.mine.egoless.ws.classeclient.RuoloCarica
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.contattoclient">
+            <Stats>
+                <TotalClasses>20</TotalClasses>
+                <ConcreteClasses>16</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.2</A>
+                <I>0</I>
+                <D>0.8</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="ContattoWS.java">
+                    nu.mine.egoless.ws.contattoclient.ContattoWS
+                </Class>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.contattoclient.Elemento
+                </Class>
+                <Class sourceFile="ParametriRicerca.java">
+                    nu.mine.egoless.ws.contattoclient.ParametriRicerca
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.contattoclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiContatto.java">
+                    nu.mine.egoless.ws.contattoclient.AggiungiContatto
+                </Class>
+                <Class sourceFile="AggiungiContattoResponse.java">
+                    nu.mine.egoless.ws.contattoclient.AggiungiContattoResponse
+                </Class>
+                <Class sourceFile="CancellaContatto.java">
+                    nu.mine.egoless.ws.contattoclient.CancellaContatto
+                </Class>
+                <Class sourceFile="CancellaContattoResponse.java">
+                    nu.mine.egoless.ws.contattoclient.CancellaContattoResponse
+                </Class>
+                <Class sourceFile="CaricaContatto.java">
+                    nu.mine.egoless.ws.contattoclient.CaricaContatto
+                </Class>
+                <Class sourceFile="CaricaContattoResponse.java">
+                    nu.mine.egoless.ws.contattoclient.CaricaContattoResponse
+                </Class>
+                <Class sourceFile="CercaContatto.java">
+                    nu.mine.egoless.ws.contattoclient.CercaContatto
+                </Class>
+                <Class sourceFile="CercaContattoResponse.java">
+                    nu.mine.egoless.ws.contattoclient.CercaContattoResponse
+                </Class>
+                <Class sourceFile="Contatto.java">
+                    nu.mine.egoless.ws.contattoclient.Contatto
+                </Class>
+                <Class sourceFile="ContattoWSService.java">
+                    nu.mine.egoless.ws.contattoclient.ContattoWSService
+                </Class>
+                <Class sourceFile="ModificaContatto.java">
+                    nu.mine.egoless.ws.contattoclient.ModificaContatto
+                </Class>
+                <Class sourceFile="ModificaContattoResponse.java">
+                    nu.mine.egoless.ws.contattoclient.ModificaContattoResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.contattoclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.contattoclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.contattoclient.OperazioneNonValida_Exception
+                </Class>
+                <Class sourceFile="ParametriRicercaContatto.java">
+                    nu.mine.egoless.ws.contattoclient.ParametriRicercaContatto
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.materiaclient">
+            <Stats>
+                <TotalClasses>23</TotalClasses>
+                <ConcreteClasses>20</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.13</A>
+                <I>0</I>
+                <D>0.87</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.materiaclient.Elemento
+                </Class>
+                <Class sourceFile="MateriaInsegnamentoWS.java">
+                    nu.mine.egoless.ws.materiaclient.MateriaInsegnamentoWS
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.materiaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiMateriaInsegnamento.java">
+                    nu.mine.egoless.ws.materiaclient.AggiungiMateriaInsegnamento
+                </Class>
+                <Class sourceFile="AggiungiMateriaInsegnamentoResponse.java">
+                    nu.mine.egoless.ws.materiaclient.AggiungiMateriaInsegnamentoResponse
+                </Class>
+                <Class sourceFile="CancellaMateriaInsegnamento.java">
+                    nu.mine.egoless.ws.materiaclient.CancellaMateriaInsegnamento
+                </Class>
+                <Class sourceFile="CancellaMateriaInsegnamentoResponse.java">
+                    nu.mine.egoless.ws.materiaclient.CancellaMateriaInsegnamentoResponse
+                </Class>
+                <Class sourceFile="CaricaMateriaInsegnamento.java">
+                    nu.mine.egoless.ws.materiaclient.CaricaMateriaInsegnamento
+                </Class>
+                <Class sourceFile="CaricaMateriaInsegnamentoResponse.java">
+                    nu.mine.egoless.ws.materiaclient.CaricaMateriaInsegnamentoResponse
+                </Class>
+                <Class sourceFile="DisplayEntry.java">
+                    nu.mine.egoless.ws.materiaclient.DisplayEntry
+                </Class>
+                <Class sourceFile="GetDocenti.java">
+                    nu.mine.egoless.ws.materiaclient.GetDocenti
+                </Class>
+                <Class sourceFile="GetDocentiResponse.java">
+                    nu.mine.egoless.ws.materiaclient.GetDocentiResponse
+                </Class>
+                <Class sourceFile="GetMaterie.java">
+                    nu.mine.egoless.ws.materiaclient.GetMaterie
+                </Class>
+                <Class sourceFile="GetMaterieResponse.java">
+                    nu.mine.egoless.ws.materiaclient.GetMaterieResponse
+                </Class>
+                <Class sourceFile="GetOreLezione.java">
+                    nu.mine.egoless.ws.materiaclient.GetOreLezione
+                </Class>
+                <Class sourceFile="GetOreLezioneResponse.java">
+                    nu.mine.egoless.ws.materiaclient.GetOreLezioneResponse
+                </Class>
+                <Class sourceFile="MateriaInsegnamento.java">
+                    nu.mine.egoless.ws.materiaclient.MateriaInsegnamento
+                </Class>
+                <Class sourceFile="MateriaInsegnamentoWSService.java">
+                    nu.mine.egoless.ws.materiaclient.MateriaInsegnamentoWSService
+                </Class>
+                <Class sourceFile="ModificaMateriaInsegnamento.java">
+                    nu.mine.egoless.ws.materiaclient.ModificaMateriaInsegnamento
+                </Class>
+                <Class sourceFile="ModificaMateriaInsegnamentoResponse.java">
+                    nu.mine.egoless.ws.materiaclient.ModificaMateriaInsegnamentoResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.materiaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.materiaclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.materiaclient.OperazioneNonValida_Exception
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.nazioneclient">
+            <Stats>
+                <TotalClasses>18</TotalClasses>
+                <ConcreteClasses>15</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.17</A>
+                <I>0</I>
+                <D>0.83</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.nazioneclient.Elemento
+                </Class>
+                <Class sourceFile="NazioneWS.java">
+                    nu.mine.egoless.ws.nazioneclient.NazioneWS
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.nazioneclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiNazione.java">
+                    nu.mine.egoless.ws.nazioneclient.AggiungiNazione
+                </Class>
+                <Class sourceFile="AggiungiNazioneResponse.java">
+                    nu.mine.egoless.ws.nazioneclient.AggiungiNazioneResponse
+                </Class>
+                <Class sourceFile="CancellaNazione.java">
+                    nu.mine.egoless.ws.nazioneclient.CancellaNazione
+                </Class>
+                <Class sourceFile="CancellaNazioneResponse.java">
+                    nu.mine.egoless.ws.nazioneclient.CancellaNazioneResponse
+                </Class>
+                <Class sourceFile="CaricaNazione.java">
+                    nu.mine.egoless.ws.nazioneclient.CaricaNazione
+                </Class>
+                <Class sourceFile="CaricaNazioneResponse.java">
+                    nu.mine.egoless.ws.nazioneclient.CaricaNazioneResponse
+                </Class>
+                <Class sourceFile="GetNazioni.java">
+                    nu.mine.egoless.ws.nazioneclient.GetNazioni
+                </Class>
+                <Class sourceFile="GetNazioniResponse.java">
+                    nu.mine.egoless.ws.nazioneclient.GetNazioniResponse
+                </Class>
+                <Class sourceFile="ModificaNazione.java">
+                    nu.mine.egoless.ws.nazioneclient.ModificaNazione
+                </Class>
+                <Class sourceFile="ModificaNazioneResponse.java">
+                    nu.mine.egoless.ws.nazioneclient.ModificaNazioneResponse
+                </Class>
+                <Class sourceFile="Nazione.java">
+                    nu.mine.egoless.ws.nazioneclient.Nazione
+                </Class>
+                <Class sourceFile="NazioneWSService.java">
+                    nu.mine.egoless.ws.nazioneclient.NazioneWSService
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.nazioneclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.nazioneclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.nazioneclient.OperazioneNonValida_Exception
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.personaclient">
+            <Stats>
+                <TotalClasses>96</TotalClasses>
+                <ConcreteClasses>92</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.04</A>
+                <I>0</I>
+                <D>0.96</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.personaclient.Elemento
+                </Class>
+                <Class sourceFile="ParametriRicerca.java">
+                    nu.mine.egoless.ws.personaclient.ParametriRicerca
+                </Class>
+                <Class sourceFile="PersonaWS.java">
+                    nu.mine.egoless.ws.personaclient.PersonaWS
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.personaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AddCarica.java">
+                    nu.mine.egoless.ws.personaclient.AddCarica
+                </Class>
+                <Class sourceFile="AddCaricaResponse.java">
+                    nu.mine.egoless.ws.personaclient.AddCaricaResponse
+                </Class>
+                <Class sourceFile="AddFiglio.java">
+                    nu.mine.egoless.ws.personaclient.AddFiglio
+                </Class>
+                <Class sourceFile="AddFiglioResponse.java">
+                    nu.mine.egoless.ws.personaclient.AddFiglioResponse
+                </Class>
+                <Class sourceFile="AddGenitore.java">
+                    nu.mine.egoless.ws.personaclient.AddGenitore
+                </Class>
+                <Class sourceFile="AddGenitoreResponse.java">
+                    nu.mine.egoless.ws.personaclient.AddGenitoreResponse
+                </Class>
+                <Class sourceFile="Addclasse.java">
+                    nu.mine.egoless.ws.personaclient.Addclasse
+                </Class>
+                <Class sourceFile="AddclasseResponse.java">
+                    nu.mine.egoless.ws.personaclient.AddclasseResponse
+                </Class>
+                <Class sourceFile="AggiungiDocente.java">
+                    nu.mine.egoless.ws.personaclient.AggiungiDocente
+                </Class>
+                <Class sourceFile="AggiungiDocenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.AggiungiDocenteResponse
+                </Class>
+                <Class sourceFile="AggiungiGenitore.java">
+                    nu.mine.egoless.ws.personaclient.AggiungiGenitore
+                </Class>
+                <Class sourceFile="AggiungiGenitoreResponse.java">
+                    nu.mine.egoless.ws.personaclient.AggiungiGenitoreResponse
+                </Class>
+                <Class sourceFile="AggiungiPersonaleATA.java">
+                    nu.mine.egoless.ws.personaclient.AggiungiPersonaleATA
+                </Class>
+                <Class sourceFile="AggiungiPersonaleATAResponse.java">
+                    nu.mine.egoless.ws.personaclient.AggiungiPersonaleATAResponse
+                </Class>
+                <Class sourceFile="AggiungiStudente.java">
+                    nu.mine.egoless.ws.personaclient.AggiungiStudente
+                </Class>
+                <Class sourceFile="AggiungiStudenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.AggiungiStudenteResponse
+                </Class>
+                <Class sourceFile="CancellaDocente.java">
+                    nu.mine.egoless.ws.personaclient.CancellaDocente
+                </Class>
+                <Class sourceFile="CancellaDocenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.CancellaDocenteResponse
+                </Class>
+                <Class sourceFile="CancellaGenitore.java">
+                    nu.mine.egoless.ws.personaclient.CancellaGenitore
+                </Class>
+                <Class sourceFile="CancellaGenitoreResponse.java">
+                    nu.mine.egoless.ws.personaclient.CancellaGenitoreResponse
+                </Class>
+                <Class sourceFile="CancellaPersonaleATA.java">
+                    nu.mine.egoless.ws.personaclient.CancellaPersonaleATA
+                </Class>
+                <Class sourceFile="CancellaPersonaleATAResponse.java">
+                    nu.mine.egoless.ws.personaclient.CancellaPersonaleATAResponse
+                </Class>
+                <Class sourceFile="CancellaStudente.java">
+                    nu.mine.egoless.ws.personaclient.CancellaStudente
+                </Class>
+                <Class sourceFile="CancellaStudenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.CancellaStudenteResponse
+                </Class>
+                <Class sourceFile="Carica.java">
+                    nu.mine.egoless.ws.personaclient.Carica
+                </Class>
+                <Class sourceFile="CaricaDocente.java">
+                    nu.mine.egoless.ws.personaclient.CaricaDocente
+                </Class>
+                <Class sourceFile="CaricaDocenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.CaricaDocenteResponse
+                </Class>
+                <Class sourceFile="CaricaGenitore.java">
+                    nu.mine.egoless.ws.personaclient.CaricaGenitore
+                </Class>
+                <Class sourceFile="CaricaGenitoreResponse.java">
+                    nu.mine.egoless.ws.personaclient.CaricaGenitoreResponse
+                </Class>
+                <Class sourceFile="CaricaPersonaleATA.java">
+                    nu.mine.egoless.ws.personaclient.CaricaPersonaleATA
+                </Class>
+                <Class sourceFile="CaricaPersonaleATAResponse.java">
+                    nu.mine.egoless.ws.personaclient.CaricaPersonaleATAResponse
+                </Class>
+                <Class sourceFile="CaricaStudente.java">
+                    nu.mine.egoless.ws.personaclient.CaricaStudente
+                </Class>
+                <Class sourceFile="CaricaStudenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.CaricaStudenteResponse
+                </Class>
+                <Class sourceFile="CercaDocente.java">
+                    nu.mine.egoless.ws.personaclient.CercaDocente
+                </Class>
+                <Class sourceFile="CercaDocenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.CercaDocenteResponse
+                </Class>
+                <Class sourceFile="CercaStudente.java">
+                    nu.mine.egoless.ws.personaclient.CercaStudente
+                </Class>
+                <Class sourceFile="CercaStudenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.CercaStudenteResponse
+                </Class>
+                <Class sourceFile="Date.java">
+                    nu.mine.egoless.ws.personaclient.Date
+                </Class>
+                <Class sourceFile="DelCarica.java">
+                    nu.mine.egoless.ws.personaclient.DelCarica
+                </Class>
+                <Class sourceFile="DelCaricaResponse.java">
+                    nu.mine.egoless.ws.personaclient.DelCaricaResponse
+                </Class>
+                <Class sourceFile="DelClasse.java">
+                    nu.mine.egoless.ws.personaclient.DelClasse
+                </Class>
+                <Class sourceFile="DelClasseResponse.java">
+                    nu.mine.egoless.ws.personaclient.DelClasseResponse
+                </Class>
+                <Class sourceFile="DelFiglio.java">
+                    nu.mine.egoless.ws.personaclient.DelFiglio
+                </Class>
+                <Class sourceFile="DelFiglioResponse.java">
+                    nu.mine.egoless.ws.personaclient.DelFiglioResponse
+                </Class>
+                <Class sourceFile="DelGenitore.java">
+                    nu.mine.egoless.ws.personaclient.DelGenitore
+                </Class>
+                <Class sourceFile="DelGenitoreResponse.java">
+                    nu.mine.egoless.ws.personaclient.DelGenitoreResponse
+                </Class>
+                <Class sourceFile="DisplayEntry.java">
+                    nu.mine.egoless.ws.personaclient.DisplayEntry
+                </Class>
+                <Class sourceFile="Docente.java">
+                    nu.mine.egoless.ws.personaclient.Docente
+                </Class>
+                <Class sourceFile="Genitore.java">
+                    nu.mine.egoless.ws.personaclient.Genitore
+                </Class>
+                <Class sourceFile="GetAssenze.java">
+                    nu.mine.egoless.ws.personaclient.GetAssenze
+                </Class>
+                <Class sourceFile="GetAssenzeResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetAssenzeResponse
+                </Class>
+                <Class sourceFile="GetClasse.java">
+                    nu.mine.egoless.ws.personaclient.GetClasse
+                </Class>
+                <Class sourceFile="GetClasseResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetClasseResponse
+                </Class>
+                <Class sourceFile="GetClassi.java">
+                    nu.mine.egoless.ws.personaclient.GetClassi
+                </Class>
+                <Class sourceFile="GetClassiDocente.java">
+                    nu.mine.egoless.ws.personaclient.GetClassiDocente
+                </Class>
+                <Class sourceFile="GetClassiDocenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetClassiDocenteResponse
+                </Class>
+                <Class sourceFile="GetClassiResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetClassiResponse
+                </Class>
+                <Class sourceFile="GetCoordinatoreDi.java">
+                    nu.mine.egoless.ws.personaclient.GetCoordinatoreDi
+                </Class>
+                <Class sourceFile="GetCoordinatoreDiResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetCoordinatoreDiResponse
+                </Class>
+                <Class sourceFile="GetFigli.java">
+                    nu.mine.egoless.ws.personaclient.GetFigli
+                </Class>
+                <Class sourceFile="GetFigliResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetFigliResponse
+                </Class>
+                <Class sourceFile="GetGenitori.java">
+                    nu.mine.egoless.ws.personaclient.GetGenitori
+                </Class>
+                <Class sourceFile="GetGenitoriResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetGenitoriResponse
+                </Class>
+                <Class sourceFile="GetIncarichi.java">
+                    nu.mine.egoless.ws.personaclient.GetIncarichi
+                </Class>
+                <Class sourceFile="GetIncarichiResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetIncarichiResponse
+                </Class>
+                <Class sourceFile="GetMaterie.java">
+                    nu.mine.egoless.ws.personaclient.GetMaterie
+                </Class>
+                <Class sourceFile="GetMaterieResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetMaterieResponse
+                </Class>
+                <Class sourceFile="GetOreLezione.java">
+                    nu.mine.egoless.ws.personaclient.GetOreLezione
+                </Class>
+                <Class sourceFile="GetOreLezioneResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetOreLezioneResponse
+                </Class>
+                <Class sourceFile="GetResponsabileDi.java">
+                    nu.mine.egoless.ws.personaclient.GetResponsabileDi
+                </Class>
+                <Class sourceFile="GetResponsabileDiResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetResponsabileDiResponse
+                </Class>
+                <Class sourceFile="GetUtenti.java">
+                    nu.mine.egoless.ws.personaclient.GetUtenti
+                </Class>
+                <Class sourceFile="GetUtentiResponse.java">
+                    nu.mine.egoless.ws.personaclient.GetUtentiResponse
+                </Class>
+                <Class sourceFile="ModificaDocente.java">
+                    nu.mine.egoless.ws.personaclient.ModificaDocente
+                </Class>
+                <Class sourceFile="ModificaDocenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.ModificaDocenteResponse
+                </Class>
+                <Class sourceFile="ModificaGenitore.java">
+                    nu.mine.egoless.ws.personaclient.ModificaGenitore
+                </Class>
+                <Class sourceFile="ModificaGenitoreResponse.java">
+                    nu.mine.egoless.ws.personaclient.ModificaGenitoreResponse
+                </Class>
+                <Class sourceFile="ModificaPersonaleATA.java">
+                    nu.mine.egoless.ws.personaclient.ModificaPersonaleATA
+                </Class>
+                <Class sourceFile="ModificaPersonaleATAResponse.java">
+                    nu.mine.egoless.ws.personaclient.ModificaPersonaleATAResponse
+                </Class>
+                <Class sourceFile="ModificaStudente.java">
+                    nu.mine.egoless.ws.personaclient.ModificaStudente
+                </Class>
+                <Class sourceFile="ModificaStudenteResponse.java">
+                    nu.mine.egoless.ws.personaclient.ModificaStudenteResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.personaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.personaclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.personaclient.OperazioneNonValida_Exception
+                </Class>
+                <Class sourceFile="ParametriRicercaDocente.java">
+                    nu.mine.egoless.ws.personaclient.ParametriRicercaDocente
+                </Class>
+                <Class sourceFile="ParametriRicercaStudente.java">
+                    nu.mine.egoless.ws.personaclient.ParametriRicercaStudente
+                </Class>
+                <Class sourceFile="Persona.java">
+                    nu.mine.egoless.ws.personaclient.Persona
+                </Class>
+                <Class sourceFile="PersonaWSService.java">
+                    nu.mine.egoless.ws.personaclient.PersonaWSService
+                </Class>
+                <Class sourceFile="PersonaleATA.java">
+                    nu.mine.egoless.ws.personaclient.PersonaleATA
+                </Class>
+                <Class sourceFile="SetMaterie.java">
+                    nu.mine.egoless.ws.personaclient.SetMaterie
+                </Class>
+                <Class sourceFile="SetMaterieResponse.java">
+                    nu.mine.egoless.ws.personaclient.SetMaterieResponse
+                </Class>
+                <Class sourceFile="Studente.java">
+                    nu.mine.egoless.ws.personaclient.Studente
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.religioneclient">
+            <Stats>
+                <TotalClasses>18</TotalClasses>
+                <ConcreteClasses>15</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.17</A>
+                <I>0</I>
+                <D>0.83</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.religioneclient.Elemento
+                </Class>
+                <Class sourceFile="ReligioneWS.java">
+                    nu.mine.egoless.ws.religioneclient.ReligioneWS
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.religioneclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiReligione.java">
+                    nu.mine.egoless.ws.religioneclient.AggiungiReligione
+                </Class>
+                <Class sourceFile="AggiungiReligioneResponse.java">
+                    nu.mine.egoless.ws.religioneclient.AggiungiReligioneResponse
+                </Class>
+                <Class sourceFile="CancellaReligione.java">
+                    nu.mine.egoless.ws.religioneclient.CancellaReligione
+                </Class>
+                <Class sourceFile="CancellaReligioneResponse.java">
+                    nu.mine.egoless.ws.religioneclient.CancellaReligioneResponse
+                </Class>
+                <Class sourceFile="CaricaReligione.java">
+                    nu.mine.egoless.ws.religioneclient.CaricaReligione
+                </Class>
+                <Class sourceFile="CaricaReligioneResponse.java">
+                    nu.mine.egoless.ws.religioneclient.CaricaReligioneResponse
+                </Class>
+                <Class sourceFile="GetReligioni.java">
+                    nu.mine.egoless.ws.religioneclient.GetReligioni
+                </Class>
+                <Class sourceFile="GetReligioniResponse.java">
+                    nu.mine.egoless.ws.religioneclient.GetReligioniResponse
+                </Class>
+                <Class sourceFile="ModificaReligione.java">
+                    nu.mine.egoless.ws.religioneclient.ModificaReligione
+                </Class>
+                <Class sourceFile="ModificaReligioneResponse.java">
+                    nu.mine.egoless.ws.religioneclient.ModificaReligioneResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.religioneclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.religioneclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.religioneclient.OperazioneNonValida_Exception
+                </Class>
+                <Class sourceFile="Religione.java">
+                    nu.mine.egoless.ws.religioneclient.Religione
+                </Class>
+                <Class sourceFile="ReligioneWSService.java">
+                    nu.mine.egoless.ws.religioneclient.ReligioneWSService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.tipoassenzaclient">
+            <Stats>
+                <TotalClasses>18</TotalClasses>
+                <ConcreteClasses>15</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.17</A>
+                <I>0</I>
+                <D>0.83</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.Elemento
+                </Class>
+                <Class sourceFile="TipoAssenzaWS.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.TipoAssenzaWS
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiTipoAssenza.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.AggiungiTipoAssenza
+                </Class>
+                <Class sourceFile="AggiungiTipoAssenzaResponse.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.AggiungiTipoAssenzaResponse
+                </Class>
+                <Class sourceFile="CancellaTipoAssenza.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.CancellaTipoAssenza
+                </Class>
+                <Class sourceFile="CancellaTipoAssenzaResponse.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.CancellaTipoAssenzaResponse
+                </Class>
+                <Class sourceFile="CaricaTipoAssenza.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.CaricaTipoAssenza
+                </Class>
+                <Class sourceFile="CaricaTipoAssenzaResponse.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.CaricaTipoAssenzaResponse
+                </Class>
+                <Class sourceFile="GetTipiAssenza.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.GetTipiAssenza
+                </Class>
+                <Class sourceFile="GetTipiAssenzaResponse.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.GetTipiAssenzaResponse
+                </Class>
+                <Class sourceFile="ModificaTipoAssenza.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.ModificaTipoAssenza
+                </Class>
+                <Class sourceFile="ModificaTipoAssenzaResponse.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.ModificaTipoAssenzaResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.OperazioneNonValida_Exception
+                </Class>
+                <Class sourceFile="TipoAssenza.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.TipoAssenza
+                </Class>
+                <Class sourceFile="TipoAssenzaWSService.java">
+                    nu.mine.egoless.ws.tipoassenzaclient.TipoAssenzaWSService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.tipoprovaclient">
+            <Stats>
+                <TotalClasses>18</TotalClasses>
+                <ConcreteClasses>15</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.17</A>
+                <I>0</I>
+                <D>0.83</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.tipoprovaclient.Elemento
+                </Class>
+                <Class sourceFile="TipoProvaWS.java">
+                    nu.mine.egoless.ws.tipoprovaclient.TipoProvaWS
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.tipoprovaclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiTipoProva.java">
+                    nu.mine.egoless.ws.tipoprovaclient.AggiungiTipoProva
+                </Class>
+                <Class sourceFile="AggiungiTipoProvaResponse.java">
+                    nu.mine.egoless.ws.tipoprovaclient.AggiungiTipoProvaResponse
+                </Class>
+                <Class sourceFile="CancellaTipoProva.java">
+                    nu.mine.egoless.ws.tipoprovaclient.CancellaTipoProva
+                </Class>
+                <Class sourceFile="CancellaTipoProvaResponse.java">
+                    nu.mine.egoless.ws.tipoprovaclient.CancellaTipoProvaResponse
+                </Class>
+                <Class sourceFile="CaricaTipoProva.java">
+                    nu.mine.egoless.ws.tipoprovaclient.CaricaTipoProva
+                </Class>
+                <Class sourceFile="CaricaTipoProvaResponse.java">
+                    nu.mine.egoless.ws.tipoprovaclient.CaricaTipoProvaResponse
+                </Class>
+                <Class sourceFile="GetTipiProva.java">
+                    nu.mine.egoless.ws.tipoprovaclient.GetTipiProva
+                </Class>
+                <Class sourceFile="GetTipiProvaResponse.java">
+                    nu.mine.egoless.ws.tipoprovaclient.GetTipiProvaResponse
+                </Class>
+                <Class sourceFile="ModificaTipoProva.java">
+                    nu.mine.egoless.ws.tipoprovaclient.ModificaTipoProva
+                </Class>
+                <Class sourceFile="ModificaTipoProvaResponse.java">
+                    nu.mine.egoless.ws.tipoprovaclient.ModificaTipoProvaResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.tipoprovaclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.tipoprovaclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.tipoprovaclient.OperazioneNonValida_Exception
+                </Class>
+                <Class sourceFile="TipoProva.java">
+                    nu.mine.egoless.ws.tipoprovaclient.TipoProva
+                </Class>
+                <Class sourceFile="TipoProvaWSService.java">
+                    nu.mine.egoless.ws.tipoprovaclient.TipoProvaWSService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.tipovotoclient">
+            <Stats>
+                <TotalClasses>18</TotalClasses>
+                <ConcreteClasses>15</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.17</A>
+                <I>0</I>
+                <D>0.83</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.tipovotoclient.Elemento
+                </Class>
+                <Class sourceFile="TipoVotoWS.java">
+                    nu.mine.egoless.ws.tipovotoclient.TipoVotoWS
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.tipovotoclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiTipoVoto.java">
+                    nu.mine.egoless.ws.tipovotoclient.AggiungiTipoVoto
+                </Class>
+                <Class sourceFile="AggiungiTipoVotoResponse.java">
+                    nu.mine.egoless.ws.tipovotoclient.AggiungiTipoVotoResponse
+                </Class>
+                <Class sourceFile="CancellaTipoVoto.java">
+                    nu.mine.egoless.ws.tipovotoclient.CancellaTipoVoto
+                </Class>
+                <Class sourceFile="CancellaTipoVotoResponse.java">
+                    nu.mine.egoless.ws.tipovotoclient.CancellaTipoVotoResponse
+                </Class>
+                <Class sourceFile="CaricaTipoVoto.java">
+                    nu.mine.egoless.ws.tipovotoclient.CaricaTipoVoto
+                </Class>
+                <Class sourceFile="CaricaTipoVotoResponse.java">
+                    nu.mine.egoless.ws.tipovotoclient.CaricaTipoVotoResponse
+                </Class>
+                <Class sourceFile="GetTipivoto.java">
+                    nu.mine.egoless.ws.tipovotoclient.GetTipivoto
+                </Class>
+                <Class sourceFile="GetTipivotoResponse.java">
+                    nu.mine.egoless.ws.tipovotoclient.GetTipivotoResponse
+                </Class>
+                <Class sourceFile="ModificaTipoVoto.java">
+                    nu.mine.egoless.ws.tipovotoclient.ModificaTipoVoto
+                </Class>
+                <Class sourceFile="ModificaTipoVotoResponse.java">
+                    nu.mine.egoless.ws.tipovotoclient.ModificaTipoVotoResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.tipovotoclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.tipovotoclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.tipovotoclient.OperazioneNonValida_Exception
+                </Class>
+                <Class sourceFile="TipoVoto.java">
+                    nu.mine.egoless.ws.tipovotoclient.TipoVoto
+                </Class>
+                <Class sourceFile="TipoVotoWSService.java">
+                    nu.mine.egoless.ws.tipovotoclient.TipoVotoWSService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nu.mine.egoless.ws.votoclient">
+            <Stats>
+                <TotalClasses>21</TotalClasses>
+                <ConcreteClasses>17</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.19</A>
+                <I>0</I>
+                <D>0.81</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Elemento.java">
+                    nu.mine.egoless.ws.votoclient.Elemento
+                </Class>
+                <Class sourceFile="ParametriRicerca.java">
+                    nu.mine.egoless.ws.votoclient.ParametriRicerca
+                </Class>
+                <Class sourceFile="VotoWS.java">
+                    nu.mine.egoless.ws.votoclient.VotoWS
+                </Class>
+                <Class sourceFile="package-info.java">
+                    nu.mine.egoless.ws.votoclient.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AggiungiVoto.java">
+                    nu.mine.egoless.ws.votoclient.AggiungiVoto
+                </Class>
+                <Class sourceFile="AggiungiVotoResponse.java">
+                    nu.mine.egoless.ws.votoclient.AggiungiVotoResponse
+                </Class>
+                <Class sourceFile="CancellaVoto.java">
+                    nu.mine.egoless.ws.votoclient.CancellaVoto
+                </Class>
+                <Class sourceFile="CancellaVotoResponse.java">
+                    nu.mine.egoless.ws.votoclient.CancellaVotoResponse
+                </Class>
+                <Class sourceFile="CaricaVoto.java">
+                    nu.mine.egoless.ws.votoclient.CaricaVoto
+                </Class>
+                <Class sourceFile="CaricaVotoResponse.java">
+                    nu.mine.egoless.ws.votoclient.CaricaVotoResponse
+                </Class>
+                <Class sourceFile="CercaVoto.java">
+                    nu.mine.egoless.ws.votoclient.CercaVoto
+                </Class>
+                <Class sourceFile="CercaVotoResponse.java">
+                    nu.mine.egoless.ws.votoclient.CercaVotoResponse
+                </Class>
+                <Class sourceFile="Date.java">
+                    nu.mine.egoless.ws.votoclient.Date
+                </Class>
+                <Class sourceFile="ModificaVoto.java">
+                    nu.mine.egoless.ws.votoclient.ModificaVoto
+                </Class>
+                <Class sourceFile="ModificaVotoResponse.java">
+                    nu.mine.egoless.ws.votoclient.ModificaVotoResponse
+                </Class>
+                <Class sourceFile="ObjectFactory.java">
+                    nu.mine.egoless.ws.votoclient.ObjectFactory
+                </Class>
+                <Class sourceFile="OperazioneNonValida.java">
+                    nu.mine.egoless.ws.votoclient.OperazioneNonValida
+                </Class>
+                <Class sourceFile="OperazioneNonValida_Exception.java">
+                    nu.mine.egoless.ws.votoclient.OperazioneNonValida_Exception
+                </Class>
+                <Class sourceFile="ParametriRicercaVoto.java">
+                    nu.mine.egoless.ws.votoclient.ParametriRicercaVoto
+                </Class>
+                <Class sourceFile="Voto.java">
+                    nu.mine.egoless.ws.votoclient.Voto
+                </Class>
+                <Class sourceFile="VotoWSService.java">
+                    nu.mine.egoless.ws.votoclient.VotoWSService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nu.mine.egoless.didattica.ws</Package>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

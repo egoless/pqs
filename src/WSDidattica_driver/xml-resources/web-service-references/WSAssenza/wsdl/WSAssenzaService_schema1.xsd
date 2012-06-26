@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="WSAssenzaService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="aggiungiAssenza" type="tns:aggiungiAssenza"/>
+
+  <xs:element name="aggiungiAssenzaResponse" type="tns:aggiungiAssenzaResponse"/>
+
+  <xs:element name="cancellaAssenza" type="tns:cancellaAssenza"/>
+
+  <xs:element name="cancellaAssenzaResponse" type="tns:cancellaAssenzaResponse"/>
+
+  <xs:element name="cercaAssenza" type="tns:cercaAssenza"/>
+
+  <xs:element name="cercaAssenzaResponse" type="tns:cercaAssenzaResponse"/>
+
+  <xs:element name="modificaAssenza" type="tns:modificaAssenza"/>
+
+  <xs:element name="modificaAssenzaResponse" type="tns:modificaAssenzaResponse"/>
+
+  <xs:complexType name="cercaAssenza">
+    <xs:sequence>
+      <xs:element name="insiemeParametri" type="ns1:parametriRicercaAssenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:assenza" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaAssenza">
+    <xs:sequence>
+      <xs:element name="idAssenza" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaAssenzaResponse"/>
+
+  <xs:complexType name="aggiungiAssenza">
+    <xs:sequence>
+      <xs:element name="nuovaAssenza" type="ns1:assenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaAssenza">
+    <xs:sequence>
+      <xs:element name="assenza" type="ns1:assenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaAssenzaResponse"/>
+</xs:schema>
+

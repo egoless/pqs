@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="WSTest">
+      <implementation-class>nu.mine.egoless.api.ws.WSTest</implementation-class>
+    </service>
+    <service name="TipoProvaWS">
+      <implementation-class>com.swellsys.pqs.ws.modulo.registro.TipoProvaWS</implementation-class>
+    </service>
+    <service name="TipoVotoWS">
+      <implementation-class>com.swellsys.pqs.ws.modulo.registro.TipoVotoWS</implementation-class>
+    </service>
+    <service name="PersonaWS">
+      <implementation-class>com.swellsys.pqs.ws.api.PersonaWS</implementation-class>
+    </service>
+    <service name="TipoAssenzaWS">
+      <implementation-class>com.swellsys.pqs.ws.modulo.registro.TipoAssenzaWS</implementation-class>
+    </service>
+    <service name="ContattoWS">
+      <implementation-class>com.swellsys.pqs.ws.api.ContattoWS</implementation-class>
+    </service>
+    <service name="ReligioneWS">
+      <implementation-class>com.swellsys.pqs.ws.api.ReligioneWS</implementation-class>
+    </service>
+    <service name="ClasseWS">
+      <implementation-class>com.swellsys.pqs.ws.api.ClasseWS</implementation-class>
+    </service>
+    <service name="MateriaInsegnamentoWS">
+      <implementation-class>com.swellsys.pqs.ws.api.MateriaInsegnamentoWS</implementation-class>
+    </service>
+    <service name="NazioneWS">
+      <implementation-class>com.swellsys.pqs.ws.api.NazioneWS</implementation-class>
+    </service>
+    <service name="AssenzaWS">
+      <implementation-class>com.swellsys.pqs.ws.modulo.registro.AssenzaWS</implementation-class>
+    </service>
+    <service name="VotoWS">
+      <implementation-class>com.swellsys.pqs.ws.modulo.registro.VotoWS</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

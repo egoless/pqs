@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://ws.didattica.egoless.mine.nu/" name="WSTipoVotoService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://ws.didattica.egoless.mine.nu/" schemaLocation="WSTipoVotoService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  <!--  <xsd:schema>
+      <xsd:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="http://localhost:8080/WSTipoVotoService/WSTipoVoto/__container$publishing$subctx/META-INF/wsdl/WSTipoVotoService_schema2.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema> -->
+  </types>
+  <message name="aggiungiTipoVoto">
+    <part name="parameters" element="tns:aggiungiTipoVoto"/>
+  </message>
+  <message name="aggiungiTipoVotoResponse">
+    <part name="parameters" element="tns:aggiungiTipoVotoResponse"/>
+  </message>
+  <message name="WSDidatticaException">
+    <part name="fault" element="tns:WSDidatticaException"/>
+  </message>
+  <message name="cancellaTipoVoto">
+    <part name="parameters" element="tns:cancellaTipoVoto"/>
+  </message>
+  <message name="cancellaTipoVotoResponse">
+    <part name="parameters" element="tns:cancellaTipoVotoResponse"/>
+  </message>
+  <message name="recuperaTipiVoto">
+    <part name="parameters" element="tns:recuperaTipiVoto"/>
+  </message>
+  <message name="recuperaTipiVotoResponse">
+    <part name="parameters" element="tns:recuperaTipiVotoResponse"/>
+  </message>
+  <portType name="WSTipoVoto">
+    <operation name="aggiungiTipoVoto">
+      <input message="tns:aggiungiTipoVoto"/>
+      <output message="tns:aggiungiTipoVotoResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cancellaTipoVoto">
+      <input message="tns:cancellaTipoVoto"/>
+      <output message="tns:cancellaTipoVotoResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="recuperaTipiVoto">
+      <input message="tns:recuperaTipiVoto"/>
+      <output message="tns:recuperaTipiVotoResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+  </portType>
+  <binding name="WSTipoVotoPortBinding" type="tns:WSTipoVoto">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiTipoVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaTipoVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="recuperaTipiVoto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="WSTipoVotoService">
+    <port name="WSTipoVotoPort" binding="tns:WSTipoVotoPortBinding">
+      <soap:address location="http://ericmiotto.bsshome.bedin.it:8080/WSTipoVotoService/WSTipoVoto" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

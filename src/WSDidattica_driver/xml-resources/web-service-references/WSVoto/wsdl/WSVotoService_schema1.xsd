@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="WSVotoService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="aggiungiVoto" type="tns:aggiungiVoto"/>
+
+  <xs:element name="aggiungiVotoResponse" type="tns:aggiungiVotoResponse"/>
+
+  <xs:element name="cancellaVoto" type="tns:cancellaVoto"/>
+
+  <xs:element name="cancellaVotoResponse" type="tns:cancellaVotoResponse"/>
+
+  <xs:element name="cercaVoto" type="tns:cercaVoto"/>
+
+  <xs:element name="cercaVotoResponse" type="tns:cercaVotoResponse"/>
+
+  <xs:element name="modificaVoto" type="tns:modificaVoto"/>
+
+  <xs:element name="modificaVotoResponse" type="tns:modificaVotoResponse"/>
+
+  <xs:complexType name="modificaVoto">
+    <xs:sequence>
+      <xs:element name="voto" type="ns1:Voto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaVotoResponse"/>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiVoto">
+    <xs:sequence>
+      <xs:element name="nuovoVoto" type="ns1:Voto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaVoto">
+    <xs:sequence>
+      <xs:element name="idVoto" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaVotoResponse"/>
+
+  <xs:complexType name="cercaVoto">
+    <xs:sequence>
+      <xs:element name="insiemeParametri" type="ns1:parametriRicercaVoto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:Voto" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

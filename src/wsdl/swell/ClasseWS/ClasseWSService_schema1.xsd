@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="aggiungiClasse" type="tns:aggiungiClasse"/>
+
+  <xs:element name="aggiungiClasseResponse" type="tns:aggiungiClasseResponse"/>
+
+  <xs:element name="cancellaClasse" type="tns:cancellaClasse"/>
+
+  <xs:element name="cancellaClasseResponse" type="tns:cancellaClasseResponse"/>
+
+  <xs:element name="caricaClasse" type="tns:caricaClasse"/>
+
+  <xs:element name="caricaClasseResponse" type="tns:caricaClasseResponse"/>
+
+  <xs:element name="getAule" type="tns:getAule"/>
+
+  <xs:element name="getAuleResponse" type="tns:getAuleResponse"/>
+
+  <xs:element name="getCariche" type="tns:getCariche"/>
+
+  <xs:element name="getCaricheResponse" type="tns:getCaricheResponse"/>
+
+  <xs:element name="getClassi" type="tns:getClassi"/>
+
+  <xs:element name="getClassiResponse" type="tns:getClassiResponse"/>
+
+  <xs:element name="getConsigliClasse" type="tns:getConsigliClasse"/>
+
+  <xs:element name="getConsigliClasseResponse" type="tns:getConsigliClasseResponse"/>
+
+  <xs:element name="getDocenti" type="tns:getDocenti"/>
+
+  <xs:element name="getDocentiResponse" type="tns:getDocentiResponse"/>
+
+  <xs:element name="getMaterie" type="tns:getMaterie"/>
+
+  <xs:element name="getMaterieResponse" type="tns:getMaterieResponse"/>
+
+  <xs:element name="getNomeCompleto" type="tns:getNomeCompleto"/>
+
+  <xs:element name="getNomeCompletoResponse" type="tns:getNomeCompletoResponse"/>
+
+  <xs:element name="getOreLzione" type="tns:getOreLzione"/>
+
+  <xs:element name="getOreLzioneResponse" type="tns:getOreLzioneResponse"/>
+
+  <xs:element name="modificaClasse" type="tns:modificaClasse"/>
+
+  <xs:element name="modificaClasseResponse" type="tns:modificaClasseResponse"/>
+
+  <xs:complexType name="getClassi"/>
+
+  <xs:complexType name="getClassiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaClasse">
+    <xs:sequence>
+      <xs:element name="idClasse" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaClasseResponse"/>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getOreLzione">
+    <xs:sequence>
+      <xs:element name="classe" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="classe">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="annoCorso" type="xs:int" minOccurs="0"/>
+          <xs:element name="sezione" type="xs:unsignedShort"/>
+          <xs:element name="docenteId" type="xs:int"/>
+          <xs:element name="indirizzoStudiId" type="xs:int"/>
+          <xs:element name="annoScolasticoId" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="getOreLzioneResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="displayEntry">
+    <xs:sequence>
+      <xs:element name="identificativo" type="xs:int" minOccurs="0"/>
+      <xs:element name="display" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAule">
+    <xs:sequence>
+      <xs:element name="classe" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCariche">
+    <xs:sequence>
+      <xs:element name="classe" type="tns:classe" minOccurs="0"/>
+      <xs:element name="ruoloCarica" type="tns:ruoloCarica" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ruoloCarica">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="getCaricheResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDocenti">
+    <xs:sequence>
+      <xs:element name="classe" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDocentiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getNomeCompleto">
+    <xs:sequence>
+      <xs:element name="classe" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getNomeCompletoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMaterie">
+    <xs:sequence>
+      <xs:element name="classe" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMaterieResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaClasse">
+    <xs:sequence>
+      <xs:element name="classe" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaClasseResponse"/>
+
+  <xs:complexType name="caricaClasse">
+    <xs:sequence>
+      <xs:element name="idClasse" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaClasseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiClasse">
+    <xs:sequence>
+      <xs:element name="nuovaClasse" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiClasseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getConsigliClasse">
+    <xs:sequence>
+      <xs:element name="classe" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getConsigliClasseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

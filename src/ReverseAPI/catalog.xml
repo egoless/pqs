@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+
+
+
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoValutazioneWS/TipoValutazioneWSService.wsdl" uri="src/conf/xml-resources/web-services/TipoVotoWS/wsdl/TipoValutazioneWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoValutazioneWS/TipoValutazioneWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/TipoVotoWS/wsdl/TipoValutazioneWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ValutazioneWS/ValutazioneWSService.wsdl" uri="src/conf/xml-resources/web-services/VotoWS/wsdl/ValutazioneWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ValutazioneWS/ValutazioneWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/VotoWS/wsdl/ValutazioneWSService_schema1.xsd"/>
+
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/NazioneWS/NazioneWSService.wsdl" uri="src/conf/xml-resources/web-services/NazioneWS/wsdl/NazioneWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/NazioneWS/NazioneWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/NazioneWS/wsdl/NazioneWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ReligioneWS/ReligioneWSService.wsdl" uri="src/conf/xml-resources/web-services/ReligioneWS/wsdl/ReligioneWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ReligioneWS/ReligioneWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/ReligioneWS/wsdl/ReligioneWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/MateriaInsegnamentoWS/MateriaInsegnamentoWSService.wsdl" uri="src/conf/xml-resources/web-services/MateriaInsegnamentoWS/wsdl/MateriaInsegnamentoWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/MateriaInsegnamentoWS/MateriaInsegnamentoWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/MateriaInsegnamentoWS/wsdl/MateriaInsegnamentoWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ClasseWS/ClasseWSService.wsdl" uri="src/conf/xml-resources/web-services/ClasseWS/wsdl/ClasseWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ClasseWS/ClasseWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/ClasseWS/wsdl/ClasseWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoAssenzaWS/TipoAssenzaWSService.wsdl" uri="src/conf/xml-resources/web-services/TipoAssenzaWS/wsdl/TipoAssenzaWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoAssenzaWS/TipoAssenzaWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/TipoAssenzaWS/wsdl/TipoAssenzaWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoVotoWS/TipoVotoWSService.wsdl" uri="src/conf/xml-resources/web-services/TipoVotoWS/wsdl/TipoVotoWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoVotoWS/TipoVotoWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/TipoVotoWS/wsdl/TipoVotoWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoProvaWS/TipoProvaWSService.wsdl" uri="src/conf/xml-resources/web-services/TipoProvaWS/wsdl/TipoProvaWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/TipoProvaWS/TipoProvaWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/TipoProvaWS/wsdl/TipoProvaWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/AssenzaWS/AssenzaWSService.wsdl" uri="src/conf/xml-resources/web-services/AssenzaWS/wsdl/AssenzaWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/AssenzaWS/AssenzaWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/AssenzaWS/wsdl/AssenzaWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/VotoWS/VotoWSService.wsdl" uri="src/conf/xml-resources/web-services/VotoWS/wsdl/VotoWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/VotoWS/VotoWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/VotoWS/wsdl/VotoWSService_schema1.xsd"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ContattoWS/ContattoWSService.wsdl" uri="src/conf/xml-resources/web-services/ContattoWS/wsdl/ContattoWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/ContattoWS/ContattoWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/ContattoWS/wsdl/ContattoWSService_schema1.xsd"/>
+
+
+
+
+
+
+
+
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/PersonaWS/PersonaWSService.wsdl" uri="src/conf/xml-resources/web-services/PersonaWS/wsdl/PersonaWSService.wsdl"/>
+<system systemId="file:/D:/ing_soft/src_local/wsdl/swell/PersonaWS/PersonaWSService_schema1.xsd" uri="src/conf/xml-resources/web-services/PersonaWS/wsdl/PersonaWSService_schema1.xsd"/>
+</catalog>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" name="nu.mine.egoless.didattica.app.bean.AssenzeBeanTest" tests="5" time="1.656">
+  <properties>
+    <property name="Env-TMP" value="C:\DOCUME~1\Eugenio\IMPOST~1\Temp"></property>
+    <property name="javax.xml.parsers.SAXParserFactory" value="org.netbeans.core.startup.SAXFactoryImpl"></property>
+    <property name="javac.test.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\activation.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\FastInfoset.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\http.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-xjc.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-rt.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-tools.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr173_api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr181-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr250-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\sjsxp.jar:C:\Programmi\netbeans-5.5\platform6\modules\ext\swing-layout-1.0.jar:../Supporto/dist/Supporto.jar:build/classes:C:\Programmi\netbeans-5.5\ide7\modules\ext\junit-3.8.1.jar"></property>
+    <property name="org.openide.TopManager.GUI" value="true"></property>
+    <property name="libs.junit.javadoc" value="C:\Programmi\netbeans-5.5\ide7\docs\junit-3.8.1-api.zip"></property>
+    <property name="javadoc.windowtitle" value=""></property>
+    <property name="libs.toplink.classpath" value="C:\Programmi\netbeans-5.5\enterprise3\modules\ext\toplink\toplink-essentials.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\toplink\toplink-essentials-agent.jar"></property>
+    <property name="user.dir" value="C:\Programmi\netbeans-5.5"></property>
+    <property name="java.vm.version" value="1.6.0-b105"></property>
+    <property name="env-path" value="C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Programmi\ATI Technologies\ATI Control Panel;C:\Programmi\svn\bin;"></property>
+    <property name="libs.jaxb20.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\activation.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-xjc.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr173_api.jar"></property>
+    <property name="libs.jstl11.src" value=""></property>
+    <property name="javadoc.notree" value="false"></property>
+    <property name="wsimport-client-WSClasse.notRequired" value="true"></property>
+    <property name="libs.jaxrpc16.src" value=""></property>
+    <property name="env-computername" value="EUGENIO-361CB0E"></property>
+    <property name="jdk.home" value="C:\Programmi\Java\jdk1.6.0"></property>
+    <property name="wsclientuptodate.classpath" value="C:\Programmi\netbeans-5.5\enterprise3\ant\extra\wsclientuptodate.jar"></property>
+    <property name="javadoc.noindex" value="false"></property>
+    <property name="sun.os.patch.level" value="Service Pack 2"></property>
+    <property name="AM_CONFIG_FILE" value="C:\Sun\AppServer\addons\amserver\AMConfig.properties"></property>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
+    <property name="have.tests" value="true"></property>
+    <property name="env-os" value="Windows_NT"></property>
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser"></property>
+    <property name="reference.Supporto.jar" value="../Supporto/dist/Supporto.jar"></property>
+    <property name="ant.file.imported" value="D:\src_2\ant\junitpdfreport\build-junitpdfreport.xml"></property>
+    <property name="os.name" value="Windows XP"></property>
+    <property name="env-processor_revision" value="0c00"></property>
+    <property name="libs.jaxrpc16.classpath" value="C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\activation.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\FastInfoset.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\jaxp-api.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\jax-qname.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\jaxrpc-api.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\jaxrpc-impl.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\jaxrpc-spi.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\jsr173_api.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\mail.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\relaxngDatatype.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\saaj-api.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\saaj-impl.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16\xsdlib.jar"></property>
+    <property name="env-clientname" value="Console"></property>
+    <property name="test.failed" value="true"></property>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"></property>
+    <property name="libs.jaxrpc16_xml.src" value=""></property>
+    <property name="os.arch" value="x86"></property>
+    <property name="user.name" value="Eugenio"></property>
+    <property name="manifest.available+main.class" value="true"></property>
+    <property name="build.classes.dir" value="build/classes"></property>
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense"></property>
+    <property name="build.sysclasspath" value="ignore"></property>
+    <property name="Env-Path" value="C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Programmi\ATI Technologies\ATI Control Panel;C:\Programmi\svn\bin;"></property>
+    <property name="env-systemroot" value="C:\WINDOWS"></property>
+    <property name="javax.xml.parsers.DocumentBuilderFactory" value="org.netbeans.core.startup.DOMFactoryImpl"></property>
+    <property name="user.country" value="IT"></property>
+    <property name="manifest.file" value="manifest.mf"></property>
+    <property name="libs.jstl11.javadoc" value="C:\Programmi\netbeans-5.5\enterprise3\docs\javaee5-doc-api.zip"></property>
+    <property name="Env-ComSpec" value="C:\WINDOWS\system32\cmd.exe"></property>
+    <property name="javadoc.encoding" value=""></property>
+    <property name="cobertura.dir" value="../ant/cobertura"></property>
+    <property name="platform.home" value="C:\Programmi\Java\jdk1.6.0"></property>
+    <property name="javac.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\activation.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\FastInfoset.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\http.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-xjc.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-rt.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-tools.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr173_api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr181-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr250-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\sjsxp.jar:C:\Programmi\netbeans-5.5\platform6\modules\ext\swing-layout-1.0.jar:../Supporto/dist/Supporto.jar"></property>
+    <property name="libs.JAVADB_DRIVER_LABEL.src" value=""></property>
+    <property name="platform.bootcp" value="C:\Programmi\Java\jdk1.6.0\jre\lib\resources.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\rt.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\sunrsasign.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\jsse.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\jce.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\charsets.jar;C:\Programmi\Java\jdk1.6.0\jre\classes;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\dnsns.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\localedata.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\sunjce_provider.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\sunmscapi.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\sunpkcs11.jar"></property>
+    <property name="netbeans.system_http_non_proxy_hosts" value=""></property>
+    <property name="netbeans.home" value="C:\Programmi\netbeans-5.5\platform6"></property>
+    <property name="build.compiler.emacs" value="true"></property>
+    <property name="Env-PROCESSOR_ARCHITECTURE" value="x86"></property>
+    <property name="java.endorsed.dirs" value="C:\Programmi\Java\jdk1.6.0\jre\lib\endorsed"></property>
+    <property name="netbeans.dynamic.classpath" value="C:\Programmi\netbeans-5.5\platform6\core\core.jar;C:\Programmi\netbeans-5.5\platform6\core\org-openide-filesystems.jar;C:\Programmi\netbeans-5.5\nb5.5\core\org-netbeans-upgrader.jar;C:\Programmi\netbeans-5.5\nb5.5\core\locale\core_nb.jar;C:\Programmi\netbeans-5.5\ide7\core\org-netbeans-modules-utilities-cli.jar"></property>
+    <property name="Env-HOMEDRIVE" value="C:"></property>
+    <property name="java.vm.specification.version" value="1.0"></property>
+    <property name="net.sourceforge.cobertura.datafile" value="D:\src_2\APPDidattica\coverage report\2007-03-26 21-47-58\cobertura.ser"></property>
+    <property name="platforms.JDK_1.6.home" value="C:\Programmi\Java\jdk1.6.0"></property>
+    <property name="build.coverage.results.dir" value="build/coverage/results"></property>
+    <property name="Env-USERPROFILE" value="C:\Documents and Settings\Eugenio"></property>
+    <property name="java.vendor" value="Sun Microsystems Inc."></property>
+    <property name="platforms.JDK_1.6.compiler" value="modern"></property>
+    <property name="wsimport-client-WSTipoAssenza.notRequired" value="true"></property>
+    <property name="egoless.basedir" value="D:\src_2\ant"></property>
+    <property name="env-processor_identifier" value="x86 Family 15 Model 12 Stepping 0, AuthenticAMD"></property>
+    <property name="env-logonserver" value="\\EUGENIO-361CB0E"></property>
+    <property name="javac.debug" value="true"></property>
+    <property name="javadoc.splitindex" value="true"></property>
+    <property name="file.separator" value="\"></property>
+    <property name="libs.IdentityAntTasks.src" value=""></property>
+    <property name="netbeans.buildnumber" value="200610171010, Ent.Pack 20061020"></property>
+    <property name="user.variant" value=""></property>
+    <property name="wsimport-client-WSNazione.notRequired" value="true"></property>
+    <property name="sun.java.launcher" value="SUN_STANDARD"></property>
+    <property name="libs.junit.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\junit-3.8.1.jar"></property>
+    <property name="Env-CLIENTNAME" value="Console"></property>
+    <property name="libs.struts.classpath" value="C:\Programmi\netbeans-5.5\enterprise3\modules\ext\struts\antlr.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\struts\commons-beanutils.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\struts\commons-digester.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\struts\commons-fileupload.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\struts\commons-logging.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\struts\commons-validator.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\struts\jakarta-oro.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\struts\struts.jar"></property>
+    <property name="org.openide.awt.SwingBrowserImpl.do-not-block-awt" value="false"></property>
+    <property name="checkstyle.path" value="checkstyle"></property>
+    <property name="ant.home" value="C:\Programmi\netbeans-5.5\ide7\ant"></property>
+    <property name="Env-USERDOMAIN" value="EUGENIO-361CB0E"></property>
+    <property name="ant.java.version" value="1.5"></property>
+    <property name="java.library.path" value="C:\Programmi\Java\jdk1.6.0\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Programmi\ATI Technologies\ATI Control Panel;C:\Programmi\svn\bin;"></property>
+    <property name="javadoc.author" value="false"></property>
+    <property name="libs.IdentityAntTasks.classpath" value="C:\Programmi\netbeans-5.5\identity1\ant\nblib\org-netbeans-modules-identity-ant.jar;C:\Programmi\netbeans-5.5\identity1\modules\org-netbeans-modules-identity-profile-api.jar"></property>
+    <property name="DSTAMP" value="20070326"></property>
+    <property name="https.proxyPort" value=""></property>
+    <property name="libs.jaxws20.src" value=""></property>
+    <property name="libs.jaxrpc16.javadoc" value=""></property>
+    <property name="sun.arch.data.model" value="32"></property>
+    <property name="basedir" value="D:\src_2\APPDidattica"></property>
+    <property name="jar.compress" value="false"></property>
+    <property name="libs.jstl11.classpath" value="C:\Programmi\netbeans-5.5\enterprise3\modules\ext\standard.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\jstl.jar"></property>
+    <property name="path.separator" value=";"></property>
+    <property name="com.sun.aas.installRoot" value="C:\Sun\AppServer"></property>
+    <property name="env-newenvironment1" value="C:\Programmi\ATI Technologies\ATI.ACE\"></property>
+    <property name="platform.javac" value="C:\Programmi\Java\jdk1.6.0/bin/javac"></property>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"></property>
+    <property name="TSTAMP" value="2147"></property>
+    <property name="libs.struts.src" value=""></property>
+    <property name="Env-APPDATA" value="C:\Documents and Settings\Eugenio\Dati applicazioni"></property>
+    <property name="env-fp_no_host_check" value="NO"></property>
+    <property name="user.language" value="it"></property>
+    <property name="Env-windir" value="C:\WINDOWS"></property>
+    <property name="ant.file.APPDidattica-impl" value="D:\src_2\APPDidattica\nbproject\build-impl.xml"></property>
+    <property name="env-programfiles" value="C:\Programmi"></property>
+    <property name="manifest.available" value="true"></property>
+    <property name="run.test.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\activation.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\FastInfoset.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\http.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-xjc.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-rt.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-tools.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr173_api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr181-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr250-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\sjsxp.jar:C:\Programmi\netbeans-5.5\platform6\modules\ext\swing-layout-1.0.jar:../Supporto/dist/Supporto.jar:build/classes:C:\Programmi\netbeans-5.5\ide7\modules\ext\junit-3.8.1.jar:build/test/classes"></property>
+    <property name="libs.swing-layout.javadoc" value="C:\Programmi\netbeans-5.5\platform6\docs\swing-layout-1.0-doc.zip"></property>
+    <property name="Env-PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH"></property>
+    <property name="env-number_of_processors" value="1"></property>
+    <property name="wsimport-client-WSReligione.notRequired" value="true"></property>
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|eugenio-361cb0e"></property>
+    <property name="java.class.version" value="50.0"></property>
+    <property name="libs.JAVADB_DRIVER_LABEL.classpath" value="C:\Sun\AppServer\javadb\lib\derby.jar;C:\Sun\AppServer\javadb\lib\derbyclient.jar;C:\Sun\AppServer\javadb\lib\derbynet.jar"></property>
+    <property name="netbeans.system_http_proxy" value="DIRECT"></property>
+    <property name="user.properties.file" value="C:\Documents and Settings\Eugenio\.netbeans\5.5\build.properties"></property>
+    <property name="libs.jaxrpc16_xml.classpath" value="C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16_xml\dom.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16_xml\sax.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16_xml\xalan.jar;C:\Documents and Settings\Eugenio\.netbeans\5.5\modules\ext\jaxrpc16_xml\xercesImpl.jar"></property>
+    <property name="file.encoding.pkg" value="sun.io"></property>
+    <property name="sun.cpu.endian" value="little"></property>
+    <property name="ant.file.egoless" value="D:\src_2\ant\build.xml"></property>
+    <property name="env-username" value="Eugenio"></property>
+    <property name="env-homepath" value="\Documents and Settings\Eugenio"></property>
+    <property name="javadoc.preview" value="true"></property>
+    <property name="nbplatform.default.harness.dir" value="C:\Programmi\netbeans-5.5/harness"></property>
+    <property name="java.home" value="C:\Programmi\Java\jdk1.6.0\jre"></property>
+    <property name="copyfiles.classpath" value="C:\Programmi\netbeans-5.5\enterprise3\ant\extra\copyfiles.jar"></property>
+    <property name="debug.test.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\activation.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\FastInfoset.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\http.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-xjc.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-rt.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-tools.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr173_api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr181-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr250-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\sjsxp.jar:C:\Programmi\netbeans-5.5\platform6\modules\ext\swing-layout-1.0.jar:../Supporto/dist/Supporto.jar:build/classes:C:\Programmi\netbeans-5.5\ide7\modules\ext\junit-3.8.1.jar:build/test/classes"></property>
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade"></property>
+    <property name="libs.jsf.javadoc" value="C:\Programmi\netbeans-5.5\enterprise3\docs\javaee5-doc-api.zip"></property>
+    <property name="env-sessionname" value="Console"></property>
+    <property name="org.openide.TopManager" value="org.netbeans.core.NonGui"></property>
+    <property name="wsimport-client-WSMateria.notRequired" value="true"></property>
+    <property name="env-commonprogramfiles" value="C:\Programmi\File comuni"></property>
+    <property name="env-processor_level" value="15"></property>
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|eugenio-361cb0e"></property>
+    <property name="Env-PROCESSOR_IDENTIFIER" value="x86 Family 15 Model 12 Stepping 0, AuthenticAMD"></property>
+    <property name="libs.toplink.src" value=""></property>
+    <property name="run.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\activation.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\FastInfoset.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\http.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-xjc.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-rt.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-tools.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr173_api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr181-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr250-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\sjsxp.jar:C:\Programmi\netbeans-5.5\platform6\modules\ext\swing-layout-1.0.jar:../Supporto/dist/Supporto.jar:build/classes"></property>
+    <property name="libs.jaxb20.src" value=""></property>
+    <property name="Env-SystemRoot" value="C:\WINDOWS"></property>
+    <property name="http.proxyHost" value=""></property>
+    <property name="Env-TEMP" value="C:\DOCUME~1\Eugenio\IMPOST~1\Temp"></property>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"></property>
+    <property name="javac.deprecation" value="false"></property>
+    <property name="javadoc.use" value="true"></property>
+    <property name="libs.jsf.src" value=""></property>
+    <property name="coverage.reports.dir" value="coverage report"></property>
+    <property name="javac.compilerargs" value=""></property>
+    <property name="ant.file" value="D:\src_2\APPDidattica\build.xml"></property>
+    <property name="env-tmp" value="C:\DOCUME~1\Eugenio\IMPOST~1\Temp"></property>
+    <property name="Env-SystemDrive" value="C:"></property>
+    <property name="sun.awt.exception.handler" value="org.netbeans.core.NbErrorManager$AWTHandler"></property>
+    <property name="Env-CommonProgramFiles" value="C:\Programmi\File comuni"></property>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="libs.swing-layout.src" value=""></property>
+    <property name="wsimport-client-WSDidaStub.notRequired" value="true"></property>
+    <property name="org.openide.major.version" value="IDE/1"></property>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"></property>
+    <property name="netbeans.user" value="C:\Documents and Settings\Eugenio\.netbeans\5.5"></property>
+    <property name="javadoc.additionalparam" value=""></property>
+    <property name="junitpdfreport.essentials.path" value="junitpdfreport"></property>
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\Eugenio\IMPOST~1\Temp\"></property>
+    <property name="java.vendor.url" value="http://java.sun.com/"></property>
+    <property name="jspc.classpath" value="C:\Programmi\netbeans-5.5\ide7\ant\lib\ant.jar:C:\Programmi\netbeans-5.5\enterprise3\modules\ext\servlet2.5-jsp2.1-api.jar:${j2ee.platform.classpath}:C:\Programmi\netbeans-5.5\enterprise3\modules\ext\glassfish-jspparser.jar:C:\Programmi\netbeans-5.5\enterprise3\modules\ext\glassfish-logging.jar:C:\Programmi\netbeans-5.5\ide7\modules\ext\commons-logging-1.0.4.jar"></property>
+    <property name="env-appdata" value="C:\Documents and Settings\Eugenio\Dati applicazioni"></property>
+    <property name="Env-ProgramFiles" value="C:\Programmi"></property>
+    <property name="env-windir" value="C:\WINDOWS"></property>
+    <property name="wsimport-client-WSVoto.notRequired" value="true"></property>
+    <property name="sun.boot.library.path" value="C:\Programmi\Java\jdk1.6.0\jre\bin"></property>
+    <property name="have.sources" value="true"></property>
+    <property name="debug.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\activation.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\FastInfoset.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\http.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-xjc.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-rt.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-tools.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr173_api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr181-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr250-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\sjsxp.jar:C:\Programmi\netbeans-5.5\platform6\modules\ext\swing-layout-1.0.jar:../Supporto/dist/Supporto.jar:build/classes"></property>
+    <property name="javadoc.private" value="false"></property>
+    <property name="test.src.dir" value="test"></property>
+    <property name="meta.inf.dir" value="src/META-INF"></property>
+    <property name="env-pathext" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH"></property>
+    <property name="Env-ALLUSERSPROFILE" value="C:\Documents and Settings\All Users"></property>
+    <property name="dist.jar" value="dist/APPDidattica.jar"></property>
+    <property name="Env-LOGONSERVER" value="\\EUGENIO-361CB0E"></property>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"></property>
+    <property name="env-comspec" value="C:\WINDOWS\system32\cmd.exe"></property>
+    <property name="ant.project.name" value="APPDidattica"></property>
+    <property name="platform.javadoc" value="C:\Programmi\Java\jdk1.6.0/bin/javadoc"></property>
+    <property name="platform.javadoc.tmp" value="${platforms.JDK_1.6.javadoc}"></property>
+    <property name="sun.cpu.isalist" value=""></property>
+    <property name="Env-FP_NO_HOST_CHECK" value="NO"></property>
+    <property name="libs.CopyLibs.javadoc" value=""></property>
+    <property name="platform.compiler" value="${platforms.JDK_1.6.compile}"></property>
+    <property name="org.openide.specification.version" value="6.2"></property>
+    <property name="user.home" value="C:\Documents and Settings\Eugenio"></property>
+    <property name="platform.javac.tmp" value="${platforms.JDK_1.6.javac}"></property>
+    <property name="libs.jaxws20.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\activation.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\FastInfoset.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\http.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxb-xjc.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-rt.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jaxws-tools.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr173_api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr181-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\jsr250-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-api.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\saaj-impl.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\jaxws20\sjsxp.jar"></property>
+    <property name="netbeans.osenv" value="C:\DOCUME~1\Eugenio\IMPOST~1\Temp\nbenv4"></property>
+    <property name="current.report.dir" value="coverage report/2007-03-26 21-47-58"></property>
+    <property name="libs.absolutelayout.javadoc" value=""></property>
+    <property name="java.specification.name" value="Java Platform API Specification"></property>
+    <property name="libs.jsf.classpath" value="C:\Programmi\netbeans-5.5\enterprise3\modules\ext\jsf\commons-beanutils.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\jsf\commons-collections.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\jsf\commons-digester.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\jsf\commons-logging.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\jsf\jsf-api.jar;C:\Programmi\netbeans-5.5\enterprise3\modules\ext\jsf\jsf-impl.jar"></property>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="Env-OS" value="Windows_NT"></property>
+    <property name="java.version" value="1.6.0"></property>
+    <property name="javadoc.version" value="false"></property>
+    <property name="org.openide.version" value="deprecated"></property>
+    <property name="platform.java" value="C:\Programmi\Java\jdk1.6.0/bin/java"></property>
+    <property name="Env-PROCESSOR_LEVEL" value="15"></property>
+    <property name="netbeans.home+have.tests" value="true"></property>
+    <property name="work.dir" value="D:\src_2\APPDidattica"></property>
+    <property name="wsimport-client-WSAssenza.notRequired" value="true"></property>
+    <property name="dist.javadoc.dir" value="dist/javadoc"></property>
+    <property name="libs.swing-layout.classpath" value="C:\Programmi\netbeans-5.5\platform6\modules\ext\swing-layout-1.0.jar"></property>
+    <property name="build.generated.dir" value="build/generated"></property>
+    <property name="javac.source" value="1.6"></property>
+    <property name="line.separator" value="
+"></property>
+    <property name="java.specification.version" value="1.6"></property>
+    <property name="libs.jaxws20.javadoc" value=""></property>
+    <property name="java.vm.info" value="mixed mode"></property>
+    <property name="wsimport-client-WSTipoVoto.notRequired" value="true"></property>
+    <property name="platform.java.tmp" value="${platforms.JDK_1.6.java}"></property>
+    <property name="sun.boot.class.path" value="C:\Programmi\Java\jdk1.6.0\jre\lib\resources.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\rt.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\sunrsasign.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\jsse.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\jce.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\charsets.jar;C:\Programmi\Java\jdk1.6.0\jre\classes"></property>
+    <property name="javac.target" value="1.6"></property>
+    <property name="libs.jaxrpc16_xml.javadoc" value=""></property>
+    <property name="build.test.classes.dir" value="build/test/classes"></property>
+    <property name="netbeans.osenv.nullsep" value="true"></property>
+    <property name="src.dir" value="src"></property>
+    <property name="libs.IdentityAntTasks.javadoc" value=""></property>
+    <property name="sun.awt.keepWorkingSetOnMinimize" value="true"></property>
+    <property name="nbplatform.default.netbeans.dest.dir" value="C:\Programmi\netbeans-5.5"></property>
+    <property name="env-systemdrive" value="C:"></property>
+    <property name="libs.struts.javadoc" value="C:\Programmi\netbeans-5.5\enterprise3\docs\struts-1.2.9-javadoc.zip"></property>
+    <property name="pack.build.number" value="20061020"></property>
+    <property name="project.Supporto" value="../Supporto"></property>
+    <property name="dist.dir" value="dist"></property>
+    <property name="Env-SESSIONNAME" value="Console"></property>
+    <property name="http.proxyPort" value=""></property>
+    <property name="Env-USERNAME" value="Eugenio"></property>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"></property>
+    <property name="TODAY" value="March 26 2007"></property>
+    <property name="Env-HOMEPATH" value="\Documents and Settings\Eugenio"></property>
+    <property name="default.javac.source" value="1.6"></property>
+    <property name="env-homedrive" value="C:"></property>
+    <property name="sun.jnu.encoding" value="Cp1252"></property>
+    <property name="env-userdomain" value="EUGENIO-361CB0E"></property>
+    <property name="Env-COMPUTERNAME" value="EUGENIO-361CB0E"></property>
+    <property name="java.runtime.version" value="1.6.0-b105"></property>
+    <property name="build.test.results.dir" value="build/test/results"></property>
+    <property name="env-allusersprofile" value="C:\Documents and Settings\All Users"></property>
+    <property name="manifest.available+main.class+mkdist.available" value="true"></property>
+    <property name="build.instrumented.dir" value="build/instrumented-classes"></property>
+    <property name="wsimport-client-WSPersona.notRequired" value="true"></property>
+    <property name="default.javac.target" value="1.6"></property>
+    <property name="user.timezone" value=""></property>
+    <property name="Env-PROCESSOR_REVISION" value="0c00"></property>
+    <property name="libs.JAVADB_DRIVER_LABEL.javadoc" value=""></property>
+    <property name="netbeans.dirs" value="C:\Programmi\netbeans-5.5\nb5.5;C:\Programmi\netbeans-5.5\ide7;C:\Programmi\netbeans-5.5\enterprise3;C:\Programmi\netbeans-5.5\harness;C:\Programmi\netbeans-5.5\soa1;C:\Programmi\netbeans-5.5\xmltools1;C:\Programmi\netbeans-5.5\identity1"></property>
+    <property name="test.checkstyle.dir" value="checkstyle report"></property>
+    <property name="java.ext.dirs" value="C:\Programmi\Java\jdk1.6.0\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"></property>
+    <property name="libs.absolutelayout.classpath" value="C:\Programmi\netbeans-5.5\ide7\modules\ext\AbsoluteLayout.jar"></property>
+    <property name="platforms.JDK_1.6.bootclasspath" value="C:\Programmi\Java\jdk1.6.0\jre\lib\resources.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\rt.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\sunrsasign.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\jsse.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\jce.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\charsets.jar;C:\Programmi\Java\jdk1.6.0\jre\classes;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\dnsns.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\localedata.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\sunjce_provider.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\sunmscapi.jar;C:\Programmi\Java\jdk1.6.0\jre\lib\ext\sunpkcs11.jar"></property>
+    <property name="java.class.path" value="D:\src_2\APPDidattica\build\instrumented-classes;D:\src_2\APPDidattica\build\classes;D:\src_2\ant\cobertura\cobertura.jar;D:\src_2\ant\cobertura\lib\asm-2.2.1.jar;D:\src_2\ant\cobertura\lib\jakarta-oro-2.0.8.jar;D:\src_2\ant\cobertura\lib\log4j-1.2.9.jar;C:\Programmi\netbeans-5.5\ide7\modules\ext\junit-3.8.1.jar;C:\Programmi\netbeans-5.5\ide7\ant\lib\ant-launcher.jar;C:\Programmi\netbeans-5.5\ide7\ant\lib\ant.jar;C:\Programmi\netbeans-5.5\ide7\ant\lib\ant-junit.jar"></property>
+    <property name="apple.laf.useScreenMenuBar" value="true"></property>
+    <property name="env-userprofile" value="C:\Documents and Settings\Eugenio"></property>
+    <property name="libs.absolutelayout.src" value=""></property>
+    <property name="coverage.report.prefix" value="coverage report "></property>
+    <property name="os.version" value="5.1"></property>
+    <property name="application.args" value=""></property>
+    <property name="libs.toplink.javadoc" value=""></property>
+    <property name="sun.desktop" value="windows"></property>
+    <property name="ant.file.APPDidattica" value="D:\src_2\APPDidattica\build.xml"></property>
+    <property name="libs.jaxb20.javadoc" value=""></property>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"></property>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."></property>
+    <property name="wsimport-client-WSContatto.notRequired" value="true"></property>
+    <property name="libs.CopyLibs.classpath" value="C:\Programmi\netbeans-5.5\ide7\ant\extra\org-netbeans-modules-java-j2seproject-copylibstask.jar"></property>
+    <property name="run.jvmargs" value=""></property>
+    <property name="env-processor_architecture" value="x86"></property>
+    <property name="Env-NUMBER_OF_PROCESSORS" value="1"></property>
+    <property name="env-temp" value="C:\DOCUME~1\Eugenio\IMPOST~1\Temp"></property>
+    <property name="libs.junit.src" value=""></property>
+    <property name="NOW" value="2007-03-26 21-47-58"></property>
+    <property name="main.class" value="nu.mine.egoless.didattica.app.gui.GUIFrame"></property>
+    <property name="build.dir" value="build"></property>
+    <property name="libs.CopyLibs.src" value=""></property>
+    <property name="ant.version" value="Apache Ant version 1.6.5 compiled on June 2 2005"></property>
+    <property name="test.checkstyle.prefix" value="checkstyle report "></property>
+    <property name="Env-NewEnvironment1" value="C:\Programmi\ATI Technologies\ATI.ACE\"></property>
+    <property name="file.encoding" value="Cp1252"></property>
+    <property name="wsimport-client-WSTipoProva.notRequired" value="true"></property>
+    <property name="build.classes.excludes" value="**/*.java,**/*.form"></property>
+    <property name="javadoc.nonavbar" value="false"></property>
+    <property name="platform.active" value="JDK_1.6"></property>
+    <property name="https.proxyHost" value=""></property>
+    <property name="imported.basedir" value="D:\src_2\ant\junitpdfreport"></property>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"></property>
+  </properties>
+  <testcase classname="nu.mine.egoless.didattica.app.bean.AssenzeBeanTest" name="testCaricaAssenze" time="0.641"></testcase>
+  <testcase classname="nu.mine.egoless.didattica.app.bean.AssenzeBeanTest" name="testRitornaNumeroDiAssenze" time="0.25"></testcase>
+  <testcase classname="nu.mine.egoless.didattica.app.bean.AssenzeBeanTest" name="testGetAssenzaAt" time="0.219"></testcase>
+  <testcase classname="nu.mine.egoless.didattica.app.bean.AssenzeBeanTest" name="testRimuoviAssenzaAt" time="0.25"></testcase>
+  <testcase classname="nu.mine.egoless.didattica.app.bean.AssenzeBeanTest" name="testSostituisciAssenzaAt" time="0.234"></testcase>
+  <system-out><![CDATA[caricaAssenze
+ritornaNumeroDiAssenze
+getAssenzaAt
+rimuoviAssenzaAt
+sostituisciAssenzaAt
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

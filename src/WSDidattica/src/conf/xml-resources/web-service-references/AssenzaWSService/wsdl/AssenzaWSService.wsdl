@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://registro.modulo.ws.pqs.swellsys.com/" name="AssenzaWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="AssenzaWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="aggiungiAssenza">
+    <part name="parameters" element="tns:aggiungiAssenza"/>
+  </message>
+  <message name="aggiungiAssenzaResponse">
+    <part name="parameters" element="tns:aggiungiAssenzaResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="modificaAssenza">
+    <part name="parameters" element="tns:modificaAssenza"/>
+  </message>
+  <message name="modificaAssenzaResponse">
+    <part name="parameters" element="tns:modificaAssenzaResponse"/>
+  </message>
+  <message name="cancellaAssenza">
+    <part name="parameters" element="tns:cancellaAssenza"/>
+  </message>
+  <message name="cancellaAssenzaResponse">
+    <part name="parameters" element="tns:cancellaAssenzaResponse"/>
+  </message>
+  <message name="cercaAssenza">
+    <part name="parameters" element="tns:cercaAssenza"/>
+  </message>
+  <message name="cercaAssenzaResponse">
+    <part name="parameters" element="tns:cercaAssenzaResponse"/>
+  </message>
+  <message name="caricaAssenza">
+    <part name="parameters" element="tns:caricaAssenza"/>
+  </message>
+  <message name="caricaAssenzaResponse">
+    <part name="parameters" element="tns:caricaAssenzaResponse"/>
+  </message>
+  <portType name="AssenzaWS">
+    <operation name="aggiungiAssenza">
+      <input message="tns:aggiungiAssenza"/>
+      <output message="tns:aggiungiAssenzaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaAssenza">
+      <input message="tns:modificaAssenza"/>
+      <output message="tns:modificaAssenzaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaAssenza">
+      <input message="tns:cancellaAssenza"/>
+      <output message="tns:cancellaAssenzaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cercaAssenza">
+      <input message="tns:cercaAssenza"/>
+      <output message="tns:cercaAssenzaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaAssenza">
+      <input message="tns:caricaAssenza"/>
+      <output message="tns:caricaAssenzaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+  </portType>
+  <binding name="AssenzaWSPortBinding" type="tns:AssenzaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cercaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="AssenzaWSService">
+    <port name="AssenzaWSPort" binding="tns:AssenzaWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/AssenzaWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://ws.didattica.egoless.mine.nu/" name="WSMateriaService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://ws.didattica.egoless.mine.nu/" schemaLocation="WSMateriaService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  <!--  <xsd:schema>
+      <xsd:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="http://localhost:8080/WSMateriaService/WSMateria/__container$publishing$subctx/META-INF/wsdl/WSMateriaService_schema2.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema> -->
+  </types>
+  <message name="aggiungiMateria">
+    <part name="parameters" element="tns:aggiungiMateria"/>
+  </message>
+  <message name="aggiungiMateriaResponse">
+    <part name="parameters" element="tns:aggiungiMateriaResponse"/>
+  </message>
+  <message name="WSDidatticaException">
+    <part name="fault" element="tns:WSDidatticaException"/>
+  </message>
+  <message name="cancellaMateria">
+    <part name="parameters" element="tns:cancellaMateria"/>
+  </message>
+  <message name="cancellaMateriaResponse">
+    <part name="parameters" element="tns:cancellaMateriaResponse"/>
+  </message>
+  <message name="recuperaMaterie">
+    <part name="parameters" element="tns:recuperaMaterie"/>
+  </message>
+  <message name="recuperaMaterieResponse">
+    <part name="parameters" element="tns:recuperaMaterieResponse"/>
+  </message>
+  <portType name="WSMateria">
+    <operation name="aggiungiMateria">
+      <input message="tns:aggiungiMateria"/>
+      <output message="tns:aggiungiMateriaResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cancellaMateria">
+      <input message="tns:cancellaMateria"/>
+      <output message="tns:cancellaMateriaResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="recuperaMaterie">
+      <input message="tns:recuperaMaterie"/>
+      <output message="tns:recuperaMaterieResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+  </portType>
+  <binding name="WSMateriaPortBinding" type="tns:WSMateria">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiMateria">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaMateria">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="recuperaMaterie">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="WSMateriaService">
+    <port name="WSMateriaPort" binding="tns:WSMateriaPortBinding">
+      <soap:address location="http://ericmiotto.bsshome.bedin.it:8080/WSMateriaService/WSMateria" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

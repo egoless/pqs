@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://stub.didattica.ws/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://stub.didattica.ws/" name="WSDidaStubService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://stub.didattica.ws/" schemaLocation="WSDidaStubService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="recuperaNazioniReturnsNull">
+    <part name="parameters" element="tns:recuperaNazioniReturnsNull"/>
+  </message>
+  <message name="recuperaReligioniReturnsNull">
+    <part name="parameters" element="tns:recuperaReligioniReturnsNull"/>
+  </message>
+  <message name="recuperaTipiVotoBehavior">
+    <part name="parameters" element="tns:recuperaTipiVotoBehavior"/>
+  </message>
+  <message name="recuperaTipiAssenzaBehavior">
+    <part name="parameters" element="tns:recuperaTipiAssenzaBehavior"/>
+  </message>
+  <message name="recuperaMaterieBehavior">
+    <part name="parameters" element="tns:recuperaMaterieBehavior"/>
+  </message>
+  <message name="cercaContattoBehavior">
+    <part name="parameters" element="tns:cercaContattoBehavior"/>
+  </message>
+  <message name="recuperaClassiBehavior">
+    <part name="parameters" element="tns:recuperaClassiBehavior"/>
+  </message>
+  <message name="cercaStudenteBehavior">
+    <part name="parameters" element="tns:cercaStudenteBehavior"/>
+  </message>
+  <message name="cercaInsegnanteBehavior">
+    <part name="parameters" element="tns:cercaInsegnanteBehavior"/>
+  </message>
+  <message name="cercaAssenzaBehavior">
+    <part name="parameters" element="tns:cercaAssenzaBehavior"/>
+  </message>
+  <message name="cercaVotoBehavior">
+    <part name="parameters" element="tns:cercaVotoBehavior"/>
+  </message>
+  <message name="recuperaTipiProvaBehavior">
+    <part name="parameters" element="tns:recuperaTipiProvaBehavior"/>
+  </message>
+  <portType name="WSDidaStub">
+    <operation name="recuperaNazioniReturnsNull">
+      <input message="tns:recuperaNazioniReturnsNull"/>
+    </operation>
+    <operation name="recuperaReligioniReturnsNull">
+      <input message="tns:recuperaReligioniReturnsNull"/>
+    </operation>
+    <operation name="recuperaTipiVotoBehavior">
+      <input message="tns:recuperaTipiVotoBehavior"/>
+    </operation>
+    <operation name="recuperaTipiAssenzaBehavior">
+      <input message="tns:recuperaTipiAssenzaBehavior"/>
+    </operation>
+    <operation name="recuperaMaterieBehavior">
+      <input message="tns:recuperaMaterieBehavior"/>
+    </operation>
+    <operation name="cercaContattoBehavior">
+      <input message="tns:cercaContattoBehavior"/>
+    </operation>
+    <operation name="recuperaClassiBehavior">
+      <input message="tns:recuperaClassiBehavior"/>
+    </operation>
+    <operation name="cercaStudenteBehavior">
+      <input message="tns:cercaStudenteBehavior"/>
+    </operation>
+    <operation name="cercaInsegnanteBehavior">
+      <input message="tns:cercaInsegnanteBehavior"/>
+    </operation>
+    <operation name="cercaAssenzaBehavior">
+      <input message="tns:cercaAssenzaBehavior"/>
+    </operation>
+    <operation name="cercaVotoBehavior">
+      <input message="tns:cercaVotoBehavior"/>
+    </operation>
+    <operation name="recuperaTipiProvaBehavior">
+      <input message="tns:recuperaTipiProvaBehavior"/>
+    </operation>
+  </portType>
+  <binding name="WSDidaStubPortBinding" type="tns:WSDidaStub">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="recuperaNazioniReturnsNull">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="recuperaReligioniReturnsNull">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="recuperaTipiVotoBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="recuperaTipiAssenzaBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="recuperaMaterieBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="cercaContattoBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="recuperaClassiBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="cercaStudenteBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="cercaInsegnanteBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="cercaAssenzaBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="cercaVotoBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+    <operation name="recuperaTipiProvaBehavior">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+  </binding>
+  <service name="WSDidaStubService">
+    <port name="WSDidaStubPort" binding="tns:WSDidaStubPortBinding">
+      <soap:address location="http://localhost:8080/WSDidaStubService/WSDidaStub" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

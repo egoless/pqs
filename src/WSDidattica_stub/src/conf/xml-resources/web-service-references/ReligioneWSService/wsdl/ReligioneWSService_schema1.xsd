@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="aggiungiReligione" type="tns:aggiungiReligione"/>
+
+  <xs:element name="aggiungiReligioneResponse" type="tns:aggiungiReligioneResponse"/>
+
+  <xs:element name="cancellaReligione" type="tns:cancellaReligione"/>
+
+  <xs:element name="cancellaReligioneResponse" type="tns:cancellaReligioneResponse"/>
+
+  <xs:element name="caricaReligione" type="tns:caricaReligione"/>
+
+  <xs:element name="caricaReligioneResponse" type="tns:caricaReligioneResponse"/>
+
+  <xs:element name="getReligioni" type="tns:getReligioni"/>
+
+  <xs:element name="getReligioniResponse" type="tns:getReligioniResponse"/>
+
+  <xs:element name="modificaReligione" type="tns:modificaReligione"/>
+
+  <xs:element name="modificaReligioneResponse" type="tns:modificaReligioneResponse"/>
+
+  <xs:complexType name="modificaReligione">
+    <xs:sequence>
+      <xs:element name="religione" type="tns:religione" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="religione">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="modificaReligioneResponse"/>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaReligione">
+    <xs:sequence>
+      <xs:element name="idReligione" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaReligioneResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:religione" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getReligioni"/>
+
+  <xs:complexType name="getReligioniResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaReligione">
+    <xs:sequence>
+      <xs:element name="idReligione" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaReligioneResponse"/>
+
+  <xs:complexType name="aggiungiReligione">
+    <xs:sequence>
+      <xs:element name="nuovaReligione" type="tns:religione" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiReligioneResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

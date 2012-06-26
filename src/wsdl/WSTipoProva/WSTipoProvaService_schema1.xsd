@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="WSTipoProvaService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="aggiungiTipoProva" type="tns:aggiungiTipoProva"/>
+
+  <xs:element name="aggiungiTipoProvaResponse" type="tns:aggiungiTipoProvaResponse"/>
+
+  <xs:element name="cancellaTipoProva" type="tns:cancellaTipoProva"/>
+
+  <xs:element name="cancellaTipoProvaResponse" type="tns:cancellaTipoProvaResponse"/>
+
+  <xs:element name="recuperaTipiProva" type="tns:recuperaTipiProva"/>
+
+  <xs:element name="recuperaTipiProvaResponse" type="tns:recuperaTipiProvaResponse"/>
+
+  <xs:complexType name="cancellaTipoProva">
+    <xs:sequence>
+      <xs:element name="idTipoProva" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaTipoProvaResponse"/>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaTipiProva"/>
+
+  <xs:complexType name="recuperaTipiProvaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:tipoProva" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoProva">
+    <xs:sequence>
+      <xs:element name="nuovoTipoProva" type="ns1:tipoProva" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoProvaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

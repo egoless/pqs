@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="C:\Documents and Settings\STEFANO\Documenti\Sorgenti Buoni\Supporto\src\nu\mine\egoless\supporto\package.html">
+<error line="0" severity="error" message="Missing package documentation file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.PackageHtmlCheck"/>
+</file>
+<file name="C:\Documents and Settings\STEFANO\Documenti\Sorgenti Buoni\Supporto\src\nu\mine\egoless\supporto\DateTimeFacade.java">
+<error line="27" severity="error" message="Class DateTimeFacade should be declared as final." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
+<error line="29" severity="error" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="38" column="25" severity="error" message="Name &apos;Date2String&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="38" column="37" severity="error" message="Parameter dataDaConvertire should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="56" column="25" severity="error" message="Name &apos;GregorianCalendar2String&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="56" column="50" severity="error" message="Parameter calendarioDaConvertire should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="82" column="23" severity="error" message="Name &apos;String2Date&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="82" column="35" severity="error" message="Parameter stringaDaConvertire should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="104" column="36" severity="error" message="Name &apos;String2GregorianCalendar&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="104" column="61" severity="error" message="Parameter stringaDaConvertire should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+</checkstyle>

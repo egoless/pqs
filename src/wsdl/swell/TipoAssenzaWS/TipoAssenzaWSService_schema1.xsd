@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:tns="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="aggiungiTipoAssenza" type="tns:aggiungiTipoAssenza"/>
+
+  <xs:element name="aggiungiTipoAssenzaResponse" type="tns:aggiungiTipoAssenzaResponse"/>
+
+  <xs:element name="cancellaTipoAssenza" type="tns:cancellaTipoAssenza"/>
+
+  <xs:element name="cancellaTipoAssenzaResponse" type="tns:cancellaTipoAssenzaResponse"/>
+
+  <xs:element name="caricaTipoAssenza" type="tns:caricaTipoAssenza"/>
+
+  <xs:element name="caricaTipoAssenzaResponse" type="tns:caricaTipoAssenzaResponse"/>
+
+  <xs:element name="getTipiAssenza" type="tns:getTipiAssenza"/>
+
+  <xs:element name="getTipiAssenzaResponse" type="tns:getTipiAssenzaResponse"/>
+
+  <xs:element name="modificaTipoAssenza" type="tns:modificaTipoAssenza"/>
+
+  <xs:element name="modificaTipoAssenzaResponse" type="tns:modificaTipoAssenzaResponse"/>
+
+  <xs:complexType name="caricaTipoAssenza">
+    <xs:sequence>
+      <xs:element name="idTipoAssenza" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:tipoAssenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoAssenza">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaTipoAssenza">
+    <xs:sequence>
+      <xs:element name="tipoAssenza" type="tns:tipoAssenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaTipoAssenzaResponse"/>
+
+  <xs:complexType name="cancellaTipoAssenza">
+    <xs:sequence>
+      <xs:element name="idTipoAssenza" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaTipoAssenzaResponse"/>
+
+  <xs:complexType name="getTipiAssenza"/>
+
+  <xs:complexType name="getTipiAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoAssenza">
+    <xs:sequence>
+      <xs:element name="nuovoTipoAssenza" type="tns:tipoAssenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

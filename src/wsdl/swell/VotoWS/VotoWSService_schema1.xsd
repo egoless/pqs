@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:tns="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="aggiungiVoto" type="tns:aggiungiVoto"/>
+
+  <xs:element name="aggiungiVotoResponse" type="tns:aggiungiVotoResponse"/>
+
+  <xs:element name="cancellaVoto" type="tns:cancellaVoto"/>
+
+  <xs:element name="cancellaVotoResponse" type="tns:cancellaVotoResponse"/>
+
+  <xs:element name="caricaVoto" type="tns:caricaVoto"/>
+
+  <xs:element name="caricaVotoResponse" type="tns:caricaVotoResponse"/>
+
+  <xs:element name="cercaVoto" type="tns:cercaVoto"/>
+
+  <xs:element name="cercaVotoResponse" type="tns:cercaVotoResponse"/>
+
+  <xs:element name="modificaVoto" type="tns:modificaVoto"/>
+
+  <xs:element name="modificaVotoResponse" type="tns:modificaVotoResponse"/>
+
+  <xs:complexType name="modificaVoto">
+    <xs:sequence>
+      <xs:element name="voto" type="tns:Voto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Voto">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="data" type="tns:date" minOccurs="0"/>
+          <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+          <xs:element name="classeId" type="xs:int"/>
+          <xs:element name="studenteId" type="xs:int"/>
+          <xs:element name="materiaId" type="xs:int"/>
+          <xs:element name="tipoVotoId" type="xs:int"/>
+          <xs:element name="tipoProvaId" type="xs:int"/>
+          <xs:element name="docenteId" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="date">
+    <xs:sequence>
+      <xs:element name="anno" type="xs:int"/>
+      <xs:element name="date" type="xs:string" minOccurs="0"/>
+      <xs:element name="giorno" type="xs:int"/>
+      <xs:element name="mese" type="xs:int"/>
+      <xs:element name="minuti" type="xs:int"/>
+      <xs:element name="ore" type="xs:int"/>
+      <xs:element name="secondi" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaVotoResponse"/>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaVoto">
+    <xs:sequence>
+      <xs:element name="idVoto" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:Voto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaVoto">
+    <xs:sequence>
+      <xs:element name="parametri" type="tns:parametriRicercaVoto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicercaVoto">
+    <xs:complexContent>
+      <xs:extension base="tns:parametriRicerca">
+        <xs:sequence>
+          <xs:element name="dataOra" type="tns:date" minOccurs="0"/>
+          <xs:element name="idDocente" type="xs:int"/>
+          <xs:element name="idMateria" type="xs:int"/>
+          <xs:element name="idStudente" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicerca" abstract="true">
+    <xs:sequence>
+      <xs:element name="datiParziali" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="id" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaVoto">
+    <xs:sequence>
+      <xs:element name="idVoto" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaVotoResponse"/>
+
+  <xs:complexType name="aggiungiVoto">
+    <xs:sequence>
+      <xs:element name="nuovoVoto" type="tns:Voto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

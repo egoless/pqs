@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.api.egoless.mine.nu/" xmlns:tns="http://ws.api.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="studente">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element name="dataIscrizione" type="xs:string" minOccurs="0"/>
+          <xs:element name="idClasse" type="xs:long"/>
+          <xs:element name="matricola" type="xs:string" minOccurs="0"/>
+          <xs:element name="religione" type="tns:religione" minOccurs="0"/>
+          <xs:element name="voti" type="tns:voto" nillable="true" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="persona">
+    <xs:sequence>
+      <xs:element name="assenze" type="tns:assenza" nillable="true" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="codiceFiscale" type="xs:string" minOccurs="0"/>
+      <xs:element name="cognome" type="xs:string" minOccurs="0"/>
+      <xs:element name="dataNascita" type="xs:string" minOccurs="0"/>
+      <xs:element name="extra" type="tns:listaAttributi" minOccurs="0"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element name="idIndirizzoResidenza" type="xs:long"/>
+      <xs:element name="idNazionalita" type="xs:long"/>
+      <xs:element name="idReligione" type="xs:long"/>
+      <xs:element name="nome" type="xs:string" minOccurs="0"/>
+      <xs:element name="portatoreHandicap" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="religione">
+    <xs:sequence>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element name="nome" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="voto">
+    <xs:sequence>
+      <xs:element name="dataOra" type="xs:string" minOccurs="0"/>
+      <xs:element name="extra" type="tns:listaAttributi" minOccurs="0"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element name="idInsegnante" type="xs:long"/>
+      <xs:element name="idMateria" type="xs:long"/>
+      <xs:element name="idStudente" type="xs:long"/>
+      <xs:element name="idTipoVoto" type="xs:long"/>
+      <xs:element name="tipoVoto" type="tns:tipoVoto" minOccurs="0"/>
+      <xs:element name="valore" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="listaAttributi"/>
+
+  <xs:complexType name="tipoVoto">
+    <xs:sequence>
+      <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element name="voti" type="tns:voto" nillable="true" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="assenza">
+    <xs:sequence>
+      <xs:element name="dataFine" type="xs:string" minOccurs="0"/>
+      <xs:element name="dataInizio" type="xs:string" minOccurs="0"/>
+      <xs:element name="extra" type="tns:listaAttributi" minOccurs="0"/>
+      <xs:element name="giustificata" type="xs:boolean"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element name="idPersona" type="xs:long"/>
+      <xs:element name="idTipoAssenza" type="xs:long"/>
+      <xs:element name="note" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insegnante">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element name="dataAssunzione" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicercaInsegnante">
+    <xs:complexContent>
+      <xs:extension base="tns:parametriRicerca">
+        <xs:sequence>
+          <xs:element name="cognome" type="xs:string" minOccurs="0"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element name="idMateria" type="xs:long"/>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicerca" abstract="true">
+    <xs:sequence>
+      <xs:element name="datiParziali" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicercaStudente">
+    <xs:complexContent>
+      <xs:extension base="tns:parametriRicerca">
+        <xs:sequence>
+          <xs:element name="annoCorso" type="xs:int"/>
+          <xs:element name="cognome" type="xs:string" minOccurs="0"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element name="matricola" type="xs:string" minOccurs="0"/>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+          <xs:element name="sezione" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

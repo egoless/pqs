@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://api.ws.pqs.swellsys.com/" name="MateriaInsegnamentoWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="MateriaInsegnamentoWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="getOreLezione">
+    <part name="parameters" element="tns:getOreLezione"/>
+  </message>
+  <message name="getOreLezioneResponse">
+    <part name="parameters" element="tns:getOreLezioneResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="getDocenti">
+    <part name="parameters" element="tns:getDocenti"/>
+  </message>
+  <message name="getDocentiResponse">
+    <part name="parameters" element="tns:getDocentiResponse"/>
+  </message>
+  <message name="getMaterie">
+    <part name="parameters" element="tns:getMaterie"/>
+  </message>
+  <message name="getMaterieResponse">
+    <part name="parameters" element="tns:getMaterieResponse"/>
+  </message>
+  <message name="aggiungiMateriaInsegnamento">
+    <part name="parameters" element="tns:aggiungiMateriaInsegnamento"/>
+  </message>
+  <message name="aggiungiMateriaInsegnamentoResponse">
+    <part name="parameters" element="tns:aggiungiMateriaInsegnamentoResponse"/>
+  </message>
+  <message name="modificaMateriaInsegnamento">
+    <part name="parameters" element="tns:modificaMateriaInsegnamento"/>
+  </message>
+  <message name="modificaMateriaInsegnamentoResponse">
+    <part name="parameters" element="tns:modificaMateriaInsegnamentoResponse"/>
+  </message>
+  <message name="cancellaMateriaInsegnamento">
+    <part name="parameters" element="tns:cancellaMateriaInsegnamento"/>
+  </message>
+  <message name="cancellaMateriaInsegnamentoResponse">
+    <part name="parameters" element="tns:cancellaMateriaInsegnamentoResponse"/>
+  </message>
+  <message name="caricaMateriaInsegnamento">
+    <part name="parameters" element="tns:caricaMateriaInsegnamento"/>
+  </message>
+  <message name="caricaMateriaInsegnamentoResponse">
+    <part name="parameters" element="tns:caricaMateriaInsegnamentoResponse"/>
+  </message>
+  <portType name="MateriaInsegnamentoWS">
+    <operation name="getOreLezione">
+      <input message="tns:getOreLezione"/>
+      <output message="tns:getOreLezioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getDocenti">
+      <input message="tns:getDocenti"/>
+      <output message="tns:getDocentiResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getMaterie">
+      <input message="tns:getMaterie"/>
+      <output message="tns:getMaterieResponse"/>
+    </operation>
+    <operation name="aggiungiMateriaInsegnamento">
+      <input message="tns:aggiungiMateriaInsegnamento"/>
+      <output message="tns:aggiungiMateriaInsegnamentoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaMateriaInsegnamento">
+      <input message="tns:modificaMateriaInsegnamento"/>
+      <output message="tns:modificaMateriaInsegnamentoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaMateriaInsegnamento">
+      <input message="tns:cancellaMateriaInsegnamento"/>
+      <output message="tns:cancellaMateriaInsegnamentoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaMateriaInsegnamento">
+      <input message="tns:caricaMateriaInsegnamento"/>
+      <output message="tns:caricaMateriaInsegnamentoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+  </portType>
+  <binding name="MateriaInsegnamentoWSPortBinding" type="tns:MateriaInsegnamentoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="getOreLezione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getDocenti">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getMaterie">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="aggiungiMateriaInsegnamento">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaMateriaInsegnamento">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaMateriaInsegnamento">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaMateriaInsegnamento">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="MateriaInsegnamentoWSService">
+    <port name="MateriaInsegnamentoWSPort" binding="tns:MateriaInsegnamentoWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/MateriaInsegnamentoWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

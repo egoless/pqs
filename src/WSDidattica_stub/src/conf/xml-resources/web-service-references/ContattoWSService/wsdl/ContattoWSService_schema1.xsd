@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="aggiungiContatto" type="tns:aggiungiContatto"/>
+
+  <xs:element name="aggiungiContattoResponse" type="tns:aggiungiContattoResponse"/>
+
+  <xs:element name="cancellaContatto" type="tns:cancellaContatto"/>
+
+  <xs:element name="cancellaContattoResponse" type="tns:cancellaContattoResponse"/>
+
+  <xs:element name="caricaContatto" type="tns:caricaContatto"/>
+
+  <xs:element name="caricaContattoResponse" type="tns:caricaContattoResponse"/>
+
+  <xs:element name="cercaContatto" type="tns:cercaContatto"/>
+
+  <xs:element name="cercaContattoResponse" type="tns:cercaContattoResponse"/>
+
+  <xs:element name="modificaContatto" type="tns:modificaContatto"/>
+
+  <xs:element name="modificaContattoResponse" type="tns:modificaContattoResponse"/>
+
+  <xs:complexType name="modificaContatto">
+    <xs:sequence>
+      <xs:element name="contatto" type="tns:contatto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="contatto">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="via" type="xs:string" minOccurs="0"/>
+          <xs:element name="civico" type="xs:string" minOccurs="0"/>
+          <xs:element name="cap" type="xs:string" minOccurs="0"/>
+          <xs:element name="citta" type="xs:string" minOccurs="0"/>
+          <xs:element name="provincia" type="xs:string" minOccurs="0"/>
+          <xs:element name="telefonoPrincipale" type="xs:string" minOccurs="0"/>
+          <xs:element name="telefonoSecondario" type="xs:string" minOccurs="0"/>
+          <xs:element name="fax" type="xs:string" minOccurs="0"/>
+          <xs:element name="nazioneId" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="modificaContattoResponse"/>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaContatto">
+    <xs:sequence>
+      <xs:element name="parametri" type="tns:parametriRicercaContatto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicercaContatto">
+    <xs:complexContent>
+      <xs:extension base="tns:parametriRicerca">
+        <xs:sequence>
+          <xs:element name="citta" type="xs:string" minOccurs="0"/>
+          <xs:element name="idNazione" type="xs:int"/>
+          <xs:element name="idPersona" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicerca" abstract="true">
+    <xs:sequence>
+      <xs:element name="datiParziali" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="id" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaContattoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaContatto">
+    <xs:sequence>
+      <xs:element name="idContatto" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaContattoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:contatto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiContatto">
+    <xs:sequence>
+      <xs:element name="nuovoContatto" type="tns:contatto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiContattoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaContatto">
+    <xs:sequence>
+      <xs:element name="idContatto" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaContattoResponse"/>
+</xs:schema>
+

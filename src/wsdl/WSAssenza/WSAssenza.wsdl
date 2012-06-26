@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://ws.didattica.egoless.mine.nu/" name="WSAssenzaService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://ws.didattica.egoless.mine.nu/" schemaLocation="WSAssenzaService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  <!--  <xsd:schema>
+      <xsd:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="http://localhost:8080/WSDidattica/WSAssenza/__container$publishing$subctx/META-INF/wsdl/WSAssenzaService_schema2.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema> -->
+  </types>
+  <message name="aggiungiAssenza">
+    <part name="parameters" element="tns:aggiungiAssenza"/>
+  </message>
+  <message name="aggiungiAssenzaResponse">
+    <part name="parameters" element="tns:aggiungiAssenzaResponse"/>
+  </message>
+  <message name="WSDidatticaException">
+    <part name="fault" element="tns:WSDidatticaException"/>
+  </message>
+  <message name="modificaAssenza">
+    <part name="parameters" element="tns:modificaAssenza"/>
+  </message>
+  <message name="modificaAssenzaResponse">
+    <part name="parameters" element="tns:modificaAssenzaResponse"/>
+  </message>
+  <message name="cancellaAssenza">
+    <part name="parameters" element="tns:cancellaAssenza"/>
+  </message>
+  <message name="cancellaAssenzaResponse">
+    <part name="parameters" element="tns:cancellaAssenzaResponse"/>
+  </message>
+  <message name="cercaAssenza">
+    <part name="parameters" element="tns:cercaAssenza"/>
+  </message>
+  <message name="cercaAssenzaResponse">
+    <part name="parameters" element="tns:cercaAssenzaResponse"/>
+  </message>
+  <portType name="WSAssenza">
+    <operation name="aggiungiAssenza">
+      <input message="tns:aggiungiAssenza"/>
+      <output message="tns:aggiungiAssenzaResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="modificaAssenza">
+      <input message="tns:modificaAssenza"/>
+      <output message="tns:modificaAssenzaResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cancellaAssenza">
+      <input message="tns:cancellaAssenza"/>
+      <output message="tns:cancellaAssenzaResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cercaAssenza">
+      <input message="tns:cercaAssenza"/>
+      <output message="tns:cercaAssenzaResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+  </portType>
+  <binding name="WSAssenzaPortBinding" type="tns:WSAssenza">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cercaAssenza">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="WSAssenzaService">
+    <port name="WSAssenzaPort" binding="tns:WSAssenzaPortBinding">
+      <soap:address location="http://localhost:8080/WSDidattica/WSAssenza" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

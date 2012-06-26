@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services/>
+  <clients>
+    <client name="WSTestService">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSTest/WSTestService.wsdl</wsdl-url>
+      <local-wsdl-file>WSTestService.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.testclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSTipoProva">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSTipoProva/WSTipoProva.wsdl</wsdl-url>
+      <local-wsdl-file>WSTipoProva.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.tipoprovaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSNazione">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSNazione/WSNazione.wsdl</wsdl-url>
+      <local-wsdl-file>WSNazione.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.nazioneclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSReligione">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSReligione/WSReligione.wsdl</wsdl-url>
+      <local-wsdl-file>WSReligione.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.religioneclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSTipoAssenza">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSTipoAssenza/WSTipoAssenza.wsdl</wsdl-url>
+      <local-wsdl-file>WSTipoAssenza.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.tipoassenzaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSTipoVoto">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSTipoVoto/WSTipoVoto.wsdl</wsdl-url>
+      <local-wsdl-file>WSTipoVoto.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.tipovotoclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSVoto">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSVoto/WSVoto.wsdl</wsdl-url>
+      <local-wsdl-file>WSVoto.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.votoclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSPersona">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSPersona/WSPersona.wsdl</wsdl-url>
+      <local-wsdl-file>WSPersona.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.personaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSMateria">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSMateria/WSMateria.wsdl</wsdl-url>
+      <local-wsdl-file>WSMateria.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.materiaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSClasse">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSClasse/WSClasse.wsdl</wsdl-url>
+      <local-wsdl-file>WSClasse.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.classeclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSContatto">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSContatto/WSContatto.wsdl</wsdl-url>
+      <local-wsdl-file>WSContatto.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.contattoclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+    <client name="WSAssenza">
+      <wsdl-url>file:/D:/ing_soft/src_local/wsdl/WSAssenza/WSAssenza.wsdl</wsdl-url>
+      <local-wsdl-file>WSAssenza.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ws.didattica.driver.assenzaclient</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+    </client>
+  </clients>
+  <jsr109>false</jsr109>
+</jax-ws>

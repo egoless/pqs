@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://api.ws.pqs.swellsys.com/" name="ContattoWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="ContattoWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="aggiungiContatto">
+    <part name="parameters" element="tns:aggiungiContatto"/>
+  </message>
+  <message name="aggiungiContattoResponse">
+    <part name="parameters" element="tns:aggiungiContattoResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="modificaContatto">
+    <part name="parameters" element="tns:modificaContatto"/>
+  </message>
+  <message name="modificaContattoResponse">
+    <part name="parameters" element="tns:modificaContattoResponse"/>
+  </message>
+  <message name="cancellaContatto">
+    <part name="parameters" element="tns:cancellaContatto"/>
+  </message>
+  <message name="cancellaContattoResponse">
+    <part name="parameters" element="tns:cancellaContattoResponse"/>
+  </message>
+  <message name="cercaContatto">
+    <part name="parameters" element="tns:cercaContatto"/>
+  </message>
+  <message name="cercaContattoResponse">
+    <part name="parameters" element="tns:cercaContattoResponse"/>
+  </message>
+  <message name="caricaContatto">
+    <part name="parameters" element="tns:caricaContatto"/>
+  </message>
+  <message name="caricaContattoResponse">
+    <part name="parameters" element="tns:caricaContattoResponse"/>
+  </message>
+  <portType name="ContattoWS">
+    <operation name="aggiungiContatto">
+      <input message="tns:aggiungiContatto"/>
+      <output message="tns:aggiungiContattoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaContatto">
+      <input message="tns:modificaContatto"/>
+      <output message="tns:modificaContattoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaContatto">
+      <input message="tns:cancellaContatto"/>
+      <output message="tns:cancellaContattoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cercaContatto">
+      <input message="tns:cercaContatto"/>
+      <output message="tns:cercaContattoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaContatto">
+      <input message="tns:caricaContatto"/>
+      <output message="tns:caricaContattoResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+  </portType>
+  <binding name="ContattoWSPortBinding" type="tns:ContattoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiContatto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaContatto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaContatto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cercaContatto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaContatto">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="ContattoWSService">
+    <port name="ContattoWSPort" binding="tns:ContattoWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/ContattoWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

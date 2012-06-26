@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.api.egoless.mine.nu/" xmlns:tns="http://ws.api.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="caricaAssenza" type="tns:caricaAssenza"/>
+
+  <xs:element name="caricaAssenzaResponse" type="tns:caricaAssenzaResponse"/>
+
+  <xs:element name="caricaClasse" type="tns:caricaClasse"/>
+
+  <xs:element name="caricaClasseResponse" type="tns:caricaClasseResponse"/>
+
+  <xs:element name="caricaContatto" type="tns:caricaContatto"/>
+
+  <xs:element name="caricaContattoResponse" type="tns:caricaContattoResponse"/>
+
+  <xs:element name="caricaInsegnante" type="tns:caricaInsegnante"/>
+
+  <xs:element name="caricaInsegnanteResponse" type="tns:caricaInsegnanteResponse"/>
+
+  <xs:element name="caricaMateria" type="tns:caricaMateria"/>
+
+  <xs:element name="caricaMateriaResponse" type="tns:caricaMateriaResponse"/>
+
+  <xs:element name="caricaStudente" type="tns:caricaStudente"/>
+
+  <xs:element name="caricaStudenteResponse" type="tns:caricaStudenteResponse"/>
+
+  <xs:element name="caricaTipoAssenza" type="tns:caricaTipoAssenza"/>
+
+  <xs:element name="caricaTipoAssenzaResponse" type="tns:caricaTipoAssenzaResponse"/>
+
+  <xs:element name="caricaTipoProva" type="tns:caricaTipoProva"/>
+
+  <xs:element name="caricaTipoProvaResponse" type="tns:caricaTipoProvaResponse"/>
+
+  <xs:element name="caricaTipoVoto" type="tns:caricaTipoVoto"/>
+
+  <xs:element name="caricaTipoVotoResponse" type="tns:caricaTipoVotoResponse"/>
+
+  <xs:element name="caricaVoto" type="tns:caricaVoto"/>
+
+  <xs:element name="caricaVotoResponse" type="tns:caricaVotoResponse"/>
+
+  <xs:element name="eliminaAssenza" type="tns:eliminaAssenza"/>
+
+  <xs:element name="eliminaAssenzaResponse" type="tns:eliminaAssenzaResponse"/>
+
+  <xs:element name="eliminaClasse" type="tns:eliminaClasse"/>
+
+  <xs:element name="eliminaClasseResponse" type="tns:eliminaClasseResponse"/>
+
+  <xs:element name="eliminaContatto" type="tns:eliminaContatto"/>
+
+  <xs:element name="eliminaContattoResponse" type="tns:eliminaContattoResponse"/>
+
+  <xs:element name="eliminaInsegnante" type="tns:eliminaInsegnante"/>
+
+  <xs:element name="eliminaInsegnanteResponse" type="tns:eliminaInsegnanteResponse"/>
+
+  <xs:element name="eliminaMateria" type="tns:eliminaMateria"/>
+
+  <xs:element name="eliminaMateriaResponse" type="tns:eliminaMateriaResponse"/>
+
+  <xs:element name="eliminaStudente" type="tns:eliminaStudente"/>
+
+  <xs:element name="eliminaStudenteResponse" type="tns:eliminaStudenteResponse"/>
+
+  <xs:element name="eliminaTipoAssenza" type="tns:eliminaTipoAssenza"/>
+
+  <xs:element name="eliminaTipoAssenzaResponse" type="tns:eliminaTipoAssenzaResponse"/>
+
+  <xs:element name="eliminaTipoProva" type="tns:eliminaTipoProva"/>
+
+  <xs:element name="eliminaTipoProvaResponse" type="tns:eliminaTipoProvaResponse"/>
+
+  <xs:element name="eliminaTipoVoto" type="tns:eliminaTipoVoto"/>
+
+  <xs:element name="eliminaTipoVotoResponse" type="tns:eliminaTipoVotoResponse"/>
+
+  <xs:element name="eliminaVoto" type="tns:eliminaVoto"/>
+
+  <xs:element name="eliminaVotoResponse" type="tns:eliminaVotoResponse"/>
+
+  <xs:element name="opern" type="tns:opern"/>
+
+  <xs:element name="opernResponse" type="tns:opernResponse"/>
+
+  <xs:element name="recuperaNazioniBehavior" type="tns:recuperaNazioniBehavior"/>
+
+  <xs:element name="recuperaReligioniBehavior" type="tns:recuperaReligioniBehavior"/>
+
+  <xs:element name="salvaAssenza" type="tns:salvaAssenza"/>
+
+  <xs:element name="salvaAssenzaResponse" type="tns:salvaAssenzaResponse"/>
+
+  <xs:element name="salvaClasse" type="tns:salvaClasse"/>
+
+  <xs:element name="salvaClasseResponse" type="tns:salvaClasseResponse"/>
+
+  <xs:element name="salvaContatto" type="tns:salvaContatto"/>
+
+  <xs:element name="salvaContattoResponse" type="tns:salvaContattoResponse"/>
+
+  <xs:element name="salvaInsegnante" type="tns:salvaInsegnante"/>
+
+  <xs:element name="salvaInsegnanteResponse" type="tns:salvaInsegnanteResponse"/>
+
+  <xs:element name="salvaMateria" type="tns:salvaMateria"/>
+
+  <xs:element name="salvaMateriaResponse" type="tns:salvaMateriaResponse"/>
+
+  <xs:element name="salvaStudente" type="tns:salvaStudente"/>
+
+  <xs:element name="salvaStudenteResponse" type="tns:salvaStudenteResponse"/>
+
+  <xs:element name="salvaTipoAssenza" type="tns:salvaTipoAssenza"/>
+
+  <xs:element name="salvaTipoAssenzaResponse" type="tns:salvaTipoAssenzaResponse"/>
+
+  <xs:element name="salvaTipoProva" type="tns:salvaTipoProva"/>
+
+  <xs:element name="salvaTipoProvaResponse" type="tns:salvaTipoProvaResponse"/>
+
+  <xs:element name="salvaTipoVoto" type="tns:salvaTipoVoto"/>
+
+  <xs:element name="salvaTipoVotoResponse" type="tns:salvaTipoVotoResponse"/>
+
+  <xs:element name="salvaVoto" type="tns:salvaVoto"/>
+
+  <xs:element name="salvaVotoResponse" type="tns:salvaVotoResponse"/>
+
+  <xs:complexType name="caricaMateria">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaMateriaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:materiaInsegnamento" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="materiaInsegnamento">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="salvaTipoAssenza">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:tipoAssenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoAssenza">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="salvaTipoAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaVoto">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:voto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="voto">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="classeId" type="xs:int"/>
+          <xs:element name="data" type="tns:date" minOccurs="0"/>
+          <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+          <xs:element name="docenteId" type="xs:int"/>
+          <xs:element name="materiaId" type="xs:int"/>
+          <xs:element name="studenteId" type="xs:int"/>
+          <xs:element name="tipoProvaId" type="xs:int"/>
+          <xs:element name="tipoVotoId" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="date">
+    <xs:sequence>
+      <xs:element name="anno" type="xs:int"/>
+      <xs:element name="date" type="xs:string" minOccurs="0"/>
+      <xs:element name="giorno" type="xs:int"/>
+      <xs:element name="mese" type="xs:int"/>
+      <xs:element name="minuti" type="xs:int"/>
+      <xs:element name="ore" type="xs:int"/>
+      <xs:element name="secondi" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaReligioniBehavior">
+    <xs:sequence>
+      <xs:element name="returnNull" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaInsegnante">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaInsegnanteResponse"/>
+
+  <xs:complexType name="salvaAssenza">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:assenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="assenza">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="dataOraFine" type="tns:date" minOccurs="0"/>
+          <xs:element name="dataOraInizio" type="tns:date" minOccurs="0"/>
+          <xs:element name="eventoId" type="xs:int"/>
+          <xs:element name="giustificazione" type="xs:string" minOccurs="0"/>
+          <xs:element name="personaId" type="xs:int"/>
+          <xs:element name="tipoAssenzaId" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="salvaAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaTipoAssenza">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaTipoAssenzaResponse"/>
+
+  <xs:complexType name="salvaInsegnante">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="docente">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element name="dataAssunzione" type="tns:date" minOccurs="0"/>
+          <xs:element name="matricola" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="persona">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="codiceFiscale" type="xs:string" minOccurs="0"/>
+          <xs:element name="cognome" type="xs:string" minOccurs="0"/>
+          <xs:element name="contattoId" type="xs:int"/>
+          <xs:element name="dataNascita" type="tns:date" minOccurs="0"/>
+          <xs:element name="istitutoId" type="xs:int"/>
+          <xs:element name="nazioneId" type="xs:int"/>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+          <xs:element name="portatoreHandicap" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="religioneId" type="xs:int"/>
+          <xs:element name="sesso" type="xs:int" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="salvaInsegnanteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaClasse">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaClasseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="classe">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="annoCorso" type="xs:int" minOccurs="0"/>
+          <xs:element name="annoScolasticoId" type="xs:int"/>
+          <xs:element name="docenteId" type="xs:int"/>
+          <xs:element name="indirizzoStudiId" type="xs:int"/>
+          <xs:element name="sezione" type="xs:unsignedShort"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="caricaInsegnante">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaInsegnanteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaMateria">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:materiaInsegnamento" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaMateriaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaStudente">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaStudenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="studente">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element name="dataIscrizione" type="tns:date" minOccurs="0"/>
+          <xs:element name="idClasse" type="xs:int"/>
+          <xs:element name="matricola" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaTipoProva">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaTipoProvaResponse"/>
+
+  <xs:complexType name="salvaStudente">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaStudenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoVoto">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:TipoVoto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TipoVoto">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+          <xs:element name="ordine" type="xs:int" minOccurs="0"/>
+          <xs:element name="valore" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoProva">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoProvaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:tipoProva" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoProva">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="caricaVoto">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:voto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaContatto">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:contatto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="contatto">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="cap" type="xs:string" minOccurs="0"/>
+          <xs:element name="citta" type="xs:string" minOccurs="0"/>
+          <xs:element name="civico" type="xs:string" minOccurs="0"/>
+          <xs:element name="fax" type="xs:string" minOccurs="0"/>
+          <xs:element name="nazioneId" type="xs:int"/>
+          <xs:element name="provincia" type="xs:string" minOccurs="0"/>
+          <xs:element name="telefonoPrincipale" type="xs:string" minOccurs="0"/>
+          <xs:element name="telefonoSecondario" type="xs:string" minOccurs="0"/>
+          <xs:element name="via" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="salvaContattoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaTipoVoto">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:TipoVoto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaTipoVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaContatto">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaContattoResponse"/>
+
+  <xs:complexType name="recuperaNazioniBehavior">
+    <xs:sequence>
+      <xs:element name="returnNull" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaClasse">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:classe" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaClasseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaClasse">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaClasseResponse"/>
+
+  <xs:complexType name="opern"/>
+
+  <xs:complexType name="opernResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaVoto">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaVotoResponse"/>
+
+  <xs:complexType name="eliminaStudente">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaStudenteResponse"/>
+
+  <xs:complexType name="caricaAssenza">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:assenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaMateria">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaMateriaResponse"/>
+
+  <xs:complexType name="eliminaAssenza">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaAssenzaResponse"/>
+
+  <xs:complexType name="caricaContatto">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaContattoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:contatto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoAssenza">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:tipoAssenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaTipoVoto">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eliminaTipoVotoResponse"/>
+
+  <xs:complexType name="salvaTipoProva">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:tipoProva" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salvaTipoProvaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://api.ws.pqs.swellsys.com/" name="ReligioneWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="ReligioneWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="aggiungiReligione">
+    <part name="parameters" element="tns:aggiungiReligione"/>
+  </message>
+  <message name="aggiungiReligioneResponse">
+    <part name="parameters" element="tns:aggiungiReligioneResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="modificaReligione">
+    <part name="parameters" element="tns:modificaReligione"/>
+  </message>
+  <message name="modificaReligioneResponse">
+    <part name="parameters" element="tns:modificaReligioneResponse"/>
+  </message>
+  <message name="cancellaReligione">
+    <part name="parameters" element="tns:cancellaReligione"/>
+  </message>
+  <message name="cancellaReligioneResponse">
+    <part name="parameters" element="tns:cancellaReligioneResponse"/>
+  </message>
+  <message name="caricaReligione">
+    <part name="parameters" element="tns:caricaReligione"/>
+  </message>
+  <message name="caricaReligioneResponse">
+    <part name="parameters" element="tns:caricaReligioneResponse"/>
+  </message>
+  <message name="getReligioni">
+    <part name="parameters" element="tns:getReligioni"/>
+  </message>
+  <message name="getReligioniResponse">
+    <part name="parameters" element="tns:getReligioniResponse"/>
+  </message>
+  <portType name="ReligioneWS">
+    <operation name="aggiungiReligione">
+      <input message="tns:aggiungiReligione"/>
+      <output message="tns:aggiungiReligioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaReligione">
+      <input message="tns:modificaReligione"/>
+      <output message="tns:modificaReligioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaReligione">
+      <input message="tns:cancellaReligione"/>
+      <output message="tns:cancellaReligioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaReligione">
+      <input message="tns:caricaReligione"/>
+      <output message="tns:caricaReligioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getReligioni">
+      <input message="tns:getReligioni"/>
+      <output message="tns:getReligioniResponse"/>
+    </operation>
+  </portType>
+  <binding name="ReligioneWSPortBinding" type="tns:ReligioneWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiReligione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaReligione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaReligione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaReligione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getReligioni">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="ReligioneWSService">
+    <port name="ReligioneWSPort" binding="tns:ReligioneWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/ReligioneWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

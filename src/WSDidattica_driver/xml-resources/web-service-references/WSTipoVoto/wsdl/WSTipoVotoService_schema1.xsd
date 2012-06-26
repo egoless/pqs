@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="WSTipoVotoService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="aggiungiTipoVoto" type="tns:aggiungiTipoVoto"/>
+
+  <xs:element name="aggiungiTipoVotoResponse" type="tns:aggiungiTipoVotoResponse"/>
+
+  <xs:element name="cancellaTipoVoto" type="tns:cancellaTipoVoto"/>
+
+  <xs:element name="cancellaTipoVotoResponse" type="tns:cancellaTipoVotoResponse"/>
+
+  <xs:element name="recuperaTipiVoto" type="tns:recuperaTipiVoto"/>
+
+  <xs:element name="recuperaTipiVotoResponse" type="tns:recuperaTipiVotoResponse"/>
+
+  <xs:complexType name="aggiungiTipoVoto">
+    <xs:sequence>
+      <xs:element name="nuovoTipoVoto" type="ns1:TipoVoto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaTipiVoto"/>
+
+  <xs:complexType name="recuperaTipiVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:TipoVoto" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaTipoVoto">
+    <xs:sequence>
+      <xs:element name="idTipoVoto" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaTipoVotoResponse"/>
+</xs:schema>
+

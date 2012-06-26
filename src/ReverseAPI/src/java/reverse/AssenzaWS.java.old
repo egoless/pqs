@@ -1,0 +1,48 @@
+/*
+ * Nome file: AssenzaWS.java
+ * Data creazione: 24 marzo 2007, 17.20
+ * Info svn: $Id$
+ */
+
+package reverse;
+
+import com.swellsys.pqs.ws.modulo.registro.HashMap;
+import javax.ejb.Stateless;
+import javax.jws.WebService;
+
+/**
+ * Class description
+ */
+@Stateless
+@WebService(serviceName = "AssenzaWSService", portName = "AssenzaWSPort", endpointInterface = "com.swellsys.pqs.ws.modulo.registro.AssenzaWS", targetNamespace = "http://registro.modulo.ws.pqs.swellsys.com/", wsdlLocation = "META-INF/wsdl/AssenzaWS/AssenzaWSService.wsdl")
+public class AssenzaWS implements com.swellsys.pqs.ws.modulo.registro.AssenzaWS {
+   
+   /** Creates a new instance of AssenzaWS */
+   public AssenzaWS() {
+   }
+
+   public int getIdAssenza(com.swellsys.pqs.ws.modulo.registro.Assenza assenza) {
+      return 0;
+   }
+
+   public int aggiungiAssenza(com.swellsys.pqs.ws.modulo.registro.Assenza nuovaAssenza) throws com.swellsys.pqs.ws.modulo.registro.OperazioneNonValida_Exception {
+      return 0;
+   }
+
+   public void modificaAssenza(com.swellsys.pqs.ws.modulo.registro.Assenza assenza) throws com.swellsys.pqs.ws.modulo.registro.OperazioneNonValida_Exception {
+      throw new UnsupportedOperationException("Not yet implemented");
+   }
+
+   public void cancellaAssenza(com.swellsys.pqs.ws.modulo.registro.Assenza assenza) {
+      throw new UnsupportedOperationException("Not yet implemented");
+   }
+
+   public com.swellsys.pqs.ws.modulo.registro.Assenza caricaAssenza(int idAssenza) throws com.swellsys.pqs.ws.modulo.registro.OperazioneNonValida_Exception {
+      return null;
+   }
+
+   public HashMap cercaAssenza(com.swellsys.pqs.ws.modulo.registro.ParametriAssenza parametri) {
+      return null;
+   }
+   
+}

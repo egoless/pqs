@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://registro.modulo.ws.pqs.swellsys.com/" name="TipoProvaWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="TipoProvaWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="aggiungiTipoProva">
+    <part name="parameters" element="tns:aggiungiTipoProva"/>
+  </message>
+  <message name="aggiungiTipoProvaResponse">
+    <part name="parameters" element="tns:aggiungiTipoProvaResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="modificaTipoProva">
+    <part name="parameters" element="tns:modificaTipoProva"/>
+  </message>
+  <message name="modificaTipoProvaResponse">
+    <part name="parameters" element="tns:modificaTipoProvaResponse"/>
+  </message>
+  <message name="cancellaTipoProva">
+    <part name="parameters" element="tns:cancellaTipoProva"/>
+  </message>
+  <message name="cancellaTipoProvaResponse">
+    <part name="parameters" element="tns:cancellaTipoProvaResponse"/>
+  </message>
+  <message name="caricaTipoProva">
+    <part name="parameters" element="tns:caricaTipoProva"/>
+  </message>
+  <message name="caricaTipoProvaResponse">
+    <part name="parameters" element="tns:caricaTipoProvaResponse"/>
+  </message>
+  <message name="getTipiProva">
+    <part name="parameters" element="tns:getTipiProva"/>
+  </message>
+  <message name="getTipiProvaResponse">
+    <part name="parameters" element="tns:getTipiProvaResponse"/>
+  </message>
+  <portType name="TipoProvaWS">
+    <operation name="aggiungiTipoProva">
+      <input message="tns:aggiungiTipoProva"/>
+      <output message="tns:aggiungiTipoProvaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaTipoProva">
+      <input message="tns:modificaTipoProva"/>
+      <output message="tns:modificaTipoProvaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaTipoProva">
+      <input message="tns:cancellaTipoProva"/>
+      <output message="tns:cancellaTipoProvaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaTipoProva">
+      <input message="tns:caricaTipoProva"/>
+      <output message="tns:caricaTipoProvaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getTipiProva">
+      <input message="tns:getTipiProva"/>
+      <output message="tns:getTipiProvaResponse"/>
+    </operation>
+  </portType>
+  <binding name="TipoProvaWSPortBinding" type="tns:TipoProvaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiTipoProva">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaTipoProva">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaTipoProva">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaTipoProva">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getTipiProva">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="TipoProvaWSService">
+    <port name="TipoProvaWSPort" binding="tns:TipoProvaWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/TipoProvaWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

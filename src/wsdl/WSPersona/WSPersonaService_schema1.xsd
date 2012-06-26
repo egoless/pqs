@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="WSPersonaService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="aggiungiDocente" type="tns:aggiungiDocente"/>
+
+  <xs:element name="aggiungiDocenteResponse" type="tns:aggiungiDocenteResponse"/>
+
+  <xs:element name="aggiungiStudente" type="tns:aggiungiStudente"/>
+
+  <xs:element name="aggiungiStudenteResponse" type="tns:aggiungiStudenteResponse"/>
+
+  <xs:element name="cancellaDocente" type="tns:cancellaDocente"/>
+
+  <xs:element name="cancellaDocenteResponse" type="tns:cancellaDocenteResponse"/>
+
+  <xs:element name="cancellaStudente" type="tns:cancellaStudente"/>
+
+  <xs:element name="cancellaStudenteResponse" type="tns:cancellaStudenteResponse"/>
+
+  <xs:element name="cercaDocente" type="tns:cercaDocente"/>
+
+  <xs:element name="cercaDocenteResponse" type="tns:cercaDocenteResponse"/>
+
+  <xs:element name="cercaStudente" type="tns:cercaStudente"/>
+
+  <xs:element name="cercaStudenteResponse" type="tns:cercaStudenteResponse"/>
+
+  <xs:element name="getClasse" type="tns:getClasse"/>
+
+  <xs:element name="getClasseResponse" type="tns:getClasseResponse"/>
+
+  <xs:element name="getMaterie" type="tns:getMaterie"/>
+
+  <xs:element name="getMaterieResponse" type="tns:getMaterieResponse"/>
+
+  <xs:element name="modificaDocente" type="tns:modificaDocente"/>
+
+  <xs:element name="modificaDocenteResponse" type="tns:modificaDocenteResponse"/>
+
+  <xs:element name="modificaStudente" type="tns:modificaStudente"/>
+
+  <xs:element name="modificaStudenteResponse" type="tns:modificaStudenteResponse"/>
+
+  <xs:element name="setClasse" type="tns:setClasse"/>
+
+  <xs:element name="setClasseResponse" type="tns:setClasseResponse"/>
+
+  <xs:element name="setMaterie" type="tns:setMaterie"/>
+
+  <xs:element name="setMaterieResponse" type="tns:setMaterieResponse"/>
+
+  <xs:complexType name="setClasse">
+    <xs:sequence>
+      <xs:element name="idStudente" type="xs:int"/>
+      <xs:element name="idClasse" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setClasseResponse"/>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiDocente">
+    <xs:sequence>
+      <xs:element name="nuovoDocente" type="ns1:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiDocenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaDocente">
+    <xs:sequence>
+      <xs:element name="idDocente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaDocenteResponse"/>
+
+  <xs:complexType name="getClasse">
+    <xs:sequence>
+      <xs:element name="idStudente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClasseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaDocente">
+    <xs:sequence>
+      <xs:element name="insiemeParametri" type="ns1:parametriRicercaDocente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaDocenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:docente" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaDocente">
+    <xs:sequence>
+      <xs:element name="docente" type="ns1:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaDocenteResponse"/>
+
+  <xs:complexType name="aggiungiStudente">
+    <xs:sequence>
+      <xs:element name="nuovoStudente" type="ns1:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiStudenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaStudente">
+    <xs:sequence>
+      <xs:element name="studente" type="ns1:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaStudenteResponse"/>
+
+  <xs:complexType name="getMaterie">
+    <xs:sequence>
+      <xs:element name="idDocente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMaterieResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setMaterie">
+    <xs:sequence>
+      <xs:element name="idDocente" type="xs:int"/>
+      <xs:element name="idMaterie" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setMaterieResponse"/>
+
+  <xs:complexType name="cercaStudente">
+    <xs:sequence>
+      <xs:element name="insiemeParametri" type="ns1:parametriRicercaStudente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaStudenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:studente" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaStudente">
+    <xs:sequence>
+      <xs:element name="idStudente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaStudenteResponse"/>
+</xs:schema>
+

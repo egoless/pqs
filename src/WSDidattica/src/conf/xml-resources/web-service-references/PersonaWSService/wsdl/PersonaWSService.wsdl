@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://api.ws.pqs.swellsys.com/" name="PersonaWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="PersonaWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="getClassi">
+    <part name="parameters" element="tns:getClassi"/>
+  </message>
+  <message name="getClassiResponse">
+    <part name="parameters" element="tns:getClassiResponse"/>
+  </message>
+  <message name="aggiungiStudente">
+    <part name="parameters" element="tns:aggiungiStudente"/>
+  </message>
+  <message name="aggiungiStudenteResponse">
+    <part name="parameters" element="tns:aggiungiStudenteResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="modificaStudente">
+    <part name="parameters" element="tns:modificaStudente"/>
+  </message>
+  <message name="modificaStudenteResponse">
+    <part name="parameters" element="tns:modificaStudenteResponse"/>
+  </message>
+  <message name="cancellaStudente">
+    <part name="parameters" element="tns:cancellaStudente"/>
+  </message>
+  <message name="cancellaStudenteResponse">
+    <part name="parameters" element="tns:cancellaStudenteResponse"/>
+  </message>
+  <message name="cercaStudente">
+    <part name="parameters" element="tns:cercaStudente"/>
+  </message>
+  <message name="cercaStudenteResponse">
+    <part name="parameters" element="tns:cercaStudenteResponse"/>
+  </message>
+  <message name="aggiungiDocente">
+    <part name="parameters" element="tns:aggiungiDocente"/>
+  </message>
+  <message name="aggiungiDocenteResponse">
+    <part name="parameters" element="tns:aggiungiDocenteResponse"/>
+  </message>
+  <message name="modificaDocente">
+    <part name="parameters" element="tns:modificaDocente"/>
+  </message>
+  <message name="modificaDocenteResponse">
+    <part name="parameters" element="tns:modificaDocenteResponse"/>
+  </message>
+  <message name="cancellaDocente">
+    <part name="parameters" element="tns:cancellaDocente"/>
+  </message>
+  <message name="cancellaDocenteResponse">
+    <part name="parameters" element="tns:cancellaDocenteResponse"/>
+  </message>
+  <message name="cercaDocente">
+    <part name="parameters" element="tns:cercaDocente"/>
+  </message>
+  <message name="cercaDocenteResponse">
+    <part name="parameters" element="tns:cercaDocenteResponse"/>
+  </message>
+  <message name="setMaterie">
+    <part name="parameters" element="tns:setMaterie"/>
+  </message>
+  <message name="setMaterieResponse">
+    <part name="parameters" element="tns:setMaterieResponse"/>
+  </message>
+  <message name="getClasse">
+    <part name="parameters" element="tns:getClasse"/>
+  </message>
+  <message name="getClasseResponse">
+    <part name="parameters" element="tns:getClasseResponse"/>
+  </message>
+  <message name="caricaStudente">
+    <part name="parameters" element="tns:caricaStudente"/>
+  </message>
+  <message name="caricaStudenteResponse">
+    <part name="parameters" element="tns:caricaStudenteResponse"/>
+  </message>
+  <message name="caricaDocente">
+    <part name="parameters" element="tns:caricaDocente"/>
+  </message>
+  <message name="caricaDocenteResponse">
+    <part name="parameters" element="tns:caricaDocenteResponse"/>
+  </message>
+  <message name="addclasse">
+    <part name="parameters" element="tns:addclasse"/>
+  </message>
+  <message name="addclasseResponse">
+    <part name="parameters" element="tns:addclasseResponse"/>
+  </message>
+  <message name="getOreLezione">
+    <part name="parameters" element="tns:getOreLezione"/>
+  </message>
+  <message name="getOreLezioneResponse">
+    <part name="parameters" element="tns:getOreLezioneResponse"/>
+  </message>
+  <message name="getResponsabileDi">
+    <part name="parameters" element="tns:getResponsabileDi"/>
+  </message>
+  <message name="getResponsabileDiResponse">
+    <part name="parameters" element="tns:getResponsabileDiResponse"/>
+  </message>
+  <message name="getCoordinatoreDi">
+    <part name="parameters" element="tns:getCoordinatoreDi"/>
+  </message>
+  <message name="getCoordinatoreDiResponse">
+    <part name="parameters" element="tns:getCoordinatoreDiResponse"/>
+  </message>
+  <message name="delCarica">
+    <part name="parameters" element="tns:delCarica"/>
+  </message>
+  <message name="delCaricaResponse">
+    <part name="parameters" element="tns:delCaricaResponse"/>
+  </message>
+  <message name="getUtenti">
+    <part name="parameters" element="tns:getUtenti"/>
+  </message>
+  <message name="getUtentiResponse">
+    <part name="parameters" element="tns:getUtentiResponse"/>
+  </message>
+  <message name="getAssenze">
+    <part name="parameters" element="tns:getAssenze"/>
+  </message>
+  <message name="getAssenzeResponse">
+    <part name="parameters" element="tns:getAssenzeResponse"/>
+  </message>
+  <message name="getIncarichi">
+    <part name="parameters" element="tns:getIncarichi"/>
+  </message>
+  <message name="getIncarichiResponse">
+    <part name="parameters" element="tns:getIncarichiResponse"/>
+  </message>
+  <message name="addCarica">
+    <part name="parameters" element="tns:addCarica"/>
+  </message>
+  <message name="addCaricaResponse">
+    <part name="parameters" element="tns:addCaricaResponse"/>
+  </message>
+  <message name="addGenitore">
+    <part name="parameters" element="tns:addGenitore"/>
+  </message>
+  <message name="addGenitoreResponse">
+    <part name="parameters" element="tns:addGenitoreResponse"/>
+  </message>
+  <message name="delGenitore">
+    <part name="parameters" element="tns:delGenitore"/>
+  </message>
+  <message name="delGenitoreResponse">
+    <part name="parameters" element="tns:delGenitoreResponse"/>
+  </message>
+  <message name="getGenitori">
+    <part name="parameters" element="tns:getGenitori"/>
+  </message>
+  <message name="getGenitoriResponse">
+    <part name="parameters" element="tns:getGenitoriResponse"/>
+  </message>
+  <message name="delClasse">
+    <part name="parameters" element="tns:delClasse"/>
+  </message>
+  <message name="delClasseResponse">
+    <part name="parameters" element="tns:delClasseResponse"/>
+  </message>
+  <message name="getClassiDocente">
+    <part name="parameters" element="tns:getClassiDocente"/>
+  </message>
+  <message name="getClassiDocenteResponse">
+    <part name="parameters" element="tns:getClassiDocenteResponse"/>
+  </message>
+  <message name="aggiungiGenitore">
+    <part name="parameters" element="tns:aggiungiGenitore"/>
+  </message>
+  <message name="aggiungiGenitoreResponse">
+    <part name="parameters" element="tns:aggiungiGenitoreResponse"/>
+  </message>
+  <message name="modificaGenitore">
+    <part name="parameters" element="tns:modificaGenitore"/>
+  </message>
+  <message name="modificaGenitoreResponse">
+    <part name="parameters" element="tns:modificaGenitoreResponse"/>
+  </message>
+  <message name="cancellaGenitore">
+    <part name="parameters" element="tns:cancellaGenitore"/>
+  </message>
+  <message name="cancellaGenitoreResponse">
+    <part name="parameters" element="tns:cancellaGenitoreResponse"/>
+  </message>
+  <message name="caricaGenitore">
+    <part name="parameters" element="tns:caricaGenitore"/>
+  </message>
+  <message name="caricaGenitoreResponse">
+    <part name="parameters" element="tns:caricaGenitoreResponse"/>
+  </message>
+  <message name="addFiglio">
+    <part name="parameters" element="tns:addFiglio"/>
+  </message>
+  <message name="addFiglioResponse">
+    <part name="parameters" element="tns:addFiglioResponse"/>
+  </message>
+  <message name="delFiglio">
+    <part name="parameters" element="tns:delFiglio"/>
+  </message>
+  <message name="delFiglioResponse">
+    <part name="parameters" element="tns:delFiglioResponse"/>
+  </message>
+  <message name="getFigli">
+    <part name="parameters" element="tns:getFigli"/>
+  </message>
+  <message name="getFigliResponse">
+    <part name="parameters" element="tns:getFigliResponse"/>
+  </message>
+  <message name="aggiungiPersonaleATA">
+    <part name="parameters" element="tns:aggiungiPersonaleATA"/>
+  </message>
+  <message name="aggiungiPersonaleATAResponse">
+    <part name="parameters" element="tns:aggiungiPersonaleATAResponse"/>
+  </message>
+  <message name="modificaPersonaleATA">
+    <part name="parameters" element="tns:modificaPersonaleATA"/>
+  </message>
+  <message name="modificaPersonaleATAResponse">
+    <part name="parameters" element="tns:modificaPersonaleATAResponse"/>
+  </message>
+  <message name="cancellaPersonaleATA">
+    <part name="parameters" element="tns:cancellaPersonaleATA"/>
+  </message>
+  <message name="cancellaPersonaleATAResponse">
+    <part name="parameters" element="tns:cancellaPersonaleATAResponse"/>
+  </message>
+  <message name="caricaPersonaleATA">
+    <part name="parameters" element="tns:caricaPersonaleATA"/>
+  </message>
+  <message name="caricaPersonaleATAResponse">
+    <part name="parameters" element="tns:caricaPersonaleATAResponse"/>
+  </message>
+  <message name="getMaterieDocente">
+    <part name="parameters" element="tns:getMaterieDocente"/>
+  </message>
+  <message name="getMaterieDocenteResponse">
+    <part name="parameters" element="tns:getMaterieDocenteResponse"/>
+  </message>
+  <portType name="PersonaWS">
+    <operation name="getClassi">
+      <input message="tns:getClassi"/>
+      <output message="tns:getClassiResponse"/>
+    </operation>
+    <operation name="aggiungiStudente">
+      <input message="tns:aggiungiStudente"/>
+      <output message="tns:aggiungiStudenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaStudente">
+      <input message="tns:modificaStudente"/>
+      <output message="tns:modificaStudenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaStudente">
+      <input message="tns:cancellaStudente"/>
+      <output message="tns:cancellaStudenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cercaStudente">
+      <input message="tns:cercaStudente"/>
+      <output message="tns:cercaStudenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="aggiungiDocente">
+      <input message="tns:aggiungiDocente"/>
+      <output message="tns:aggiungiDocenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaDocente">
+      <input message="tns:modificaDocente"/>
+      <output message="tns:modificaDocenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaDocente">
+      <input message="tns:cancellaDocente"/>
+      <output message="tns:cancellaDocenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cercaDocente">
+      <input message="tns:cercaDocente"/>
+      <output message="tns:cercaDocenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="setMaterie">
+      <input message="tns:setMaterie"/>
+      <output message="tns:setMaterieResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getClasse">
+      <input message="tns:getClasse"/>
+      <output message="tns:getClasseResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaStudente">
+      <input message="tns:caricaStudente"/>
+      <output message="tns:caricaStudenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaDocente">
+      <input message="tns:caricaDocente"/>
+      <output message="tns:caricaDocenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="addclasse">
+      <input message="tns:addclasse"/>
+      <output message="tns:addclasseResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getOreLezione">
+      <input message="tns:getOreLezione"/>
+      <output message="tns:getOreLezioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getResponsabileDi">
+      <input message="tns:getResponsabileDi"/>
+      <output message="tns:getResponsabileDiResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getCoordinatoreDi">
+      <input message="tns:getCoordinatoreDi"/>
+      <output message="tns:getCoordinatoreDiResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="delCarica">
+      <input message="tns:delCarica"/>
+      <output message="tns:delCaricaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getUtenti">
+      <input message="tns:getUtenti"/>
+      <output message="tns:getUtentiResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getAssenze">
+      <input message="tns:getAssenze"/>
+      <output message="tns:getAssenzeResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getIncarichi">
+      <input message="tns:getIncarichi"/>
+      <output message="tns:getIncarichiResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="addCarica">
+      <input message="tns:addCarica"/>
+      <output message="tns:addCaricaResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="addGenitore">
+      <input message="tns:addGenitore"/>
+      <output message="tns:addGenitoreResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="delGenitore">
+      <input message="tns:delGenitore"/>
+      <output message="tns:delGenitoreResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getGenitori">
+      <input message="tns:getGenitori"/>
+      <output message="tns:getGenitoriResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="delClasse">
+      <input message="tns:delClasse"/>
+      <output message="tns:delClasseResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getClassiDocente">
+      <input message="tns:getClassiDocente"/>
+      <output message="tns:getClassiDocenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="aggiungiGenitore">
+      <input message="tns:aggiungiGenitore"/>
+      <output message="tns:aggiungiGenitoreResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaGenitore">
+      <input message="tns:modificaGenitore"/>
+      <output message="tns:modificaGenitoreResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaGenitore">
+      <input message="tns:cancellaGenitore"/>
+      <output message="tns:cancellaGenitoreResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaGenitore">
+      <input message="tns:caricaGenitore"/>
+      <output message="tns:caricaGenitoreResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="addFiglio">
+      <input message="tns:addFiglio"/>
+      <output message="tns:addFiglioResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="delFiglio">
+      <input message="tns:delFiglio"/>
+      <output message="tns:delFiglioResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getFigli">
+      <input message="tns:getFigli"/>
+      <output message="tns:getFigliResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="aggiungiPersonaleATA">
+      <input message="tns:aggiungiPersonaleATA"/>
+      <output message="tns:aggiungiPersonaleATAResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaPersonaleATA">
+      <input message="tns:modificaPersonaleATA"/>
+      <output message="tns:modificaPersonaleATAResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaPersonaleATA">
+      <input message="tns:cancellaPersonaleATA"/>
+      <output message="tns:cancellaPersonaleATAResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaPersonaleATA">
+      <input message="tns:caricaPersonaleATA"/>
+      <output message="tns:caricaPersonaleATAResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getMaterieDocente">
+      <input message="tns:getMaterieDocente"/>
+      <output message="tns:getMaterieDocenteResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+  </portType>
+  <binding name="PersonaWSPortBinding" type="tns:PersonaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="getClassi">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="aggiungiStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cercaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="aggiungiDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cercaDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="setMaterie">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="addclasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getOreLezione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getResponsabileDi">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getCoordinatoreDi">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="delCarica">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getUtenti">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getAssenze">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getIncarichi">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="addCarica">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="addGenitore">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="delGenitore">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getGenitori">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="delClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getClassiDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="aggiungiGenitore">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaGenitore">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaGenitore">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaGenitore">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="addFiglio">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="delFiglio">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getFigli">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="aggiungiPersonaleATA">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaPersonaleATA">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaPersonaleATA">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaPersonaleATA">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getMaterieDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="PersonaWSService">
+    <port name="PersonaWSPort" binding="tns:PersonaWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/PersonaWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

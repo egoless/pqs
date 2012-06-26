@@ -1,0 +1,1888 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>JDepend Analysis</title>
+<style type="text/css">
+      body {
+        font:normal 68% verdana,arial,helvetica;
+        color:#000000;
+      }
+      table tr td, tr th {
+          font-size: 68%;
+      }
+      table.details tr th{
+        font-weight: bold;
+        text-align:left;
+        background:#a6caf0;
+      }
+      table.details tr td{
+        background:#eeeee0;
+      }
+      
+      p {
+        line-height:1.5em;
+        margin-top:0.5em; margin-bottom:1.0em;
+        margin-left:2em;
+        margin-right:2em;
+      }
+      h1 {
+        margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+      }
+      h2 {
+        margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+      }
+      h3 {
+        margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+      }
+      h4 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h5 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h6 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      .Error {
+        font-weight:bold; color:red;
+      }
+      .Failure {
+        font-weight:bold; color:purple;
+      }
+      .Properties {
+        text-align:right;
+      }
+      </style>
+</head>
+<body>
+<h1>
+<a name="top">JDepend Analysis</a>
+</h1>
+<p align="right">Designed for use with <a href="http://www.clarkware.com/software/JDepend.html">JDepend</a> and <a href="http://jakarta.apache.org">Ant</a>.</p>
+<hr size="2">
+<table width="100%">
+<tr>
+<td><a name="NVsummary">
+<h2>Summary</h2>
+</a></td><td align="right">
+    [<a href="#NVsummary">summary</a>]
+    [<a href="#NVpackages">packages</a>]
+    [<a href="#NVcycles">cycles</a>]
+    [<a href="#NVexplanations">explanations</a>]
+    </td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Package</th><th>Total Classes</th><th><a href="#EXnumber">Abstract Classes</a></th><th><a href="#EXnumber">Concrete Classes</a></th><th><a href="#EXafferent">Afferent Couplings</a></th><th><a href="#EXefferent">Efferent Couplings</a></th><th><a href="#EXabstractness">Abstractness</a></th><th><a href="#EXinstability">Instability</a></th><th><a href="#EXdistance">Distance</a></th>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.adapter">nu.mine.egoless.didattica.app.adapter</a></td><td align="right">4</td><td align="right">0</td><td align="right">4</td><td align="right">3</td><td align="right">4</td><td align="right">0</td><td align="right">0.57</td><td align="right">0.43</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a></td><td align="right">24</td><td align="right">1</td><td align="right">23</td><td align="right">7</td><td align="right">12</td><td align="right">0.04</td><td align="right">0.63</td><td align="right">0.33</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.gui">nu.mine.egoless.didattica.app.gui</a></td><td align="right">25</td><td align="right">0</td><td align="right">25</td><td align="right">0</td><td align="right">5</td><td align="right">0</td><td align="right">1</td><td align="right">0</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a></td><td align="right">23</td><td align="right">2</td><td align="right">21</td><td align="right">7</td><td align="right">10</td><td align="right">0.09</td><td align="right">0.59</td><td align="right">0.32</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a></td><td align="right">11</td><td align="right">1</td><td align="right">10</td><td align="right">2</td><td align="right">7</td><td align="right">0.09</td><td align="right">0.78</td><td align="right">0.13</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a></td><td align="right">62</td><td align="right">2</td><td align="right">60</td><td align="right">2</td><td align="right">7</td><td align="right">0.03</td><td align="right">0.78</td><td align="right">0.19</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a></td><td align="right">32</td><td align="right">0</td><td align="right">32</td><td align="right">1</td><td align="right">9</td><td align="right">0</td><td align="right">0.9</td><td align="right">0.1</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a></td><td align="right">37</td><td align="right">0</td><td align="right">37</td><td align="right">1</td><td align="right">9</td><td align="right">0</td><td align="right">0.9</td><td align="right">0.1</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a></td><td align="right">42</td><td align="right">0</td><td align="right">42</td><td align="right">0</td><td align="right">15</td><td align="right">0</td><td align="right">1</td><td align="right">0</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.app.prove">nu.mine.egoless.didattica.app.prove</a></td><td align="right">15</td><td align="right">0</td><td align="right">15</td><td align="right">0</td><td align="right">2</td><td align="right">0</td><td align="right">1</td><td align="right">0</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.assenzaclient">nu.mine.egoless.didattica.ws.assenzaclient</a></td><td align="right">19</td><td align="right">4</td><td align="right">15</td><td align="right">2</td><td align="right">0</td><td align="right">0.21</td><td align="right">0</td><td align="right">0.79</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.classesupport">nu.mine.egoless.didattica.ws.classesupport</a></td><td align="right">14</td><td align="right">3</td><td align="right">11</td><td align="right">7</td><td align="right">0</td><td align="right">0.21</td><td align="right">0</td><td align="right">0.79</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.contattoclient">nu.mine.egoless.didattica.ws.contattoclient</a></td><td align="right">18</td><td align="right">4</td><td align="right">14</td><td align="right">3</td><td align="right">0</td><td align="right">0.22</td><td align="right">0</td><td align="right">0.78</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.didastubclient">nu.mine.egoless.didattica.ws.didastubclient</a></td><td align="right">16</td><td align="right">2</td><td align="right">14</td><td align="right">0</td><td align="right">0</td><td align="right">0.12</td><td align="right">0</td><td align="right">0.88</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.materiaclient">nu.mine.egoless.didattica.ws.materiaclient</a></td><td align="right">14</td><td align="right">3</td><td align="right">11</td><td align="right">6</td><td align="right">0</td><td align="right">0.21</td><td align="right">0</td><td align="right">0.79</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.nazioneclient">nu.mine.egoless.didattica.ws.nazioneclient</a></td><td align="right">10</td><td align="right">3</td><td align="right">7</td><td align="right">7</td><td align="right">0</td><td align="right">0.3</td><td align="right">0</td><td align="right">0.7</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.personaclient">nu.mine.egoless.didattica.ws.personaclient</a></td><td align="right">38</td><td align="right">4</td><td align="right">34</td><td align="right">4</td><td align="right">0</td><td align="right">0.11</td><td align="right">0</td><td align="right">0.89</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.religioneclient">nu.mine.egoless.didattica.ws.religioneclient</a></td><td align="right">10</td><td align="right">3</td><td align="right">7</td><td align="right">7</td><td align="right">0</td><td align="right">0.3</td><td align="right">0</td><td align="right">0.7</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.tipoassenzaclient">nu.mine.egoless.didattica.ws.tipoassenzaclient</a></td><td align="right">14</td><td align="right">3</td><td align="right">11</td><td align="right">4</td><td align="right">0</td><td align="right">0.21</td><td align="right">0</td><td align="right">0.79</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.tipoprovaclient">nu.mine.egoless.didattica.ws.tipoprovaclient</a></td><td align="right">14</td><td align="right">3</td><td align="right">11</td><td align="right">4</td><td align="right">0</td><td align="right">0.21</td><td align="right">0</td><td align="right">0.79</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.tipovotoclient">nu.mine.egoless.didattica.ws.tipovotoclient</a></td><td align="right">14</td><td align="right">3</td><td align="right">11</td><td align="right">4</td><td align="right">0</td><td align="right">0.21</td><td align="right">0</td><td align="right">0.79</td>
+</tr>
+<tr>
+<td align="left"><a href="#PKnu.mine.egoless.didattica.ws.votoclient">nu.mine.egoless.didattica.ws.votoclient</a></td><td align="right">19</td><td align="right">4</td><td align="right">15</td><td align="right">2</td><td align="right">0</td><td align="right">0.21</td><td align="right">0</td><td align="right">0.79</td>
+</tr>
+<tr>
+<td align="left">nu.mine.egoless.supporto</td><td align="left" colspan="8">No stats available: package referenced, but not analyzed.</td>
+</tr>
+<tr>
+<td align="left">org.jdesktop.layout</td><td align="left" colspan="8">No stats available: package referenced, but not analyzed.</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td><a name="NVpackages">
+<h2>Packages</h2>
+</a></td><td align="right">
+    [<a href="#NVsummary">summary</a>]
+    [<a href="#NVpackages">packages</a>]
+    [<a href="#NVcycles">cycles</a>]
+    [<a href="#NVexplanations">explanations</a>]
+    </td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.adapter">nu.mine.egoless.didattica.app.adapter</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 3</td><td><a href="#EXefferent">Efferent Couplings</a>: 4</td><td><a href="#EXabstractness">Abstractness</a>: 0</td><td><a href="#EXinstability">Instability</a>: 0.57</td><td><a href="#EXdistance">Distance</a>: 0.43</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.adapter.ClasseAdapter
+                <br>
+                    nu.mine.egoless.didattica.app.adapter.MateriaInsegnamentoAdapter
+                <br>
+                    nu.mine.egoless.didattica.app.adapter.NazioneAdapter
+                <br>
+                    nu.mine.egoless.didattica.app.adapter.ReligioneAdapter
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws.classesupport">nu.mine.egoless.didattica.ws.classesupport</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.materiaclient">nu.mine.egoless.didattica.ws.materiaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.nazioneclient">nu.mine.egoless.didattica.ws.nazioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.religioneclient">nu.mine.egoless.didattica.ws.religioneclient</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 7</td><td><a href="#EXefferent">Efferent Couplings</a>: 12</td><td><a href="#EXabstractness">Abstractness</a>: 0.04</td><td><a href="#EXinstability">Instability</a>: 0.63</td><td><a href="#EXdistance">Distance</a>: 0.33</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.bean.PersonaBean
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.bean.AssenzaBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.AssenzeBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.ClasseBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.ClassiBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.ContattiBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.ContattoBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.Costanti
+                <br>
+                    nu.mine.egoless.didattica.app.bean.InsegnanteBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.InsegnantiBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.MateriaInsegnamentoBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.MaterieInsegnamentoBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.NazioniBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.ReligioniBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.StudenteBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.StudentiBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.TipiAssenzeBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.TipiProveBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.TipiVotiBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.TipoAssenzaBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.TipoProvaBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.TipoVotoBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.VotiBean
+                <br>
+                    nu.mine.egoless.didattica.app.bean.VotoBean
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.gui">nu.mine.egoless.didattica.app.gui</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.ws.assenzaclient">nu.mine.egoless.didattica.ws.assenzaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.classesupport">nu.mine.egoless.didattica.ws.classesupport</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.contattoclient">nu.mine.egoless.didattica.ws.contattoclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.materiaclient">nu.mine.egoless.didattica.ws.materiaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.nazioneclient">nu.mine.egoless.didattica.ws.nazioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.personaclient">nu.mine.egoless.didattica.ws.personaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.religioneclient">nu.mine.egoless.didattica.ws.religioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipoassenzaclient">nu.mine.egoless.didattica.ws.tipoassenzaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipoprovaclient">nu.mine.egoless.didattica.ws.tipoprovaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipovotoclient">nu.mine.egoless.didattica.ws.tipovotoclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.votoclient">nu.mine.egoless.didattica.ws.votoclient</a>
+<br>
+<a href="#PKnu.mine.egoless.supporto">nu.mine.egoless.supporto</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.gui">nu.mine.egoless.didattica.app.gui</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 0</td><td><a href="#EXefferent">Efferent Couplings</a>: 5</td><td><a href="#EXabstractness">Abstractness</a>: 0</td><td><a href="#EXinstability">Instability</a>: 1</td><td><a href="#EXdistance">Distance</a>: 0</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.CaricamentoDialog
+                <br>
+                    nu.mine.egoless.didattica.app.gui.CaricamentoDialog$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.CreditDialog
+                <br>
+                    nu.mine.egoless.didattica.app.gui.CreditDialog$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.CreditDialog$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$1$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$10
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$11
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$12
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$13
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$14
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$15
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$16
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$17
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$17$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$8
+                <br>
+                    nu.mine.egoless.didattica.app.gui.GUIFrame$9
+                <br>
+</td><td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+<a href="#PKorg.jdesktop.layout">org.jdesktop.layout</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 7</td><td><a href="#EXefferent">Efferent Couplings</a>: 10</td><td><a href="#EXabstractness">Abstractness</a>: 0.09</td><td><a href="#EXinstability">Instability</a>: 0.59</td><td><a href="#EXdistance">Distance</a>: 0.32</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.BarraDiStatoCompatibile
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.Listable
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.BarraDiStatoPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ButtonTabComponent
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ButtonTabComponent$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ButtonTabComponent$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ButtonTabComponent$TabButton
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ContenitoreDati
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.DataPanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ElementiComboBox
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ElementiComboBox$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.IconListRenderer
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.ModificaListaElementiDialog$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.UtilitaGUI
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.gui">nu.mine.egoless.didattica.app.gui</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.prove">nu.mine.egoless.didattica.app.prove</a>
+<br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.classesupport">nu.mine.egoless.didattica.ws.classesupport</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.materiaclient">nu.mine.egoless.didattica.ws.materiaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.nazioneclient">nu.mine.egoless.didattica.ws.nazioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.religioneclient">nu.mine.egoless.didattica.ws.religioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipoassenzaclient">nu.mine.egoless.didattica.ws.tipoassenzaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipoprovaclient">nu.mine.egoless.didattica.ws.tipoprovaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipovotoclient">nu.mine.egoless.didattica.ws.tipovotoclient</a>
+<br>
+<a href="#PKorg.jdesktop.layout">org.jdesktop.layout</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 2</td><td><a href="#EXefferent">Efferent Couplings</a>: 7</td><td><a href="#EXabstractness">Abstractness</a>: 0.09</td><td><a href="#EXinstability">Instability</a>: 0.78</td><td><a href="#EXdistance">Distance</a>: 0.13</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.Listable
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiClasse
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiMaterieInsegnamento
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiTipiAssenze
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiTipiProve
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementiTipiVoti
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoClasse
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoMateriaInsegnamento
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoTipoAssenza
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoTipoProva
+                <br>
+                    nu.mine.egoless.didattica.app.gui.componentiComuni.elementi.ElementoTipoVoto
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.classesupport">nu.mine.egoless.didattica.ws.classesupport</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.materiaclient">nu.mine.egoless.didattica.ws.materiaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipoassenzaclient">nu.mine.egoless.didattica.ws.tipoassenzaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipoprovaclient">nu.mine.egoless.didattica.ws.tipoprovaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipovotoclient">nu.mine.egoless.didattica.ws.tipovotoclient</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 2</td><td><a href="#EXefferent">Efferent Couplings</a>: 7</td><td><a href="#EXabstractness">Abstractness</a>: 0.03</td><td><a href="#EXinstability">Instability</a>: 0.78</td><td><a href="#EXdistance">Distance</a>: 0.19</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestionePersonaPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneTabPersonePanel
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$10
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$11
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$12
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$13
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$14
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$15
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$16
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$17
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$18
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$19
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$20
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$21
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$8
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.AnteprimaDialog$9
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$10
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$11
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$12
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$13
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$14
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$15
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$16
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$8
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneContattoDialog$9
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$10
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$11
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$12
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$13
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$14
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$15
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$16
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$17
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$18
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$8
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneDatiAnagraficiPanel$9
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.GestioneTabPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.RicercaPersonePanel
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.adapter">nu.mine.egoless.didattica.app.adapter</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.classesupport">nu.mine.egoless.didattica.ws.classesupport</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.nazioneclient">nu.mine.egoless.didattica.ws.nazioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.religioneclient">nu.mine.egoless.didattica.ws.religioneclient</a>
+<br>
+<a href="#PKorg.jdesktop.layout">org.jdesktop.layout</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 9</td><td><a href="#EXabstractness">Abstractness</a>: 0</td><td><a href="#EXinstability">Instability</a>: 0.9</td><td><a href="#EXdistance">Distance</a>: 0.1</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneDatiInsegnantePanel$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$1$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneInsegnantePanel$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.GestioneTabInsegnantiPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$10
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$11
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$12
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$13
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$14
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$14$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$8
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti.RicercaInsegnantiPanel$9
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.gui">nu.mine.egoless.didattica.app.gui</a>
+<br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.adapter">nu.mine.egoless.didattica.app.adapter</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.contattoclient">nu.mine.egoless.didattica.ws.contattoclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.materiaclient">nu.mine.egoless.didattica.ws.materiaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.nazioneclient">nu.mine.egoless.didattica.ws.nazioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.personaclient">nu.mine.egoless.didattica.ws.personaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.religioneclient">nu.mine.egoless.didattica.ws.religioneclient</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 1</td><td><a href="#EXefferent">Efferent Couplings</a>: 9</td><td><a href="#EXabstractness">Abstractness</a>: 0</td><td><a href="#EXinstability">Instability</a>: 0.9</td><td><a href="#EXdistance">Distance</a>: 0.1</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneDatiStudentePanel$8
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$1$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneStudentePanel$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.GestioneTabStudentiPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$10
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$11
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$12
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$13
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$14
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$15
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$16
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$16$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$8
+                <br>
+                    nu.mine.egoless.didattica.app.gui.gestionePersone.studenti.RicercaStudentiPanel$9
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.gui">nu.mine.egoless.didattica.app.gui</a>
+<br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.adapter">nu.mine.egoless.didattica.app.adapter</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.classesupport">nu.mine.egoless.didattica.ws.classesupport</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.contattoclient">nu.mine.egoless.didattica.ws.contattoclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.nazioneclient">nu.mine.egoless.didattica.ws.nazioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.personaclient">nu.mine.egoless.didattica.ws.personaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.religioneclient">nu.mine.egoless.didattica.ws.religioneclient</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 0</td><td><a href="#EXefferent">Efferent Couplings</a>: 15</td><td><a href="#EXabstractness">Abstractness</a>: 0</td><td><a href="#EXinstability">Instability</a>: 1</td><td><a href="#EXdistance">Distance</a>: 0</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$10
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$11
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$12
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$13
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$14
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$6
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$7
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$8
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneAssenzeStudentePanel$9
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneDatiStudentePanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneDatiStudentePanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.GestioneVotiStudentePanel$5
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaAssenzeStudenteDialog
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaAssenzeStudenteDialog$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaAssenzeStudenteDialog$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaAssenzeStudenteDialog$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaVotiStudenteDialog
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaVotiStudenteDialog$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaVotiStudentePanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.ListaVotiStudentePanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.Pair
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroInsegnantePanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$1$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$2
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$3
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.RegistroPanel$4
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.SelezionaRegistroPanel
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.SelezionaRegistroPanel$1
+                <br>
+                    nu.mine.egoless.didattica.app.gui.registroDocente.VisualizzaDatiStudentePanel
+                <br>
+</td><td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.assenzaclient">nu.mine.egoless.didattica.ws.assenzaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.classesupport">nu.mine.egoless.didattica.ws.classesupport</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.materiaclient">nu.mine.egoless.didattica.ws.materiaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.nazioneclient">nu.mine.egoless.didattica.ws.nazioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.personaclient">nu.mine.egoless.didattica.ws.personaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.religioneclient">nu.mine.egoless.didattica.ws.religioneclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipoassenzaclient">nu.mine.egoless.didattica.ws.tipoassenzaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipoprovaclient">nu.mine.egoless.didattica.ws.tipoprovaclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.tipovotoclient">nu.mine.egoless.didattica.ws.tipovotoclient</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.ws.votoclient">nu.mine.egoless.didattica.ws.votoclient</a>
+<br>
+<a href="#PKnu.mine.egoless.supporto">nu.mine.egoless.supporto</a>
+<br>
+<a href="#PKorg.jdesktop.layout">org.jdesktop.layout</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.app.prove">nu.mine.egoless.didattica.app.prove</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 0</td><td><a href="#EXefferent">Efferent Couplings</a>: 2</td><td><a href="#EXabstractness">Abstractness</a>: 0</td><td><a href="#EXinstability">Instability</a>: 1</td><td><a href="#EXdistance">Distance</a>: 0</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.app.prove.BeanProxy
+                <br>
+                    nu.mine.egoless.didattica.app.prove.DataProva
+                <br>
+                    nu.mine.egoless.didattica.app.prove.DataProva$1
+                <br>
+                    nu.mine.egoless.didattica.app.prove.DataProva$2
+                <br>
+                    nu.mine.egoless.didattica.app.prove.DataProva$3
+                <br>
+                    nu.mine.egoless.didattica.app.prove.ExtProva
+                <br>
+                    nu.mine.egoless.didattica.app.prove.NewDataDialog
+                <br>
+                    nu.mine.egoless.didattica.app.prove.NewDataDialog$1
+                <br>
+                    nu.mine.egoless.didattica.app.prove.NewDataDialog$2
+                <br>
+                    nu.mine.egoless.didattica.app.prove.NewDataDialog$3
+                <br>
+                    nu.mine.egoless.didattica.app.prove.NewJDialog
+                <br>
+                    nu.mine.egoless.didattica.app.prove.NewJDialog$1
+                <br>
+                    nu.mine.egoless.didattica.app.prove.NewJPanel
+                <br>
+                    nu.mine.egoless.didattica.app.prove.Prova
+                <br>
+                    nu.mine.egoless.didattica.app.prove.Win
+                <br>
+</td><td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKorg.jdesktop.layout">org.jdesktop.layout</a>
+<br>
+</td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.assenzaclient">nu.mine.egoless.didattica.ws.assenzaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 2</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.21</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.79</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.assenzaclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.ParametriRicerca
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.WSAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.assenzaclient.AggiungiAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.AggiungiAssenzaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.Assenza
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.CancellaAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.CancellaAssenzaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.CercaAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.CercaAssenzaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.Date
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.ModificaAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.ModificaAssenzaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.ParametriRicercaAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.WSAssenzaService
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.assenzaclient.WSDidatticaException_Exception
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.classesupport">nu.mine.egoless.didattica.ws.classesupport</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 7</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.21</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.79</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.classesupport.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.WSClasse
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.classesupport.AggiungiClasse
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.AggiungiClasseResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.CancellaClasse
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.CancellaClasseResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.Classe
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.RecuperaClassi
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.RecuperaClassiResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.WSClasseService
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.classesupport.WSDidatticaException_Exception
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.adapter">nu.mine.egoless.didattica.app.adapter</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.contattoclient">nu.mine.egoless.didattica.ws.contattoclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 3</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.22</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.78</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.contattoclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.ParametriRicerca
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.WSContatto
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.contattoclient.AggiungiContatto
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.AggiungiContattoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.CancellaContatto
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.CancellaContattoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.CercaContatto
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.CercaContattoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.Contatto
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.ModificaContatto
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.ModificaContattoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.ParametriRicercaContatto
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.WSContattoService
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.contattoclient.WSDidatticaException_Exception
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.didastubclient">nu.mine.egoless.didattica.ws.didastubclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 0</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.12</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.88</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.didastubclient.WSDidaStub
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaAssenzaBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaContattoBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaInsegnanteBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaStudenteBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.CercaVotoBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaClassiBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaMaterieBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaNazioniReturnsNull
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaReligioniReturnsNull
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaTipiAssenzaBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaTipiProvaBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.RecuperaTipiVotoBehavior
+                <br>
+                    nu.mine.egoless.didattica.ws.didastubclient.WSDidaStubService
+                <br>
+</td><td valign="top" width="25%"><i>None</i></td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.materiaclient">nu.mine.egoless.didattica.ws.materiaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 6</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.21</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.79</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.materiaclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.WSMateria
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.materiaclient.AggiungiMateria
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.AggiungiMateriaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.CancellaMateria
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.CancellaMateriaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.MateriaInsegnamento
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.RecuperaMaterie
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.RecuperaMaterieResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.WSDidatticaException_Exception
+                <br>
+                    nu.mine.egoless.didattica.ws.materiaclient.WSMateriaService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.adapter">nu.mine.egoless.didattica.app.adapter</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.nazioneclient">nu.mine.egoless.didattica.ws.nazioneclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 7</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.3</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.7</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.nazioneclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.nazioneclient.WSNazione
+                <br>
+                    nu.mine.egoless.didattica.ws.nazioneclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.nazioneclient.Nazione
+                <br>
+                    nu.mine.egoless.didattica.ws.nazioneclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.nazioneclient.RecuperaNazioni
+                <br>
+                    nu.mine.egoless.didattica.ws.nazioneclient.RecuperaNazioniResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.nazioneclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.nazioneclient.WSDidatticaException_Exception
+                <br>
+                    nu.mine.egoless.didattica.ws.nazioneclient.WSNazioneService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.adapter">nu.mine.egoless.didattica.app.adapter</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.personaclient">nu.mine.egoless.didattica.ws.personaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 4</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.11</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.89</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.personaclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.ParametriRicerca
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.WSPersona
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.personaclient.AggiungiDocente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.AggiungiDocenteResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.AggiungiStudente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.AggiungiStudenteResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.CancellaDocente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.CancellaDocenteResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.CancellaStudente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.CancellaStudenteResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.CercaDocente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.CercaDocenteResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.CercaStudente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.CercaStudenteResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.Date
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.Docente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.GetClasse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.GetClasseResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.GetMaterie
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.GetMaterieResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.ModificaDocente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.ModificaDocenteResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.ModificaStudente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.ModificaStudenteResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.ParametriRicercaDocente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.ParametriRicercaStudente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.Persona
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.SetClasse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.SetClasseResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.SetMaterie
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.SetMaterieResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.Studente
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.WSDidatticaException_Exception
+                <br>
+                    nu.mine.egoless.didattica.ws.personaclient.WSPersonaService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.religioneclient">nu.mine.egoless.didattica.ws.religioneclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 7</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.3</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.7</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.religioneclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.religioneclient.WSReligione
+                <br>
+                    nu.mine.egoless.didattica.ws.religioneclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.religioneclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.religioneclient.RecuperaReligioni
+                <br>
+                    nu.mine.egoless.didattica.ws.religioneclient.RecuperaReligioniResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.religioneclient.Religione
+                <br>
+                    nu.mine.egoless.didattica.ws.religioneclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.religioneclient.WSDidatticaException_Exception
+                <br>
+                    nu.mine.egoless.didattica.ws.religioneclient.WSReligioneService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.adapter">nu.mine.egoless.didattica.app.adapter</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone">nu.mine.egoless.didattica.app.gui.gestionePersone</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti">nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.gestionePersone.studenti">nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.tipoassenzaclient">nu.mine.egoless.didattica.ws.tipoassenzaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 4</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.21</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.79</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.WSTipoAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.AggiungiTipoAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.AggiungiTipoAssenzaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.CancellaTipoAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.CancellaTipoAssenzaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.RecuperaTipiAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.RecuperaTipiAssenzaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.TipoAssenza
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.WSDidatticaException_Exception
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoassenzaclient.WSTipoAssenzaService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.tipoprovaclient">nu.mine.egoless.didattica.ws.tipoprovaclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 4</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.21</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.79</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.WSTipoProva
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.AggiungiTipoProva
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.AggiungiTipoProvaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.CancellaTipoProva
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.CancellaTipoProvaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.RecuperaTipiProva
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.RecuperaTipiProvaResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.TipoProva
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.WSDidatticaException_Exception
+                <br>
+                    nu.mine.egoless.didattica.ws.tipoprovaclient.WSTipoProvaService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.tipovotoclient">nu.mine.egoless.didattica.ws.tipovotoclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 4</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.21</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.79</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.WSTipoVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.tipovotoclient.AggiungiTipoVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.AggiungiTipoVotoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.CancellaTipoVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.CancellaTipoVotoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.RecuperaTipiVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.RecuperaTipiVotoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.TipoVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.WSDidatticaException_Exception
+                <br>
+                    nu.mine.egoless.didattica.ws.tipovotoclient.WSTipoVotoService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni">nu.mine.egoless.didattica.app.gui.componentiComuni</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.componentiComuni.elementi">nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<h3>
+<a name="PKnu.mine.egoless.didattica.ws.votoclient">nu.mine.egoless.didattica.ws.votoclient</a>
+</h3>
+<table width="100%">
+<tr>
+<td><a href="#EXafferent">Afferent Couplings</a>: 2</td><td><a href="#EXefferent">Efferent Couplings</a>: 0</td><td><a href="#EXabstractness">Abstractness</a>: 0.21</td><td><a href="#EXinstability">Instability</a>: 0</td><td><a href="#EXdistance">Distance</a>: 0.79</td>
+</tr>
+</table>
+<table width="100%" class="details">
+<tr>
+<th>Abstract Classes</th><th>Concrete Classes</th><th>Used by Packages</th><th>Uses Packages</th>
+</tr>
+<tr>
+<td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.votoclient.Elemento
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.ParametriRicerca
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.WSVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.package-info
+                <br>
+</td><td valign="top" width="25%">
+                    nu.mine.egoless.didattica.ws.votoclient.AggiungiVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.AggiungiVotoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.CancellaVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.CancellaVotoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.CercaVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.CercaVotoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.Date
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.ModificaVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.ModificaVotoResponse
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.ObjectFactory
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.ParametriRicercaVoto
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.Voto
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.WSDidatticaException
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.WSDidatticaException_Exception
+                <br>
+                    nu.mine.egoless.didattica.ws.votoclient.WSVotoService
+                <br>
+</td><td valign="top" width="25%"><a href="#PKnu.mine.egoless.didattica.app.bean">nu.mine.egoless.didattica.app.bean</a>
+<br>
+<a href="#PKnu.mine.egoless.didattica.app.gui.registroDocente">nu.mine.egoless.didattica.app.gui.registroDocente</a>
+<br>
+</td><td valign="top" width="25%"><i>None</i></td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td><a name="NVcycles">
+<h2>Cycles</h2>
+</a></td><td align="right">
+    [<a href="#NVsummary">summary</a>]
+    [<a href="#NVpackages">packages</a>]
+    [<a href="#NVcycles">cycles</a>]
+    [<a href="#NVexplanations">explanations</a>]
+    </td>
+</tr>
+</table>
+<h3>nu.mine.egoless.didattica.app.gui</h3>
+<p>nu.mine.egoless.didattica.app.gui.componentiComuni<br>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi<br>nu.mine.egoless.didattica.app.gui.componentiComuni<br>
+</p>
+<h3>nu.mine.egoless.didattica.app.gui.componentiComuni</h3>
+<p>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi<br>nu.mine.egoless.didattica.app.gui.componentiComuni<br>
+</p>
+<h3>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi</h3>
+<p>nu.mine.egoless.didattica.app.gui.componentiComuni<br>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi<br>
+</p>
+<h3>nu.mine.egoless.didattica.app.gui.gestionePersone</h3>
+<p>nu.mine.egoless.didattica.app.gui.componentiComuni<br>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi<br>nu.mine.egoless.didattica.app.gui.componentiComuni<br>
+</p>
+<h3>nu.mine.egoless.didattica.app.gui.gestionePersone.insegnanti</h3>
+<p>nu.mine.egoless.didattica.app.gui.componentiComuni<br>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi<br>nu.mine.egoless.didattica.app.gui.componentiComuni<br>
+</p>
+<h3>nu.mine.egoless.didattica.app.gui.gestionePersone.studenti</h3>
+<p>nu.mine.egoless.didattica.app.gui.componentiComuni<br>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi<br>nu.mine.egoless.didattica.app.gui.componentiComuni<br>
+</p>
+<h3>nu.mine.egoless.didattica.app.gui.registroDocente</h3>
+<p>nu.mine.egoless.didattica.app.gui.componentiComuni<br>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi<br>nu.mine.egoless.didattica.app.gui.componentiComuni<br>
+</p>
+<h3>nu.mine.egoless.didattica.app.prove</h3>
+<p>nu.mine.egoless.didattica.app.gui.componentiComuni<br>nu.mine.egoless.didattica.app.gui.componentiComuni.elementi<br>nu.mine.egoless.didattica.app.gui.componentiComuni<br>
+</p>
+<table width="100%">
+<tr>
+<td><a name="NVexplanations">
+<h2>Explanations</h2>
+</a></td><td align="right">
+    [<a href="#NVsummary">summary</a>]
+    [<a href="#NVpackages">packages</a>]
+    [<a href="#NVcycles">cycles</a>]
+    [<a href="#NVexplanations">explanations</a>]
+    </td>
+</tr>
+</table>
+<p>The following explanations are for quick reference and are lifted directly from the original <a href="http://www.clarkware.com/software/JDepend.html">JDepend documentation</a>.</p>
+<h3>
+<a name="EXnumber">Number of Classes</a>
+</h3>
+<p>The number of concrete and abstract classes (and interfaces) in the package is an indicator of the extensibility of the package.</p>
+<h3>
+<a name="EXafferent">Afferent Couplings</a>
+</h3>
+<p>The number of other packages that depend upon classes within the package is an indicator of the package's responsibility. </p>
+<h3>
+<a name="EXefferent">Efferent Couplings</a>
+</h3>
+<p>The number of other packages that the classes in the package depend upon is an indicator of the package's independence. </p>
+<h3>
+<a name="EXabstractness">Abstractness</a>
+</h3>
+<p>The ratio of the number of abstract classes (and interfaces) in the analyzed package to the total number of classes in the analyzed package. </p>
+<p>The range for this metric is 0 to 1, with A=0 indicating a completely concrete package and A=1 indicating a completely abstract package. </p>
+<h3>
+<a name="EXinstability">Instability</a>
+</h3>
+<p>The ratio of efferent coupling (Ce) to total coupling (Ce / (Ce + Ca)). This metric is an indicator of the package's resilience to change. </p>
+<p>The range for this metric is 0 to 1, with I=0 indicating a completely stable package and I=1 indicating a completely instable package. </p>
+<h3>
+<a name="EXdistance">Distance</a>
+</h3>
+<p>The perpendicular distance of a package from the idealized line A + I = 1. This metric is an indicator of the package's balance between abstractness and stability. </p>
+<p>A package squarely on the main sequence is optimally balanced with respect to its abstractness and stability. Ideal packages are either completely abstract and stable (x=0, y=1) or completely concrete and instable (x=1, y=0). </p>
+<p>The range for this metric is 0 to 1, with D=0 indicating a package that is coincident with the main sequence and D=1 indicating a package that is as far from the main sequence as possible. </p>
+</body>
+</html>

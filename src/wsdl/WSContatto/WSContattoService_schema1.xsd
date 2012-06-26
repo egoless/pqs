@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="WSContattoService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="aggiungiContatto" type="tns:aggiungiContatto"/>
+
+  <xs:element name="aggiungiContattoResponse" type="tns:aggiungiContattoResponse"/>
+
+  <xs:element name="cancellaContatto" type="tns:cancellaContatto"/>
+
+  <xs:element name="cancellaContattoResponse" type="tns:cancellaContattoResponse"/>
+
+  <xs:element name="cercaContatto" type="tns:cercaContatto"/>
+
+  <xs:element name="cercaContattoResponse" type="tns:cercaContattoResponse"/>
+
+  <xs:element name="modificaContatto" type="tns:modificaContatto"/>
+
+  <xs:element name="modificaContattoResponse" type="tns:modificaContattoResponse"/>
+
+  <xs:complexType name="aggiungiContatto">
+    <xs:sequence>
+      <xs:element name="nuovoContatto" type="ns1:contatto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiContattoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaContatto">
+    <xs:sequence>
+      <xs:element name="idContatto" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaContattoResponse"/>
+
+  <xs:complexType name="cercaContatto">
+    <xs:sequence>
+      <xs:element name="insiemeParametri" type="ns1:parametriRicercaContatto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaContattoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:contatto" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaContatto">
+    <xs:sequence>
+      <xs:element name="contatto" type="ns1:contatto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaContattoResponse"/>
+</xs:schema>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:tns="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="aggiungiTipoVoto" type="tns:aggiungiTipoVoto"/>
+
+  <xs:element name="aggiungiTipoVotoResponse" type="tns:aggiungiTipoVotoResponse"/>
+
+  <xs:element name="cancellaTipoVoto" type="tns:cancellaTipoVoto"/>
+
+  <xs:element name="cancellaTipoVotoResponse" type="tns:cancellaTipoVotoResponse"/>
+
+  <xs:element name="caricaTipoVoto" type="tns:caricaTipoVoto"/>
+
+  <xs:element name="caricaTipoVotoResponse" type="tns:caricaTipoVotoResponse"/>
+
+  <xs:element name="getTipivoto" type="tns:getTipivoto"/>
+
+  <xs:element name="getTipivotoResponse" type="tns:getTipivotoResponse"/>
+
+  <xs:element name="modificaTipoVoto" type="tns:modificaTipoVoto"/>
+
+  <xs:element name="modificaTipoVotoResponse" type="tns:modificaTipoVotoResponse"/>
+
+  <xs:complexType name="modificaTipoVoto">
+    <xs:sequence>
+      <xs:element name="tipoVoto" type="tns:TipoVoto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TipoVoto">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+          <xs:element name="ordine" type="xs:int" minOccurs="0"/>
+          <xs:element name="valore" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="modificaTipoVotoResponse"/>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaTipoVoto">
+    <xs:sequence>
+      <xs:element name="idTipoVoto" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaTipoVotoResponse"/>
+
+  <xs:complexType name="caricaTipoVoto">
+    <xs:sequence>
+      <xs:element name="idTipoVoto" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaTipoVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:TipoVoto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTipivoto"/>
+
+  <xs:complexType name="getTipivotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoVoto">
+    <xs:sequence>
+      <xs:element name="nuovoTipoVoto" type="tns:TipoVoto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoVotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

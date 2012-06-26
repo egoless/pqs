@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="WSMateriaService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="aggiungiMateria" type="tns:aggiungiMateria"/>
+
+  <xs:element name="aggiungiMateriaResponse" type="tns:aggiungiMateriaResponse"/>
+
+  <xs:element name="cancellaMateria" type="tns:cancellaMateria"/>
+
+  <xs:element name="cancellaMateriaResponse" type="tns:cancellaMateriaResponse"/>
+
+  <xs:element name="recuperaMaterie" type="tns:recuperaMaterie"/>
+
+  <xs:element name="recuperaMaterieResponse" type="tns:recuperaMaterieResponse"/>
+
+  <xs:complexType name="recuperaMaterie"/>
+
+  <xs:complexType name="recuperaMaterieResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:materiaInsegnamento" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiMateria">
+    <xs:sequence>
+      <xs:element name="nuovaMateria" type="ns1:materiaInsegnamento" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiMateriaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaMateria">
+    <xs:sequence>
+      <xs:element name="idMateria" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaMateriaResponse"/>
+</xs:schema>
+

@@ -1,4 +1,3 @@
-pqs
-===
+h1. pqs
 
 Progetto Qualità nella Scuola -- Software Engineering Project

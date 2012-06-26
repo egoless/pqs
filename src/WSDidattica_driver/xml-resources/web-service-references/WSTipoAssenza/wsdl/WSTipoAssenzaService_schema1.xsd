@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.didattica.egoless.mine.nu/" xmlns:ns1="http://registro.modulo.ws.pqs.swellsys.com/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://registro.modulo.ws.pqs.swellsys.com/" schemaLocation="WSTipoAssenzaService_schema2.xsd"/>
+
+  <xs:element name="WSDidatticaException" type="tns:WSDidatticaException"/>
+
+  <xs:element name="aggiungiTipoAssenza" type="tns:aggiungiTipoAssenza"/>
+
+  <xs:element name="aggiungiTipoAssenzaResponse" type="tns:aggiungiTipoAssenzaResponse"/>
+
+  <xs:element name="cancellaTipoAssenza" type="tns:cancellaTipoAssenza"/>
+
+  <xs:element name="cancellaTipoAssenzaResponse" type="tns:cancellaTipoAssenzaResponse"/>
+
+  <xs:element name="recuperaTipiAssenza" type="tns:recuperaTipiAssenza"/>
+
+  <xs:element name="recuperaTipiAssenzaResponse" type="tns:recuperaTipiAssenzaResponse"/>
+
+  <xs:complexType name="cancellaTipoAssenza">
+    <xs:sequence>
+      <xs:element name="idTipoAssenza" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaTipoAssenzaResponse"/>
+
+  <xs:complexType name="WSDidatticaException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoAssenza">
+    <xs:sequence>
+      <xs:element name="nuovoTipoAssenza" type="ns1:tipoAssenza" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiTipoAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recuperaTipiAssenza"/>
+
+  <xs:complexType name="recuperaTipiAssenzaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="ns1:tipoAssenza" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

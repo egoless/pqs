@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" id="0" name="AssenzaTest" package="nu.mine.egoless.api.ws" tests="1" time="0.451">
+  
+    <properties>
+    
+      <property name="javax.xml.parsers.SAXParserFactory" value="org.netbeans.core.startup.SAXFactoryImpl"></property>
+
+          <property name="env-shell" value="/bin/bash"></property>
+
+          <property name="javac.test.classpath" value=":build/jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/junit-3.8.1.jar"></property>
+
+          <property name="ant.file.API_stub" value="/Users/ericmi/ing_soft/src_local/API_stub/build.xml"></property>
+
+          <property name="source.root" value="src"></property>
+
+          <property name="org.openide.TopManager.GUI" value="true"></property>
+
+          <property name="libs.theme-default.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/defaulttheme.jar"></property>
+
+          <property name="libs.junit.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/docs/junit-3.8.1-api.zip"></property>
+
+          <property name="env-j2d_pixmaps" value="shared"></property>
+
+          <property name="javadoc.windowtitle" value=""></property>
+
+          <property name="libs.toplink.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/toplink/toplink-essentials.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/toplink/toplink-essentials-agent.jar"></property>
+
+          <property name="user.dir" value="/Users/ericmi/ing_soft/src_local/API_stub"></property>
+
+          <property name="com.apple.mrj.application.apple.menu.about.name" value="NetBeans"></property>
+
+          <property name="libs.theme-default-green.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/defaulttheme-green.jar"></property>
+
+          <property name="java.vm.version" value="1.5.0_07-87"></property>
+
+          <property name="libs.jsf-runtime.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/jsf-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/jsf-impl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/commons-beanutils.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/commons-collections.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/commons-digester.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/commons-logging-1.0.4.jar"></property>
+
+          <property name="env-path" value="/bin:/sbin:/usr/bin:/usr/sbin:/Applications/SUNWappserver/bin:/usr/local/bin:/usr/local/teTeX/bin/powerpc-apple-darwin-current"></property>
+
+          <property name="libs.jaxb20.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/activation.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jaxb-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jaxb-impl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jaxb-xjc.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jsr173_api.jar"></property>
+
+          <property name="libs.jstl11.src" value=""></property>
+
+          <property name="javadoc.notree" value="false"></property>
+
+          <property name="libs.jaxrpc16.src" value=""></property>
+
+          <property name="jdk.home" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home"></property>
+
+          <property name="wsclientuptodate.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/ant/extra/wsclientuptodate.jar"></property>
+
+          <property name="javadoc.noindex" value="false"></property>
+
+          <property name="libs.theme-default-green.runtime" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/defaulttheme-green.jar"></property>
+
+          <property name="Env-HOME" value="/Users/ericmi"></property>
+
+          <property name="sun.os.patch.level" value="unknown"></property>
+
+          <property name="libs.theme-default-gray.runtime" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/defaulttheme-gray.jar"></property>
+
+          <property name="AM_CONFIG_FILE" value="/Applications/SUNWappserver/addons/amserver/AMConfig.properties"></property>
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
+
+          <property name="libs.jdbcsupport-runtime.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rowset.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/sqlx.jar"></property>
+
+          <property name="have.tests" value="true"></property>
+
+          <property name="libs.jdbcsupport-designtime.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rowset.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/sqlx.jar"></property>
+
+          <property name="org.xml.sax.driver" value="org.apache.crimson.parser.XMLReaderImpl"></property>
+
+          <property name="j2ee.server.instance" value="[/Applications/SUNWappserver]deployer:Sun:AppServer::localhost:4848"></property>
+
+          <property name="ant.file.imported" value="/Users/ericmi/ing_soft/src_local/ant/junitpdfreport/build-junitpdfreport.xml"></property>
+
+          <property name="os.name" value="Mac OS X"></property>
+
+          <property name="libs.jaxrpc16.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/activation.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/FastInfoset.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/jax-qname.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/jaxp-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/jaxrpc-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/jaxrpc-impl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/jaxrpc-spi.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/jsr173_api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/mail.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/relaxngDatatype.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/saaj-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/saaj-impl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxrpc16/xsdlib.jar"></property>
+
+          <property name="mrj.version" value="1040.1.5.0_07-164"></property>
+
+          <property name="rave.build" value="thresher-fcs"></property>
+
+          <property name="runmain.jvmargs" value=""></property>
+
+          <property name="java.vendor.url.bug" value="http://developer.apple.com/java/"></property>
+
+          <property name="os.arch" value="ppc"></property>
+
+          <property name="user.name" value="ericmi"></property>
+
+          <property name="build.classes.dir" value="build/jar"></property>
+
+          <property name="env-pwd" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home"></property>
+
+          <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense"></property>
+
+          <property name="j2ee.platform.wsimport.classpath" value="/Applications/SUNWappserver/lib/tools.jar:/Applications/SUNWappserver/lib/appserv-jstl.jar:/Applications/SUNWappserver/lib/javaee.jar:/Applications/SUNWappserver/lib/appserv-ws.jar:/Applications/SUNWappserver/lib/mail.jar:/Applications/SUNWappserver/lib/activation.jar"></property>
+
+          <property name="javax.xml.parsers.DocumentBuilderFactory" value="org.netbeans.core.startup.DOMFactoryImpl"></property>
+
+          <property name="user.country" value="US"></property>
+
+          <property name="env-app_name_808" value="NetBeans"></property>
+
+          <property name="libs.commons-logging-1-0-4.javadoc" value=""></property>
+
+          <property name="libs.jstl11.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/docs/javaee5-doc-api.zip"></property>
+
+          <property name="env-bouml_id" value="7"></property>
+
+          <property name="javadoc.encoding" value=""></property>
+
+          <property name="javac.classpath" value=""></property>
+
+          <property name="libs.jsfsupport-designtime.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/appbase-doc.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/dataprovider-doc.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/jsfcl-doc.zip"></property>
+
+          <property name="Env-SECURITYSESSIONID" value="2481470"></property>
+
+          <property name="libs.JAVADB_DRIVER_LABEL.src" value=""></property>
+
+          <property name="meta.inf" value="src/conf"></property>
+
+          <property name="netbeans.system_http_non_proxy_hosts" value=""></property>
+
+          <property name="netbeans.home" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/platform6"></property>
+
+          <property name="build.compiler.emacs" value="true"></property>
+
+          <property name="env-term_program" value="Apple_Terminal"></property>
+
+          <property name="libs.jdbcsupport-runtime.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/rowset-doc.zip"></property>
+
+          <property name="java.endorsed.dirs" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/endorsed"></property>
+
+          <property name="Env-TERM_PROGRAM_VERSION" value="133"></property>
+
+          <property name="netbeans.dynamic.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/platform6/core/core.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/platform6/core/org-openide-filesystems.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/nb5.5/core/org-netbeans-upgrader.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/nb5.5/core/locale/core_nb.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/core/org-netbeans-modules-utilities-cli.jar"></property>
+
+          <property name="java.vm.specification.version" value="1.0"></property>
+
+          <property name="platforms.Java_HotSpot_TM__Core_VM_1.6.0-b88-17-release.bootclasspath" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/ui.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/laf.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/sunrsasign.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/charsets.jar:/System/Library/Java/Extensions/CoreAudio.jar:/System/Library/Java/Extensions/dns_sd.jar:/System/Library/Java/Extensions/j3daudio.jar:/System/Library/Java/Extensions/j3dcore.jar:/System/Library/Java/Extensions/j3dutils.jar:/System/Library/Java/Extensions/jai_codec.jar:/System/Library/Java/Extensions/jai_core.jar:/System/Library/Java/Extensions/mlibwrapper_jai.jar:/System/Library/Java/Extensions/MRJToolkit.jar:/System/Library/Java/Extensions/QTJava.zip:/System/Library/Java/Extensions/QTJSupport.jar:/System/Library/Java/Extensions/vecmath.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/lib/ext/apple_provider.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/lib/ext/dnsns.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/lib/ext/localedata.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/lib/ext/sunjce_provider.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/lib/ext/sunpkcs11.jar"></property>
+
+          <property name="libs.EJB_SUPPORT_LIB.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/ejb20.jar"></property>
+
+          <property name="meta.inf.excludes" value="sun-cmp-mappings.xml"></property>
+
+          <property name="java.vendor" value="Apple Computer, Inc."></property>
+
+          <property name="egoless.basedir" value="/Users/ericmi/ing_soft/src_local/ant"></property>
+
+          <property name="javac.debug" value="true"></property>
+
+          <property name="javadoc.splitindex" value="true"></property>
+
+          <property name="file.separator" value="/"></property>
+
+          <property name="libs.IdentityAntTasks.src" value=""></property>
+
+          <property name="resource.dir" value="setup"></property>
+
+          <property name="libs.EJB_SUPPORT_LIB.javadoc" value=""></property>
+
+          <property name="netbeans.buildnumber" value="200610171010,Visual Web Pack 061127_6, Ent.Pack 20061020"></property>
+
+          <property name="libs.webui-runtime.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/webui.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/commons-fileupload.jar"></property>
+
+          <property name="libs.junit.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/junit-3.8.1.jar"></property>
+
+          <property name="libs.struts.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/struts/antlr.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/struts/commons-beanutils.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/struts/commons-digester.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/struts/commons-fileupload.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/struts/commons-logging.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/struts/commons-validator.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/struts/jakarta-oro.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/struts/struts.jar"></property>
+
+          <property name="libs.woodstock-theme-default.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/webui-jsf-suntheme.jar"></property>
+
+          <property name="checkstyle.path" value="checkstyle"></property>
+
+          <property name="Env-APP_NAME_808" value="NetBeans"></property>
+
+          <property name="ant.home" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/ant"></property>
+
+          <property name="ant.java.version" value="1.5"></property>
+
+          <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"></property>
+
+          <property name="javadoc.author" value="false"></property>
+
+          <property name="libs.IdentityAntTasks.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/identity1/ant/nblib/org-netbeans-modules-identity-ant.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/identity1/modules/org-netbeans-modules-identity-profile-api.jar"></property>
+
+          <property name="DSTAMP" value="20070305"></property>
+
+          <property name="https.proxyPort" value=""></property>
+
+          <property name="Env-TERM" value="xterm-color"></property>
+
+          <property name="libs.jaxws20.src" value=""></property>
+
+          <property name="libs.jaxrpc16.javadoc" value=""></property>
+
+          <property name="sun.arch.data.model" value="32"></property>
+
+          <property name="basedir" value="/Users/ericmi/ing_soft/src_local/API_stub"></property>
+
+          <property name="build.ear.classes.dir" value="build/ear-module"></property>
+
+          <property name="jar.compress" value="false"></property>
+
+          <property name="libs.jstl11.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/standard.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/jstl.jar"></property>
+
+          <property name="path.separator" value=":"></property>
+
+          <property name="com.sun.aas.installRoot" value="/Applications/SUNWappserver"></property>
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig"></property>
+
+          <property name="TSTAMP" value="2027"></property>
+
+          <property name="libs.struts.src" value=""></property>
+
+          <property name="apple.awt.graphics.UseQuartz" value="true"></property>
+
+          <property name="user.language" value="en"></property>
+
+          <property name="j2ee.platform.classpath" value="/Applications/SUNWappserver/lib/javaee.jar:/Applications/SUNWappserver/lib/jsf-impl.jar:/Applications/SUNWappserver/lib/activation.jar:/Applications/SUNWappserver/lib/appserv-tags.jar:/Applications/SUNWappserver/lib/mail.jar:/Applications/SUNWappserver/lib/appserv-jstl.jar:/Applications/SUNWappserver/lib/appserv-ws.jar"></property>
+
+          <property name="env-__cf_user_text_encoding" value="0x1F6:0:0"></property>
+
+          <property name="run.test.classpath" value=":build/jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/junit-3.8.1.jar:build/test/classes"></property>
+
+          <property name="libs.swing-layout.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/platform6/docs/swing-layout-1.0-doc.zip"></property>
+
+          <property name="Env-APP_ICON_808" value="/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../nb5.5/netbeans.icns"></property>
+
+          <property name="libs.commons-logging-1-0-4.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/commons-logging-1.0.4.jar"></property>
+
+          <property name="gopherProxySet" value="false"></property>
+
+          <property name="https.nonProxyHosts" value="localhost|127.0.0.1|iBook.local"></property>
+
+          <property name="env-securitysessionid" value="2481470"></property>
+
+          <property name="java.class.version" value="49.0"></property>
+
+          <property name="libs.JAVADB_DRIVER_LABEL.classpath" value="/Applications/SUNWappserver/javadb/lib/derby.jar:/Applications/SUNWappserver/javadb/lib/derbyclient.jar:/Applications/SUNWappserver/javadb/lib/derbynet.jar"></property>
+
+          <property name="netbeans.system_http_proxy" value="DIRECT"></property>
+
+          <property name="user.properties.file" value="/Users/ericmi/.netbeans/5.5/build.properties"></property>
+
+          <property name="libs.EJB_SUPPORT_LIB.src" value=""></property>
+
+          <property name="file.encoding.pkg" value="sun.io"></property>
+
+          <property name="Env-SHLVL" value="4"></property>
+
+          <property name="sun.cpu.endian" value="big"></property>
+
+          <property name="ant.file.egoless" value="/Users/ericmi/ing_soft/src_local/ant/build.xml"></property>
+
+          <property name="libs.WEBSVC_SUPPORT_LIB.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-activation.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-jaxp-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-jax-qname.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-jaxrpc-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-jaxrpc-impl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-jaxrpc-spi.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-mail.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-relaxngDatatype.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-saaj-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-saaj-impl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/rave-xsdlib.jar"></property>
+
+          <property name="Env-J2D_PIXMAPS" value="shared"></property>
+
+          <property name="libs.jsfsupport-designtime.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/jsfcl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/dataprovider.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/appbase.jar"></property>
+
+          <property name="javadoc.preview" value="true"></property>
+
+          <property name="nbplatform.default.harness.dir" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/harness"></property>
+
+          <property name="java.home" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home"></property>
+
+          <property name="copyfiles.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/ant/extra/copyfiles.jar"></property>
+
+          <property name="Env-USER" value="ericmi"></property>
+
+          <property name="debug.test.classpath" value=":build/jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/junit-3.8.1.jar:build/test/classes"></property>
+
+          <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade"></property>
+
+          <property name="libs.webui-designtime.src" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/webui-src.zip"></property>
+
+          <property name="libs.jsf.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/docs/javaee5-doc-api.zip"></property>
+
+          <property name="org.openide.TopManager" value="org.netbeans.core.NonGui"></property>
+
+          <property name="libs.exceptionhandler-runtime.javadoc" value=""></property>
+
+          <property name="libs.jsfsupport-runtime.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/jsfcl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/dataprovider.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/appbase.jar"></property>
+
+          <property name="j2ee.platform.wsgen.classpath" value="/Applications/SUNWappserver/lib/tools.jar:/Applications/SUNWappserver/lib/appserv-jstl.jar:/Applications/SUNWappserver/lib/javaee.jar:/Applications/SUNWappserver/lib/appserv-ws.jar:/Applications/SUNWappserver/lib/mail.jar:/Applications/SUNWappserver/lib/activation.jar"></property>
+
+          <property name="http.nonProxyHosts" value="localhost|127.0.0.1|iBook.local"></property>
+
+          <property name="libs.toplink.src" value=""></property>
+
+          <property name="Env-BOUML_ID" value="7"></property>
+
+          <property name="jar.name" value="API_stub.jar"></property>
+
+          <property name="libs.jsf12-support.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/appbase-doc.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/dataprovider-doc.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/jsfcl-doc.zip"></property>
+
+          <property name="libs.jaxb20.src" value=""></property>
+
+          <property name="libs.theme-default.runtime" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/defaulttheme.jar"></property>
+
+          <property name="libs.commons-logging-1-0-4.src" value=""></property>
+
+          <property name="http.proxyHost" value=""></property>
+
+          <property name="subversion.path" value="/usr/local/bin"></property>
+
+          <property name="libs.WEBSVC_SUPPORT_LIB.src" value=""></property>
+
+          <property name="sun.management.compiler" value="HotSpot Client Compiler"></property>
+
+          <property name="javac.deprecation" value="false"></property>
+
+          <property name="javadoc.use" value="true"></property>
+
+          <property name="libs.jdbcsupport-runtime.src" value=""></property>
+
+          <property name="libs.theme-default-gray.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/defaulttheme-gray.jar"></property>
+
+          <property name="libs.jsf.src" value=""></property>
+
+          <property name="env-home" value="/Users/ericmi"></property>
+
+          <property name="javac.compilerargs" value=""></property>
+
+          <property name="ant.file" value="/Users/ericmi/ing_soft/src_local/API_stub/build.xml"></property>
+
+          <property name="sun.awt.exception.handler" value="org.netbeans.core.NbErrorManager$AWTHandler"></property>
+
+          <property name="has.custom.manifest" value="true"></property>
+
+          <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."></property>
+
+          <property name="libs.swing-layout.src" value=""></property>
+
+          <property name="org.openide.major.version" value="IDE/1"></property>
+
+          <property name="java.vm.name" value="Java HotSpot(TM) Client VM"></property>
+
+          <property name="netbeans.user" value="/Users/ericmi/.netbeans/5.5"></property>
+
+          <property name="javadoc.additionalparam" value=""></property>
+
+          <property name="junitpdfreport.essentials.path" value="junitpdfreport"></property>
+
+          <property name="java.io.tmpdir" value="/tmp"></property>
+
+          <property name="java.vendor.url" value="http://apple.com/"></property>
+
+          <property name="Env-SHELL" value="/bin/bash"></property>
+
+          <property name="jspc.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/ant/lib/ant.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/servlet2.5-jsp2.1-api.jar:/Applications/SUNWappserver/lib/javaee.jar:/Applications/SUNWappserver/lib/jsf-impl.jar:/Applications/SUNWappserver/lib/activation.jar:/Applications/SUNWappserver/lib/appserv-tags.jar:/Applications/SUNWappserver/lib/mail.jar:/Applications/SUNWappserver/lib/appserv-jstl.jar:/Applications/SUNWappserver/lib/appserv-ws.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/glassfish-jspparser.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/glassfish-logging.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/commons-logging-1.0.4.jar"></property>
+
+          <property name="deploy.ant.properties.file" value="/Users/ericmi/.netbeans/5.5/glassfish.properties"></property>
+
+          <property name="j2ee.platform.wscompile.classpath" value="/Applications/SUNWappserver/lib/j2ee.jar:/Applications/SUNWappserver/lib/saaj-api.jar:/Applications/SUNWappserver/lib/saaj-impl.jar:/Applications/SUNWappserver/lib/jaxrpc-api.jar:/Applications/SUNWappserver/lib/jaxrpc-impl.jar:/Applications/SUNWappserver/lib/endorsed/jaxp-api.jar:/Applications/SUNWappserver/lib/appserv-ws.jar"></property>
+
+          <property name="sun.boot.library.path" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Libraries"></property>
+
+          <property name="have.sources" value="true"></property>
+
+          <property name="debug.classpath" value=":build/jar"></property>
+
+          <property name="libs.woodstock-theme-default.runtime" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/webui-jsf-suntheme.jar"></property>
+
+          <property name="libs.jsf-designtime.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/jsf_1.1-doc.zip"></property>
+
+          <property name="javadoc.private" value="false"></property>
+
+          <property name="test.src.dir" value="test"></property>
+
+          <property name="Env-PATH" value="/bin:/sbin:/usr/bin:/usr/sbin:/Applications/SUNWappserver/bin:/usr/local/bin:/usr/local/teTeX/bin/powerpc-apple-darwin-current"></property>
+
+          <property name="dist.jar" value="dist/API_stub.jar"></property>
+
+          <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition"></property>
+
+          <property name="ant.project.name" value="API_stub"></property>
+
+          <property name="Env-PWD" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home"></property>
+
+          <property name="libs.jdbcsupport-designtime.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/rowset-doc.zip"></property>
+
+          <property name="sun.cpu.isalist" value=""></property>
+
+          <property name="libs.CopyLibs.javadoc" value=""></property>
+
+          <property name="org.openide.specification.version" value="6.2"></property>
+
+          <property name="user.home" value="/Users/ericmi"></property>
+
+          <property name="libs.exceptionhandler-runtime.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/errorhandler.jar"></property>
+
+          <property name="libs.jsf-designtime.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/jsf-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/jsf-impl.jar"></property>
+
+          <property name="libs.jaxws20.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/activation.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/FastInfoset.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/http.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jaxb-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jaxb-impl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jaxb-xjc.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jaxws-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jaxws-rt.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jaxws-tools.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jsr173_api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jsr181-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/jsr250-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/saaj-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/saaj-impl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/jaxws20/sjsxp.jar"></property>
+
+          <property name="netbeans.osenv" value="/tmp/nbenv.762"></property>
+
+          <property name="libs.absolutelayout.javadoc" value=""></property>
+
+          <property name="java.specification.name" value="Java Platform API Specification"></property>
+
+          <property name="no.dist.ear.dir" value="true"></property>
+
+          <property name="libs.woodstock-components.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/webui-jsf.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/commons-fileupload.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/json2.jar"></property>
+
+          <property name="libs.jsf.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/jsf/commons-beanutils.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/jsf/commons-collections.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/jsf/commons-digester.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/jsf/commons-logging.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/jsf/jsf-api.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/modules/ext/jsf/jsf-impl.jar"></property>
+
+          <property name="java.specification.vendor" value="Sun Microsystems Inc."></property>
+
+          <property name="libs.jdbcsupport-designtime.src" value=""></property>
+
+          <property name="java.version" value="1.5.0_07"></property>
+
+          <property name="javadoc.version" value="false"></property>
+
+          <property name="org.openide.version" value="deprecated"></property>
+
+          <property name="awt.nativeDoubleBuffering" value="true"></property>
+
+          <property name="libs.jsf12-support.src" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/appbase-src.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/dataprovider-src.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/jsfcl-src.zip"></property>
+
+          <property name="netbeans.home+have.tests" value="true"></property>
+
+          <property name="derbyPort" value="1527"></property>
+
+          <property name="libs.WEBSVC_SUPPORT_LIB.javadoc" value=""></property>
+
+          <property name="Env-LOGNAME" value="ericmi"></property>
+
+          <property name="env-_" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home/bin/java"></property>
+
+          <property name="classes.dir" value="build/jar"></property>
+
+          <property name="dist.javadoc.dir" value="dist/javadoc"></property>
+
+          <property name="libs.swing-layout.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/platform6/modules/ext/swing-layout-1.0.jar"></property>
+
+          <property name="build.generated.dir" value="build/generated"></property>
+
+          <property name="javac.source" value="1.5"></property>
+
+          <property name="line.separator" value=" "></property>
+
+          <property name="java.specification.version" value="1.5"></property>
+
+          <property name="libs.jaxws20.javadoc" value=""></property>
+
+          <property name="java.vm.info" value="mixed mode, sharing"></property>
+
+          <property name="env-term" value="xterm-color"></property>
+
+          <property name="Env-TERM_PROGRAM" value="Apple_Terminal"></property>
+
+          <property name="libs.jsf12-support.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/jsfcl.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/dataprovider.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/appbase.jar"></property>
+
+          <property name="sun.boot.class.path" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/ui.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/laf.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/sunrsasign.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/charsets.jar"></property>
+
+          <property name="javac.target" value="1.5"></property>
+
+          <property name="libs.woodstock-components.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/webui-jsf-doc.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/portlet-doc.zip"></property>
+
+          <property name="build.test.classes.dir" value="build/test/classes"></property>
+
+          <property name="netbeans.osenv.nullsep" value="false"></property>
+
+          <property name="src.dir" value="src/java"></property>
+
+          <property name="libs.IdentityAntTasks.javadoc" value=""></property>
+
+          <property name="j2ee.platform" value="1.5"></property>
+
+          <property name="nbplatform.default.netbeans.dest.dir" value="/Applications/NetBeans.app/Contents/Resources/NetBeans"></property>
+
+          <property name="libs.struts.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/enterprise3/docs/struts-1.2.9-javadoc.zip"></property>
+
+          <property name="pack.build.number" value="20061020"></property>
+
+          <property name="dist.dir" value="dist"></property>
+
+          <property name="libs.webui-designtime.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/webui.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/modules/ext/commons-fileupload.jar"></property>
+
+          <property name="http.proxyPort" value=""></property>
+
+          <property name="dist.ear.jar" value="dist/API_stub.jar"></property>
+
+          <property name="java.awt.printerjob" value="apple.awt.CPrinterJob"></property>
+
+          <property name="TODAY" value="March 5 2007"></property>
+
+          <property name="default.javac.source" value="1.5"></property>
+
+          <property name="sun.jnu.encoding" value="MacRoman"></property>
+
+          <property name="libs.woodstock-components.src" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/webui-jsf-src.zip"></property>
+
+          <property name="java.runtime.version" value="1.5.0_07-164"></property>
+
+          <property name="build.test.results.dir" value="build/test/results"></property>
+
+          <property name="env-shlvl" value="4"></property>
+
+          <property name="default.javac.target" value="1.5"></property>
+
+          <property name="user.timezone" value=""></property>
+
+          <property name="env-java_main_class_808" value="org.netbeans.Main"></property>
+
+          <property name="libs.jsfsupport-designtime.src" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/appbase-src.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/dataprovider-src.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/jsfcl-src.zip"></property>
+
+          <property name="libs.JAVADB_DRIVER_LABEL.javadoc" value=""></property>
+
+          <property name="netbeans.dirs" value="/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../nb5.5:/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../ide7:/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../enterprise3:/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../harness:/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../profiler1:/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../rave2.0:/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../soa1:/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../xmltools1:/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../identity1:"></property>
+
+          <property name="Env-JAVA_MAIN_CLASS_808" value="org.netbeans.Main"></property>
+
+          <property name="test.checkstyle.dir" value="checkstyle report"></property>
+
+          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/ext"></property>
+
+          <property name="libs.exceptionhandler-runtime.src" value=""></property>
+
+          <property name="libs.absolutelayout.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/AbsoluteLayout.jar"></property>
+
+          <property name="env-user" value="ericmi"></property>
+
+          <property name="java.class.path" value="/Users/ericmi/ing_soft/src_local/API_stub/build/jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/modules/ext/junit-3.8.1.jar:/Users/ericmi/ing_soft/src_local/API_stub/build/test/classes:/Applications/SUNWappserver/lib/javaee.jar:/Applications/SUNWappserver/lib/jsf-impl.jar:/Applications/SUNWappserver/lib/activation.jar:/Applications/SUNWappserver/lib/appserv-tags.jar:/Applications/SUNWappserver/lib/mail.jar:/Applications/SUNWappserver/lib/appserv-jstl.jar:/Applications/SUNWappserver/lib/appserv-ws.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/ant/lib/ant-launcher.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/ant/lib/ant.jar:/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/ant/lib/ant-junit.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/.compatibility/14compatibility.jar"></property>
+
+          <property name="apple.laf.useScreenMenuBar" value="true"></property>
+
+          <property name="libs.webui-designtime.javadoc" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/webui-doc.zip:/Applications/NetBeans.app/Contents/Resources/NetBeans/rave2.0/docs/portlet-doc.zip"></property>
+
+          <property name="libs.absolutelayout.src" value=""></property>
+
+          <property name="j2ee.server.type" value="J2EE"></property>
+
+          <property name="os.version" value="10.4.8"></property>
+
+          <property name="ant.file.API_stub-impl" value="/Users/ericmi/ing_soft/src_local/API_stub/nbproject/ant-deploy.xml"></property>
+
+          <property name="libs.toplink.javadoc" value=""></property>
+
+          <property name="libs.jaxb20.javadoc" value=""></property>
+
+          <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"></property>
+
+          <property name="rave.version" value="2.0.0"></property>
+
+          <property name="java.vm.vendor" value="&quot;Apple Computer, Inc.&quot;"></property>
+
+          <property name="platforms.Java_HotSpot_TM__Core_VM_1.6.0-b88-17-release.home" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"></property>
+
+          <property name="libs.CopyLibs.classpath" value="/Applications/NetBeans.app/Contents/Resources/NetBeans/ide7/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar"></property>
+
+          <property name="Env-_" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home/bin/java"></property>
+
+          <property name="Env-__CF_USER_TEXT_ENCODING" value="0x1F6:0:0"></property>
+
+          <property name="platforms.Java_HotSpot_TM__Core_VM_1.6.0-b88-17-release.compiler" value="modern"></property>
+
+          <property name="env-app_icon_808" value="/Applications/NetBeans.app/Contents/MacOS/../Resources/NetBeans/bin/../nb5.5/netbeans.icns"></property>
+
+          <property name="libs.junit.src" value=""></property>
+
+          <property name="env-logname" value="ericmi"></property>
+
+          <property name="NOW" value="2007-03-05 20-27-39"></property>
+
+          <property name="build.dir" value="build"></property>
+
+          <property name="libs.CopyLibs.src" value=""></property>
+
+          <property name="env-term_program_version" value="133"></property>
+
+          <property name="ant.version" value="Apache Ant version 1.6.5 compiled on June 2 2005"></property>
+
+          <property name="test.checkstyle.prefix" value="checkstyle report "></property>
+
+          <property name="file.encoding" value="MacRoman"></property>
+
+          <property name="build.classes.excludes" value="**/*.java,**/*.form,**/.nbattrs"></property>
+
+          <property name="javadoc.nonavbar" value="false"></property>
+
+          <property name="platform.active" value="default_platform"></property>
+
+          <property name="https.proxyHost" value=""></property>
+
+          <property name="imported.basedir" value="/Users/ericmi/ing_soft/src_local/ant/junitpdfreport"></property>
+
+          <property name="awt.toolkit" value="apple.awt.CToolkit"></property>
+
+      </properties>
+
+      <testcase classname="nu.mine.egoless.api.ws.AssenzaTest" name="testMain" time="0.027"></testcase>
+
+      <system-out><![CDATA[main
+]]></system-out>
+
+      <system-err></system-err>
+
+  </testsuite>
+</testsuites>

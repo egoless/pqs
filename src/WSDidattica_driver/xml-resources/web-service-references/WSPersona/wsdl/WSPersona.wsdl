@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://ws.didattica.egoless.mine.nu/" name="WSPersonaService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://ws.didattica.egoless.mine.nu/" schemaLocation="WSPersonaService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+   <!-- <xsd:schema>
+      <xsd:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="http://localhost:8080/WSDidattica/WSPersona/__container$publishing$subctx/META-INF/wsdl/WSPersonaService_schema2.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema> -->
+  </types>
+  <message name="getMaterie">
+    <part name="parameters" element="tns:getMaterie"/>
+  </message>
+  <message name="getMaterieResponse">
+    <part name="parameters" element="tns:getMaterieResponse"/>
+  </message>
+  <message name="WSDidatticaException">
+    <part name="fault" element="tns:WSDidatticaException"/>
+  </message>
+  <message name="cercaStudente">
+    <part name="parameters" element="tns:cercaStudente"/>
+  </message>
+  <message name="cercaStudenteResponse">
+    <part name="parameters" element="tns:cercaStudenteResponse"/>
+  </message>
+  <message name="aggiungiStudente">
+    <part name="parameters" element="tns:aggiungiStudente"/>
+  </message>
+  <message name="aggiungiStudenteResponse">
+    <part name="parameters" element="tns:aggiungiStudenteResponse"/>
+  </message>
+  <message name="modificaStudente">
+    <part name="parameters" element="tns:modificaStudente"/>
+  </message>
+  <message name="modificaStudenteResponse">
+    <part name="parameters" element="tns:modificaStudenteResponse"/>
+  </message>
+  <message name="cancellaStudente">
+    <part name="parameters" element="tns:cancellaStudente"/>
+  </message>
+  <message name="cancellaStudenteResponse">
+    <part name="parameters" element="tns:cancellaStudenteResponse"/>
+  </message>
+  <message name="aggiungiDocente">
+    <part name="parameters" element="tns:aggiungiDocente"/>
+  </message>
+  <message name="aggiungiDocenteResponse">
+    <part name="parameters" element="tns:aggiungiDocenteResponse"/>
+  </message>
+  <message name="modificaDocente">
+    <part name="parameters" element="tns:modificaDocente"/>
+  </message>
+  <message name="modificaDocenteResponse">
+    <part name="parameters" element="tns:modificaDocenteResponse"/>
+  </message>
+  <message name="cancellaDocente">
+    <part name="parameters" element="tns:cancellaDocente"/>
+  </message>
+  <message name="cancellaDocenteResponse">
+    <part name="parameters" element="tns:cancellaDocenteResponse"/>
+  </message>
+  <message name="cercaDocente">
+    <part name="parameters" element="tns:cercaDocente"/>
+  </message>
+  <message name="cercaDocenteResponse">
+    <part name="parameters" element="tns:cercaDocenteResponse"/>
+  </message>
+  <message name="setMaterie">
+    <part name="parameters" element="tns:setMaterie"/>
+  </message>
+  <message name="setMaterieResponse">
+    <part name="parameters" element="tns:setMaterieResponse"/>
+  </message>
+  <message name="getClasse">
+    <part name="parameters" element="tns:getClasse"/>
+  </message>
+  <message name="getClasseResponse">
+    <part name="parameters" element="tns:getClasseResponse"/>
+  </message>
+  <message name="setClasse">
+    <part name="parameters" element="tns:setClasse"/>
+  </message>
+  <message name="setClasseResponse">
+    <part name="parameters" element="tns:setClasseResponse"/>
+  </message>
+  <portType name="WSPersona">
+    <operation name="getMaterie">
+      <input message="tns:getMaterie"/>
+      <output message="tns:getMaterieResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cercaStudente">
+      <input message="tns:cercaStudente"/>
+      <output message="tns:cercaStudenteResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="aggiungiStudente">
+      <input message="tns:aggiungiStudente"/>
+      <output message="tns:aggiungiStudenteResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="modificaStudente">
+      <input message="tns:modificaStudente"/>
+      <output message="tns:modificaStudenteResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cancellaStudente">
+      <input message="tns:cancellaStudente"/>
+      <output message="tns:cancellaStudenteResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="aggiungiDocente">
+      <input message="tns:aggiungiDocente"/>
+      <output message="tns:aggiungiDocenteResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="modificaDocente">
+      <input message="tns:modificaDocente"/>
+      <output message="tns:modificaDocenteResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cancellaDocente">
+      <input message="tns:cancellaDocente"/>
+      <output message="tns:cancellaDocenteResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cercaDocente">
+      <input message="tns:cercaDocente"/>
+      <output message="tns:cercaDocenteResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="setMaterie">
+      <input message="tns:setMaterie"/>
+      <output message="tns:setMaterieResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="getClasse">
+      <input message="tns:getClasse"/>
+      <output message="tns:getClasseResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="setClasse">
+      <input message="tns:setClasse"/>
+      <output message="tns:setClasseResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+  </portType>
+  <binding name="WSPersonaPortBinding" type="tns:WSPersona">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="getMaterie">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cercaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="aggiungiStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaStudente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="aggiungiDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cercaDocente">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="setMaterie">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="setClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="WSPersonaService">
+    <port name="WSPersonaPort" binding="tns:WSPersonaPortBinding">
+      <soap:address location="http://localhost:8080/WSDidattica/WSPersona" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

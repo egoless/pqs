@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="addCarica" type="tns:addCarica"/>
+
+  <xs:element name="addCaricaResponse" type="tns:addCaricaResponse"/>
+
+  <xs:element name="addFiglio" type="tns:addFiglio"/>
+
+  <xs:element name="addFiglioResponse" type="tns:addFiglioResponse"/>
+
+  <xs:element name="addGenitore" type="tns:addGenitore"/>
+
+  <xs:element name="addGenitoreResponse" type="tns:addGenitoreResponse"/>
+
+  <xs:element name="addclasse" type="tns:addclasse"/>
+
+  <xs:element name="addclasseResponse" type="tns:addclasseResponse"/>
+
+  <xs:element name="aggiungiDocente" type="tns:aggiungiDocente"/>
+
+  <xs:element name="aggiungiDocenteResponse" type="tns:aggiungiDocenteResponse"/>
+
+  <xs:element name="aggiungiGenitore" type="tns:aggiungiGenitore"/>
+
+  <xs:element name="aggiungiGenitoreResponse" type="tns:aggiungiGenitoreResponse"/>
+
+  <xs:element name="aggiungiPersonaleATA" type="tns:aggiungiPersonaleATA"/>
+
+  <xs:element name="aggiungiPersonaleATAResponse" type="tns:aggiungiPersonaleATAResponse"/>
+
+  <xs:element name="aggiungiStudente" type="tns:aggiungiStudente"/>
+
+  <xs:element name="aggiungiStudenteResponse" type="tns:aggiungiStudenteResponse"/>
+
+  <xs:element name="cancellaDocente" type="tns:cancellaDocente"/>
+
+  <xs:element name="cancellaDocenteResponse" type="tns:cancellaDocenteResponse"/>
+
+  <xs:element name="cancellaGenitore" type="tns:cancellaGenitore"/>
+
+  <xs:element name="cancellaGenitoreResponse" type="tns:cancellaGenitoreResponse"/>
+
+  <xs:element name="cancellaPersonaleATA" type="tns:cancellaPersonaleATA"/>
+
+  <xs:element name="cancellaPersonaleATAResponse" type="tns:cancellaPersonaleATAResponse"/>
+
+  <xs:element name="cancellaStudente" type="tns:cancellaStudente"/>
+
+  <xs:element name="cancellaStudenteResponse" type="tns:cancellaStudenteResponse"/>
+
+  <xs:element name="caricaDocente" type="tns:caricaDocente"/>
+
+  <xs:element name="caricaDocenteResponse" type="tns:caricaDocenteResponse"/>
+
+  <xs:element name="caricaGenitore" type="tns:caricaGenitore"/>
+
+  <xs:element name="caricaGenitoreResponse" type="tns:caricaGenitoreResponse"/>
+
+  <xs:element name="caricaPersonaleATA" type="tns:caricaPersonaleATA"/>
+
+  <xs:element name="caricaPersonaleATAResponse" type="tns:caricaPersonaleATAResponse"/>
+
+  <xs:element name="caricaStudente" type="tns:caricaStudente"/>
+
+  <xs:element name="caricaStudenteResponse" type="tns:caricaStudenteResponse"/>
+
+  <xs:element name="cercaDocente" type="tns:cercaDocente"/>
+
+  <xs:element name="cercaDocenteResponse" type="tns:cercaDocenteResponse"/>
+
+  <xs:element name="cercaStudente" type="tns:cercaStudente"/>
+
+  <xs:element name="cercaStudenteResponse" type="tns:cercaStudenteResponse"/>
+
+  <xs:element name="delCarica" type="tns:delCarica"/>
+
+  <xs:element name="delCaricaResponse" type="tns:delCaricaResponse"/>
+
+  <xs:element name="delClasse" type="tns:delClasse"/>
+
+  <xs:element name="delClasseResponse" type="tns:delClasseResponse"/>
+
+  <xs:element name="delFiglio" type="tns:delFiglio"/>
+
+  <xs:element name="delFiglioResponse" type="tns:delFiglioResponse"/>
+
+  <xs:element name="delGenitore" type="tns:delGenitore"/>
+
+  <xs:element name="delGenitoreResponse" type="tns:delGenitoreResponse"/>
+
+  <xs:element name="getAssenze" type="tns:getAssenze"/>
+
+  <xs:element name="getAssenzeResponse" type="tns:getAssenzeResponse"/>
+
+  <xs:element name="getClasse" type="tns:getClasse"/>
+
+  <xs:element name="getClasseResponse" type="tns:getClasseResponse"/>
+
+  <xs:element name="getClassi" type="tns:getClassi"/>
+
+  <xs:element name="getClassiDocente" type="tns:getClassiDocente"/>
+
+  <xs:element name="getClassiDocenteResponse" type="tns:getClassiDocenteResponse"/>
+
+  <xs:element name="getClassiResponse" type="tns:getClassiResponse"/>
+
+  <xs:element name="getCoordinatoreDi" type="tns:getCoordinatoreDi"/>
+
+  <xs:element name="getCoordinatoreDiResponse" type="tns:getCoordinatoreDiResponse"/>
+
+  <xs:element name="getFigli" type="tns:getFigli"/>
+
+  <xs:element name="getFigliResponse" type="tns:getFigliResponse"/>
+
+  <xs:element name="getGenitori" type="tns:getGenitori"/>
+
+  <xs:element name="getGenitoriResponse" type="tns:getGenitoriResponse"/>
+
+  <xs:element name="getIncarichi" type="tns:getIncarichi"/>
+
+  <xs:element name="getIncarichiResponse" type="tns:getIncarichiResponse"/>
+
+  <xs:element name="getMaterieDocente" type="tns:getMaterieDocente"/>
+
+  <xs:element name="getMaterieDocenteResponse" type="tns:getMaterieDocenteResponse"/>
+
+  <xs:element name="getOreLezione" type="tns:getOreLezione"/>
+
+  <xs:element name="getOreLezioneResponse" type="tns:getOreLezioneResponse"/>
+
+  <xs:element name="getResponsabileDi" type="tns:getResponsabileDi"/>
+
+  <xs:element name="getResponsabileDiResponse" type="tns:getResponsabileDiResponse"/>
+
+  <xs:element name="getUtenti" type="tns:getUtenti"/>
+
+  <xs:element name="getUtentiResponse" type="tns:getUtentiResponse"/>
+
+  <xs:element name="modificaDocente" type="tns:modificaDocente"/>
+
+  <xs:element name="modificaDocenteResponse" type="tns:modificaDocenteResponse"/>
+
+  <xs:element name="modificaGenitore" type="tns:modificaGenitore"/>
+
+  <xs:element name="modificaGenitoreResponse" type="tns:modificaGenitoreResponse"/>
+
+  <xs:element name="modificaPersonaleATA" type="tns:modificaPersonaleATA"/>
+
+  <xs:element name="modificaPersonaleATAResponse" type="tns:modificaPersonaleATAResponse"/>
+
+  <xs:element name="modificaStudente" type="tns:modificaStudente"/>
+
+  <xs:element name="modificaStudenteResponse" type="tns:modificaStudenteResponse"/>
+
+  <xs:element name="setMaterie" type="tns:setMaterie"/>
+
+  <xs:element name="setMaterieResponse" type="tns:setMaterieResponse"/>
+
+  <xs:complexType name="getAssenze">
+    <xs:sequence>
+      <xs:element name="persona" type="tns:persona" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="persona">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="contattoId" type="xs:int"/>
+          <xs:element name="nazioneId" type="xs:int"/>
+          <xs:element name="religioneId" type="xs:int"/>
+          <xs:element name="istitutoId" type="xs:int"/>
+          <xs:element name="codiceFiscale" type="xs:string" minOccurs="0"/>
+          <xs:element name="cognome" type="xs:string" minOccurs="0"/>
+          <xs:element name="dataNascita" type="tns:date" minOccurs="0"/>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+          <xs:element name="portatoreHandicap" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="sesso" type="xs:int" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="date">
+    <xs:sequence>
+      <xs:element name="anno" type="xs:int"/>
+      <xs:element name="date" type="xs:string" minOccurs="0"/>
+      <xs:element name="giorno" type="xs:int"/>
+      <xs:element name="mese" type="xs:int"/>
+      <xs:element name="minuti" type="xs:int"/>
+      <xs:element name="ore" type="xs:int"/>
+      <xs:element name="secondi" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAssenzeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="displayEntry">
+    <xs:sequence>
+      <xs:element name="identificativo" type="xs:int" minOccurs="0"/>
+      <xs:element name="display" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getGenitori">
+    <xs:sequence>
+      <xs:element name="studente" type="tns:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="studente">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element name="dataIscrizione" type="tns:date" minOccurs="0"/>
+          <xs:element name="matricola" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="getGenitoriResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaDocente">
+    <xs:sequence>
+      <xs:element name="parametri" type="tns:parametriRicercaDocente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicercaDocente">
+    <xs:complexContent>
+      <xs:extension base="tns:parametriRicerca">
+        <xs:sequence>
+          <xs:element name="idMateria" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicerca" abstract="true">
+    <xs:sequence>
+      <xs:element name="datiParziali" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="id" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cercaDocenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMaterieDocente">
+    <xs:sequence>
+      <xs:element name="idDocente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMaterieDocenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaGenitore">
+    <xs:sequence>
+      <xs:element name="idGenitore" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaGenitoreResponse"/>
+
+  <xs:complexType name="cancellaDocente">
+    <xs:sequence>
+      <xs:element name="idDocente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaDocenteResponse"/>
+
+  <xs:complexType name="getOreLezione">
+    <xs:sequence>
+      <xs:element name="docente" type="tns:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="docente">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element name="dataAssunzione" type="tns:date" minOccurs="0"/>
+          <xs:element name="matricola" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="getOreLezioneResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getResponsabileDi">
+    <xs:sequence>
+      <xs:element name="docente" type="tns:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getResponsabileDiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addCarica">
+    <xs:sequence>
+      <xs:element name="persona" type="tns:persona" minOccurs="0"/>
+      <xs:element name="carica" type="tns:carica" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="carica">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="annoId" type="xs:int"/>
+          <xs:element name="ruoloId" type="xs:int"/>
+          <xs:element name="classeId" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="addCaricaResponse"/>
+
+  <xs:complexType name="modificaGenitore">
+    <xs:sequence>
+      <xs:element name="genitore" type="tns:genitore" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="genitore">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="modificaGenitoreResponse"/>
+
+  <xs:complexType name="modificaDocente">
+    <xs:sequence>
+      <xs:element name="docente" type="tns:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaDocenteResponse"/>
+
+  <xs:complexType name="aggiungiStudente">
+    <xs:sequence>
+      <xs:element name="nuovoStudente" type="tns:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiStudenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiDocente">
+    <xs:sequence>
+      <xs:element name="nuovoDocente" type="tns:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiDocenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="delGenitore">
+    <xs:sequence>
+      <xs:element name="studente" type="tns:studente" minOccurs="0"/>
+      <xs:element name="genitore" type="tns:genitore" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="delGenitoreResponse"/>
+
+  <xs:complexType name="cercaStudente">
+    <xs:sequence>
+      <xs:element name="parametri" type="tns:parametriRicercaStudente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametriRicercaStudente">
+    <xs:complexContent>
+      <xs:extension base="tns:parametriRicerca">
+        <xs:sequence>
+          <xs:element name="cognome" type="xs:string" minOccurs="0"/>
+          <xs:element name="idClasse" type="xs:int"/>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="cercaStudenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaStudente">
+    <xs:sequence>
+      <xs:element name="studente" type="tns:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaStudenteResponse"/>
+
+  <xs:complexType name="getUtenti">
+    <xs:sequence>
+      <xs:element name="persona" type="tns:persona" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUtentiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addGenitore">
+    <xs:sequence>
+      <xs:element name="studente" type="tns:studente" minOccurs="0"/>
+      <xs:element name="genitore" type="tns:genitore" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addGenitoreResponse"/>
+
+  <xs:complexType name="caricaStudente">
+    <xs:sequence>
+      <xs:element name="idStudente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaStudenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getFigli">
+    <xs:sequence>
+      <xs:element name="genitore" type="tns:genitore" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getFigliResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiGenitore">
+    <xs:sequence>
+      <xs:element name="nuovoGenitore" type="tns:genitore" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiGenitoreResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClasse">
+    <xs:sequence>
+      <xs:element name="idStudente" type="xs:int"/>
+      <xs:element name="idAnnoScolastico" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClasseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClassiDocente">
+    <xs:sequence>
+      <xs:element name="docente" type="tns:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClassiDocenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaGenitore">
+    <xs:sequence>
+      <xs:element name="idGenitore" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaGenitoreResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:genitore" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClassi">
+    <xs:sequence>
+      <xs:element name="idStudente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClassiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setMaterie">
+    <xs:sequence>
+      <xs:element name="idDocente" type="xs:int"/>
+      <xs:element name="idMaterie" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setMaterieResponse"/>
+
+  <xs:complexType name="delFiglio">
+    <xs:sequence>
+      <xs:element name="genitore" type="tns:genitore" minOccurs="0"/>
+      <xs:element name="figlio" type="tns:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="delFiglioResponse"/>
+
+  <xs:complexType name="modificaPersonaleATA">
+    <xs:sequence>
+      <xs:element name="personaleATA" type="tns:personaleATA" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="personaleATA">
+    <xs:complexContent>
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element name="dataAssunzione" type="tns:date" minOccurs="0"/>
+          <xs:element name="dataScandenzaContratto" type="tns:date" minOccurs="0"/>
+          <xs:element name="matricola" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="modificaPersonaleATAResponse"/>
+
+  <xs:complexType name="caricaDocente">
+    <xs:sequence>
+      <xs:element name="idDocente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaDocenteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaPersonaleATA">
+    <xs:sequence>
+      <xs:element name="idPersonaleATA" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaPersonaleATAResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:personaleATA" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiPersonaleATA">
+    <xs:sequence>
+      <xs:element name="nuovoPersonaleATA" type="tns:personaleATA" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiPersonaleATAResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addFiglio">
+    <xs:sequence>
+      <xs:element name="genitore" type="tns:genitore" minOccurs="0"/>
+      <xs:element name="figlio" type="tns:studente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addFiglioResponse"/>
+
+  <xs:complexType name="cancellaPersonaleATA">
+    <xs:sequence>
+      <xs:element name="idPersonaleATA" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaPersonaleATAResponse"/>
+
+  <xs:complexType name="getCoordinatoreDi">
+    <xs:sequence>
+      <xs:element name="docente" type="tns:docente" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCoordinatoreDiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="delClasse">
+    <xs:sequence>
+      <xs:element name="idStudente" type="xs:int"/>
+      <xs:element name="idClasse" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="delClasseResponse"/>
+
+  <xs:complexType name="cancellaStudente">
+    <xs:sequence>
+      <xs:element name="idStudente" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaStudenteResponse"/>
+
+  <xs:complexType name="delCarica">
+    <xs:sequence>
+      <xs:element name="persona" type="tns:persona" minOccurs="0"/>
+      <xs:element name="carica" type="tns:carica" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="delCaricaResponse"/>
+
+  <xs:complexType name="addclasse">
+    <xs:sequence>
+      <xs:element name="idStudente" type="xs:int"/>
+      <xs:element name="idClasse" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addclasseResponse"/>
+
+  <xs:complexType name="getIncarichi">
+    <xs:sequence>
+      <xs:element name="persona" type="tns:persona" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getIncarichiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

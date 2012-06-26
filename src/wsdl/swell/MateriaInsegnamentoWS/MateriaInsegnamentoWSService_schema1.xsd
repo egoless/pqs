@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://api.ws.pqs.swellsys.com/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OperazioneNonValida" type="tns:OperazioneNonValida"/>
+
+  <xs:element name="aggiungiMateriaInsegnamento" type="tns:aggiungiMateriaInsegnamento"/>
+
+  <xs:element name="aggiungiMateriaInsegnamentoResponse" type="tns:aggiungiMateriaInsegnamentoResponse"/>
+
+  <xs:element name="cancellaMateriaInsegnamento" type="tns:cancellaMateriaInsegnamento"/>
+
+  <xs:element name="cancellaMateriaInsegnamentoResponse" type="tns:cancellaMateriaInsegnamentoResponse"/>
+
+  <xs:element name="caricaMateriaInsegnamento" type="tns:caricaMateriaInsegnamento"/>
+
+  <xs:element name="caricaMateriaInsegnamentoResponse" type="tns:caricaMateriaInsegnamentoResponse"/>
+
+  <xs:element name="getDocenti" type="tns:getDocenti"/>
+
+  <xs:element name="getDocentiResponse" type="tns:getDocentiResponse"/>
+
+  <xs:element name="getMaterie" type="tns:getMaterie"/>
+
+  <xs:element name="getMaterieResponse" type="tns:getMaterieResponse"/>
+
+  <xs:element name="getOreLezione" type="tns:getOreLezione"/>
+
+  <xs:element name="getOreLezioneResponse" type="tns:getOreLezioneResponse"/>
+
+  <xs:element name="modificaMateriaInsegnamento" type="tns:modificaMateriaInsegnamento"/>
+
+  <xs:element name="modificaMateriaInsegnamentoResponse" type="tns:modificaMateriaInsegnamentoResponse"/>
+
+  <xs:complexType name="getDocenti">
+    <xs:sequence>
+      <xs:element name="materiaInsegnamento" type="tns:materiaInsegnamento" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="materiaInsegnamento">
+    <xs:complexContent>
+      <xs:extension base="tns:elemento">
+        <xs:sequence>
+          <xs:element name="nome" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="elemento" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="getDocentiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="displayEntry">
+    <xs:sequence>
+      <xs:element name="identificativo" type="xs:int" minOccurs="0"/>
+      <xs:element name="display" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OperazioneNonValida">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaMateriaInsegnamento">
+    <xs:sequence>
+      <xs:element name="idMateriaInsegnamento" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancellaMateriaInsegnamentoResponse"/>
+
+  <xs:complexType name="aggiungiMateriaInsegnamento">
+    <xs:sequence>
+      <xs:element name="nuovaMateriaInsegnamento" type="tns:materiaInsegnamento" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiungiMateriaInsegnamentoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMaterie"/>
+
+  <xs:complexType name="getMaterieResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaMateriaInsegnamento">
+    <xs:sequence>
+      <xs:element name="materiaInsegnamento" type="tns:materiaInsegnamento" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modificaMateriaInsegnamentoResponse"/>
+
+  <xs:complexType name="getOreLezione">
+    <xs:sequence>
+      <xs:element name="materiaInsegnamento" type="tns:materiaInsegnamento" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getOreLezioneResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:displayEntry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaMateriaInsegnamento">
+    <xs:sequence>
+      <xs:element name="idMateriaInsegnamento" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="caricaMateriaInsegnamentoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:materiaInsegnamento" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

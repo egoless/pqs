@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://api.ws.pqs.swellsys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://api.ws.pqs.swellsys.com/" name="NazioneWSService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="NazioneWSService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="aggiungiNazione">
+    <part name="parameters" element="tns:aggiungiNazione"/>
+  </message>
+  <message name="aggiungiNazioneResponse">
+    <part name="parameters" element="tns:aggiungiNazioneResponse"/>
+  </message>
+  <message name="OperazioneNonValida">
+    <part name="fault" element="tns:OperazioneNonValida"/>
+  </message>
+  <message name="modificaNazione">
+    <part name="parameters" element="tns:modificaNazione"/>
+  </message>
+  <message name="modificaNazioneResponse">
+    <part name="parameters" element="tns:modificaNazioneResponse"/>
+  </message>
+  <message name="cancellaNazione">
+    <part name="parameters" element="tns:cancellaNazione"/>
+  </message>
+  <message name="cancellaNazioneResponse">
+    <part name="parameters" element="tns:cancellaNazioneResponse"/>
+  </message>
+  <message name="caricaNazione">
+    <part name="parameters" element="tns:caricaNazione"/>
+  </message>
+  <message name="caricaNazioneResponse">
+    <part name="parameters" element="tns:caricaNazioneResponse"/>
+  </message>
+  <message name="getNazioni">
+    <part name="parameters" element="tns:getNazioni"/>
+  </message>
+  <message name="getNazioniResponse">
+    <part name="parameters" element="tns:getNazioniResponse"/>
+  </message>
+  <portType name="NazioneWS">
+    <operation name="aggiungiNazione">
+      <input message="tns:aggiungiNazione"/>
+      <output message="tns:aggiungiNazioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="modificaNazione">
+      <input message="tns:modificaNazione"/>
+      <output message="tns:modificaNazioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="cancellaNazione">
+      <input message="tns:cancellaNazione"/>
+      <output message="tns:cancellaNazioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="caricaNazione">
+      <input message="tns:caricaNazione"/>
+      <output message="tns:caricaNazioneResponse"/>
+      <fault name="OperazioneNonValida" message="tns:OperazioneNonValida"/>
+    </operation>
+    <operation name="getNazioni">
+      <input message="tns:getNazioni"/>
+      <output message="tns:getNazioniResponse"/>
+    </operation>
+  </portType>
+  <binding name="NazioneWSPortBinding" type="tns:NazioneWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiNazione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="modificaNazione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaNazione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="caricaNazione">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="OperazioneNonValida">
+        <soap:fault name="OperazioneNonValida" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getNazioni">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="NazioneWSService">
+    <port name="NazioneWSPort" binding="tns:NazioneWSPortBinding">
+      <soap:address location="http://localhost:8080/pqs_api_glassfish/NazioneWSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

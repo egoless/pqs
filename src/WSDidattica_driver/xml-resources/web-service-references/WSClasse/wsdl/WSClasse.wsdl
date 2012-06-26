@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.didattica.egoless.mine.nu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://ws.didattica.egoless.mine.nu/" name="WSClasseService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://ws.didattica.egoless.mine.nu/" schemaLocation="WSClasseService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+   <!-- <xsd:schema>
+      <xsd:import namespace="http://api.ws.pqs.swellsys.com/" schemaLocation="http://localhost:8080/WSClasseService/WSClasse/__container$publishing$subctx/META-INF/wsdl/WSClasseService_schema2.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema> -->
+  </types>
+  <message name="aggiungiClasse">
+    <part name="parameters" element="tns:aggiungiClasse"/>
+  </message>
+  <message name="aggiungiClasseResponse">
+    <part name="parameters" element="tns:aggiungiClasseResponse"/>
+  </message>
+  <message name="WSDidatticaException">
+    <part name="fault" element="tns:WSDidatticaException"/>
+  </message>
+  <message name="cancellaClasse">
+    <part name="parameters" element="tns:cancellaClasse"/>
+  </message>
+  <message name="cancellaClasseResponse">
+    <part name="parameters" element="tns:cancellaClasseResponse"/>
+  </message>
+  <message name="recuperaClassi">
+    <part name="parameters" element="tns:recuperaClassi"/>
+  </message>
+  <message name="recuperaClassiResponse">
+    <part name="parameters" element="tns:recuperaClassiResponse"/>
+  </message>
+  <portType name="WSClasse">
+    <operation name="aggiungiClasse">
+      <input message="tns:aggiungiClasse"/>
+      <output message="tns:aggiungiClasseResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="cancellaClasse">
+      <input message="tns:cancellaClasse"/>
+      <output message="tns:cancellaClasseResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+    <operation name="recuperaClassi">
+      <input message="tns:recuperaClassi"/>
+      <output message="tns:recuperaClassiResponse"/>
+      <fault name="WSDidatticaException" message="tns:WSDidatticaException"/>
+    </operation>
+  </portType>
+  <binding name="WSClassePortBinding" type="tns:WSClasse">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="aggiungiClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="cancellaClasse">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="recuperaClassi">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="WSDidatticaException">
+        <soap:fault name="WSDidatticaException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="WSClasseService">
+    <port name="WSClassePort" binding="tns:WSClassePortBinding">
+      <soap:address location="http://ericmiotto.bsshome.bedin.it:8080/WSClasseService/WSClasse" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>
